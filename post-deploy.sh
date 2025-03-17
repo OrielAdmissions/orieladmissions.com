@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Check if the theme is already active, and activate it if not
-if ! wp theme is-active your-roots-theme-here; then
+if ! wp theme is-active oriel-roots-sage; then
     echo "Activating the theme..."
-    wp theme activate your-roots-theme-here
+    wp theme activate oriel-roots-sage
 else
     echo "The theme is already active."
 fi

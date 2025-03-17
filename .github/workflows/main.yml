@@ -48,6 +48,7 @@ jobs:
         with:
           SCRIPT: post-deploy.sh
           WPE_ENV: ${{ secrets.PROD_ENVIRONMENT }}
+          WPE_SSHG_KEY_PRIVATE: ${{ secrets.WPE_SSHG_KEY_PRIVATE }}
 
   php-build:
     runs-on: ubuntu-latest
@@ -78,3 +79,4 @@ jobs:
         with:
           SCRIPT: post-deploy.sh
           WPE_ENV: ${{ secrets.PROD_ENVIRONMENT }}
+          WPE_SSHG_KEY_PRIVATE: ${{ secrets.WPE_SSHG_KEY_PRIVATE }}
