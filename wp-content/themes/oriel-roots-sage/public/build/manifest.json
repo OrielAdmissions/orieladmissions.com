@@ -1,0 +1,447 @@
+{
+  "_editor.deps.json": {
+    "file": "editor.deps.json",
+    "src": "_editor.deps.json"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-C1mQxdPE.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/css/editor.css": {
+    "file": "assets/editor-cpq5uV7L.css",
+    "src": "resources/css/editor.css",
+    "isEntry": true
+  },
+  "resources/fonts/BarlowSemiCondensed-Bold.ttf": {
+    "file": "assets/BarlowSemiCondensed-Bold-CssTw-Xu.ttf",
+    "src": "resources/fonts/BarlowSemiCondensed-Bold.ttf"
+  },
+  "resources/fonts/BarlowSemiCondensed-BoldItalic.ttf": {
+    "file": "assets/BarlowSemiCondensed-BoldItalic-18BuHBDw.ttf",
+    "src": "resources/fonts/BarlowSemiCondensed-BoldItalic.ttf"
+  },
+  "resources/fonts/BarlowSemiCondensed-Italic.ttf": {
+    "file": "assets/BarlowSemiCondensed-Italic-Bood5Hmg.ttf",
+    "src": "resources/fonts/BarlowSemiCondensed-Italic.ttf"
+  },
+  "resources/fonts/BarlowSemiCondensed-Light.ttf": {
+    "file": "assets/BarlowSemiCondensed-Light-DjGDXa8y.ttf",
+    "src": "resources/fonts/BarlowSemiCondensed-Light.ttf"
+  },
+  "resources/fonts/BarlowSemiCondensed-LightItalic.ttf": {
+    "file": "assets/BarlowSemiCondensed-LightItalic-CBzLfpzs.ttf",
+    "src": "resources/fonts/BarlowSemiCondensed-LightItalic.ttf"
+  },
+  "resources/fonts/BarlowSemiCondensed-Medium.ttf": {
+    "file": "assets/BarlowSemiCondensed-Medium-Dk7oZW7H.ttf",
+    "src": "resources/fonts/BarlowSemiCondensed-Medium.ttf"
+  },
+  "resources/fonts/BarlowSemiCondensed-MediumItalic.ttf": {
+    "file": "assets/BarlowSemiCondensed-MediumItalic-BplP7TXo.ttf",
+    "src": "resources/fonts/BarlowSemiCondensed-MediumItalic.ttf"
+  },
+  "resources/fonts/BarlowSemiCondensed-Regular.ttf": {
+    "file": "assets/BarlowSemiCondensed-Regular-EZJP0DsF.ttf",
+    "src": "resources/fonts/BarlowSemiCondensed-Regular.ttf"
+  },
+  "resources/fonts/PPEditorialNew-Italic.otf": {
+    "file": "assets/PPEditorialNew-Italic-BlENFm4N.otf",
+    "src": "resources/fonts/PPEditorialNew-Italic.otf"
+  },
+  "resources/fonts/PPEditorialNew-Regular.otf": {
+    "file": "assets/PPEditorialNew-Regular-CHymeRq6.otf",
+    "src": "resources/fonts/PPEditorialNew-Regular.otf"
+  },
+  "resources/fonts/PPEditorialNew-Ultrabold.otf": {
+    "file": "assets/PPEditorialNew-Ultrabold-BFfmAO5X.otf",
+    "src": "resources/fonts/PPEditorialNew-Ultrabold.otf"
+  },
+  "resources/fonts/PPEditorialNew-UltraboldItalic.otf": {
+    "file": "assets/PPEditorialNew-UltraboldItalic-BYM9vjzi.otf",
+    "src": "resources/fonts/PPEditorialNew-UltraboldItalic.otf"
+  },
+  "resources/fonts/PPEditorialNew-Ultralight.otf": {
+    "file": "assets/PPEditorialNew-Ultralight-ChorL6Ve.otf",
+    "src": "resources/fonts/PPEditorialNew-Ultralight.otf"
+  },
+  "resources/fonts/PPEditorialNew-UltralightItalic.otf": {
+    "file": "assets/PPEditorialNew-UltralightItalic-Bw7LjlFL.otf",
+    "src": "resources/fonts/PPEditorialNew-UltralightItalic.otf"
+  },
+  "resources/images/Headshots/Alison-Headshot.jpg": {
+    "file": "assets/Alison-Headshot-Xnb0vDfY.jpg",
+    "src": "resources/images/Headshots/Alison-Headshot.jpg"
+  },
+  "resources/images/Headshots/Alyssa-Headshot.jpg": {
+    "file": "assets/Alyssa-Headshot-9GbAOeve.jpg",
+    "src": "resources/images/Headshots/Alyssa-Headshot.jpg"
+  },
+  "resources/images/Headshots/Becky-Headshot.jpg": {
+    "file": "assets/Becky-Headshot-ByMltfjv.jpg",
+    "src": "resources/images/Headshots/Becky-Headshot.jpg"
+  },
+  "resources/images/Headshots/Carrie-Headshot.jpg": {
+    "file": "assets/Carrie-Headshot-uMhuHtRz.jpg",
+    "src": "resources/images/Headshots/Carrie-Headshot.jpg"
+  },
+  "resources/images/Headshots/Clarissa-Headshot.jpg": {
+    "file": "assets/Clarissa-Headshot-1zS6X9Sm.jpg",
+    "src": "resources/images/Headshots/Clarissa-Headshot.jpg"
+  },
+  "resources/images/Headshots/Dejuanna-Headshot.jpg": {
+    "file": "assets/Dejuanna-Headshot-q5r-yPsJ.jpg",
+    "src": "resources/images/Headshots/Dejuanna-Headshot.jpg"
+  },
+  "resources/images/Headshots/Ellie-Headshot.jpg": {
+    "file": "assets/Ellie-Headshot-DvuLwFwD.jpg",
+    "src": "resources/images/Headshots/Ellie-Headshot.jpg"
+  },
+  "resources/images/Headshots/Jessie-Headshot.jpg": {
+    "file": "assets/Jessie-Headshot-BrML8pPM.jpg",
+    "src": "resources/images/Headshots/Jessie-Headshot.jpg"
+  },
+  "resources/images/Headshots/Joy-Headshot.jpg": {
+    "file": "assets/Joy-Headshot-Ce4-Glnu.jpg",
+    "src": "resources/images/Headshots/Joy-Headshot.jpg"
+  },
+  "resources/images/Headshots/Julia-Headshot.jpg": {
+    "file": "assets/Julia-Headshot-Dm47vEQp.jpg",
+    "src": "resources/images/Headshots/Julia-Headshot.jpg"
+  },
+  "resources/images/Headshots/Kendra-Headshot.jpg": {
+    "file": "assets/Kendra-Headshot-blO-t0f9.jpg",
+    "src": "resources/images/Headshots/Kendra-Headshot.jpg"
+  },
+  "resources/images/Headshots/Lindsey-Headshot.jpg": {
+    "file": "assets/Lindsey-Headshot-CFaNUDeF.jpg",
+    "src": "resources/images/Headshots/Lindsey-Headshot.jpg"
+  },
+  "resources/images/Headshots/Rita-Headshot.jpg": {
+    "file": "assets/Rita-Headshot-BYTTX4Ih.jpg",
+    "src": "resources/images/Headshots/Rita-Headshot.jpg"
+  },
+  "resources/images/Headshots/Rona-Aydin-Headshot.jpg": {
+    "file": "assets/Rona-Aydin-Headshot-DW7AP6NB.jpg",
+    "src": "resources/images/Headshots/Rona-Aydin-Headshot.jpg"
+  },
+  "resources/images/Headshots/Tanner-Headshot.jpg": {
+    "file": "assets/Tanner-Headshot-ytaMOmLM.jpg",
+    "src": "resources/images/Headshots/Tanner-Headshot.jpg"
+  },
+  "resources/images/Headshots/Thea-Headshot.jpg": {
+    "file": "assets/Thea-Headshot-B5uZmGSU.jpg",
+    "src": "resources/images/Headshots/Thea-Headshot.jpg"
+  },
+  "resources/images/Headshots/Zoe-Headshot.jpg": {
+    "file": "assets/Zoe-Headshot-BN_r9Ny6.jpg",
+    "src": "resources/images/Headshots/Zoe-Headshot.jpg"
+  },
+  "resources/images/application-graph.svg": {
+    "file": "assets/application-graph-BX3fWkX2.svg",
+    "src": "resources/images/application-graph.svg"
+  },
+  "resources/images/chevron-down.svg": {
+    "file": "assets/chevron-down-BW1nLDwR.svg",
+    "src": "resources/images/chevron-down.svg"
+  },
+  "resources/images/chevron-left.svg": {
+    "file": "assets/chevron-left-BCyJMCWF.svg",
+    "src": "resources/images/chevron-left.svg"
+  },
+  "resources/images/chevron-right.svg": {
+    "file": "assets/chevron-right-BWlaMm5U.svg",
+    "src": "resources/images/chevron-right.svg"
+  },
+  "resources/images/clip.svg": {
+    "file": "assets/clip-DQgu6GpO.svg",
+    "src": "resources/images/clip.svg"
+  },
+  "resources/images/college-graph.svg": {
+    "file": "assets/college-graph-Bn2kdyxX.svg",
+    "src": "resources/images/college-graph.svg"
+  },
+  "resources/images/college-logos/Columbia-white-bg.svg": {
+    "file": "assets/Columbia-white-bg-BJGItMYu.svg",
+    "src": "resources/images/college-logos/Columbia-white-bg.svg"
+  },
+  "resources/images/college-logos/berkeley.svg": {
+    "file": "assets/berkeley-BpRSSFfV.svg",
+    "src": "resources/images/college-logos/berkeley.svg"
+  },
+  "resources/images/college-logos/boston-college.svg": {
+    "file": "assets/boston-college-Bu1A-rWv.svg",
+    "src": "resources/images/college-logos/boston-college.svg"
+  },
+  "resources/images/college-logos/boston-university.svg": {
+    "file": "assets/boston-university-C6HzEFmJ.svg",
+    "src": "resources/images/college-logos/boston-university.svg"
+  },
+  "resources/images/college-logos/brown.svg": {
+    "file": "assets/brown-DZDHKD4c.svg",
+    "src": "resources/images/college-logos/brown.svg"
+  },
+  "resources/images/college-logos/cambridge.svg": {
+    "file": "assets/cambridge-BxnUsgmc.svg",
+    "src": "resources/images/college-logos/cambridge.svg"
+  },
+  "resources/images/college-logos/carnegie-mellon-white-bg.svg": {
+    "file": "assets/carnegie-mellon-white-bg-oUX1FPK6.svg",
+    "src": "resources/images/college-logos/carnegie-mellon-white-bg.svg"
+  },
+  "resources/images/college-logos/carnegie-mellon.svg": {
+    "file": "assets/carnegie-mellon-OZocRCA1.svg",
+    "src": "resources/images/college-logos/carnegie-mellon.svg"
+  },
+  "resources/images/college-logos/columbia-university.svg": {
+    "file": "assets/columbia-university-qjGb_auW.svg",
+    "src": "resources/images/college-logos/columbia-university.svg"
+  },
+  "resources/images/college-logos/cornell-university.svg": {
+    "file": "assets/cornell-university-DItbG1r0.svg",
+    "src": "resources/images/college-logos/cornell-university.svg"
+  },
+  "resources/images/college-logos/cornell-white-bg.svg": {
+    "file": "assets/cornell-white-bg-Dd8xpBAl.svg",
+    "src": "resources/images/college-logos/cornell-white-bg.svg"
+  },
+  "resources/images/college-logos/dartmouth.svg": {
+    "file": "assets/dartmouth-CTz4_b9N.svg",
+    "src": "resources/images/college-logos/dartmouth.svg"
+  },
+  "resources/images/college-logos/duke.svg": {
+    "file": "assets/duke-IwUbceGj.svg",
+    "src": "resources/images/college-logos/duke.svg"
+  },
+  "resources/images/college-logos/georgetown-university.svg": {
+    "file": "assets/georgetown-university-u0KswwSw.svg",
+    "src": "resources/images/college-logos/georgetown-university.svg"
+  },
+  "resources/images/college-logos/harvard-business-white-bg.png": {
+    "file": "assets/harvard-business-white-bg-CzAKjKhb.png",
+    "src": "resources/images/college-logos/harvard-business-white-bg.png"
+  },
+  "resources/images/college-logos/harvard.svg": {
+    "file": "assets/harvard-Ddj4Dw05.svg",
+    "src": "resources/images/college-logos/harvard.svg"
+  },
+  "resources/images/college-logos/johns-hopkins-white-bg.svg": {
+    "file": "assets/johns-hopkins-white-bg-BcN15OTO.svg",
+    "src": "resources/images/college-logos/johns-hopkins-white-bg.svg"
+  },
+  "resources/images/college-logos/johns-hopkins.svg": {
+    "file": "assets/johns-hopkins-BMpvtMS0.svg",
+    "src": "resources/images/college-logos/johns-hopkins.svg"
+  },
+  "resources/images/college-logos/johnshopkins-white-bg.svg": {
+    "file": "assets/johnshopkins-white-bg-CPDy1Y2j.svg",
+    "src": "resources/images/college-logos/johnshopkins-white-bg.svg"
+  },
+  "resources/images/college-logos/kellogg-white-bg.png": {
+    "file": "assets/kellogg-white-bg-D5zVMpYu.png",
+    "src": "resources/images/college-logos/kellogg-white-bg.png"
+  },
+  "resources/images/college-logos/mit-white-bg.svg": {
+    "file": "assets/mit-white-bg-CnWYN6q5.svg",
+    "src": "resources/images/college-logos/mit-white-bg.svg"
+  },
+  "resources/images/college-logos/mit.svg": {
+    "file": "assets/mit-BkharLBy.svg",
+    "src": "resources/images/college-logos/mit.svg"
+  },
+  "resources/images/college-logos/northwestern.svg": {
+    "file": "assets/northwestern-C6OONwSo.svg",
+    "src": "resources/images/college-logos/northwestern.svg"
+  },
+  "resources/images/college-logos/nyu.svg": {
+    "file": "assets/nyu-CzD5Ne3Y.svg",
+    "src": "resources/images/college-logos/nyu.svg"
+  },
+  "resources/images/college-logos/oxford.svg": {
+    "file": "assets/oxford-DyYMUWbR.svg",
+    "src": "resources/images/college-logos/oxford.svg"
+  },
+  "resources/images/college-logos/princeton.svg": {
+    "file": "assets/princeton-BzLxY9LU.svg",
+    "src": "resources/images/college-logos/princeton.svg"
+  },
+  "resources/images/college-logos/saiid-white-bg.png": {
+    "file": "assets/saiid-white-bg-DZZRsPLP.png",
+    "src": "resources/images/college-logos/saiid-white-bg.png"
+  },
+  "resources/images/college-logos/stanford.svg": {
+    "file": "assets/stanford-DbmqRvmM.svg",
+    "src": "resources/images/college-logos/stanford.svg"
+  },
+  "resources/images/college-logos/ucla.svg": {
+    "file": "assets/ucla-AOmRLUrz.svg",
+    "src": "resources/images/college-logos/ucla.svg"
+  },
+  "resources/images/college-logos/university-of-pennsylvania.svg": {
+    "file": "assets/university-of-pennsylvania-BpPiiBd3.svg",
+    "src": "resources/images/college-logos/university-of-pennsylvania.svg"
+  },
+  "resources/images/college-logos/university-of-virginia.svg": {
+    "file": "assets/university-of-virginia-BOS3kXHd.svg",
+    "src": "resources/images/college-logos/university-of-virginia.svg"
+  },
+  "resources/images/college-logos/upenn-white-bg.svg": {
+    "file": "assets/upenn-white-bg-DhO1wONm.svg",
+    "src": "resources/images/college-logos/upenn-white-bg.svg"
+  },
+  "resources/images/college-logos/yale.svg": {
+    "file": "assets/yale-D7cR1Ald.svg",
+    "src": "resources/images/college-logos/yale.svg"
+  },
+  "resources/images/footer-window.svg": {
+    "file": "assets/footer-window-CnJ1INJr.svg",
+    "src": "resources/images/footer-window.svg"
+  },
+  "resources/images/graph.svg": {
+    "file": "assets/graph-104DTF-T.svg",
+    "src": "resources/images/graph.svg"
+  },
+  "resources/images/graphs/desktop-home-graph.svg": {
+    "file": "assets/desktop-home-graph-BsLqndAr.svg",
+    "src": "resources/images/graphs/desktop-home-graph.svg"
+  },
+  "resources/images/icon-book.svg": {
+    "file": "assets/icon-book-CHUsySnJ.svg",
+    "src": "resources/images/icon-book.svg"
+  },
+  "resources/images/icon-briefcase.svg": {
+    "file": "assets/icon-briefcase-DY1aw3z2.svg",
+    "src": "resources/images/icon-briefcase.svg"
+  },
+  "resources/images/icon-calendar.svg": {
+    "file": "assets/icon-calendar-BoEfLjkw.svg",
+    "src": "resources/images/icon-calendar.svg"
+  },
+  "resources/images/icon-checkmark.svg": {
+    "file": "assets/icon-checkmark-CCJlItKX.svg",
+    "src": "resources/images/icon-checkmark.svg"
+  },
+  "resources/images/icon-clock.svg": {
+    "file": "assets/icon-clock-BKGPduUJ.svg",
+    "src": "resources/images/icon-clock.svg"
+  },
+  "resources/images/icon-close.svg": {
+    "file": "assets/icon-close-BSizjxIP.svg",
+    "src": "resources/images/icon-close.svg"
+  },
+  "resources/images/icon-map-pin.svg": {
+    "file": "assets/map-pin-yhj5Yz-R.svg",
+    "src": "resources/images/icon-map-pin.svg"
+  },
+  "resources/images/icon-school.svg": {
+    "file": "assets/school-CXYPRBnL.svg",
+    "src": "resources/images/icon-school.svg"
+  },
+  "resources/images/logo-large.svg": {
+    "file": "assets/logo-large-BRSyRBbJ.svg",
+    "src": "resources/images/logo-large.svg"
+  },
+  "resources/images/logo-small.svg": {
+    "file": "assets/logo-small-C2r5zYq9.svg",
+    "src": "resources/images/logo-small.svg"
+  },
+  "resources/images/map-pin.svg": {
+    "file": "assets/map-pin-yhj5Yz-R.svg",
+    "src": "resources/images/icon-map-pin.svg"
+  },
+  "resources/images/mask.svg": {
+    "file": "assets/mask-DQmrCm4I.svg",
+    "src": "resources/images/mask.svg"
+  },
+  "resources/images/mobile-graph.svg": {
+    "file": "assets/mobile-graph-C4riYCze.svg",
+    "src": "resources/images/mobile-graph.svg"
+  },
+  "resources/images/mobile-line-graph.svg": {
+    "file": "assets/mobile-line-graph-Be6u4SW5.svg",
+    "src": "resources/images/mobile-line-graph.svg"
+  },
+  "resources/images/oriel-shape-outline.svg": {
+    "file": "assets/oriel-shape-outline-D0XMakRp.svg",
+    "src": "resources/images/oriel-shape-outline.svg"
+  },
+  "resources/images/oriel-shape.svg": {
+    "file": "assets/oriel-shape-BC_-fW8W.svg",
+    "src": "resources/images/oriel-shape.svg"
+  },
+  "resources/images/paper-texture.jpeg": {
+    "file": "assets/paper-texture-C_4z38P4.jpeg",
+    "src": "resources/images/paper-texture.jpeg"
+  },
+  "resources/images/rona.png": {
+    "file": "assets/rona-BKXxO66V.png",
+    "src": "resources/images/rona.png"
+  },
+  "resources/images/school.svg": {
+    "file": "assets/school-CXYPRBnL.svg",
+    "src": "resources/images/icon-school.svg"
+  },
+  "resources/images/slider-image-1.png": {
+    "file": "assets/slider-image-1-CkuY5KPq.png",
+    "src": "resources/images/slider-image-1.png"
+  },
+  "resources/images/steps-arrow.svg": {
+    "file": "assets/steps-arrow-C6XhELku.svg",
+    "src": "resources/images/steps-arrow.svg"
+  },
+  "resources/images/student-story.jpeg": {
+    "file": "assets/student-story-BUZ5r2pG.jpeg",
+    "src": "resources/images/student-story.jpeg"
+  },
+  "resources/images/window-bottom.svg": {
+    "file": "assets/window-bottom-Cm1Whe9E.svg",
+    "src": "resources/images/window-bottom.svg"
+  },
+  "resources/images/window-full-mask.svg": {
+    "file": "assets/window-full-mask-aW9mMEyq.svg",
+    "src": "resources/images/window-full-mask.svg"
+  },
+  "resources/images/window-full.svg": {
+    "file": "assets/window-full-CK-Mp6Ng.svg",
+    "src": "resources/images/window-full.svg"
+  },
+  "resources/images/window-outline.svg": {
+    "file": "assets/window-outline-Be-RT41q.svg",
+    "src": "resources/images/window-outline.svg"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-DcSgmpzd.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "css": [
+      "assets/app-xr_-SPmt.css"
+    ],
+    "assets": [
+      "assets/brown-DZDHKD4c.svg",
+      "assets/cornell-university-DItbG1r0.svg",
+      "assets/yale-D7cR1Ald.svg",
+      "assets/nyu-CzD5Ne3Y.svg",
+      "assets/mit-BkharLBy.svg",
+      "assets/princeton-BzLxY9LU.svg",
+      "assets/johns-hopkins-BMpvtMS0.svg",
+      "assets/university-of-pennsylvania-BpPiiBd3.svg",
+      "assets/harvard-Ddj4Dw05.svg",
+      "assets/dartmouth-CTz4_b9N.svg",
+      "assets/columbia-university-qjGb_auW.svg",
+      "assets/duke-IwUbceGj.svg"
+    ]
+  },
+  "resources/js/custom.js": {
+    "file": "assets/custom-BNZp1WUM.js",
+    "name": "custom",
+    "src": "resources/js/custom.js",
+    "isEntry": true
+  },
+  "resources/js/editor.js": {
+    "file": "assets/editor-CfU4GbSP.js",
+    "name": "editor",
+    "src": "resources/js/editor.js",
+    "isEntry": true
+  }
+}

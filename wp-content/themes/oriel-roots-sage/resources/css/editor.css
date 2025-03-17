@@ -1,0 +1,67 @@
+@import 'tailwindcss';
+
+@source "../views/";
+@source "../../app/";
+
+@theme {
+  --font-sans: 'Barlow Semi Condensed', sans-serif;
+  --font-serif: 'PP Editorial New', serif;
+  --text-fluid-66px: clamp(3rem, 2.857vw + 2.429rem, 5rem);
+  --text-fluid-66px--line-height: 1.25;
+  --text-fluid-64px: clamp(3rem, 1.429vw + 2.714rem, 4rem);
+  --text-fluid-64px--line-height: 1.25;
+  --text-fluid-48px: clamp(2rem, 1.25vw + 1.75rem, 3rem);
+  --text-fluid-48px--line-height: 1.25;
+  --text-fluid-32px: clamp(1.5rem, 0.714vw + 1.357rem, 2rem);
+  --text-fluid-32px--line-height: 1.25;
+  --text-fluid-24px: clamp(1.25rem, 0.313vw + 1.188rem, 1.5rem);
+  --text-fluid-24px--line-height: 1.25;
+  --text-fluid-108px: clamp(5rem, 3.906vw + 4.219rem, 8.125rem);
+  --text-fluid-108px--line-height: 1;
+
+  --color-chalk: #f7f0eb;
+  --color-sand: #edddd1;
+  --color-brick: #d35040;
+  --color-stucco: #ab8867;
+  --color-opium: #968587;
+  --color-ivy: #5d6720;
+  --color-black: #29202d;
+  --color-keyline: #d9cbcf;
+  --color-oriel: #ee2212;
+  --color-cardinal: #602537;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-chalk;
+  }
+
+  .font-sans {
+    @apply font-normal;
+  }
+
+  .font-serif {
+    @apply font-light;
+  }
+
+  a {
+    @apply !no-underline;
+  }
+
+  h1,
+  h1,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif font-light;
+  }
+
+  hr {
+    @apply !border-keyline/80 !border-t;
+  }
+}

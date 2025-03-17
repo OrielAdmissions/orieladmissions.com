@@ -1,0 +1,1460 @@
+{
+  "__processed__": "This file was generated from Tailwind v4 CSS variables",
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "background": {
+      "backgroundImage": true
+    },
+    "color": {
+      "custom": false,
+      "customDuotone": false,
+      "customGradient": false,
+      "defaultDuotone": false,
+      "defaultGradients": false,
+      "defaultPalette": false,
+      "duotone": [],
+      "palette": [
+        {
+          "name": "red-50",
+          "slug": "red-50",
+          "color": "oklch(.971 .013 17.38)"
+        },
+        {
+          "name": "red-100",
+          "slug": "red-100",
+          "color": "oklch(.936 .032 17.717)"
+        },
+        {
+          "name": "red-200",
+          "slug": "red-200",
+          "color": "oklch(.885 .062 18.334)"
+        },
+        {
+          "name": "red-300",
+          "slug": "red-300",
+          "color": "oklch(.808 .114 19.571)"
+        },
+        {
+          "name": "red-400",
+          "slug": "red-400",
+          "color": "oklch(.704 .191 22.216)"
+        },
+        {
+          "name": "red-500",
+          "slug": "red-500",
+          "color": "oklch(.637 .237 25.331)"
+        },
+        {
+          "name": "red-600",
+          "slug": "red-600",
+          "color": "oklch(.577 .245 27.325)"
+        },
+        {
+          "name": "red-700",
+          "slug": "red-700",
+          "color": "oklch(.505 .213 27.518)"
+        },
+        {
+          "name": "red-800",
+          "slug": "red-800",
+          "color": "oklch(.444 .177 26.899)"
+        },
+        {
+          "name": "red-900",
+          "slug": "red-900",
+          "color": "oklch(.396 .141 25.723)"
+        },
+        {
+          "name": "red-950",
+          "slug": "red-950",
+          "color": "oklch(.258 .092 26.042)"
+        },
+        {
+          "name": "orange-50",
+          "slug": "orange-50",
+          "color": "oklch(.98 .016 73.684)"
+        },
+        {
+          "name": "orange-100",
+          "slug": "orange-100",
+          "color": "oklch(.954 .038 75.164)"
+        },
+        {
+          "name": "orange-200",
+          "slug": "orange-200",
+          "color": "oklch(.901 .076 70.697)"
+        },
+        {
+          "name": "orange-300",
+          "slug": "orange-300",
+          "color": "oklch(.837 .128 66.29)"
+        },
+        {
+          "name": "orange-400",
+          "slug": "orange-400",
+          "color": "oklch(.75 .183 55.934)"
+        },
+        {
+          "name": "orange-500",
+          "slug": "orange-500",
+          "color": "oklch(.705 .213 47.604)"
+        },
+        {
+          "name": "orange-600",
+          "slug": "orange-600",
+          "color": "oklch(.646 .222 41.116)"
+        },
+        {
+          "name": "orange-700",
+          "slug": "orange-700",
+          "color": "oklch(.553 .195 38.402)"
+        },
+        {
+          "name": "orange-800",
+          "slug": "orange-800",
+          "color": "oklch(.47 .157 37.304)"
+        },
+        {
+          "name": "orange-900",
+          "slug": "orange-900",
+          "color": "oklch(.408 .123 38.172)"
+        },
+        {
+          "name": "orange-950",
+          "slug": "orange-950",
+          "color": "oklch(.266 .079 36.259)"
+        },
+        {
+          "name": "amber-50",
+          "slug": "amber-50",
+          "color": "oklch(.987 .022 95.277)"
+        },
+        {
+          "name": "amber-100",
+          "slug": "amber-100",
+          "color": "oklch(.962 .059 95.617)"
+        },
+        {
+          "name": "amber-200",
+          "slug": "amber-200",
+          "color": "oklch(.924 .12 95.746)"
+        },
+        {
+          "name": "amber-300",
+          "slug": "amber-300",
+          "color": "oklch(.879 .169 91.605)"
+        },
+        {
+          "name": "amber-400",
+          "slug": "amber-400",
+          "color": "oklch(.828 .189 84.429)"
+        },
+        {
+          "name": "amber-500",
+          "slug": "amber-500",
+          "color": "oklch(.769 .188 70.08)"
+        },
+        {
+          "name": "amber-600",
+          "slug": "amber-600",
+          "color": "oklch(.666 .179 58.318)"
+        },
+        {
+          "name": "amber-700",
+          "slug": "amber-700",
+          "color": "oklch(.555 .163 48.998)"
+        },
+        {
+          "name": "amber-800",
+          "slug": "amber-800",
+          "color": "oklch(.473 .137 46.201)"
+        },
+        {
+          "name": "amber-900",
+          "slug": "amber-900",
+          "color": "oklch(.414 .112 45.904)"
+        },
+        {
+          "name": "amber-950",
+          "slug": "amber-950",
+          "color": "oklch(.279 .077 45.635)"
+        },
+        {
+          "name": "yellow-50",
+          "slug": "yellow-50",
+          "color": "oklch(.987 .026 102.212)"
+        },
+        {
+          "name": "yellow-100",
+          "slug": "yellow-100",
+          "color": "oklch(.973 .071 103.193)"
+        },
+        {
+          "name": "yellow-200",
+          "slug": "yellow-200",
+          "color": "oklch(.945 .129 101.54)"
+        },
+        {
+          "name": "yellow-300",
+          "slug": "yellow-300",
+          "color": "oklch(.905 .182 98.111)"
+        },
+        {
+          "name": "yellow-400",
+          "slug": "yellow-400",
+          "color": "oklch(.852 .199 91.936)"
+        },
+        {
+          "name": "yellow-500",
+          "slug": "yellow-500",
+          "color": "oklch(.795 .184 86.047)"
+        },
+        {
+          "name": "yellow-600",
+          "slug": "yellow-600",
+          "color": "oklch(.681 .162 75.834)"
+        },
+        {
+          "name": "yellow-700",
+          "slug": "yellow-700",
+          "color": "oklch(.554 .135 66.442)"
+        },
+        {
+          "name": "yellow-800",
+          "slug": "yellow-800",
+          "color": "oklch(.476 .114 61.907)"
+        },
+        {
+          "name": "yellow-900",
+          "slug": "yellow-900",
+          "color": "oklch(.421 .095 57.708)"
+        },
+        {
+          "name": "yellow-950",
+          "slug": "yellow-950",
+          "color": "oklch(.286 .066 53.813)"
+        },
+        {
+          "name": "lime-50",
+          "slug": "lime-50",
+          "color": "oklch(.986 .031 120.757)"
+        },
+        {
+          "name": "lime-100",
+          "slug": "lime-100",
+          "color": "oklch(.967 .067 122.328)"
+        },
+        {
+          "name": "lime-200",
+          "slug": "lime-200",
+          "color": "oklch(.938 .127 124.321)"
+        },
+        {
+          "name": "lime-300",
+          "slug": "lime-300",
+          "color": "oklch(.897 .196 126.665)"
+        },
+        {
+          "name": "lime-400",
+          "slug": "lime-400",
+          "color": "oklch(.841 .238 128.85)"
+        },
+        {
+          "name": "lime-500",
+          "slug": "lime-500",
+          "color": "oklch(.768 .233 130.85)"
+        },
+        {
+          "name": "lime-600",
+          "slug": "lime-600",
+          "color": "oklch(.648 .2 131.684)"
+        },
+        {
+          "name": "lime-700",
+          "slug": "lime-700",
+          "color": "oklch(.532 .157 131.589)"
+        },
+        {
+          "name": "lime-800",
+          "slug": "lime-800",
+          "color": "oklch(.453 .124 130.933)"
+        },
+        {
+          "name": "lime-900",
+          "slug": "lime-900",
+          "color": "oklch(.405 .101 131.063)"
+        },
+        {
+          "name": "lime-950",
+          "slug": "lime-950",
+          "color": "oklch(.274 .072 132.109)"
+        },
+        {
+          "name": "green-50",
+          "slug": "green-50",
+          "color": "oklch(.982 .018 155.826)"
+        },
+        {
+          "name": "green-100",
+          "slug": "green-100",
+          "color": "oklch(.962 .044 156.743)"
+        },
+        {
+          "name": "green-200",
+          "slug": "green-200",
+          "color": "oklch(.925 .084 155.995)"
+        },
+        {
+          "name": "green-300",
+          "slug": "green-300",
+          "color": "oklch(.871 .15 154.449)"
+        },
+        {
+          "name": "green-400",
+          "slug": "green-400",
+          "color": "oklch(.792 .209 151.711)"
+        },
+        {
+          "name": "green-500",
+          "slug": "green-500",
+          "color": "oklch(.723 .219 149.579)"
+        },
+        {
+          "name": "green-600",
+          "slug": "green-600",
+          "color": "oklch(.627 .194 149.214)"
+        },
+        {
+          "name": "green-700",
+          "slug": "green-700",
+          "color": "oklch(.527 .154 150.069)"
+        },
+        {
+          "name": "green-800",
+          "slug": "green-800",
+          "color": "oklch(.448 .119 151.328)"
+        },
+        {
+          "name": "green-900",
+          "slug": "green-900",
+          "color": "oklch(.393 .095 152.535)"
+        },
+        {
+          "name": "green-950",
+          "slug": "green-950",
+          "color": "oklch(.266 .065 152.934)"
+        },
+        {
+          "name": "emerald-50",
+          "slug": "emerald-50",
+          "color": "oklch(.979 .021 166.113)"
+        },
+        {
+          "name": "emerald-100",
+          "slug": "emerald-100",
+          "color": "oklch(.95 .052 163.051)"
+        },
+        {
+          "name": "emerald-200",
+          "slug": "emerald-200",
+          "color": "oklch(.905 .093 164.15)"
+        },
+        {
+          "name": "emerald-300",
+          "slug": "emerald-300",
+          "color": "oklch(.845 .143 164.978)"
+        },
+        {
+          "name": "emerald-400",
+          "slug": "emerald-400",
+          "color": "oklch(.765 .177 163.223)"
+        },
+        {
+          "name": "emerald-500",
+          "slug": "emerald-500",
+          "color": "oklch(.696 .17 162.48)"
+        },
+        {
+          "name": "emerald-600",
+          "slug": "emerald-600",
+          "color": "oklch(.596 .145 163.225)"
+        },
+        {
+          "name": "emerald-700",
+          "slug": "emerald-700",
+          "color": "oklch(.508 .118 165.612)"
+        },
+        {
+          "name": "emerald-800",
+          "slug": "emerald-800",
+          "color": "oklch(.432 .095 166.913)"
+        },
+        {
+          "name": "emerald-900",
+          "slug": "emerald-900",
+          "color": "oklch(.378 .077 168.94)"
+        },
+        {
+          "name": "emerald-950",
+          "slug": "emerald-950",
+          "color": "oklch(.262 .051 172.552)"
+        },
+        {
+          "name": "teal-50",
+          "slug": "teal-50",
+          "color": "oklch(.984 .014 180.72)"
+        },
+        {
+          "name": "teal-100",
+          "slug": "teal-100",
+          "color": "oklch(.953 .051 180.801)"
+        },
+        {
+          "name": "teal-200",
+          "slug": "teal-200",
+          "color": "oklch(.91 .096 180.426)"
+        },
+        {
+          "name": "teal-300",
+          "slug": "teal-300",
+          "color": "oklch(.855 .138 181.071)"
+        },
+        {
+          "name": "teal-400",
+          "slug": "teal-400",
+          "color": "oklch(.777 .152 181.912)"
+        },
+        {
+          "name": "teal-500",
+          "slug": "teal-500",
+          "color": "oklch(.704 .14 182.503)"
+        },
+        {
+          "name": "teal-600",
+          "slug": "teal-600",
+          "color": "oklch(.6 .118 184.704)"
+        },
+        {
+          "name": "teal-700",
+          "slug": "teal-700",
+          "color": "oklch(.511 .096 186.391)"
+        },
+        {
+          "name": "teal-800",
+          "slug": "teal-800",
+          "color": "oklch(.437 .078 188.216)"
+        },
+        {
+          "name": "teal-900",
+          "slug": "teal-900",
+          "color": "oklch(.386 .063 188.416)"
+        },
+        {
+          "name": "teal-950",
+          "slug": "teal-950",
+          "color": "oklch(.277 .046 192.524)"
+        },
+        {
+          "name": "cyan-50",
+          "slug": "cyan-50",
+          "color": "oklch(.984 .019 200.873)"
+        },
+        {
+          "name": "cyan-100",
+          "slug": "cyan-100",
+          "color": "oklch(.956 .045 203.388)"
+        },
+        {
+          "name": "cyan-200",
+          "slug": "cyan-200",
+          "color": "oklch(.917 .08 205.041)"
+        },
+        {
+          "name": "cyan-300",
+          "slug": "cyan-300",
+          "color": "oklch(.865 .127 207.078)"
+        },
+        {
+          "name": "cyan-400",
+          "slug": "cyan-400",
+          "color": "oklch(.789 .154 211.53)"
+        },
+        {
+          "name": "cyan-500",
+          "slug": "cyan-500",
+          "color": "oklch(.715 .143 215.221)"
+        },
+        {
+          "name": "cyan-600",
+          "slug": "cyan-600",
+          "color": "oklch(.609 .126 221.723)"
+        },
+        {
+          "name": "cyan-700",
+          "slug": "cyan-700",
+          "color": "oklch(.52 .105 223.128)"
+        },
+        {
+          "name": "cyan-800",
+          "slug": "cyan-800",
+          "color": "oklch(.45 .085 224.283)"
+        },
+        {
+          "name": "cyan-900",
+          "slug": "cyan-900",
+          "color": "oklch(.398 .07 227.392)"
+        },
+        {
+          "name": "cyan-950",
+          "slug": "cyan-950",
+          "color": "oklch(.302 .056 229.695)"
+        },
+        {
+          "name": "sky-50",
+          "slug": "sky-50",
+          "color": "oklch(.977 .013 236.62)"
+        },
+        {
+          "name": "sky-100",
+          "slug": "sky-100",
+          "color": "oklch(.951 .026 236.824)"
+        },
+        {
+          "name": "sky-200",
+          "slug": "sky-200",
+          "color": "oklch(.901 .058 230.902)"
+        },
+        {
+          "name": "sky-300",
+          "slug": "sky-300",
+          "color": "oklch(.828 .111 230.318)"
+        },
+        {
+          "name": "sky-400",
+          "slug": "sky-400",
+          "color": "oklch(.746 .16 232.661)"
+        },
+        {
+          "name": "sky-500",
+          "slug": "sky-500",
+          "color": "oklch(.685 .169 237.323)"
+        },
+        {
+          "name": "sky-600",
+          "slug": "sky-600",
+          "color": "oklch(.588 .158 241.966)"
+        },
+        {
+          "name": "sky-700",
+          "slug": "sky-700",
+          "color": "oklch(.5 .134 242.749)"
+        },
+        {
+          "name": "sky-800",
+          "slug": "sky-800",
+          "color": "oklch(.443 .11 240.79)"
+        },
+        {
+          "name": "sky-900",
+          "slug": "sky-900",
+          "color": "oklch(.391 .09 240.876)"
+        },
+        {
+          "name": "sky-950",
+          "slug": "sky-950",
+          "color": "oklch(.293 .066 243.157)"
+        },
+        {
+          "name": "blue-50",
+          "slug": "blue-50",
+          "color": "oklch(.97 .014 254.604)"
+        },
+        {
+          "name": "blue-100",
+          "slug": "blue-100",
+          "color": "oklch(.932 .032 255.585)"
+        },
+        {
+          "name": "blue-200",
+          "slug": "blue-200",
+          "color": "oklch(.882 .059 254.128)"
+        },
+        {
+          "name": "blue-300",
+          "slug": "blue-300",
+          "color": "oklch(.809 .105 251.813)"
+        },
+        {
+          "name": "blue-400",
+          "slug": "blue-400",
+          "color": "oklch(.707 .165 254.624)"
+        },
+        {
+          "name": "blue-500",
+          "slug": "blue-500",
+          "color": "oklch(.623 .214 259.815)"
+        },
+        {
+          "name": "blue-600",
+          "slug": "blue-600",
+          "color": "oklch(.546 .245 262.881)"
+        },
+        {
+          "name": "blue-700",
+          "slug": "blue-700",
+          "color": "oklch(.488 .243 264.376)"
+        },
+        {
+          "name": "blue-800",
+          "slug": "blue-800",
+          "color": "oklch(.424 .199 265.638)"
+        },
+        {
+          "name": "blue-900",
+          "slug": "blue-900",
+          "color": "oklch(.379 .146 265.522)"
+        },
+        {
+          "name": "blue-950",
+          "slug": "blue-950",
+          "color": "oklch(.282 .091 267.935)"
+        },
+        {
+          "name": "indigo-50",
+          "slug": "indigo-50",
+          "color": "oklch(.962 .018 272.314)"
+        },
+        {
+          "name": "indigo-100",
+          "slug": "indigo-100",
+          "color": "oklch(.93 .034 272.788)"
+        },
+        {
+          "name": "indigo-200",
+          "slug": "indigo-200",
+          "color": "oklch(.87 .065 274.039)"
+        },
+        {
+          "name": "indigo-300",
+          "slug": "indigo-300",
+          "color": "oklch(.785 .115 274.713)"
+        },
+        {
+          "name": "indigo-400",
+          "slug": "indigo-400",
+          "color": "oklch(.673 .182 276.935)"
+        },
+        {
+          "name": "indigo-500",
+          "slug": "indigo-500",
+          "color": "oklch(.585 .233 277.117)"
+        },
+        {
+          "name": "indigo-600",
+          "slug": "indigo-600",
+          "color": "oklch(.511 .262 276.966)"
+        },
+        {
+          "name": "indigo-700",
+          "slug": "indigo-700",
+          "color": "oklch(.457 .24 277.023)"
+        },
+        {
+          "name": "indigo-800",
+          "slug": "indigo-800",
+          "color": "oklch(.398 .195 277.366)"
+        },
+        {
+          "name": "indigo-900",
+          "slug": "indigo-900",
+          "color": "oklch(.359 .144 278.697)"
+        },
+        {
+          "name": "indigo-950",
+          "slug": "indigo-950",
+          "color": "oklch(.257 .09 281.288)"
+        },
+        {
+          "name": "violet-50",
+          "slug": "violet-50",
+          "color": "oklch(.969 .016 293.756)"
+        },
+        {
+          "name": "violet-100",
+          "slug": "violet-100",
+          "color": "oklch(.943 .029 294.588)"
+        },
+        {
+          "name": "violet-200",
+          "slug": "violet-200",
+          "color": "oklch(.894 .057 293.283)"
+        },
+        {
+          "name": "violet-300",
+          "slug": "violet-300",
+          "color": "oklch(.811 .111 293.571)"
+        },
+        {
+          "name": "violet-400",
+          "slug": "violet-400",
+          "color": "oklch(.702 .183 293.541)"
+        },
+        {
+          "name": "violet-500",
+          "slug": "violet-500",
+          "color": "oklch(.606 .25 292.717)"
+        },
+        {
+          "name": "violet-600",
+          "slug": "violet-600",
+          "color": "oklch(.541 .281 293.009)"
+        },
+        {
+          "name": "violet-700",
+          "slug": "violet-700",
+          "color": "oklch(.491 .27 292.581)"
+        },
+        {
+          "name": "violet-800",
+          "slug": "violet-800",
+          "color": "oklch(.432 .232 292.759)"
+        },
+        {
+          "name": "violet-900",
+          "slug": "violet-900",
+          "color": "oklch(.38 .189 293.745)"
+        },
+        {
+          "name": "violet-950",
+          "slug": "violet-950",
+          "color": "oklch(.283 .141 291.089)"
+        },
+        {
+          "name": "purple-50",
+          "slug": "purple-50",
+          "color": "oklch(.977 .014 308.299)"
+        },
+        {
+          "name": "purple-100",
+          "slug": "purple-100",
+          "color": "oklch(.946 .033 307.174)"
+        },
+        {
+          "name": "purple-200",
+          "slug": "purple-200",
+          "color": "oklch(.902 .063 306.703)"
+        },
+        {
+          "name": "purple-300",
+          "slug": "purple-300",
+          "color": "oklch(.827 .119 306.383)"
+        },
+        {
+          "name": "purple-400",
+          "slug": "purple-400",
+          "color": "oklch(.714 .203 305.504)"
+        },
+        {
+          "name": "purple-500",
+          "slug": "purple-500",
+          "color": "oklch(.627 .265 303.9)"
+        },
+        {
+          "name": "purple-600",
+          "slug": "purple-600",
+          "color": "oklch(.558 .288 302.321)"
+        },
+        {
+          "name": "purple-700",
+          "slug": "purple-700",
+          "color": "oklch(.496 .265 301.924)"
+        },
+        {
+          "name": "purple-800",
+          "slug": "purple-800",
+          "color": "oklch(.438 .218 303.724)"
+        },
+        {
+          "name": "purple-900",
+          "slug": "purple-900",
+          "color": "oklch(.381 .176 304.987)"
+        },
+        {
+          "name": "purple-950",
+          "slug": "purple-950",
+          "color": "oklch(.291 .149 302.717)"
+        },
+        {
+          "name": "fuchsia-50",
+          "slug": "fuchsia-50",
+          "color": "oklch(.977 .017 320.058)"
+        },
+        {
+          "name": "fuchsia-100",
+          "slug": "fuchsia-100",
+          "color": "oklch(.952 .037 318.852)"
+        },
+        {
+          "name": "fuchsia-200",
+          "slug": "fuchsia-200",
+          "color": "oklch(.903 .076 319.62)"
+        },
+        {
+          "name": "fuchsia-300",
+          "slug": "fuchsia-300",
+          "color": "oklch(.833 .145 321.434)"
+        },
+        {
+          "name": "fuchsia-400",
+          "slug": "fuchsia-400",
+          "color": "oklch(.74 .238 322.16)"
+        },
+        {
+          "name": "fuchsia-500",
+          "slug": "fuchsia-500",
+          "color": "oklch(.667 .295 322.15)"
+        },
+        {
+          "name": "fuchsia-600",
+          "slug": "fuchsia-600",
+          "color": "oklch(.591 .293 322.896)"
+        },
+        {
+          "name": "fuchsia-700",
+          "slug": "fuchsia-700",
+          "color": "oklch(.518 .253 323.949)"
+        },
+        {
+          "name": "fuchsia-800",
+          "slug": "fuchsia-800",
+          "color": "oklch(.452 .211 324.591)"
+        },
+        {
+          "name": "fuchsia-900",
+          "slug": "fuchsia-900",
+          "color": "oklch(.401 .17 325.612)"
+        },
+        {
+          "name": "fuchsia-950",
+          "slug": "fuchsia-950",
+          "color": "oklch(.293 .136 325.661)"
+        },
+        {
+          "name": "pink-50",
+          "slug": "pink-50",
+          "color": "oklch(.971 .014 343.198)"
+        },
+        {
+          "name": "pink-100",
+          "slug": "pink-100",
+          "color": "oklch(.948 .028 342.258)"
+        },
+        {
+          "name": "pink-200",
+          "slug": "pink-200",
+          "color": "oklch(.899 .061 343.231)"
+        },
+        {
+          "name": "pink-300",
+          "slug": "pink-300",
+          "color": "oklch(.823 .12 346.018)"
+        },
+        {
+          "name": "pink-400",
+          "slug": "pink-400",
+          "color": "oklch(.718 .202 349.761)"
+        },
+        {
+          "name": "pink-500",
+          "slug": "pink-500",
+          "color": "oklch(.656 .241 354.308)"
+        },
+        {
+          "name": "pink-600",
+          "slug": "pink-600",
+          "color": "oklch(.592 .249 .584)"
+        },
+        {
+          "name": "pink-700",
+          "slug": "pink-700",
+          "color": "oklch(.525 .223 3.958)"
+        },
+        {
+          "name": "pink-800",
+          "slug": "pink-800",
+          "color": "oklch(.459 .187 3.815)"
+        },
+        {
+          "name": "pink-900",
+          "slug": "pink-900",
+          "color": "oklch(.408 .153 2.432)"
+        },
+        {
+          "name": "pink-950",
+          "slug": "pink-950",
+          "color": "oklch(.284 .109 3.907)"
+        },
+        {
+          "name": "rose-50",
+          "slug": "rose-50",
+          "color": "oklch(.969 .015 12.422)"
+        },
+        {
+          "name": "rose-100",
+          "slug": "rose-100",
+          "color": "oklch(.941 .03 12.58)"
+        },
+        {
+          "name": "rose-200",
+          "slug": "rose-200",
+          "color": "oklch(.892 .058 10.001)"
+        },
+        {
+          "name": "rose-300",
+          "slug": "rose-300",
+          "color": "oklch(.81 .117 11.638)"
+        },
+        {
+          "name": "rose-400",
+          "slug": "rose-400",
+          "color": "oklch(.712 .194 13.428)"
+        },
+        {
+          "name": "rose-500",
+          "slug": "rose-500",
+          "color": "oklch(.645 .246 16.439)"
+        },
+        {
+          "name": "rose-600",
+          "slug": "rose-600",
+          "color": "oklch(.586 .253 17.585)"
+        },
+        {
+          "name": "rose-700",
+          "slug": "rose-700",
+          "color": "oklch(.514 .222 16.935)"
+        },
+        {
+          "name": "rose-800",
+          "slug": "rose-800",
+          "color": "oklch(.455 .188 13.697)"
+        },
+        {
+          "name": "rose-900",
+          "slug": "rose-900",
+          "color": "oklch(.41 .159 10.272)"
+        },
+        {
+          "name": "rose-950",
+          "slug": "rose-950",
+          "color": "oklch(.271 .105 12.094)"
+        },
+        {
+          "name": "slate-50",
+          "slug": "slate-50",
+          "color": "oklch(.984 .003 247.858)"
+        },
+        {
+          "name": "slate-100",
+          "slug": "slate-100",
+          "color": "oklch(.968 .007 247.896)"
+        },
+        {
+          "name": "slate-200",
+          "slug": "slate-200",
+          "color": "oklch(.929 .013 255.508)"
+        },
+        {
+          "name": "slate-300",
+          "slug": "slate-300",
+          "color": "oklch(.869 .022 252.894)"
+        },
+        {
+          "name": "slate-400",
+          "slug": "slate-400",
+          "color": "oklch(.704 .04 256.788)"
+        },
+        {
+          "name": "slate-500",
+          "slug": "slate-500",
+          "color": "oklch(.554 .046 257.417)"
+        },
+        {
+          "name": "slate-600",
+          "slug": "slate-600",
+          "color": "oklch(.446 .043 257.281)"
+        },
+        {
+          "name": "slate-700",
+          "slug": "slate-700",
+          "color": "oklch(.372 .044 257.287)"
+        },
+        {
+          "name": "slate-800",
+          "slug": "slate-800",
+          "color": "oklch(.279 .041 260.031)"
+        },
+        {
+          "name": "slate-900",
+          "slug": "slate-900",
+          "color": "oklch(.208 .042 265.755)"
+        },
+        {
+          "name": "slate-950",
+          "slug": "slate-950",
+          "color": "oklch(.129 .042 264.695)"
+        },
+        {
+          "name": "gray-50",
+          "slug": "gray-50",
+          "color": "oklch(.985 .002 247.839)"
+        },
+        {
+          "name": "gray-100",
+          "slug": "gray-100",
+          "color": "oklch(.967 .003 264.542)"
+        },
+        {
+          "name": "gray-200",
+          "slug": "gray-200",
+          "color": "oklch(.928 .006 264.531)"
+        },
+        {
+          "name": "gray-300",
+          "slug": "gray-300",
+          "color": "oklch(.872 .01 258.338)"
+        },
+        {
+          "name": "gray-400",
+          "slug": "gray-400",
+          "color": "oklch(.707 .022 261.325)"
+        },
+        {
+          "name": "gray-500",
+          "slug": "gray-500",
+          "color": "oklch(.551 .027 264.364)"
+        },
+        {
+          "name": "gray-600",
+          "slug": "gray-600",
+          "color": "oklch(.446 .03 256.802)"
+        },
+        {
+          "name": "gray-700",
+          "slug": "gray-700",
+          "color": "oklch(.373 .034 259.733)"
+        },
+        {
+          "name": "gray-800",
+          "slug": "gray-800",
+          "color": "oklch(.278 .033 256.848)"
+        },
+        {
+          "name": "gray-900",
+          "slug": "gray-900",
+          "color": "oklch(.21 .034 264.665)"
+        },
+        {
+          "name": "gray-950",
+          "slug": "gray-950",
+          "color": "oklch(.13 .028 261.692)"
+        },
+        {
+          "name": "zinc-50",
+          "slug": "zinc-50",
+          "color": "oklch(.985 0 0)"
+        },
+        {
+          "name": "zinc-100",
+          "slug": "zinc-100",
+          "color": "oklch(.967 .001 286.375)"
+        },
+        {
+          "name": "zinc-200",
+          "slug": "zinc-200",
+          "color": "oklch(.92 .004 286.32)"
+        },
+        {
+          "name": "zinc-300",
+          "slug": "zinc-300",
+          "color": "oklch(.871 .006 286.286)"
+        },
+        {
+          "name": "zinc-400",
+          "slug": "zinc-400",
+          "color": "oklch(.705 .015 286.067)"
+        },
+        {
+          "name": "zinc-500",
+          "slug": "zinc-500",
+          "color": "oklch(.552 .016 285.938)"
+        },
+        {
+          "name": "zinc-600",
+          "slug": "zinc-600",
+          "color": "oklch(.442 .017 285.786)"
+        },
+        {
+          "name": "zinc-700",
+          "slug": "zinc-700",
+          "color": "oklch(.37 .013 285.805)"
+        },
+        {
+          "name": "zinc-800",
+          "slug": "zinc-800",
+          "color": "oklch(.274 .006 286.033)"
+        },
+        {
+          "name": "zinc-900",
+          "slug": "zinc-900",
+          "color": "oklch(.21 .006 285.885)"
+        },
+        {
+          "name": "zinc-950",
+          "slug": "zinc-950",
+          "color": "oklch(.141 .005 285.823)"
+        },
+        {
+          "name": "neutral-50",
+          "slug": "neutral-50",
+          "color": "oklch(.985 0 0)"
+        },
+        {
+          "name": "neutral-100",
+          "slug": "neutral-100",
+          "color": "oklch(.97 0 0)"
+        },
+        {
+          "name": "neutral-200",
+          "slug": "neutral-200",
+          "color": "oklch(.922 0 0)"
+        },
+        {
+          "name": "neutral-300",
+          "slug": "neutral-300",
+          "color": "oklch(.87 0 0)"
+        },
+        {
+          "name": "neutral-400",
+          "slug": "neutral-400",
+          "color": "oklch(.708 0 0)"
+        },
+        {
+          "name": "neutral-500",
+          "slug": "neutral-500",
+          "color": "oklch(.556 0 0)"
+        },
+        {
+          "name": "neutral-600",
+          "slug": "neutral-600",
+          "color": "oklch(.439 0 0)"
+        },
+        {
+          "name": "neutral-700",
+          "slug": "neutral-700",
+          "color": "oklch(.371 0 0)"
+        },
+        {
+          "name": "neutral-800",
+          "slug": "neutral-800",
+          "color": "oklch(.269 0 0)"
+        },
+        {
+          "name": "neutral-900",
+          "slug": "neutral-900",
+          "color": "oklch(.205 0 0)"
+        },
+        {
+          "name": "neutral-950",
+          "slug": "neutral-950",
+          "color": "oklch(.145 0 0)"
+        },
+        {
+          "name": "stone-50",
+          "slug": "stone-50",
+          "color": "oklch(.985 .001 106.423)"
+        },
+        {
+          "name": "stone-100",
+          "slug": "stone-100",
+          "color": "oklch(.97 .001 106.424)"
+        },
+        {
+          "name": "stone-200",
+          "slug": "stone-200",
+          "color": "oklch(.923 .003 48.717)"
+        },
+        {
+          "name": "stone-300",
+          "slug": "stone-300",
+          "color": "oklch(.869 .005 56.366)"
+        },
+        {
+          "name": "stone-400",
+          "slug": "stone-400",
+          "color": "oklch(.709 .01 56.259)"
+        },
+        {
+          "name": "stone-500",
+          "slug": "stone-500",
+          "color": "oklch(.553 .013 58.071)"
+        },
+        {
+          "name": "stone-600",
+          "slug": "stone-600",
+          "color": "oklch(.444 .011 73.639)"
+        },
+        {
+          "name": "stone-700",
+          "slug": "stone-700",
+          "color": "oklch(.374 .01 67.558)"
+        },
+        {
+          "name": "stone-800",
+          "slug": "stone-800",
+          "color": "oklch(.268 .007 34.298)"
+        },
+        {
+          "name": "stone-900",
+          "slug": "stone-900",
+          "color": "oklch(.216 .006 56.043)"
+        },
+        {
+          "name": "stone-950",
+          "slug": "stone-950",
+          "color": "oklch(.147 .004 49.25)"
+        },
+        {
+          "name": "black",
+          "slug": "black",
+          "color": "#29202d"
+        },
+        {
+          "name": "white",
+          "slug": "white",
+          "color": "#fff"
+        },
+        {
+          "name": "chalk",
+          "slug": "chalk",
+          "color": "#f7f0eb"
+        },
+        {
+          "name": "sand",
+          "slug": "sand",
+          "color": "#edddd1"
+        },
+        {
+          "name": "brick",
+          "slug": "brick",
+          "color": "#d35040"
+        },
+        {
+          "name": "stucco",
+          "slug": "stucco",
+          "color": "#ab8867"
+        },
+        {
+          "name": "opium",
+          "slug": "opium",
+          "color": "#968587"
+        },
+        {
+          "name": "ivy",
+          "slug": "ivy",
+          "color": "#5d6720"
+        },
+        {
+          "name": "keyline",
+          "slug": "keyline",
+          "color": "#d9cbcf"
+        },
+        {
+          "name": "oriel",
+          "slug": "oriel",
+          "color": "#ee2212"
+        },
+        {
+          "name": "cardinal",
+          "slug": "cardinal",
+          "color": "#602537"
+        },
+        {
+          "name": "cardinal-muted",
+          "slug": "cardinal-muted",
+          "color": "#c3a6a3"
+        },
+        {
+          "name": "chalk-passthrough",
+          "slug": "chalk-passthrough",
+          "color": "color-mix(in oklab,var(--color-chalk)30%,transparent)"
+        }
+      ]
+    },
+    "custom": {
+      "spacing": {},
+      "typography": {
+        "font-size": {},
+        "line-height": {}
+      }
+    },
+    "spacing": {
+      "padding": true,
+      "units": [
+        "px",
+        "%",
+        "em",
+        "rem",
+        "vw",
+        "vh"
+      ]
+    },
+    "typography": {
+      "defaultFontSizes": false,
+      "customFontSize": false,
+      "fontSizes": [
+        {
+          "name": "xs",
+          "slug": "xs",
+          "size": ".75rem"
+        },
+        {
+          "name": "sm",
+          "slug": "sm",
+          "size": ".875rem"
+        },
+        {
+          "name": "base",
+          "slug": "base",
+          "size": "1rem"
+        },
+        {
+          "name": "lg",
+          "slug": "lg",
+          "size": "1.125rem"
+        },
+        {
+          "name": "xl",
+          "slug": "xl",
+          "size": "1.25rem"
+        },
+        {
+          "name": "2xl",
+          "slug": "2xl",
+          "size": "1.5rem"
+        },
+        {
+          "name": "3xl",
+          "slug": "3xl",
+          "size": "1.875rem"
+        },
+        {
+          "name": "4xl",
+          "slug": "4xl",
+          "size": "2.25rem"
+        },
+        {
+          "name": "5xl",
+          "slug": "5xl",
+          "size": "3rem"
+        },
+        {
+          "name": "6xl",
+          "slug": "6xl",
+          "size": "3.75rem"
+        },
+        {
+          "name": "7xl",
+          "slug": "7xl",
+          "size": "4.5rem"
+        },
+        {
+          "name": "8xl",
+          "slug": "8xl",
+          "size": "6rem"
+        },
+        {
+          "name": "9xl",
+          "slug": "9xl",
+          "size": "8rem"
+        },
+        {
+          "name": "fluid-66px",
+          "slug": "fluid-66px",
+          "size": "clamp(3rem,2.857vw + 2.429rem,4.125rem)"
+        },
+        {
+          "name": "fluid-64px",
+          "slug": "fluid-64px",
+          "size": "clamp(2.08rem,1.429vw + 2.714rem,3.33rem)"
+        },
+        {
+          "name": "fluid-48px",
+          "slug": "fluid-48px",
+          "size": "clamp(1.67rem,1.25vw + 1.75rem,2.5rem)"
+        },
+        {
+          "name": "fluid-40px",
+          "slug": "fluid-40px",
+          "size": "clamp(1.67rem,.702vw + 1.868rem,2.08rem)"
+        },
+        {
+          "name": "fluid-32px",
+          "slug": "fluid-32px",
+          "size": "clamp(1.25rem,.714vw + 1.357rem,1.67rem)"
+        },
+        {
+          "name": "fluid-24px",
+          "slug": "fluid-24px",
+          "size": "clamp(1.04rem,.313vw + 1.188rem,1.25rem)"
+        },
+        {
+          "name": "fluid-104px",
+          "slug": "fluid-104px",
+          "size": "clamp(3.33rem,3.3rem + 3.5vw,5.375rem)"
+        },
+        {
+          "name": "fluid-108px",
+          "slug": "fluid-108px",
+          "size": "clamp(4.25rem,3.3rem + 3.5vw,6.75rem)"
+        },
+        {
+          "name": "8xl-fluid",
+          "slug": "8xl-fluid",
+          "size": "clamp(3.25rem,4.583vw + 2.333rem,6rem)"
+        },
+        {
+          "name": "6xl-fluid",
+          "slug": "6xl-fluid",
+          "size": "clamp(2.5rem,2.083vw + 2.083rem,3.75rem)"
+        },
+        {
+          "name": "5xl-fluid",
+          "slug": "5xl-fluid",
+          "size": "clamp(2.25rem,1.25vw + 2rem,3rem)"
+        },
+        {
+          "name": "4xl-fluid",
+          "slug": "4xl-fluid",
+          "size": "clamp(1.875rem,.625vw + 1.75rem,2.25rem)"
+        },
+        {
+          "name": "3xl-fluid",
+          "slug": "3xl-fluid",
+          "size": "clamp(1.5rem,.625vw + 1.375rem,1.875rem)"
+        },
+        {
+          "name": "2xl-fluid",
+          "slug": "2xl-fluid",
+          "size": "clamp(1.25rem,.417vw + 1.167rem,1.5rem)"
+        },
+        {
+          "name": "lg-fluid",
+          "slug": "lg-fluid",
+          "size": "clamp(1rem,.208vw + .958rem,1.125rem)"
+        }
+      ]
+    }
+  }
+}

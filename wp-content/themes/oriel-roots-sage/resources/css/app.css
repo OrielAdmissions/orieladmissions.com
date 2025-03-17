@@ -1,0 +1,263 @@
+@import 'tailwindcss';
+@import './variables.css';
+@import './base.css';
+@import './components.css';
+@import './utilities.css';
+@import './fonts.css';
+@import './ninja-forms.css';
+@import './blocks/header.css';
+@import './blocks/logo-marquee.css';
+@import './animations.css';
+
+@source "../views/";
+@source "../../app/";
+
+.content-grid {
+  --padding-inline: 1rem;
+  --content-max-width: 1100px;
+  --breakout-max-width: 1280px;
+
+  --breakout-size: calc(
+    (var(--breakout-max-width) - var(--content-max-width)) / 2
+  );
+
+  display: grid;
+  grid-template-columns:
+    [full-width-start] minmax(var(--padding-inline), 1fr)
+    [breakout-start] minmax(0, var(--breakout-size))
+    [content-start] min(
+      100% - (var(--padding-inline) * 2),
+      var(--content-max-width)
+    )
+    [content-end] minmax(0, var(--breakout-size)) [breakout-end]
+    minmax(var(--padding-inline), 1fr) [full-width-end];
+}
+
+.content-grid > :not(.breakout, .full-width, .full-width-constrained),
+.full-width-constrained
+  > :not(.breakout, .full-width, .full-width-constrained) {
+  grid-column: content;
+}
+
+.content-grid .breakout {
+  grid-column: breakout;
+}
+
+.content-grid .full-width-constrained {
+  grid-column: full-width;
+  display: grid;
+  grid-template-columns: inherit;
+}
+
+.content-grid .full-width {
+  grid-column: full-width;
+}
+
+#college-nav a.active {
+  @apply text-oriel;
+}
+
+.tag-filters .active {
+  @apply bg-cardinal text-white;
+}
+
+.tab {
+  @apply bg-sand/20 hover:bg-keyline/80 p-4 text-center font-medium transition-all duration-300 focus:z-10;
+}
+
+.active.tab {
+  @apply border-b-2;
+  border-bottom-color: var(--tab-accent, #000);
+}
+
+.oriel-slider {
+  @apply relative;
+
+  .carousel {
+    overflow-x: clip;
+  }
+
+  .swiper-slide {
+    background: transparent;
+    align-self: center;
+    @apply transition duration-300;
+
+    @apply flex w-auto max-w-full;
+
+    &.swiper-slide-visible {
+      &:not(.swiper-slide-fully-visible) {
+        @apply brightness-50;
+      }
+    }
+  }
+
+  .image-mask {
+    position: relative;
+    pointer-events: none;
+    user-select: none;
+    height: 100%;
+    width: 100%;
+
+    img {
+      width: 358px;
+      pointer-events: none;
+      max-width: 100%;
+      @apply bg-chalk;
+    }
+  }
+}
+
+.pagination {
+  @apply flex items-center justify-center gap-4;
+
+  .page-item {
+    span,
+    a {
+      @apply border-keyline/80 flex size-16 items-center justify-center rounded-full bg-white text-black;
+
+      &.current {
+        @apply bg-cardinal text-white;
+      }
+    }
+  }
+}
+
+.college-services__card {
+  & details:last-of-type {
+    border-bottom: 0;
+  }
+}
+
+.window-overlay {
+  @apply relative;
+
+  &:after {
+    @apply absolute inset-0 z-[1] h-full w-full;
+    content: '';
+    background: rgba(0, 0, 0, 0.38);
+
+    @variant lg {
+      -webkit-mask-composite: destination-out;
+      mask:
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 622 1274" preserveAspectRatio="xMidYMid meet"><g transform="scale(1.1, 1)" transform-origin="center"><path transform-origin="center" fill="none" stroke="black" stroke-width="1" d="M75.9474 1097.31C184.23 1128.99 268.923 1195.82 310.994 1272.95C353.066 1195.82 437.759 1128.99 546.042 1097.31C571.105 1089.98 596.117 1084.91 620.714 1081.98V204.709C598.202 201.694 575.37 196.891 552.495 190.198C437.996 156.7 349.87 83.8989 310.625 1.17163C271.382 83.9012 183.254 156.705 68.7523 190.204C45.8664 196.9 23.0231 201.705 0.5 204.72V1081.89C25.3462 1084.81 50.6207 1089.9 75.9474 1097.31Z"/><path transform-origin="center" fill="black" transform="scale(0.95, 0.95)" d="M75.9474 1097.31C184.23 1128.99 268.923 1195.82 310.994 1272.95C353.066 1195.82 437.759 1128.99 546.042 1097.31C571.105 1089.98 596.117 1084.91 620.714 1081.98V204.709C598.202 201.694 575.37 196.891 552.495 190.198C437.996 156.7 349.87 83.8989 310.625 1.17163C271.382 83.9012 183.254 156.705 68.7523 190.204C45.8664 196.9 23.0231 201.705 0.5 204.72V1081.89C25.3462 1084.81 50.6207 1089.9 75.9474 1097.31Z"/></g></svg>')
+          0 / 100% calc(100% - 2rem) no-repeat,
+        linear-gradient(#fff, #fff);
+      mask-composite: exclude;
+      mask-position: center;
+    }
+  }
+}
+
+.bar {
+  pointer-events: bounding-box;
+  @apply transition-all duration-500;
+
+  .bar-background {
+    @apply transition-all duration-500;
+    fill-opacity: 0;
+  }
+
+  &:hover {
+    @apply text-white;
+
+    .bar-background {
+      fill-opacity: 1;
+    }
+  }
+}
+
+.mobile-bar {
+  pointer-events: bounding-box;
+  @apply transition-all duration-500;
+
+  .mobile-bar-background {
+    @apply transition-all duration-500;
+    fill-opacity: 0;
+  }
+
+  /*&:hover {*/
+  /*  @apply text-white;*/
+
+  /*  .mobile-bar-background {*/
+  /*    fill-opacity: 1;*/
+  /*  }*/
+  /*}*/
+}
+
+.tippy-box[data-theme~='custom-tooltip'] {
+  background-color: white !important; /* White background */
+  color: black; /* Black text */
+  border: 1px solid #ddd; /* Light border */
+  padding: 0 !important; /* Remove default padding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  border-radius: 8px; /* Rounded corners */
+  max-width: 200px; /* Optional width limit */
+}
+
+.tooltip-content {
+  padding: 16px; /* Control padding here */
+}
+
+.text-slide {
+  display: none;
+}
+
+.text-slide.active-text {
+  display: block;
+}
+
+@utility animate-underline {
+  @apply after:bg-oriel relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-full after:origin-bottom-right after:scale-x-0 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100;
+}
+
+.navigation.pagination .nav-links {
+  @apply flex items-center gap-3;
+
+  .page-numbers {
+    @apply hover:bg-cardinal border-keyline/80 inline-flex size-15 items-center justify-center rounded-full border bg-white transition duration-300 hover:text-white;
+
+    &.current {
+      @apply bg-cardinal text-white;
+    }
+  }
+}
+
+.fancybox__content > .f-button.is-close-btn {
+  @apply bg-sand hover:text-oriel hover:bg-sand/80 !top-4 !right-4 size-12 rounded-full p-2 text-black transition-colors duration-300;
+}
+
+.spiral-binding {
+  background:
+    linear-gradient(
+        var(--color-chalk-passthrough),
+        var(--color-chalk-passthrough)
+      )
+      center center/cover no-repeat,
+    url('@images/paper-texture.jpeg') center center/cover no-repeat;
+
+  @variant lg {
+    background:
+      url('data:image/svg+xml,%3Csvg%20width%3D%2213%22%20height%3D%2213%22%20viewBox%3D%220%200%2013%2013%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20filter%3D%22url(%23filter0_i_352_2522)%22%3E%3Ccircle%20cx%3D%226.333%22%20cy%3D%226.333%22%20r%3D%225.926%22%20fill%3D%22%23EDDDD1%22%2F%3E%3C%2Fg%3E%3Cdefs%3E%3Cfilter%20id%3D%22filter0_i_352_2522%22%20x%3D%22.407%22%20y%3D%22.407%22%20width%3D%2211.852%22%20height%3D%2213.334%22%20filterUnits%3D%22userSpaceOnUse%22%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20color-interpolation-filters%3D%22sRGB%22%3E%3CfeFlood%20flood-opacity%3D%220%22%20result%3D%22BackgroundImageFix%22%2F%3E%3CfeBlend%20mode%3D%22normal%22%20in%3D%22SourceGraphic%22%20in2%3D%22BackgroundImageFix%22%20result%3D%22shape%22%2F%3E%3CfeColorMatrix%20in%3D%22SourceAlpha%22%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%20127%200%22%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20result%3D%22hardAlpha%22%2F%3E%3CfeOffset%20dy%3D%222.222%22%2F%3E%3CfeGaussianBlur%20stdDeviation%3D%22.741%22%2F%3E%3CfeComposite%20in2%3D%22hardAlpha%22%20operator%3D%22arithmetic%22%20k2%3D%22-1%22%20k3%3D%221%22%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.75%200%22%2F%3E%3CfeBlend%20mode%3D%22normal%22%20in2%3D%22shape%22%20result%3D%22effect1_innerShadow_352_2522%22%2F%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3C%2Fsvg%3E')
+        24px 0/20px 50px repeat-y,
+      linear-gradient(
+          var(--color-chalk-passthrough),
+          var(--color-chalk-passthrough)
+        )
+        center center/cover no-repeat,
+      url('@images/paper-texture.jpeg') center center/cover no-repeat;
+  }
+}
+
+.hero__window-overlay {
+  @apply relative;
+
+  @variant md {
+    -webkit-mask-composite: destination-out;
+    mask:
+      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 622 1274" preserveAspectRatio="xMidYMid meet"><g transform="scale(1.1, 1)" transform-origin="center"><path transform-origin="center" fill="none" stroke="black" stroke-width="0" d="M75.9474 1097.31C184.23 1128.99 268.923 1195.82 310.994 1272.95C353.066 1195.82 437.759 1128.99 546.042 1097.31C571.105 1089.98 596.117 1084.91 620.714 1081.98V204.709C598.202 201.694 575.37 196.891 552.495 190.198C437.996 156.7 349.87 83.8989 310.625 1.17163C271.382 83.9012 183.254 156.705 68.7523 190.204C45.8664 196.9 23.0231 201.705 0.5 204.72V1081.89C25.3462 1084.81 50.6207 1089.9 75.9474 1097.31Z"/><path transform-origin="center" fill="black" transform="scale(0.95, 0.95)" d="M75.9474 1097.31C184.23 1128.99 268.923 1195.82 310.994 1272.95C353.066 1195.82 437.759 1128.99 546.042 1097.31C571.105 1089.98 596.117 1084.91 620.714 1081.98V204.709C598.202 201.694 575.37 196.891 552.495 190.198C437.996 156.7 349.87 83.8989 310.625 1.17163C271.382 83.9012 183.254 156.705 68.7523 190.204C45.8664 196.9 23.0231 201.705 0.5 204.72V1081.89C25.3462 1084.81 50.6207 1089.9 75.9474 1097.31Z"/></g></svg>')
+        0 / 100% 700px no-repeat,
+      linear-gradient(#fff, #fff);
+    mask-composite: exclude;
+    mask-position: center;
+  }
+}

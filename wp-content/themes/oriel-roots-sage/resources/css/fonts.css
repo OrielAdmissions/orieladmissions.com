@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'PP Editorial New';
+  font-style: italic;
+  font-weight: normal;
+  font-display: swap;
+  src: url('@fonts/PPEditorialNew-Italic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'PP Editorial New';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url('@fonts/PPEditorialNew-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'PP Editorial New';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('@fonts/PPEditorialNew-Ultrabold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'PP Editorial New';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url('@fonts/PPEditorialNew-UltraboldItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'PP Editorial New';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('@fonts/PPEditorialNew-Ultralight.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'PP Editorial New';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url('@fonts/PPEditorialNew-UltralightItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Barlow Semi Condensed';
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url('@fonts/BarlowSemiCondensed-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Barlow Semi Condensed';
+  font-style: italic;
+  font-weight: bold;
+  font-display: swap;
+  src: url('@fonts/BarlowSemiCondensed-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Barlow Semi Condensed';
+  font-style: italic;
+  font-weight: normal;
+  font-display: swap;
+  src: url('@fonts/BarlowSemiCondensed-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Barlow Semi Condensed';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('@fonts/BarlowSemiCondensed-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Barlow Semi Condensed';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url('@fonts/BarlowSemiCondensed-LightItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Barlow Semi Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('@fonts/BarlowSemiCondensed-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Barlow Semi Condensed';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url('@fonts/BarlowSemiCondensed-MediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Barlow Semi Condensed';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url('@fonts/BarlowSemiCondensed-Regular.ttf') format('truetype');
+}

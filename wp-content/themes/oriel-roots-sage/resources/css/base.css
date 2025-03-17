@@ -1,0 +1,146 @@
+@layer base {
+  html {
+    @variant max-md {
+      scroll-behavior: smooth;
+      scroll-margin-top: 80px;
+    }
+  }
+
+  body {
+    @apply bg-chalk;
+  }
+
+  [x-cloak] {
+    display: none !important;
+  }
+
+  #smooth-content {
+    will-change: transform;
+  }
+
+  /*!* width *!*/
+  /*::-webkit-scrollbar {*/
+  /*  @apply h-1 w-2 transition;*/
+  /*}*/
+  /* Track */
+  ::-webkit-scrollbar-track {
+    @apply bg-sand;
+  }
+
+  /* Handle */
+  /*::-webkit-scrollbar-thumb {*/
+  /*  @apply bg-oriel rounded-full transition;*/
+  /*}*/
+  /*!* Handle on hover *!*/
+  /*::-webkit-scrollbar-thumb:hover {*/
+  /*  @apply bg-cardinal;*/
+  /*}*/
+  .font-sans {
+    @apply font-normal;
+  }
+
+  .font-serif {
+    @apply font-light;
+  }
+
+  a,
+  button {
+    @apply focus-visible:outline-oriel !no-underline focus-visible:outline;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif leading-none font-light;
+  }
+
+  hr {
+    @apply !border-keyline/80 !border-t;
+  }
+
+  *:focus {
+    @apply outline-oriel;
+  }
+
+  h1,
+  .h1 {
+    font-size: calc(1.375rem + 1.5vw);
+  }
+
+  h2,
+  .h2 {
+    font-size: calc(1.325rem + 0.9vw);
+  }
+
+  h3,
+  .h3 {
+    font-size: calc(1.3rem + 0.6vw);
+  }
+
+  h4,
+  .h4 {
+    font-size: calc(1.275rem + 0.3vw);
+  }
+
+  h5,
+  .h5 {
+    font-size: 1.25rem;
+  }
+
+  h6,
+  .h6 {
+    font-size: 1rem;
+  }
+
+  [class^='wp-block'],
+  .h-entry {
+    p,
+    blockquote,
+    table,
+    ul,
+    ol,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      @apply mb-4;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    table,
+    ul,
+    ol {
+      .main &:first-child {
+        @apply mt-0;
+      }
+
+      .main &:last-child {
+        @apply mb-0;
+      }
+    }
+
+    hr {
+      @apply my-4;
+    }
+
+    ul.wp-block-list {
+      @apply list-disc pl-4;
+    }
+
+    ol.wp-block-list {
+      @apply list-decimal pl-4;
+    }
+  }
+}

@@ -1,0 +1,267 @@
+:root {
+  --cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  --hamburger-padding-x: 8px;
+  --hamburger-padding-y: 8px;
+  --hamburger-layer-width: 20px;
+  --hamburger-layer-height: 2px;
+  --hamburger-layer-spacing: 3px;
+  --hamburger-layer-color: var(--color-black);
+  --hamburger-layer-border-radius: 1px;
+  --hamburger-hover-opacity: 1;
+  --hamburger-active-layer-color: var(--hamburger-layer-color);
+  --hamburger-active-hover-opacity: var(--hamburger-hover-opacity);
+  --transition-duration: 0.25s;
+
+  /* Toggle these if you want to use filter instead of opacity (or handle in JS). */
+  --hamburger-hover-use-filter: false;
+  --hamburger-hover-filter: opacity(50%);
+  --hamburger-active-hover-filter: opacity(50%);
+}
+
+/* Example hamburger base */
+.hamburger {
+  @apply cursor-pointer;
+  padding: var(--hamburger-padding-y) var(--hamburger-padding-x);
+  transition-property: opacity, filter;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: linear;
+
+  /* Replace with filter or opacity, as needed.
+     (Tailwind can’t handle toggling 'filter' vs 'opacity' in pure CSS—
+     so you may need a separate class or JS approach.)
+  */
+
+  &:hover {
+    opacity: var(--hamburger-hover-opacity);
+    /* or filter: var(--hamburger-hover-filter); */
+  }
+
+  &.menu-opened {
+    &:hover {
+      opacity: var(--hamburger-active-hover-opacity);
+      /* or filter: var(--hamburger-active-hover-filter); */
+    }
+
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+      background: var(--hamburger-active-layer-color);
+    }
+  }
+}
+
+.hamburger-box {
+  width: var(--hamburger-layer-width);
+  height: calc(
+    var(--hamburger-layer-height) * 3 + var(--hamburger-layer-spacing) * 2
+  );
+  @apply relative inline-block;
+}
+
+.hamburger-inner {
+  @apply absolute block;
+  /* replaced 'top-1/2' with manual top: 50% below if you like */
+  top: 50%;
+
+  &,
+  &::before,
+  &::after {
+    @apply absolute bg-white;
+    /* keep the color from var if you want */
+    width: var(--hamburger-layer-width);
+    height: var(--hamburger-layer-height);
+    border-radius: var(--hamburger-layer-border-radius);
+    background: var(--hamburger-layer-color);
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+  }
+
+  &::before {
+    top: calc(
+      (var(--hamburger-layer-spacing) + var(--hamburger-layer-height)) * -1
+    );
+  }
+
+  &::after {
+    bottom: calc(
+      (var(--hamburger-layer-spacing) + var(--hamburger-layer-height)) * -1
+    );
+  }
+}
+
+/* Spin variant */
+.hamburger--spin .hamburger-inner {
+  transition:
+    transform var(--transition-duration) var(--cubic),
+    background 1s var(--cubic) 0.3s;
+
+  &::before {
+    transition:
+      top 0.1s var(--transition-duration) ease-in,
+      opacity 0.1s ease-in,
+      background 1s var(--cubic) 0.3s;
+  }
+
+  &::after {
+    transition:
+      bottom 0.1s var(--transition-duration) ease-in,
+      transform 0.22s var(--cubic),
+      background 1s var(--cubic) 0.3s;
+  }
+}
+
+.hamburger--spin.menu-opened .hamburger-inner {
+  transform: rotate(225deg);
+  transition:
+    transform var(--transition-duration) var(--cubic),
+    background 0.3s var(--cubic);
+
+  &::before {
+    top: 0;
+    opacity: 0;
+    transition:
+      top 0.1s ease-out,
+      opacity 0.1s var(--transition-duration) ease-out,
+      background 0.3s var(--cubic);
+  }
+
+  &::after {
+    bottom: 0;
+    transform: rotate(-90deg);
+    transition:
+      bottom 0.1s ease-out,
+      transform 0.22s var(--transition-duration) var(--cubic),
+      background 0.3s var(--cubic);
+  }
+}
+
+#sticky-header {
+  @apply fixed top-0 left-0 z-50 w-full transition-all;
+}
+
+.header-light .header-logo {
+  @apply text-black;
+}
+
+.header-dark .header-logo {
+  @apply text-white;
+}
+
+body.menu-opened .header-logo {
+  @variant max-sm {
+    @apply text-black;
+  }
+}
+
+.main-nav-menu {
+  @apply opacity-0 duration-300 max-xl:fixed max-xl:top-0 max-xl:right-0 max-xl:h-full max-xl:w-full max-xl:translate-x-full max-xl:pt-24 max-lg:transition-all;
+
+  &.active {
+    @apply translate-x-0 opacity-100;
+  }
+
+  @variant sm {
+    @apply w-[350px];
+  }
+
+  @variant xl {
+    @apply w-full basis-[fit-content] rounded-full opacity-100;
+  }
+}
+
+.desktop-menu__parent-link {
+  &:before {
+    content: '';
+    @apply absolute inset-0 h-full w-full origin-center rounded-full bg-white opacity-0 duration-300;
+  }
+
+  &:hover:before {
+    @apply opacity-100;
+  }
+}
+
+a[aria-expanded='true']:before {
+  @apply opacity-100;
+}
+
+.desktop-menu .has-submenu .submenu {
+  transition: visibility 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  @apply invisible absolute top-full left-0 w-full overflow-hidden pt-2;
+}
+
+.desktop-menu .has-submenu a[aria-expanded='true'] + .submenu {
+  @apply visible;
+}
+
+.desktop-menu .has-submenu .submenu .content {
+  overflow: hidden;
+  transform: translate3d(0, -100%, 0);
+  transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.desktop-menu .has-submenu .submenu .content .subcontent {
+  transform: translate3d(0, 100%, 0);
+  transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.desktop-menu .has-submenu a[aria-expanded='true'] + .submenu .content,
+.desktop-menu .has-submenu a[aria-expanded='true'] + .submenu .subcontent {
+  transform: translateZ(0);
+}
+
+.desktop-menu .has-submenu .submenu .content .subcontent a:not(.btn),
+.desktop-menu .has-submenu .submenu .content .subcontent p {
+  opacity: 0;
+  transform: translate3d(0, 50%, 0);
+  transition:
+    color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1),
+    opacity 0.3s cubic-bezier(0.215, 0.61, 0.355, 1),
+    transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1),
+    padding 0.3s ease-in-out;
+}
+
+.desktop-menu .has-submenu .submenu .content .subcontent > ul > li > a,
+.desktop-menu .has-submenu .submenu .content .subcontent p {
+  --d: 0.1s;
+  --subindex: 0;
+}
+
+.desktop-menu
+  .has-submenu
+  a[aria-expanded='true']
+  + .submenu
+  .content
+  a:not(.btn),
+.desktop-menu .has-submenu a[aria-expanded='true'] + .submenu .content p {
+  --delay: calc(var(--d) + var(--index) * 0.05s + var(--subindex) * 0.05s);
+  opacity: 1;
+  transform: translateZ(0);
+  transition:
+    color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1),
+    opacity 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) var(--delay),
+    transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) var(--delay),
+    padding 0.3s ease-in-out;
+}
+
+.desktop-menu .has-submenu .submenu .content .subcontent p {
+  opacity: 0;
+  transform: translate3d(0, 50%, 0);
+  transition:
+    color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1),
+    opacity 0.3s cubic-bezier(0.215, 0.61, 0.355, 1),
+    transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.desktop-menu .has-submenu a[aria-expanded='true'] + .submenu .content p {
+  --delay: calc(var(--d) + var(--textindex) * 0.05s);
+  opacity: 1;
+  transform: translateZ(0);
+  transition:
+    color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1),
+    opacity 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) var(--delay),
+    transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) var(--delay);
+}

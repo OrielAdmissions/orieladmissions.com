@@ -1,0 +1,52 @@
+@layer components {
+  details {
+    box-sizing: border-box;
+    @apply border-t border-[#D9CBCF] font-sans tracking-wide;
+
+    &:last-of-type {
+      @apply border-b border-b-[#D9CBCF];
+    }
+
+    summary {
+      display: block;
+      position: relative;
+      cursor: pointer;
+      transition: 0.2s ease-out;
+      @apply focus:outline-[var(--accent-color)];
+
+      &::-webkit-details-marker {
+        @apply hidden;
+      }
+
+      .accordion-icon {
+        position: absolute;
+        width: 24px;
+        height: 14px;
+        top: 50%;
+        right: 1rem;
+        transform: translate(0, -50%) rotate(0deg);
+        cursor: pointer;
+        z-index: 1;
+        transition: 0.2s ease-out;
+        @apply text-black;
+      }
+    }
+
+    &.opened {
+      @apply border-t-[var(--accent-color)];
+
+      > summary {
+        @apply text-[var(--accent-color)];
+
+        .accordion-icon {
+          transform: translate(0, -50%) rotate(180deg);
+          @apply text-[var(--accent-color)];
+        }
+      }
+
+      & + button:not(.open-details) {
+        display: none;
+      }
+    }
+  }
+}

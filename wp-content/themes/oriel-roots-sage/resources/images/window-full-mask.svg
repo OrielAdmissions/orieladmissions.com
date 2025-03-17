@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 622 1274" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <mask id="cutout-mask" maskUnits="userSpaceOnUse">
+      <!-- White background (visible area) -->
+      <rect width="100%" height="100%" fill="white" />
+
+      <!-- Group for scaling and centering -->
+      <g transform="scale(0.5)" transform-origin="center">
+
+        <!-- Outer outline path (center aligned) -->
+        <path
+          fill="none"
+          stroke="black"
+          stroke-width="1"
+          transform-origin="center"
+          d="M75.9474 1097.31C184.23 1128.99 268.923 1195.82 310.994 1272.95C353.066 1195.82 437.759 1128.99 546.042 1097.31C571.105 1089.98 596.117 1084.91 620.714 1081.98V204.709C598.202 201.694 575.37 196.891 552.495 190.198C437.996 156.7 349.87 83.8989 310.625 1.17163C271.382 83.9012 183.254 156.705 68.7523 190.204C45.8664 196.9 23.0231 201.705 0.5 204.72V1081.89C25.3462 1084.81 50.6207 1089.9 75.9474 1097.31Z"
+        />
+
+        <!-- Cutout shape with slight scaling for gap, center aligned -->
+        <path
+          fill="black"
+          transform="scale(0.98)"  <!-- Slight shrink for the gap -->
+        transform-origin="center"
+        d="M75.9474 1097.31C184.23 1128.99 268.923 1195.82 310.994 1272.95C353.066 1195.82 437.759 1128.99 546.042 1097.31C571.105 1089.98 596.117 1084.91 620.714 1081.98V204.709C598.202 201.694 575.37 196.891 552.495 190.198C437.996 156.7 349.87 83.8989 310.625 1.17163C271.382 83.9012 183.254 156.705 68.7523 190.204C45.8664 196.9 23.0231 201.705 0.5 204.72V1081.89C25.3462 1084.81 50.6207 1089.9 75.9474 1097.31Z"
+        />
+      </g>
+    </mask>
+  </defs>
+
+  <rect width="100%" height="100%" fill="black" mask="url(#cutout-mask)" />
+</svg>

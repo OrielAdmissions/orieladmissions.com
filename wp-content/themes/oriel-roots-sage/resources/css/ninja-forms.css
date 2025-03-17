@@ -1,0 +1,129 @@
+.nf-field-element {
+  @apply relative;
+
+  &:not(
+      :has(
+        input[type='submit'],
+        input[type='radio'],
+        input[type='checkbox'],
+        input[type='file'],
+        input[type='image']
+      )
+    ) {
+    &:after {
+      content: '';
+      @apply absolute inset-x-0 bottom-0 border-t transition-colors duration-300;
+    }
+  }
+
+  input[type='text'].ninja-forms-field,
+  input[type='email'].ninja-forms-field,
+  input[type='tel'].ninja-forms-field,
+  select.ninja-forms-field {
+    @apply block h-16 w-full border border-transparent bg-transparent py-1.5 text-[23px] text-black placeholder:text-black/40 focus:outline focus:outline-0;
+
+    .nf-error & {
+      @apply border-transparent;
+    }
+  }
+
+  textarea {
+    @apply block h-[200px] w-full border border-transparent bg-transparent py-1.5 text-[23px] text-black placeholder:text-black/40 focus:outline focus:outline-0;
+
+    .nf-error & {
+      @apply border-transparent;
+    }
+  }
+
+  &:after {
+    @apply border-keyline/80;
+  }
+
+  &:focus:after,
+  &:focus-within:after {
+    @apply border-oriel;
+  }
+}
+
+.ninja-forms-req-symbol {
+  @apply !text-black;
+}
+
+.nf-field-label label,
+.nf-label-span {
+  @apply text-[23px] !font-normal;
+}
+
+.nf-field-element {
+  ul li {
+    @apply flex items-center;
+
+    input[type='radio'].ninja-forms-field {
+      @apply !size-8;
+      @apply before:bg-cardinal checked:border-cardinal relative appearance-none rounded-full border border-gray-300 bg-white transition-colors duration-300 before:absolute before:inset-1 before:rounded-full checked:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:before:bg-gray-400 forced-colors:appearance-auto forced-colors:before:hidden [&:not(:checked)]:before:hidden;
+    }
+  }
+}
+
+.nf-field-container {
+  @apply mb-16;
+}
+
+.enable-select2 .select2-container {
+  @apply block flex h-16 w-full flex-col justify-center py-1.5;
+}
+
+.select2-container--flat .select2-selection--single {
+  @apply border-0 bg-transparent;
+}
+
+.select2-container--flat
+  .select2-selection--single
+  .select2-selection__rendered {
+  @apply px-0 pr-6 text-[23px];
+}
+
+.select2-container--flat .select2-selection--single .select2-selection__arrow {
+  @apply absolute top-1/2 right-0 flex -translate-y-1/2;
+
+  b {
+    border-color: var(--color-black) transparent transparent transparent;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+  }
+}
+
+.select2-container--flat.select2-container--open
+  .select2-selection--single
+  .select2-selection__arrow
+  b {
+  border-color: transparent transparent var(--color-black) transparent;
+  border-width: 0 4px 5px 4px;
+}
+
+.select2-selection select2-selection--single {
+  @apply flex items-center;
+}
+
+#nf-field-13-container .listradio-wrap {
+  ul {
+    @apply grid grid-cols-2 gap-2;
+  }
+
+  li {
+    @apply relative !m-0 flex items-center justify-center;
+
+    label {
+      @apply border-keyline/80 relative !m-0 flex h-16 w-full items-center justify-center rounded-full border bg-white !py-2 !text-center text-center transition;
+    }
+
+    input[type='radio'] {
+      @apply absolute !m-0 !h-full !w-full cursor-pointer opacity-0;
+
+      &:checked ~ label,
+      &:hover ~ label {
+        @apply bg-cardinal text-white;
+      }
+    }
+  }
+}
