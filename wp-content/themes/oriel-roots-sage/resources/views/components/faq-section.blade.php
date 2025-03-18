@@ -12,7 +12,7 @@
     >
       <div class="pin-content">
         <h2
-          class="fade-in-bottom {{ $isFaqPage ? 'max-w-80' : 'mb-10 max-w-113' }} font-serif text-5xl leading-tight font-light"
+          class="{{ $isFaqPage ? 'max-w-80' : 'mb-10 max-w-113' }} font-serif text-5xl leading-tight font-light"
         >
           {!! $title !!}
         </h2>
