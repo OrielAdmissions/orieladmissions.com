@@ -33,7 +33,7 @@
       <div class="pb-6 lg:pb-37">
         <div class="flex flex-wrap pt-6 md:pt-13 lg:items-center">
           <div class="w-full md:w-2/3">
-            <h2 class="fade-in-bottom text-6xl-fluid mb-4 max-w-100">
+            <h2 class="text-6xl-fluid mb-4 max-w-100">
               Admissions Help That’s Anything but Ordinary
             </h2>
             <div class="flex flex-wrap gap-8 md:mb-0 md:gap-x-22">
