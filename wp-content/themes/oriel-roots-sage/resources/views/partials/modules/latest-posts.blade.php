@@ -3,7 +3,7 @@
     <div class="col-start-1 row-start-1">
       <div class="content-grid" id="card-slider">
         <div class="flex items-center justify-between">
-          <h2 class="fade-in-bottom text-3xl md:text-5xl">Latest Posts</h2>
+          <h2 class="text-3xl md:text-5xl">Latest Posts</h2>
           <a href="/blog" class="btn btn-outline sm:hidden">Show all</a>
         </div>
       </div>
