@@ -2,7 +2,7 @@
   <div class="grid grid-cols-1 gap-8">
     <div class="col-start-1 row-start-1">
       <div class="content-grid">
-        <h2 class="fade-in-bottom text-6xl-fluid">
+        <h2 class="text-6xl-fluid">
           <span class="text-oriel">Additional</span>
           Stand Alone Services
         </h2>
