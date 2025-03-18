@@ -30,13 +30,13 @@
     <div class="relative overflow-hidden pt-18 pb-47 lg:pt-30 lg:pb-70">
       <div class="grid gap-4 gap-x-6 max-lg:text-center lg:grid-cols-12">
         <div class="lg:col-span-5 lg:col-start-2">
-          <h2 class="fade-in-bottom text-6xl-fluid max-w-130 max-lg:mx-auto">
+          <h2 class="text-6xl-fluid max-w-130 max-lg:mx-auto">
             The Oriel Admissions team are
             <span class="text-oriel">experts</span>
             in our fields.
           </h2>
         </div>
-        <p class="fade-in-bottom text-xl lg:col-span-3 lg:col-start-9">
+        <p class="text-xl lg:col-span-3 lg:col-start-9">
           We are former admissions officers, dedicated college counselors,
           creative writing specialists, academic tutors, project mentors, and
           more.
@@ -47,7 +47,7 @@
   </div>
   <section class="bg-cardinal full-width content-grid">
     <div class="breakout mx-auto py-20 text-white lg:pt-24 lg:pb-4">
-      <h2 class="fade-in-bottom text-6xl-fluid mb-10 md:mb-30 md:text-center">
+      <h2 class="text-6xl-fluid mb-10 md:mb-30 md:text-center">
         Meet our founder
       </h2>
 
@@ -93,7 +93,7 @@
   </section>
   <div class="breakout py-16">
     <h2
-      class="fade-in-bottom text-6xl-fluid mx-auto mb-16 max-w-screen-sm py-13 text-center"
+      class="text-6xl-fluid mx-auto mb-16 max-w-screen-sm py-13 text-center"
     >
       Our team
     </h2>

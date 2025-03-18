@@ -18,7 +18,7 @@
         class="flex justify-between gap-8 max-md:flex-col max-md:text-center"
       >
         <div class="basis-8/12">
-          <h2 class="fade-in-bottom text-6xl-fluid mb-8">
+          <h2 class="text-6xl-fluid mb-8">
             Our
             <span class="text-oriel text-6xl-fluid">360 degree approach</span>
             to college counseling.
@@ -26,7 +26,7 @@
 
           <a href="/why-us" class="btn btn-outline">Learn More</a>
         </div>
-        <p class="fade-in-bottom text-lg-fluid basis-64">
+        <p class="text-lg-fluid basis-64">
           Our team of experts provides personalized and high-touch support at
           every stage of the college application process.
         </p>
@@ -42,7 +42,7 @@
     <div class="grid grid-cols-12 items-center gap-y-8 md:gap-x-8">
       <div class="col-span-12 text-center">
         <h2
-          class="fade-in-bottom text-8xl-fluid mx-auto mb-8 max-w-175 text-center"
+          class="text-8xl-fluid mx-auto mb-8 max-w-175 text-center"
         >
           Explore the Oriel Admissions Edge.
         </h2>

@@ -13,7 +13,7 @@
         Why work with us
       </h1>
       <div class="flex justify-center self-end">
-        <a href="/contact" class="btn btn-primary">Contact Us</a>
+        <a href="/contact" class="btn btn-primary hidden">Contact Us</a>
       </div>
     </div>
   </div>
@@ -22,7 +22,7 @@
     <div class="md:the-stack">
       <div class="content-grid">
         <div class="max-w-175">
-          <h2 class="text-8xl-fluid fade-in-bottom mb-6">
+          <h2 class="text-8xl-fluid mb-6">
             Why work with a
             <span class="text-oriel">college counselor?</span>
           </h2>
@@ -38,7 +38,7 @@
     </div>
     <div class="content-grid">
       <div class="mx-auto max-w-4xl pt-44">
-        <h2 class="fade-in-bottom text-6xl-fluid mb-12 text-center">
+        <h2 class="text-6xl-fluid mb-12 text-center">
           We go above and beyond what high school guidance counselors provide.
         </h2>
         <p class="mb-24 text-center text-lg lg:text-xl">
@@ -107,14 +107,14 @@
   <div class="full-width content-grid py-30">
     <div class="grid grid-cols-1 gap-8 pb-30 md:grid-cols-2">
       <div>
-        <h2 class="fade-in-bottom text-6xl-fluid">
+        <h2 class="text-6xl-fluid">
           Working with Oriel Admissions
           <span class="text-oriel">Makes an Impact</span>
           for Students
         </h2>
       </div>
       <div class="md:pl-16">
-        <p class="fade-in-bottom max-w-md text-lg text-black/90 lg:text-xl">
+        <p class="max-w-md text-lg text-black/90 lg:text-xl">
           Our students receive holistic support to build skills and experiences
           before they begin applying to college.
         </p>
@@ -129,7 +129,7 @@
   <section class="full-width content-grid bg-sand py-12 md:py-30">
     <div class="breakout">
       <h2
-        class="fade-in-bottom text-6xl-fluid mx-auto mb-32 max-w-125 text-center"
+        class="text-6xl-fluid mx-auto mb-32 max-w-125 text-center"
       >
         We estimate that our students spend over:
       </h2>

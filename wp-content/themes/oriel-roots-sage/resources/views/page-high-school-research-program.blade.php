@@ -13,7 +13,7 @@
       >
         Explore your passion through research.
       </h2>
-      <a href="/contact" class="btn btn-white">Contact Us</a>
+      <a href="/contact" class="btn btn-white hidden">Contact Us</a>
     </div>
   </div>
 
@@ -27,7 +27,7 @@
 
   <div class="breakout relative space-y-12 py-12 md:py-30">
     <h2
-      class="fade-in-bottom text-6xl-fluid mx-auto max-w-4xl text-center font-serif"
+      class="text-6xl-fluid mx-auto max-w-4xl text-center font-serif"
     >
       A
       <span class="text-oriel">virtual research program</span>
@@ -69,7 +69,7 @@
   <div class="bg-sand full-width-constrained">
     <div class="breakout py-12 lg:py-32">
       <h2
-        class="fade-in-bottom text-fluid-104px mb-20 max-w-2xl max-lg:text-center"
+        class="text-fluid-104px mb-20 max-w-2xl max-lg:text-center"
       >
         Why complete research?
       </h2>
@@ -131,7 +131,7 @@
         </div>
         <div class="lg:col-span-6 lg:col-start-5">
           <div class="mx-auto space-y-10 lg:max-w-2xl">
-            <h2 class="fade-in-bottom text-6xl-fluid font-serif leading-none">
+            <h2 class="text-6xl-fluid font-serif leading-none">
               Why the
               <span class="text-oriel">Oriel Ignite</span>
               Research Program?
@@ -162,7 +162,7 @@
       <div
         class="col-span-full flex max-w-lg flex-col gap-y-12 lg:col-span-4 lg:col-start-2 xl:pt-16"
       >
-        <h2 class="fade-in-bottom text-6xl-fluid">
+        <h2 class="text-6xl-fluid">
           We offer
           <span class="text-oriel">2</span>
           program options
@@ -340,7 +340,7 @@
 
   <div class="bg-sand full-width-constrained">
     <div class="breakout space-y-8 py-12 md:py-30">
-      <h2 @class(['fade-in-bottom text-6xl-fluid mb-20 text-center'])>
+      <h2 @class(['text-6xl-fluid mb-20 text-center'])>
         Student Stories
       </h2>
 

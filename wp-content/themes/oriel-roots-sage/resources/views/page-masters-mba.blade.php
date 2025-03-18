@@ -28,7 +28,7 @@
   <div class="bg-sand full-width content-grid py-16">
     <div class="py-16">
       <h2
-        class="text-6xl-fluid fade-in-bottom mx-auto mb-10 max-w-175 text-center"
+        class="text-6xl-fluid mx-auto mb-10 max-w-175 text-center"
       >
         Applying to graduate school is competitive so
         <span class="text-oriel">don’t leave your application to chance!</span>
@@ -37,7 +37,7 @@
 
     <div class="breakout">
       <h2
-        class="fade-in-bottom text-6xl-fluid pb-12 text-center lg:pt-44 lg:pb-20"
+        class="text-6xl-fluid pb-12 text-center lg:pt-44 lg:pb-20"
       >
         What sets us apart?
       </h2>
