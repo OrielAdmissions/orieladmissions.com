@@ -14,6 +14,11 @@
     <div class="relative w-full overflow-clip">
       {!! App\get_picture([$image_id], 'full', false, ['class' => 'w-full object-cover rounded-t-lg  aspect-16/9']) !!}
     </div>
+
+  @else
+    <div class="relative w-full overflow-clip">
+      {!! get_svg('images.featured-image-placeholder', 'w-full object-cover rounded-t-lg  aspect-16/9') !!}
+    </div>
   @endif
 
   <div class="flex w-full grow flex-col gap-y-6 px-6 pt-10 pb-6">

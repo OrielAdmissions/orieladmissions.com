@@ -4,12 +4,12 @@
     "src": "_editor.deps.json"
   },
   "resources/css/app.css": {
-    "file": "assets/app-B1WcZHRO.css",
+    "file": "assets/app-ER7u0Bh7.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/css/editor.css": {
-    "file": "assets/editor-BUgSWmSv.css",
+    "file": "assets/editor-EKII7WtE.css",
     "src": "resources/css/editor.css",
     "isEntry": true
   },
@@ -292,6 +292,10 @@
   "resources/images/college-logos/yale.svg": {
     "file": "assets/yale-D7cR1Ald.svg",
     "src": "resources/images/college-logos/yale.svg"
+  },
+  "resources/images/featured-image-placeholder.svg": {
+    "file": "assets/featured-image-placeholder-BKTsVJTk.svg",
+    "src": "resources/images/featured-image-placeholder.svg"
   },
   "resources/images/footer-window.svg": {
     "file": "assets/footer-window-CnJ1INJr.svg",

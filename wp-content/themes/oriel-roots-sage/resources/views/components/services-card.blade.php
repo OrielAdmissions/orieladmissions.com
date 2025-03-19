@@ -12,6 +12,8 @@
     <div class="flex flex-col overflow-hidden rounded-t-lg md:rounded-b-lg">
       @if ($image_id)
         {!! App\get_picture([$image_id], 'full', false, ['class' => 'w-full h-full object-cover mx-auto']) !!}
+      @else
+          {!! get_svg('images.featured-image-placeholder', 'w-full object-cover h-full mx-auto') !!}
       @endif
     </div>
 
