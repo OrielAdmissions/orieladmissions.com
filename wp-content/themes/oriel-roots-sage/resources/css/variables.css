@@ -16,7 +16,7 @@
   --text-fluid-104px: clamp(3.33rem, 3.3rem + 3.5vw, 5.375rem);
   --text-fluid-104px--line-height: 1.125;
   --text-fluid-108px: clamp(4.25rem, 3.3rem + 3.5vw, 6.75rem);
-  --text-8xl-fluid--line-height: 1;
+  --text-8xl-fluid--line-height: 1.125;
   --text-8xl-fluid: clamp(
     3.25rem,
     4.583vw + 2.333rem,
@@ -25,11 +25,11 @@
   --text-6xl-fluid: clamp(2.5rem, 2.083vw + 2.083rem, 3.75rem); /*40px to 60px*/
   --text-6xl-fluid--line-height: 1.125;
   --text-5xl-fluid: clamp(2.25rem, 1.25vw + 2rem, 3rem);
-  --text-5xl-fluid--line-height: 1.125;
+  --text-5xl-fluid--line-height: 1.25;
   --text-4xl-fluid: clamp(1.875rem, 0.625vw + 1.75rem, 2.25rem);
-  --text-4xl-fluid--line-height: 1.125;
+  --text-4xl-fluid--line-height: 1.25;
   --text-3xl-fluid: clamp(1.5rem, 0.625vw + 1.375rem, 1.875rem);
-  --text-3xl-fluid--line-height: 1.5;
+  --text-3xl-fluid--line-height: 1.25;
   --text-2xl-fluid: clamp(1.25rem, 0.417vw + 1.167rem, 1.5rem); /*20px to 24px*/
   --text-lg-fluid: clamp(1rem, 0.208vw + 0.958rem, 1.125rem); /*16px to 18px*/
   --color-chalk: #f7f0eb;

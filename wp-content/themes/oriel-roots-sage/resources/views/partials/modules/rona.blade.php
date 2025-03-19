@@ -1,5 +1,5 @@
 <div class="py-12 md:py-30">
-  <h2 class="fade-in-bottom mb-30 text-center font-serif text-5xl font-light">
+  <h2 class="fade-in-bottom mb-12 md:mb-30 text-center font-serif text-5xl font-light">
     Meet our founder, Rona
   </h2>
   <div class="space-y-8">

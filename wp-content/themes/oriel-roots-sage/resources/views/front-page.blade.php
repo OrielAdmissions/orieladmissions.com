@@ -12,12 +12,12 @@
   </x-hero>
   @include('partials.modules.rona')
 
-  <div>
+  <div class="breakout">
     <div class="py-12 md:py-30">
       <div
-        class="flex justify-between gap-8 max-md:flex-col max-md:text-center"
+        class="grid gap-8 grid-cols-12 max-md:text-center"
       >
-        <div class="basis-8/12">
+        <div class="md:col-start-2 md:col-span-7 col-span-full">
           <h2 class="text-6xl-fluid mb-8">
             Our
             <span class="text-oriel text-6xl-fluid">360 degree approach</span>
@@ -26,10 +26,12 @@
 
           <a href="/why-us" class="btn btn-outline">Learn More</a>
         </div>
-        <p class="text-lg-fluid basis-64">
-          Our team of experts provides personalized and high-touch support at
-          every stage of the college application process.
-        </p>
+        <div class="col-span-full md:col-start-9 lg:col-span-2 md:col-span-3">
+          <p class="text-lg-fluid ">
+            Our team of experts provides personalized and high-touch support at
+            every stage of the college application process.
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -38,7 +40,7 @@
   @include('partials.modules.block-links')
   @include('partials.modules.logo-marquee')
 
-  <div class="py-24">
+  <div class="pt-24 pb-12">
     <div class="grid grid-cols-12 items-center gap-y-8 md:gap-x-8">
       <div class="col-span-12 text-center">
         <h2
@@ -46,24 +48,24 @@
         >
           Explore the Oriel Admissions Edge.
         </h2>
-        <p class="text-xl">
+        <p class="text-xl mb-12">
           93% of our students are admitted to one of their top 3 college
           choices.
         </p>
+        <div class="inline-flex flex-col mx-auto">
+          <div class="flex items-center gap-3">
+            <div class="bg-keyline size-3 rounded-full"></div>
+            <div>National Acceptance Rate</div>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="bg-oriel size-3 rounded-full"></div>
+            <div>Oriel Admissions Acceptance Rate</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
   <div class="full-width !block">
-    <div class="pl-4">
-      <div class="flex items-center gap-3">
-        <div class="bg-keyline size-3 rounded-full"></div>
-        <div>National Acceptance Rate</div>
-      </div>
-      <div class="flex items-center gap-3">
-        <div class="bg-oriel size-3 rounded-full"></div>
-        <div>Oriel Admissions Acceptance Rate</div>
-      </div>
-    </div>
     @include('components.college-graph')
   </div>
   @include('partials.modules.bio-slider')

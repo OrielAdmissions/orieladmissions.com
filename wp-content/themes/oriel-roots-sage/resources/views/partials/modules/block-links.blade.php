@@ -1,5 +1,5 @@
 <section class="full-width content-grid bg-[#FBF8F6] py-12 md:py-30">
-  <h2 class="text-6xl-fluid mx-auto mb-32 max-w-150 text-center">
+  <h2 class="text-6xl-fluid mx-auto mb-12 md:mb-32 max-w-150 text-center">
     Our Services
   </h2>
   <div class="breakout">
