@@ -51,7 +51,7 @@
             ],
             [
               'link' => '/admissions-counseling/masters-mba/',
-              'headline' => 'MBA and Master’s Admissions',
+              'headline' => "Master's & MBA Admissions",
               'tag' => '',
               'content' => '<p class="">Applying to graduate school is competitive so don’t leave your application to chance. We have the expertise across a wide range of graduate programs and we will work with you to discover the best programs for your goals and to craft tailored applications, geared towards each of your individual schools.</p>',
             ],
