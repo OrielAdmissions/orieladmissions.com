@@ -2,21 +2,26 @@
 
 @section('content')
   <div class="full-width">
-    <div class="the-stack min-h-svh overflow-hidden">
-      @if (has_post_thumbnail($page_id))
-        {!! App\get_picture([get_post_thumbnail_id($page_id)], 'full', false, ['loading' => false, 'class' => 'w-full h-full object-cover kenburns-top']) !!}
-      @endif
+    <div class="the-stack ">
+      <div class="overflow-hidden h-screen min-h-[500px]">
+        @if (has_post_thumbnail($page_id))
+          {!! App\get_picture([get_post_thumbnail_id($page_id)], 'full', false, ['loading' => false, 'class' => 'w-full h-full  object-cover kenburns-top']) !!}
+        @endif
+      </div>
+
 
       <div class="hero__window-overlay relative bg-[black] opacity-50"></div>
       <div class="content-grid">
         <div class="breakout relative flex flex-col justify-end">
-          <div class="relative py-8 flex fade-in-bottom max-md:flex-col items-end justify-between">
-            <h1 class="max-w-225 text-8xl-fluid max-md:mb-6 max-md:text-center text-white">
-              Your Trusted Authority in Admissions.
-            </h1>
-            <p class="text-white md:text-lg text-center max-md:mx-auto md:text-right max-w-80 md:mb-4">Lorem ipsum dolor sit
-              amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          </div>
+
+            <div class="relative py-8 flex max-md:flex-col items-end justify-between">
+              <h1 class="max-w-225 text-8xl-fluid max-md:mb-6 max-md:text-center text-white">
+                Your Trusted Authority in Admissions.
+              </h1>
+              <p class="text-white md:text-lg text-center max-md:mx-auto md:text-right max-w-80 md:mb-4">Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+
         </div>
       </div>
     </div>
