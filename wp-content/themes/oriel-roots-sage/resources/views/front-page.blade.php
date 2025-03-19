@@ -14,7 +14,7 @@
       <div class="content-grid">
         <div class="breakout relative flex flex-col justify-end">
 
-            <div class="relative py-8 flex max-md:flex-col items-end justify-between">
+            <div class="relative py-8 flex max-md:flex-col fade-in-bottom items-end justify-between">
               <h1 class="max-w-225 text-8xl-fluid max-md:mb-6 max-md:text-center text-white">
                 Your Trusted Authority in Admissions.
               </h1>
