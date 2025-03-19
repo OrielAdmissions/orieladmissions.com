@@ -18,49 +18,41 @@
     </div>
   </div>
 
-  <div class="breakout">
-    <div
-      class="grid grid-cols-1 place-items-center gap-8 py-12 md:py-30 lg:grid-cols-12"
-    >
-      <div class="lg:col-span-3 lg:row-span-2 lg:row-start-1">
-        {!! App\get_picture([268], 'full', false, ['class' => 'object-cover object-right w-full rounded-xl', 'data-speed' => '1.2']) !!}
+  <div class="">
+
+    <div class="grid grid-cols-12 gap-8 py-12 md:py-30 items-center">
+      <div class="md:col-span-6">
+        {!! App\get_picture([394], 'full', false, ['class' => 'object-cover object-right w-full rounded-xl']) !!}
       </div>
-      <h2
-        class="text-fluid-48px parallax-text text-center lg:col-span-6 lg:row-span-1 lg:row-start-2"
-      >
-        We are a team of highly motivated individuals who love working with
-        students in order to ensure their success in the college application
-        process.
-      </h2>
-      <div
-        class="relative max-lg:hidden lg:col-span-3 lg:col-start-10 lg:row-span-2 lg:row-start-3"
-      >
-        {!! App\get_picture([269], 'full', false, ['class' => 'object-cover object-right w-full rounded-xl', 'data-speed' => '1.25']) !!}
+      <div class="md:col-span-6">
+        <h2 class="leading-tight">We are a team of highly motivated individuals who love working with students in
+          order to ensure their success in the college application process.</h2>
       </div>
     </div>
   </div>
-  <div class="content-grid">
+
+  <div class="">
     <x-accordion
       heading="College Counselor"
       summary_classes="text-fluid-48px py-12 font-serif font-light"
     >
-      <div class="flex gap-8 max-md:flex-col">
-        <div class="md:basis-1/4">
-          <p>
-            Oriel Admissions is seeking a dedicated and experienced College
-            Counselor to join our team. The ideal candidate is passionate about
-            education and has a proven track record of supporting students
-            through the college admissions process. As a College Counselor, you
-            will provide personalized, step-by-step guidance to high school
-            students and their families, helping them navigate academic
-            planning, extracurricular involvement, and the development of
-            competitive college applications.
-          </p>
-        </div>
-        <div class="space-y-4 md:basis-3/4">
+      <div class="space-y-8">
+
+        <p class="text-lg md:text-xl">
+          Oriel Admissions is seeking a dedicated and experienced College
+          Counselor to join our team. The ideal candidate is passionate about
+          education and has a proven track record of supporting students
+          through the college admissions process. As a College Counselor, you
+          will provide personalized, step-by-step guidance to high school
+          students and their families, helping them navigate academic
+          planning, extracurricular involvement, and the development of
+          competitive college applications.
+        </p>
+
+        <div class="space-y-4">
           <div class="rounded-xl bg-white p-6 md:p-10">
-            <h6 class="mb-4 font-sans font-medium">Responsibilities</h6>
-            <ul class="list-disc pl-4">
+            <h6 class="mb-4 font-sans font-medium text-lg md:text-xl">Responsibilities</h6>
+            <ul class="list-disc pl-4 md:text-lg">
               <li>
                 Provide one-on-one counseling to students as early as 8th grade,
                 through their senior year, helping them to develop personalized
@@ -93,8 +85,8 @@
             </ul>
           </div>
           <div class="rounded-xl bg-white p-6 md:p-10">
-            <h6 class="mb-4 font-sans font-medium">Qualifications</h6>
-            <ul class="list-disc pl-4">
+            <h6 class="mb-4 font-sans font-medium text-lg md:text-xl">Qualifications</h6>
+            <ul class="list-disc pl-4 md:text-lg">
               <li>
                 Former admissions officer or admissions reader at a selective
                 college or university is strongly preferred.
@@ -129,24 +121,24 @@
       heading="MBA Admissions Counselor"
       summary_classes="text-fluid-48px py-12 font-serif font-light"
     >
-      <div class="flex gap-8 max-md:flex-col">
-        <div class="md:basis-1/4">
-          <p>
-            We are seeking an experienced MBA Admissions Consultant to join our
-            growing team. You would work directly with clients to provide
-            end-to-end support throughout the MBA admissions process. This
-            includes evaluating client profiles, helping them define their
-            personal and professional stories, advising on program selection,
-            reviewing application materials (including essays, resumes, and
-            recommendation letters), and preparing clients for interviews. You
-            will play a key role in helping clients present themselves as
-            strong, distinctive candidates to top MBA programs worldwide.
-          </p>
-        </div>
-        <div class="space-y-4 md:basis-3/4">
+      <div class="space-y-8">
+
+        <p class="text-lg md:text-xl">
+          We are seeking an experienced MBA Admissions Consultant to join our
+          growing team. You would work directly with clients to provide
+          end-to-end support throughout the MBA admissions process. This
+          includes evaluating client profiles, helping them define their
+          personal and professional stories, advising on program selection,
+          reviewing application materials (including essays, resumes, and
+          recommendation letters), and preparing clients for interviews. You
+          will play a key role in helping clients present themselves as
+          strong, distinctive candidates to top MBA programs worldwide.
+        </p>
+
+        <div class="space-y-4">
           <div class="rounded-xl bg-white p-6 md:p-10">
-            <h6 class="mb-4 font-sans font-medium">Responsibilities</h6>
-            <ul class="list-disc pl-4">
+            <h6 class="mb-4 font-sans font-medium text-lg md:text-xl">Responsibilities</h6>
+            <ul class="list-disc pl-4 md:text-lg">
               <li>
                 Conduct initial consultations to assess clients' academic and
                 professional backgrounds, career goals, and MBA program
@@ -186,8 +178,8 @@
             </ul>
           </div>
           <div class="rounded-xl bg-white p-6 md:p-10">
-            <h6 class="mb-4 font-sans font-medium">Qualifications</h6>
-            <ul class="list-disc pl-4">
+            <h6 class="mb-4 font-sans font-medium text-lg md:text-xl">Qualifications</h6>
+            <ul class="list-disc pl-4 md:text-lg">
               <li>
                 Former MBA admissions officer, reader, or experienced MBA
                 admissions consultant.
@@ -222,22 +214,22 @@
       heading="Academic or SAT/ACT Tutor"
       summary_classes="text-fluid-48px py-12 font-serif font-light"
     >
-      <div class="flex gap-8 max-md:flex-col">
-        <div class="md:basis-1/4">
-          <p>
-            As a Tutor at Oriel Admissions, you will work one-on-one with
-            students to help them achieve academic excellence and improve their
-            test scores. Tutors can specialize in academic subjects (such as
-            math, science, humanities, or foreign languages), test preparation
-            (such as SAT, ACT, or AP exams), or both. You will develop
-            personalized strategies to meet each student’s unique learning
-            needs, providing them with the tools and confidence to succeed.
-          </p>
-        </div>
-        <div class="space-y-4 md:basis-3/4">
+      <div class="space-y-8">
+
+        <p class="text-lg md:text-xl">
+          As a Tutor at Oriel Admissions, you will work one-on-one with
+          students to help them achieve academic excellence and improve their
+          test scores. Tutors can specialize in academic subjects (such as
+          math, science, humanities, or foreign languages), test preparation
+          (such as SAT, ACT, or AP exams), or both. You will develop
+          personalized strategies to meet each student’s unique learning
+          needs, providing them with the tools and confidence to succeed.
+        </p>
+
+        <div class="space-y-4">
           <div class="rounded-xl bg-white p-6 md:p-10">
-            <h6 class="mb-4 font-sans font-medium">Responsibilities</h6>
-            <ul class="list-disc pl-4">
+            <h6 class="mb-4 font-sans font-medium text-lg md:text-xl">Responsibilities</h6>
+            <ul class="list-disc pl-4 md:text-lg">
               <li>
                 Provide one-on-one virtual tutoring in your area of expertise
                 (academic subjects, test prep, or both).
@@ -269,8 +261,8 @@
             </ul>
           </div>
           <div class="rounded-xl bg-white p-6 md:p-10">
-            <h6 class="mb-4 font-sans font-medium">Qualifications</h6>
-            <ul class="list-disc pl-4">
+            <h6 class="mb-4 font-sans font-medium text-lg md:text-xl">Qualifications</h6>
+            <ul class="list-disc pl-4 md:text-lg">
               <li>
                 Bachelor’s degree in a relevant field (Master’s degree
                 preferred).
@@ -305,22 +297,22 @@
       heading="Project Mentor"
       summary_classes="text-fluid-48px py-12 font-serif font-light"
     >
-      <div class="flex gap-8 max-md:flex-col">
-        <div class="md:basis-1/4">
-          <p>
-            As a Project Mentor, you will work with students on self-directed
-            projects in your area of expertise. These projects can range from
-            research papers and creative portfolios to business plans and
-            technical builds. Your role is to provide guidance, feedback, and
-            accountability throughout the project, helping students refine their
-            ideas, overcome challenges, and produce high-quality, meaningful
-            work.
-          </p>
-        </div>
-        <div class="space-y-4 md:basis-3/4">
+      <div class="space-y-8">
+
+        <p class="text-lg md:text-xl">
+          As a Project Mentor, you will work with students on self-directed
+          projects in your area of expertise. These projects can range from
+          research papers and creative portfolios to business plans and
+          technical builds. Your role is to provide guidance, feedback, and
+          accountability throughout the project, helping students refine their
+          ideas, overcome challenges, and produce high-quality, meaningful
+          work.
+        </p>
+
+        <div class="space-y-4">
           <div class="rounded-xl bg-white p-6 md:p-10">
-            <h6 class="mb-4 font-sans font-medium">Responsibilities</h6>
-            <ul class="list-disc pl-4">
+            <h6 class="mb-4 font-sans font-medium text-lg md:text-xl">Responsibilities</h6>
+            <ul class="list-disc pl-4 md:text-lg">
               <li>
                 Guide students in selecting and refining their project ideas
                 based on their interests and goals.
@@ -352,8 +344,8 @@
             </ul>
           </div>
           <div class="rounded-xl bg-white p-6 md:p-10">
-            <h6 class="mb-4 font-sans font-medium">Qualifications</h6>
-            <ul class="list-disc pl-4">
+            <h6 class="mb-4 font-sans font-medium text-lg md:text-xl">Qualifications</h6>
+            <ul class="list-disc pl-4 md:text-lg">
               <li>
                 Expertise in a specific academic or professional field (e.g.,
                 computer science, business, humanities, arts, sciences).
@@ -388,21 +380,21 @@
       heading="Application Evaluators"
       summary_classes="text-fluid-48px py-12 font-serif font-light"
     >
-      <div class="flex gap-8 max-md:flex-col">
-        <div class="md:basis-1/4">
-          <p>
-            We are seeking Application Evaluators with direct experience in
-            college admissions to join our team. The ideal candidate is a former
-            admissions officer or admissions reader with a deep understanding of
-            what selective universities look for in applicants. This role is
-            pivotal in providing students with actionable feedback to enhance
-            their application materials.
-          </p>
-        </div>
-        <div class="space-y-4 md:basis-3/4">
+      <div class="space-y-8">
+
+        <p class="text-lg md:text-xl">
+          We are seeking Application Evaluators with direct experience in
+          college admissions to join our team. The ideal candidate is a former
+          admissions officer or admissions reader with a deep understanding of
+          what selective universities look for in applicants. This role is
+          pivotal in providing students with actionable feedback to enhance
+          their application materials.
+        </p>
+
+        <div class="space-y-4">
           <div class="rounded-xl bg-white p-6 md:p-10">
-            <h6 class="mb-4 font-sans font-medium">Responsibilities</h6>
-            <ul class="list-disc pl-4">
+            <h6 class="mb-4 font-sans font-medium text-lg md:text-xl">Responsibilities</h6>
+            <ul class="list-disc pl-4 md:text-lg">
               <li>
                 Conduct comprehensive reviews of students' profiles and complete
                 college applications.
@@ -431,8 +423,8 @@
             </ul>
           </div>
           <div class="rounded-xl bg-white p-6 md:p-10">
-            <h6 class="mb-4 font-sans font-medium">Qualifications</h6>
-            <ul class="list-disc pl-4">
+            <h6 class="mb-4 font-sans font-medium text-lg md:text-xl">Qualifications</h6>
+            <ul class="list-disc pl-4 md:text-lg">
               <li>
                 Former admissions officer or admissions reader at a selective
                 college or university.
