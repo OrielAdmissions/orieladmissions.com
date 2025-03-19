@@ -1,22 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-  <div class="full-width content-grid relative overflow-hidden">
-    {!! App\get_picture([get_post_thumbnail_id()], 'full', false, ['class' => 'absolute inset-0 size-full object-cover kenburns-top']) !!}
-
-    <div
-      class="the-stack relative flex min-h-svh flex-col items-center pt-24 pb-14"
-    >
+  <x-hero>
+    <x-slot name="headline">
       <h1
         class="fade-in-bottom text-8xl-fluid justify-self-center text-center text-white"
       >
         Why work with us
       </h1>
-      <div class="flex justify-center self-end">
-        <a href="/contact" class="btn btn-primary hidden">Contact Us</a>
-      </div>
-    </div>
-  </div>
+    </x-slot>
+  </x-hero>
 
   <div class="full-width bg-sand full-width !block pt-30">
     <div class="md:the-stack">
