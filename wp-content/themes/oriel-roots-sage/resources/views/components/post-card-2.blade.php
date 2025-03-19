@@ -11,10 +11,12 @@
   class="group relative flex h-full flex-col items-start justify-between overflow-hidden rounded-xl bg-white transition duration-500"
 >
   <div
-    class="bg-sand/80 relative aspect-16/9 w-full overflow-hidden rounded-t-lg"
+    class="bg-sand relative aspect-16/9 w-full overflow-hidden rounded-t-lg"
   >
     @if ($image_id)
       {!! App\get_picture([$image_id], 'full', false, ['class' => 'w-full h-full object-cover aspect-16/9']) !!}
+    @else
+      {!! get_svg('images.featured-image-placeholder', 'w-full h-auto object-cover aspect-16/9 max-w-full') !!}
     @endif
   </div>
 
