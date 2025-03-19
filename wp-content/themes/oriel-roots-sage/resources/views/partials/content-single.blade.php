@@ -28,7 +28,7 @@
     {!! App\get_picture([get_post_thumbnail_id()], 'full', false, ['class' => 'w-screen-xl mx-auto rounded-xl img-grow']) !!}
   </div>
 
-  <div class="e-content lg:text-lg">
+  <div class="e-content full-width-constrained lg:text-lg">
     @php(the_content())
   </div>
 
