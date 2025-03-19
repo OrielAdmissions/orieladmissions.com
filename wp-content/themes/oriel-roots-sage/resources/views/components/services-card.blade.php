@@ -34,9 +34,9 @@
           @endif
         </div>
       </div>
-      @if (! empty($accordion))
-        @include('partials.modules.accordion', ['accordions' => [$accordion]])
-      @endif
+      @isset($accordion)
+        {{ $accordion }}
+      @endisset
     </div>
   </div>
 </div>

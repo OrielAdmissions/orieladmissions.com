@@ -103,19 +103,179 @@
     ];
 
     ?>
+    <x-services-card
+      grade="Grades 8-10"
+      title="Early Start Counseling"
+      description="These years are all about discovery, planning, and careful execution. We start each engagement by crafting a personalized, strategic roadmap that aligns with a student’s passions and goals. With this strategy in place, we will work with students to provide the right guidance throughout high school, making tweaks or adjustments along the way."
+      image_id="97"
+    >
+      <x-slot name="accordion">
+        <x-accordion heading="What do packages include?">
+          <ul class="grid list-none gap-4 md:grid-cols-2">
+            @foreach ([
+                'Creation of a Strategic Roadmap',
+                'Advising Sessions',
+                'Course Selection Support',
+                'Extracurricular Planning',
+                'Leadership Development',
+                'Identify Summer Programs',
+                'Applying to Summer Program',
+                'Support for Passion Projects',
+                'College List Building',
+                'Professional Resume'
+              ]
+              as $subject)
+              <li class="flex items-center gap-2 text-sm">
+                {!! get_svg('images.chevron-right', 'text-oriel size-4 flex-shrink-0') !!}
+                <span>{{ $subject }}</span>
+              </li>
+            @endforeach
+          </ul>
+        </x-accordion>
+      </x-slot>
+    </x-services-card>
 
-    @foreach ($services as $service)
-      @include(
-        'components.services-card',
-        [
-          'grade' => $service['grade'],
-          'title' => $service['title'],
-          'description' => $service['description'],
-          'image_id' => $service['image_id'],
-          'accordion' => $service['accordion'] ?? null,
-        ]
-      )
-    @endforeach
+    <x-services-card
+      grade="Grade 11"
+      title="College Application Preparation"
+      description="11th grade is the time to refine, perfect, and to begin planning for college applications. We meticulously support students through this critical year, advising about the best academic and leadership experiences to pursue and helping students to build a list of best-fit colleges. For applications, we help students to identify their compelling narrative and guide them through all of the components of the application, from essay writing to interview preparation."
+      image_id="93"
+    >
+      <x-slot name="accordion">
+        <x-accordion heading="What do packages include?">
+          <ul class="grid list-none gap-4 md:grid-cols-2">
+            @foreach ([
+              'Application Strategy',
+              'College List Building',
+              'Creative Writing Development',
+              'Professional Resume',
+              'Brainstorming for the Personal Statement and Comprehensive Revision Support',
+              'Revising and Editing College-Specific Supplemental Essays',
+              'Revising and Editing the Additional Information Essay',
+              'All Other Application Support',
+              'Independent Review of the Application by a Former Admissions Officer and Feedback'
+            ] as $item)
+              <li class="flex items-center gap-2 text-sm">
+                {!! get_svg('images.chevron-right', 'text-oriel size-4 flex-shrink-0') !!}
+                <span>{{ $item }}</span>
+              </li>
+            @endforeach
+          </ul>
+
+        </x-accordion>
+      </x-slot>
+    </x-services-card>
+
+    <x-services-card
+      grade="Grade 12"
+      title="Late-Stage Application Support"
+      description="For students in the final stretch of the application process, we are great at polishing applications. We will help you to highlight your strengths and unique story, brainstorming essay topics, improving resumes, and refining your writing until your application is absolutely perfect."
+      image_id="94"
+    >
+      <x-slot name="accordion">
+        <x-accordion heading="What do packages include?">
+          <ul class="grid list-none gap-4 md:grid-cols-2">
+            @foreach ([
+              'Full Review of the Common App',
+              'Refinement of the Application Narrative',
+              'Actionable Suggestions and Direction for Improving the Application'
+            ] as $item)
+              <li class="flex items-center gap-2 text-sm">
+                {!! get_svg('images.chevron-right', 'text-oriel size-4 flex-shrink-0') !!}
+                <span>{{ $item }}</span>
+              </li>
+            @endforeach
+          </ul>
+
+        </x-accordion>
+      </x-slot>
+    </x-services-card>
+
+    <x-services-card
+      grade="Grades 10-12"
+      title="Applying to the UK University System"
+      description="Colleges in the UK have their own unique set of expectations and we will help you to navigate them! We will walk you through the UCAS system, help you to select the perfect programs, and assist in developing a standout personal statement. We will ensure that you have the knowledge and expert guidance to make applying to UK colleges stress-free."
+      image_id="95"
+    >
+      <x-slot name="accordion">
+        <x-accordion heading="What do packages include?">
+          <ul class="grid list-none gap-4 md:grid-cols-2">
+            @foreach ([
+              'College List Building Specifically for UK Universities',
+              'Brainstorming for the Personal Statement and Comprehensive Revision Support',
+              'Support in completing the UCAS Application',
+              'Expert Advice for Applying to Oxford or Cambridge'
+            ] as $item)
+              <li class="flex items-center gap-2 text-sm">
+                {!! get_svg('images.chevron-right', 'text-oriel size-4 flex-shrink-0') !!}
+                <span>{{ $item }}</span>
+              </li>
+            @endforeach
+          </ul>
+
+        </x-accordion>
+      </x-slot>
+    </x-services-card>
+
+    <x-services-card
+      grade="All Grades"
+      title="Academic Tutoring and Test Prep"
+      description="Maintaining a strong academic profile is critical when applying to college. As part of the counseling process, your counselor will advise if a student needs any additional academic or test prep support. Our team of tutors will coordinate with the counselor to provide expert guidance on the SAT, ACT, AP exams, or any other academic needs, allowing students to reach their full potential."
+      image_id="97"
+    >
+      <x-slot name="accordion">
+        <x-accordion heading="What do packages include?">
+          <ul class="grid list-none gap-4 md:grid-cols-2">
+            @foreach ([
+              'Personalized SAT Test Prep',
+              'Personalized ACT Test Prep',
+              'Academic Tutoring across all subjects',
+              'AP Exams'
+            ] as $item)
+              <li class="flex items-center gap-2 text-sm">
+                {!! get_svg('images.chevron-right', 'text-oriel size-4 flex-shrink-0') !!}
+                <span>{{ $item }}</span>
+              </li>
+            @endforeach
+          </ul>
+
+        </x-accordion>
+      </x-slot>
+    </x-services-card>
+
+    <x-services-card
+      grade="Grades 9-12"
+      title="Support for International Students"
+      description="At Oriel Admissions, we have the expertise to support international students to navigate the complex process of applying to US colleges and universities. We have an in-depth knowledge of diverse international academic systems and we offer highly personalized guidance tailored to your unique aspirations. Our expertise is designed to maximize your chances of success and help you stand out in the competitive college admissions process."
+      image_id="96"
+    >
+      <x-slot name="accordion">
+        <x-accordion heading="What do packages include?">
+          <ul class="grid list-none gap-4 md:grid-cols-2">
+            @foreach ([
+              'Creation of a Strategic Roadmap with your Educational System in Mind',
+              'Advising Sessions',
+              'Course Selection Support',
+              'Extracurricular Planning',
+              'Leadership Development',
+              'Identify Summer Programs',
+              'Applying to Summer Program',
+              'Support for Passion Projects',
+              'College List Building',
+              'Professional Resume',
+              'Comprehensive Support for Completing the Common App and/or other Applications'
+            ] as $item)
+              <li class="flex items-center gap-2 text-sm">
+                {!! get_svg('images.chevron-right', 'text-oriel size-4 flex-shrink-0') !!}
+                <span>{{ $item }}</span>
+              </li>
+            @endforeach
+          </ul>
+
+        </x-accordion>
+      </x-slot>
+    </x-services-card>
+
   </div>
 
   @include('partials.modules.services-slider')
