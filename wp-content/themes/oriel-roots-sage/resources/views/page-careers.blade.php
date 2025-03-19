@@ -19,13 +19,12 @@
   </div>
 
   <div class="">
-
-    <div class="grid grid-cols-12 gap-8 py-12 md:py-30 items-center">
-      <div class="md:col-span-6">
+    <div class="grid grid-cols-12 gap-y-8 md:gap-x-8 py-12 md:py-30 items-center">
+      <div class="col-span-12 md:col-span-6">
         {!! App\get_picture([394], 'full', false, ['class' => 'object-cover object-right w-full rounded-xl']) !!}
       </div>
-      <div class="md:col-span-6">
-        <h2 class="leading-tight">We are a team of highly motivated individuals who love working with students in
+      <div class="col-span-12 md:col-span-6">
+        <h2 class="leading-tight text-5xl-fluid">We are a team of highly motivated individuals who <span class="text-oriel">love working with students</span> in
           order to ensure their success in the college application process.</h2>
       </div>
     </div>
