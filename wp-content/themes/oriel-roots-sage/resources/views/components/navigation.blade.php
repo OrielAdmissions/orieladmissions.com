@@ -81,20 +81,9 @@
                     </li>
                   @endforeach
                 </ul>
-                <div
-                  class="items-between relative inline-flex basis-[40%] flex-col justify-start gap-12 max-xl:hidden"
-                >
-                  <p style="--textindex: 0">
-                    Our team of experts provides personalized and high-touch
-                    support at every stage of the college application process,
-                    helping students to build the skills and experiences that
-                    will set them up for success when applying to college.
-                  </p>
-                  <p style="--textindex: 1">
-                    <a href="/about/team" class="btn btn-primary">
-                      Meet the Team
-                    </a>
-                  </p>
+                <div class="items-between relative inline-flex basis-[40%] flex-col justify-start gap-12 max-xl:hidden">
+{{--                  {!! dynamic_sidebar('menu-widget-' . Str::slug($item->label)) !!}--}}
+                  @php(dynamic_sidebar('menu-widget-' . Str::slug($item->label)))
                 </div>
               </div>
             </div>

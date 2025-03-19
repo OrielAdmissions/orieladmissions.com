@@ -345,3 +345,23 @@ register_block_type('vendor/team_card_block', [
         return view('blocks/team_card_block', compact('attributes', 'content'));
     },
 ]);
+
+
+add_action('widgets_init', function () {
+    $menu_widgets = [
+        'about' => 'About',
+        'admissions-counseling' => 'Admissions Counseling',
+        'resources' => 'Resources'
+    ];
+
+    foreach ($menu_widgets as $slug => $name) {
+        register_sidebar([
+            'name' => "Menu Widget Area - $name",
+            'id' => "menu-widget-$slug",
+            'before_widget' => '<div class="menu-widget">',
+            'after_widget' => '</div>',
+            'before_title' => '<h3>',
+            'after_title' => '</h3>',
+        ]);
+    }
+});
