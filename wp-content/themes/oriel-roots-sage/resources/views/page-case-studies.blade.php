@@ -137,43 +137,44 @@
             class="grid grid-cols-1 gap-6 md:grid-cols-2"
             x-html="posts"
           ></div>
-
-          <nav class="flex items-center justify-center space-x-2 py-12">
-            <!-- Left Chevron -->
-            <button
-              @click="changePage(page - 1)"
-              :disabled="page === 1"
-              class="hover:bg-cardinal border-keyline/80 flex h-15 w-15 cursor-pointer items-center justify-center rounded-full border bg-white p-2 transition-colors duration-300 hover:text-white disabled:opacity-50"
-            >
-              {!! get_svg('images.chevron-left') !!}
-            </button>
-
-            <!-- Page Numbers -->
-            <template
-              x-for="pageNumber in Array.from({ length: maxPages }, (v, i) => i + 1)"
-              :key="pageNumber"
-            >
+          @if ($max_pages > 1)
+            <nav class="flex items-center justify-center space-x-2 py-12">
+              <!-- Left Chevron -->
               <button
-                @click="changePage(pageNumber)"
-                :class="{
+                @click="changePage(page - 1)"
+                :disabled="page === 1"
+                class="hover:bg-cardinal border-keyline/80 flex h-15 w-15 cursor-pointer items-center justify-center rounded-full border bg-white p-2 transition-colors duration-300 hover:text-white disabled:opacity-50"
+              >
+                {!! get_svg('images.chevron-left') !!}
+              </button>
+
+              <!-- Page Numbers -->
+              <template
+                x-for="pageNumber in Array.from({ length: maxPages }, (v, i) => i + 1)"
+                :key="pageNumber"
+              >
+                <button
+                  @click="changePage(pageNumber)"
+                  :class="{
         'active bg-cardinal text-white': page === pageNumber,
         'bg-white text-black': page !== pageNumber
       }"
-                class="border-keyline/80 hover:bg-cardinal flex h-15 w-15 cursor-pointer items-center justify-center rounded-full border transition-colors duration-300 hover:text-white"
-              >
-                <span x-text="pageNumber"></span>
-              </button>
-            </template>
+                  class="border-keyline/80 hover:bg-cardinal flex h-15 w-15 cursor-pointer items-center justify-center rounded-full border transition-colors duration-300 hover:text-white"
+                >
+                  <span x-text="pageNumber"></span>
+                </button>
+              </template>
 
-            <!-- Right Chevron -->
-            <button
-              @click="changePage(page + 1)"
-              :disabled="page === maxPages"
-              class="hover:bg-cardinal border-keyline/80 flex h-15 w-15 cursor-pointer items-center justify-center rounded-full border bg-white p-2 transition-colors duration-300 hover:text-white disabled:opacity-50"
-            >
-              {!! get_svg('images.chevron-right') !!}
-            </button>
-          </nav>
+              <!-- Right Chevron -->
+              <button
+                @click="changePage(page + 1)"
+                :disabled="page === maxPages"
+                class="hover:bg-cardinal border-keyline/80 flex h-15 w-15 cursor-pointer items-center justify-center rounded-full border bg-white p-2 transition-colors duration-300 hover:text-white disabled:opacity-50"
+              >
+                {!! get_svg('images.chevron-right') !!}
+              </button>
+            </nav>
+          @endif
         </div>
       @endif
     </div>

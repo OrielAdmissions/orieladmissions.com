@@ -95,48 +95,48 @@
 
         <!-- AJAX posts container for filtered or paginated requests -->
         <div x-show="!loading" x-show="!showDefault" class="grid grid-cols-1 md:grid-cols-2 gap-6" x-html="posts"></div>
+        @if ($max_pages > 1)
+          <nav class="py-12 flex items-center space-x-2 justify-center">
+            <!-- Left Chevron -->
+            <button
+              @click="changePage(page - 1)"
+              :disabled="page === 1"
+              class="p-2 sm:h-15 sm:w-15 h-10 w-10 rounded-full flex items-center justify-center hover:bg-cardinal hover:text-white bg-white border-keyline/80 border disabled:opacity-50 duration-300 cursor-pointer transition-colors"
+            >
+              {!! get_svg('images.chevron-left') !!}
+            </button>
 
-        <nav class="py-12 flex items-center space-x-2 justify-center">
-          <!-- Left Chevron -->
-          <button
-            @click="changePage(page - 1)"
-            :disabled="page === 1"
-            class="p-2 sm:h-15 sm:w-15 h-10 w-10 rounded-full flex items-center justify-center hover:bg-cardinal hover:text-white bg-white border-keyline/80 border disabled:opacity-50 duration-300 cursor-pointer transition-colors"
-          >
-            {!! get_svg('images.chevron-left') !!}
-          </button>
-
-          <!-- Page Numbers -->
-          <template x-for="(pageNumber, index) in getVisiblePages()" :key="index">
-            <template x-if="pageNumber">
-              <button
-                @click="changePage(pageNumber)"
-                :class="{
+            <!-- Page Numbers -->
+            <template x-for="(pageNumber, index) in getVisiblePages()" :key="index">
+              <template x-if="pageNumber">
+                <button
+                  @click="changePage(pageNumber)"
+                  :class="{
         'active bg-cardinal text-white': page === pageNumber,
         'bg-white text-black': page !== pageNumber
       }"
-                class="border-keyline/80 border flex sm:h-15 sm:w-15 h-10 w-10 items-center justify-center cursor-pointer rounded-full hover:bg-cardinal hover:text-white duration-300 transition-colors"
-              >
-                <span x-text="pageNumber"></span>
-              </button>
+                  class="border-keyline/80 border flex sm:h-15 sm:w-15 h-10 w-10 items-center justify-center cursor-pointer rounded-full hover:bg-cardinal hover:text-white duration-300 transition-colors"
+                >
+                  <span x-text="pageNumber"></span>
+                </button>
+              </template>
+              <template x-if="!pageNumber">
+                <!-- Ellipses -->
+                <span class="px-3">…</span>
+              </template>
             </template>
-            <template x-if="!pageNumber">
-              <!-- Ellipses -->
-              <span class="px-3">…</span>
-            </template>
-          </template>
 
 
-          <!-- Right Chevron -->
-          <button
-            @click="changePage(page + 1)"
-            :disabled="page === maxPages"
-            class="p-2 rounded-full flex items-center justify-center sm:h-15 sm:w-15 h-10 w-10 hover:bg-cardinal border-keyline/80 border bg-white hover:text-white disabled:opacity-50 duration-300 transition-colors cursor-pointer"
-          >
-            {!! get_svg('images.chevron-right') !!}
-          </button>
-        </nav>
-
+            <!-- Right Chevron -->
+            <button
+              @click="changePage(page + 1)"
+              :disabled="page === maxPages"
+              class="p-2 rounded-full flex items-center justify-center sm:h-15 sm:w-15 h-10 w-10 hover:bg-cardinal border-keyline/80 border bg-white hover:text-white disabled:opacity-50 duration-300 transition-colors cursor-pointer"
+            >
+              {!! get_svg('images.chevron-right') !!}
+            </button>
+          </nav>
+        @endif
       </div>
     </div>
 @endsection
