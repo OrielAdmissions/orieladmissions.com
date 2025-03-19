@@ -50,7 +50,7 @@
           <div class="swiper-wrapper">
             @foreach ($cards as $card)
               <div
-                class="swiper-slide !h-auto max-md:px-4 md:max-w-[400px] md:grow"
+                class="swiper-slide !h-auto md:max-w-[400px] md:grow"
               >
                 <x-services-card-2
                   :title="$card['title']"

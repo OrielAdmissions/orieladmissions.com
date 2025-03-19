@@ -1,6 +1,6 @@
 <article @php(post_class('h-entry full-width-constrained'))>
   <header class="text-center">
-    <div class="py-20 md:py-30">
+    <div class="pt-20 md:py-30">
       @if (is_singular('post'))
         <a href="/blog">
           {!! get_svg('images.chevron-left', 'inline-block mr-2') !!}
@@ -24,11 +24,11 @@
       @include('partials.entry-meta')
     </div>
   </header>
-  <div class="full-width py-12">
+  <div class="full-width pb-12">
     {!! App\get_picture([get_post_thumbnail_id()], 'full', false, ['class' => 'w-screen-xl mx-auto rounded-xl img-grow']) !!}
   </div>
 
-  <div class="e-content content-grid lg:text-lg">
+  <div class="e-content lg:text-lg">
     @php(the_content())
   </div>
 

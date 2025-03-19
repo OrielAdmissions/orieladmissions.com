@@ -6,7 +6,7 @@
       {!! get_svg('images.window-full', 'absolute -bottom-[30vw] md:-bottom-[180px] mx-auto left-0 right-0 text-oriel w-full md:w-[500px] stroke-oriel md:stroke-white/20 max-w-2xl h-auto') !!}
     </div>
     <div
-      class="relative flex min-h-svh flex-col items-center justify-center px-4 py-32 text-center"
+      class="relative flex min-h-svh flex-col items-center justify-center px-4 py-30 text-center"
     >
       <h2
         class="fade-in-bottom text-8xl-fluid mx-auto mb-6 max-w-200 text-center text-white"
@@ -67,9 +67,9 @@
   </div>
 
   <div class="bg-sand full-width-constrained">
-    <div class="breakout py-12 lg:py-32">
+    <div class="breakout py-12 lg:py-30">
       <h2
-        class="text-fluid-104px mb-20 max-w-2xl max-lg:text-center"
+        class="text-6xl-fluid mb-12 md:mb-30 max-w-2xl max-lg:text-center"
       >
         Why complete research?
       </h2>
@@ -118,7 +118,7 @@
     </div>
   </div>
 
-  <div class="bg-sand full-width content-grid pb-12 lg:pb-32">
+  <div class="bg-sand full-width content-grid pb-12 lg:pb-30">
     <div class="breakout">
       <div class="grid gap-8 lg:grid-cols-12">
         <div class="col-start-1 max-lg:order-last lg:col-span-3">
@@ -240,7 +240,7 @@
       </div>
     </div>
   </div>
-  <div class="breakout mb-32">
+  <div class="breakout mb-12 md:mb-30">
     <div class="grid grid-cols-12 gap-x-4 gap-y-6">
       <div
         class="col-span-full flex max-w-lg flex-col gap-y-12 lg:col-span-4 lg:col-start-2"
@@ -340,7 +340,7 @@
 
   <div class="bg-sand full-width-constrained">
     <div class="breakout space-y-8 py-12 md:py-30">
-      <h2 @class(['text-6xl-fluid mb-20 text-center'])>
+      <h2 @class(['text-6xl-fluid mb-12 md:bb-30 text-center'])>
         Student Stories
       </h2>
 

@@ -91,9 +91,9 @@
       </div>
     </div>
   </section>
-  <div class="breakout py-16">
+  <div class="breakout py-12 md:py-30">
     <h2
-      class="text-6xl-fluid mx-auto mb-16 max-w-screen-sm py-13 text-center"
+      class="text-6xl-fluid mx-auto mb-12 md:mb-30 max-w-screen-sm text-center"
     >
       Our team
     </h2>

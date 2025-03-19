@@ -6,7 +6,7 @@
       {!! get_svg('images.window-full', 'absolute -bottom-[30vw] md:-bottom-[180px] mx-auto left-0 right-0 text-cardinal w-full md:w-[500px] stroke-cardinal md:stroke-white/20 max-w-2xl h-auto') !!}
     </div>
     <div
-      class="relative flex min-h-svh flex-col items-center justify-center py-32 text-center"
+      class="relative flex min-h-svh flex-col items-center justify-center py-30 text-center"
     >
       <h2
         class="fade-in-bottom text-8xl-fluid mx-auto mb-6 max-w-screen-lg text-center text-white"
@@ -25,15 +25,15 @@
     ]); ?>
   </div>
 
-  <div class="bg-sand full-width content-grid py-16">
-    <div class="py-16">
+  <div class="bg-sand full-width content-grid py-12 md:py-30">
+
       <h2
-        class="text-6xl-fluid mx-auto mb-10 max-w-175 text-center"
+        class="text-6xl-fluid mx-auto mb-20 md:mb-30 max-w-175 text-center"
       >
         Applying to graduate school is competitive so
         <span class="text-oriel">don’t leave your application to chance!</span>
       </h2>
-    </div>
+
 
     <div class="breakout">
       <h2

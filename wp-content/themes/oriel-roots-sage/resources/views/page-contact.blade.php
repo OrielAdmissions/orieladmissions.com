@@ -3,7 +3,7 @@
 @section('content')
   <div class="breakout mt-[100px]">
     <h1
-      class="fade-in-bottom text-fluid-104px max-w-screen-lg px-4 py-16 max-md:text-center"
+      class="fade-in-bottom text-6xl-fluid max-w-screen-lg px-4 py-16 max-md:text-center"
     >
       Get Expert Guidance on Your College Applications
     </h1>

@@ -30,7 +30,7 @@
       {!! get_svg('images.mobile-line-graph', 'w-full md:hidden h-full mt-8') !!}
     </div>
     <div class="content-grid">
-      <div class="mx-auto max-w-4xl pt-44">
+      <div class="mx-auto max-w-4xl pt-20 md:pt-44">
         <h2 class="text-6xl-fluid mb-12 text-center">
           We go above and beyond what high school guidance counselors provide.
         </h2>
@@ -97,8 +97,8 @@
     </div>
   </div>
 
-  <div class="full-width content-grid py-30">
-    <div class="grid grid-cols-1 gap-8 pb-30 md:grid-cols-2">
+  <div class="full-width content-grid py-12 md:py-30">
+    <div class="grid grid-cols-1 gap-8 pb-12 md:pb-30 md:grid-cols-2">
       <div>
         <h2 class="text-6xl-fluid">
           Working with Oriel Admissions
@@ -122,7 +122,7 @@
   <section class="full-width content-grid bg-sand py-12 md:py-30">
     <div class="breakout">
       <h2
-        class="text-6xl-fluid mx-auto mb-32 max-w-125 text-center"
+        class="text-6xl-fluid mx-auto mb-12 md:mb-30 max-w-125 text-center"
       >
         We estimate that our students spend over:
       </h2>
