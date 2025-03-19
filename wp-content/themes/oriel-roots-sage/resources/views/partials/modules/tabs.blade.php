@@ -60,7 +60,7 @@
               <div
                 class="space-y-12 text-center md:mx-auto md:max-w-111 md:text-left"
               >
-                <h2 class="text-fluid-104px">MBA Admissions Consulting</h2>
+                <h2 class="text-6xl-fluid">MBA Admissions Consulting</h2>
                 <p class="text-2xl">
                   We support applicants applying to full-time MBA programs,
                   part-time MBA programs, and executive MBA programs in the US
@@ -179,7 +179,7 @@
               <div
                 class="space-y-12 text-center md:mx-auto md:max-w-111 md:text-left"
               >
-                <h2 class="text-fluid-104px">
+                <h2 class="text-6xl-fluid">
                   Masters Program Admissions Consulting
                 </h2>
                 <p class="text-2xl">

@@ -33,7 +33,7 @@
   <div class="">
     <x-accordion
       heading="College Counselor"
-      summary_classes="text-fluid-48px py-12 font-serif font-light"
+      summary_classes="text-5xl-fluid py-12 font-serif font-light"
     >
       <div class="space-y-8">
 
@@ -118,7 +118,7 @@
 
     <x-accordion
       heading="MBA Admissions Counselor"
-      summary_classes="text-fluid-48px py-12 font-serif font-light"
+      summary_classes="text-5xl-fluid py-12 font-serif font-light"
     >
       <div class="space-y-8">
 
@@ -211,7 +211,7 @@
 
     <x-accordion
       heading="Academic or SAT/ACT Tutor"
-      summary_classes="text-fluid-48px py-12 font-serif font-light"
+      summary_classes="text-5xl-fluid py-12 font-serif font-light"
     >
       <div class="space-y-8">
 
@@ -294,7 +294,7 @@
 
     <x-accordion
       heading="Project Mentor"
-      summary_classes="text-fluid-48px py-12 font-serif font-light"
+      summary_classes="text-5xl-fluid py-12 font-serif font-light"
     >
       <div class="space-y-8">
 
@@ -377,7 +377,7 @@
 
     <x-accordion
       heading="Application Evaluators"
-      summary_classes="text-fluid-48px py-12 font-serif font-light"
+      summary_classes="text-5xl-fluid py-12 font-serif font-light"
     >
       <div class="space-y-8">
 

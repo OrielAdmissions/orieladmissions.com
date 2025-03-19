@@ -1380,46 +1380,6 @@
           "size": "8rem"
         },
         {
-          "name": "fluid-66px",
-          "slug": "fluid-66px",
-          "size": "clamp(3rem,2.857vw + 2.429rem,4.125rem)"
-        },
-        {
-          "name": "fluid-64px",
-          "slug": "fluid-64px",
-          "size": "clamp(2.08rem,1.429vw + 2.714rem,3.33rem)"
-        },
-        {
-          "name": "fluid-48px",
-          "slug": "fluid-48px",
-          "size": "clamp(1.67rem,1.25vw + 1.75rem,2.5rem)"
-        },
-        {
-          "name": "fluid-40px",
-          "slug": "fluid-40px",
-          "size": "clamp(1.67rem,.702vw + 1.868rem,2.08rem)"
-        },
-        {
-          "name": "fluid-32px",
-          "slug": "fluid-32px",
-          "size": "clamp(1.25rem,.714vw + 1.357rem,1.67rem)"
-        },
-        {
-          "name": "fluid-24px",
-          "slug": "fluid-24px",
-          "size": "clamp(1.04rem,.313vw + 1.188rem,1.25rem)"
-        },
-        {
-          "name": "fluid-104px",
-          "slug": "fluid-104px",
-          "size": "clamp(3.33rem,3.3rem + 3.5vw,5.375rem)"
-        },
-        {
-          "name": "fluid-108px",
-          "slug": "fluid-108px",
-          "size": "clamp(4.25rem,3.3rem + 3.5vw,6.75rem)"
-        },
-        {
           "name": "8xl-fluid",
           "slug": "8xl-fluid",
           "size": "clamp(3.25rem,4.583vw + 2.333rem,6rem)"

@@ -16,7 +16,7 @@
 >
   <!-- Left Content -->
   <div class="basis-full space-y-6 p-6 max-lg:order-1 lg:basis-2/3 lg:p-10">
-    <h2 class="text-fluid-48px font-serif max-lg:hidden">
+    <h2 class="text-5xl-fluid font-serif max-lg:hidden">
       {{ $college_name }}
     </h2>
     <p class="">{!! $description !!}</p>
@@ -31,7 +31,7 @@
     class="bg-chalk/30 flex basis-full flex-col p-6 max-lg:order-0 lg:basis-1/3 lg:p-10"
   >
     <div class="grow">
-      <h2 class="text-fluid-48px mb-6 font-serif lg:hidden">
+      <h2 class="text-5xl-fluid mb-6 font-serif lg:hidden">
         {{ $college_name }}
       </h2>
       <p class="text-oriel text-6xl-fluid font-serif font-light">
