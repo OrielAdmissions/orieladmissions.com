@@ -1,14 +1,18 @@
 <article @php(post_class('h-entry full-width-constrained'))>
   <header class="text-center">
     <div class="py-20 md:py-30">
-      @if (is_single())
-        <div class="py-10 text-center">
-          <a href="/blog">
-            {!! get_svg('images.chevron-left', 'inline-block mr-2') !!}
-            <span class="animate-underline">Back</span>
-          </a>
-        </div>
+      @if (is_singular('post'))
+        <a href="/blog">
+          {!! get_svg('images.chevron-left', 'inline-block mr-2') !!}
+          <span class="animate-underline">Back</span>
+        </a>
+      @elseif (is_singular('case_study'))
+        <a href="/case-studies">
+          {!! get_svg('images.chevron-left', 'inline-block mr-2') !!}
+          <span class="animate-underline">Back</span>
+        </a>
       @endif
+
 
       <h1 class="p-name fade-in-bottom text-6xl-fluid py-12 font-serif">
         {!! $title !!}
