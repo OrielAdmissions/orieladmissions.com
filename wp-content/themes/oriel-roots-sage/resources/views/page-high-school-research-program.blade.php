@@ -131,7 +131,7 @@
         </div>
         <div class="lg:col-span-6 lg:col-start-5">
           <div class="mx-auto space-y-10 lg:max-w-2xl">
-            <h2 class="text-6xl-fluid font-serif leading-none">
+            <h2 class="text-6xl-fluid leading-none">
               Why the
               <span class="text-oriel">Oriel Ignite</span>
               Research Program?

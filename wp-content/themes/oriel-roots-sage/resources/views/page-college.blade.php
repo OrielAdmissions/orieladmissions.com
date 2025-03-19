@@ -19,7 +19,7 @@
   </div>
 
   <div class="space-y-8 py-12 md:py-30">
-    <h2 class="text-6xl-fluid text-center font-serif">
+    <h2 class="text-6xl-fluid text-center">
       Our
       <span class="text-oriel">comprehensive</span>
       services
