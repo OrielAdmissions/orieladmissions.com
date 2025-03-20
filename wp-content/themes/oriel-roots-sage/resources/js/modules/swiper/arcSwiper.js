@@ -67,12 +67,8 @@ export function initArcSwiper() {
     loop: true,
     grabCursor: false,
     watchSlidesProgress: true,
-    breakpoints: {
-      768: {
-        autoplay: {
-          delay: 5000,
-        },
-      },
+    autoplay: {
+      delay: 5000,
     },
     speed: 500,
     navigation: {
