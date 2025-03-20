@@ -129,7 +129,7 @@
       <div class="grid gap-4 md:grid-cols-12 md:gap-x-21">
         <div class="md:col-span-4 lg:col-start-2">
           <div class="pin-content">
-            {!! App\get_picture([22], 'full', false, ['class' => 'object-cover object-right max-md:w-full']) !!}
+            {!! App\get_picture([440], 'full', false, ['class' => 'object-cover object-right rounded-xl max-md:w-full']) !!}
           </div>
         </div>
         <div

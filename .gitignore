@@ -13,6 +13,9 @@ wp-content/advanced-cache.php
 wp-content/wp-cache-config.php
 sitemap.xml
 sitemap.xml.gz
+wp-content/themes/twentytwentyfive/
+wp-admin/
+wp-includes/
 
 # @TODO writable paths
 wp-content/cache/
@@ -64,4 +67,24 @@ Thumbs.db
 bower_components
 node_modules/
 cache/acorn/
-themes/twentytwentyfive/
+
+/.maintenance
+/index.php
+/license.txt
+/local-xdebuginfo.php
+/readme.html
+/wix_blog_posts.csv
+/wp-activate.php
+/wp-blog-header.php
+/wp-comments-post.php
+/wp-config.php
+/wp-config-sample.php
+/wp-cron.php
+/wp-links-opml.php
+/wp-load.php
+/wp-login.php
+/wp-mail.php
+/wp-settings.php
+/wp-signup.php
+/wp-trackback.php
+/xmlrpc.php
