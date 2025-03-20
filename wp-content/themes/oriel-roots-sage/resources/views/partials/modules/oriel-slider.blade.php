@@ -37,6 +37,21 @@
       'title' => 'Career Coach',
       'text' => 'Your career coach will help you to explore diverse career paths and to identify your passions, ensuring that you can translate your interests into future career direction.',
     ],
+        [
+      'image_id' => 408,
+      'title' => 'Writing Coach',
+      'text' => 'Your writing coach will elevate your writing skills, offering expert support with brainstorming, outlining, and revising all of your application materials.',
+    ],
+    [
+      'image_id' => 409,
+      'title' => 'Project Mentor',
+      'text' => 'Your project mentor will come from your field of interest and will be another guide for exploring unique activities that reflect your interests.',
+    ],
+    [
+      'image_id' => 410,
+      'title' => 'Former Admissions Officer',
+      'text' => 'Our former admissions officers will review your application in your senior year, providing another valuable perspective on your candidacy as we perfect your application.',
+    ],
   ];
 @endphp
 
