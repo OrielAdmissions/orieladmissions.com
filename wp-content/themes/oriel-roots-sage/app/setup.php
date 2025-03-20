@@ -365,3 +365,39 @@ add_action('widgets_init', function () {
         ]);
     }
 });
+
+function register_team_member_cpt() {
+    $labels = [
+        'name'               => 'Team Members',
+        'singular_name'      => 'Team Member',
+        'menu_name'          => 'Team Members',
+        'name_admin_bar'     => 'Team Member',
+        'add_new'            => 'Add New',
+        'add_new_item'       => 'Add New Team Member',
+        'new_item'           => 'New Team Member',
+        'edit_item'          => 'Edit Team Member',
+        'view_item'          => 'View Team Member',
+        'all_items'          => 'All Team Members',
+        'search_items'       => 'Search Team Members',
+        'not_found'          => 'No team members found.',
+        'not_found_in_trash' => 'No team members found in Trash.',
+    ];
+
+    $args = [
+        'labels'             => $labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => ['slug' => 'team-member'],
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => null,
+        'supports'           => ['title', 'editor', 'thumbnail', 'excerpt'],
+    ];
+
+    register_post_type('team_member', $args);
+}
+

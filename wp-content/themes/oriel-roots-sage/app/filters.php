@@ -17,3 +17,4 @@ add_filter('excerpt_more', function () {
 
 add_action('wp_ajax_filterPosts', __NAMESPACE__ . '\\filterPosts');
 add_action('wp_ajax_nopriv_filterPosts', __NAMESPACE__ . '\\filterPosts');
+add_action('init',  __NAMESPACE__ . '\\register_team_member_cpt');
