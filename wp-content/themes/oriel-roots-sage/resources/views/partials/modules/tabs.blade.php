@@ -190,7 +190,7 @@
             </div>
             <div class="w-full px-4 md:w-1/2">
               {!!
-                App\get_picture([22], 'full', false, [
+                App\get_picture([457], 'full', false, [
                   'class' => 'rounded-xl w-full',
                 ])
               !!}
