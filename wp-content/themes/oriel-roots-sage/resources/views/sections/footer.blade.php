@@ -99,14 +99,14 @@
                 <a href="#">
                   <address class="leading-relaxed not-italic mb-4">
                     35 Quarry St.
-                    <br />
+                    <br/>
                     Princeton, New Jersey
-                    <br />
+                    <br/>
                     08542
                   </address>
                   <address class="leading-relaxed not-italic mb-4">
                     401 Park Avenue S
-                    <br />
+                    <br/>
                     New York, New York <br>
                     10016
                   </address>
@@ -114,138 +114,148 @@
               </div>
               <div class="w-full md:w-auto">
                 <h6 class="mb-2 text-black/40">Testimonials</h6>
-                <a
-                  class="animate-underline group relative inline-flex items-center justify-center"
-                  href="https://www.trustpilot.com/review/orieladmissions.com"
-                >
-                  Trust Pilot
-                  <div
-                    class="relative ml-1 inline-block h-5 w-5 overflow-hidden"
-                  >
-                    <div
-                      class="absolute transition-all duration-200 group-hover:-translate-y-5 group-hover:translate-x-4"
+                <ul class="space-y-2">
+                  <li>
+                    <a
+                      class="animate-underline group relative inline-flex items-center justify-center"
+                      href="https://www.trustpilot.com/review/orieladmissions.com"
                     >
-                      <svg
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
+                      Trust Pilot
+                      <div
+                        class="relative ml-1 inline-block h-5 w-5 overflow-hidden"
                       >
-                        <path
-                          d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
-                          fill="currentColor"
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                      <svg
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5 -translate-x-4"
-                      >
-                        <path
-                          d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
-                          fill="currentColor"
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-                <a
-                  class="animate-underline group relative inline-flex items-center justify-center"
-                  href="https://www.google.com/search?q=oriel+admissions+&sca_esv=a702c171394dd447&rlz=1C1CHBF_enUS1034US1035&ei=zCfbZ5mBJaLskvQPg7-G8Ao&ved=0ahUKEwiZl6fg_JaMAxUitoQIHYOfAa4Q4dUDCBI&uact=5&oq=oriel+admissions+&gs_lp=Egxnd3Mtd2l6LXNlcnAiEW9yaWVsIGFkbWlzc2lvbnMgMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yAhAmMgsQABiABBiGAxiKBTILEAAYgAQYhgMYigUyCxAAGIAEGIYDGIoFMgUQABjvBTIFEAAY7wVIswtQtwNYtwNwAngAkAEAmAFmoAFmqgEDMC4xuAEDyAEA-AEBmAIDoAJywgILEAAYgAQYsAMYogTCAggQABiwAxjvBZgDAIgGAZAGBZIHAzIuMaAHhwayBwMwLjG4B2s&sclient=gws-wiz-serp#lrd=0x89c3e79ad8752f77:0x2f70d924f5a8dd70,1,,,,"
-                >
-                  Google Business Reviews
-                  <div
-                    class="relative ml-1 inline-block h-5 w-5 overflow-hidden"
-                  >
-                    <div
-                      class="absolute transition-all duration-200 group-hover:-translate-y-5 group-hover:translate-x-4"
+                        <div
+                          class="absolute transition-all duration-200 group-hover:-translate-y-5 group-hover:translate-x-4"
+                        >
+                          <svg
+                            width="15"
+                            height="15"
+                            viewBox="0 0 15 15"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                          >
+                            <path
+                              d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
+                              fill="currentColor"
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                          <svg
+                            width="15"
+                            height="15"
+                            viewBox="0 0 15 15"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5 -translate-x-4"
+                          >
+                            <path
+                              d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
+                              fill="currentColor"
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="animate-underline group relative inline-flex items-center justify-center"
+                      href="https://www.google.com/search?q=oriel+admissions+&sca_esv=a702c171394dd447&rlz=1C1CHBF_enUS1034US1035&ei=zCfbZ5mBJaLskvQPg7-G8Ao&ved=0ahUKEwiZl6fg_JaMAxUitoQIHYOfAa4Q4dUDCBI&uact=5&oq=oriel+admissions+&gs_lp=Egxnd3Mtd2l6LXNlcnAiEW9yaWVsIGFkbWlzc2lvbnMgMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yAhAmMgsQABiABBiGAxiKBTILEAAYgAQYhgMYigUyCxAAGIAEGIYDGIoFMgUQABjvBTIFEAAY7wVIswtQtwNYtwNwAngAkAEAmAFmoAFmqgEDMC4xuAEDyAEA-AEBmAIDoAJywgILEAAYgAQYsAMYogTCAggQABiwAxjvBZgDAIgGAZAGBZIHAzIuMaAHhwayBwMwLjG4B2s&sclient=gws-wiz-serp#lrd=0x89c3e79ad8752f77:0x2f70d924f5a8dd70,1,,,,"
                     >
-                      <svg
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
+                      Google Business Reviews
+                      <div
+                        class="relative ml-1 inline-block h-5 w-5 overflow-hidden"
                       >
-                        <path
-                          d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
-                          fill="currentColor"
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                      <svg
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5 -translate-x-4"
-                      >
-                        <path
-                          d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
-                          fill="currentColor"
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-                <a
-                  class="animate-underline group relative inline-flex items-center justify-center"
-                  href="https://www.yelp.com/biz/oriel-admissions-princeton"
-                >
-                  Yelp
-                  <div
-                    class="relative ml-1 inline-block h-5 w-5 overflow-hidden"
-                  >
-                    <div
-                      class="absolute transition-all duration-200 group-hover:-translate-y-5 group-hover:translate-x-4"
+                        <div
+                          class="absolute transition-all duration-200 group-hover:-translate-y-5 group-hover:translate-x-4"
+                        >
+                          <svg
+                            width="15"
+                            height="15"
+                            viewBox="0 0 15 15"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                          >
+                            <path
+                              d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
+                              fill="currentColor"
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                          <svg
+                            width="15"
+                            height="15"
+                            viewBox="0 0 15 15"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5 -translate-x-4"
+                          >
+                            <path
+                              d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
+                              fill="currentColor"
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="animate-underline group relative inline-flex items-center justify-center"
+                      href="https://www.yelp.com/biz/oriel-admissions-princeton"
                     >
-                      <svg
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
+                      Yelp
+                      <div
+                        class="relative ml-1 inline-block h-5 w-5 overflow-hidden"
                       >
-                        <path
-                          d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
-                          fill="currentColor"
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                      <svg
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5 -translate-x-4"
-                      >
-                        <path
-                          d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
-                          fill="currentColor"
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
+                        <div
+                          class="absolute transition-all duration-200 group-hover:-translate-y-5 group-hover:translate-x-4"
+                        >
+                          <svg
+                            width="15"
+                            height="15"
+                            viewBox="0 0 15 15"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                          >
+                            <path
+                              d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
+                              fill="currentColor"
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                          <svg
+                            width="15"
+                            height="15"
+                            viewBox="0 0 15 15"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5 -translate-x-4"
+                          >
+                            <path
+                              d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
+                              fill="currentColor"
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+
+
               </div>
             </div>
           </div>
