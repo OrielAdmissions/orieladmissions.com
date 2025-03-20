@@ -23,7 +23,7 @@
     </div>
   </div>
 
-  @include('partials.modules.rona')
+{{--  @include('partials.modules.rona')--}}
 
   <div class="breakout">
     <div class="py-12 md:py-30">
