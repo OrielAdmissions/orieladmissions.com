@@ -4,12 +4,12 @@
     "src": "_editor.deps.json"
   },
   "resources/css/app.css": {
-    "file": "assets/app-WAMYLs_2.css",
+    "file": "assets/app-C9ECqyJV.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/css/editor.css": {
-    "file": "assets/editor-Cn1aSWNu.css",
+    "file": "assets/editor-D_IsvRAW.css",
     "src": "resources/css/editor.css",
     "isEntry": true
   },
@@ -435,12 +435,6 @@
       "assets/columbia-university-qjGb_auW.svg",
       "assets/duke-IwUbceGj.svg"
     ]
-  },
-  "resources/js/custom.js": {
-    "file": "assets/custom-BNZp1WUM.js",
-    "name": "custom",
-    "src": "resources/js/custom.js",
-    "isEntry": true
   },
   "resources/js/editor.js": {
     "file": "assets/editor-CfU4GbSP.js",

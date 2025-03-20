@@ -1,22 +1,17 @@
 @extends('layouts.app')
 
 @section('content')
-  <div class="full-width content-grid relative overflow-hidden">
-    {!! App\get_picture([get_post_thumbnail_id()], 'full', false, ['class' => 'absolute inset-0 size-full object-cover kenburns-top']) !!}
 
-    <div
-      class="the-stack relative flex min-h-svh flex-col items-center pt-24 pb-14"
-    >
+
+  <x-hero>
+    <x-slot name="headline">
       <h1
-        class="fade-in-bottom text-8xl-fluid mx-auto max-w-200 justify-self-center text-center text-white"
+        class="fade-in-bottom text-8xl-fluid justify-self-center mx-auto max-w-200 text-center text-white"
       >
         We are with you every step of the way.
       </h1>
-      <div class="flex justify-center self-end">
-        <a href="/contact" class="btn btn-primary">Contact Us</a>
-      </div>
-    </div>
-  </div>
+    </x-slot>
+  </x-hero>
 
   <div class="space-y-8 py-12 md:py-30">
     <h2 class="text-6xl-fluid text-center">
@@ -111,7 +106,7 @@
     >
       <x-slot name="accordion">
         <x-accordion heading="What do packages include?">
-          <ul class="grid list-none gap-4 md:grid-cols-2">
+          <ul class="grid list-image-(--red-chevron) pl-3 gap-4 md:grid-cols-2">
             @foreach ([
                 'Creation of a Strategic Roadmap',
                 'Advising Sessions',
@@ -125,8 +120,8 @@
                 'Professional Resume'
               ]
               as $subject)
-              <li class="flex items-center gap-2 text-sm">
-                {!! get_svg('images.chevron-right', 'text-oriel size-4 flex-shrink-0') !!}
+              <li class="text-sm pl-1">
+
                 <span>{{ $subject }}</span>
               </li>
             @endforeach
@@ -143,7 +138,7 @@
     >
       <x-slot name="accordion">
         <x-accordion heading="What do packages include?">
-          <ul class="grid list-none gap-4 md:grid-cols-2">
+          <ul class="grid list-image-(--red-chevron) pl-3 gap-4 md:grid-cols-2">
             @foreach ([
               'Application Strategy',
               'College List Building',
@@ -155,8 +150,8 @@
               'All Other Application Support',
               'Independent Review of the Application by a Former Admissions Officer and Feedback'
             ] as $item)
-              <li class="flex items-center gap-2 text-sm">
-                {!! get_svg('images.chevron-right', 'text-oriel size-4 flex-shrink-0') !!}
+              <li class="text-sm pl-1">
+
                 <span>{{ $item }}</span>
               </li>
             @endforeach
@@ -174,14 +169,14 @@
     >
       <x-slot name="accordion">
         <x-accordion heading="What do packages include?">
-          <ul class="grid list-none gap-4 md:grid-cols-2">
+          <ul class="grid list-image-(--red-chevron) pl-3 gap-4 md:grid-cols-2">
             @foreach ([
               'Full Review of the Common App',
               'Refinement of the Application Narrative',
               'Actionable Suggestions and Direction for Improving the Application'
             ] as $item)
-              <li class="flex items-center gap-2 text-sm">
-                {!! get_svg('images.chevron-right', 'text-oriel size-4 flex-shrink-0') !!}
+              <li class="text-sm pl-1">
+
                 <span>{{ $item }}</span>
               </li>
             @endforeach
@@ -199,15 +194,15 @@
     >
       <x-slot name="accordion">
         <x-accordion heading="What do packages include?">
-          <ul class="grid list-none gap-4 md:grid-cols-2">
+          <ul class="grid list-image-(--red-chevron) pl-3 gap-4 md:grid-cols-2">
             @foreach ([
               'College List Building Specifically for UK Universities',
               'Brainstorming for the Personal Statement and Comprehensive Revision Support',
               'Support in completing the UCAS Application',
               'Expert Advice for Applying to Oxford or Cambridge'
             ] as $item)
-              <li class="flex items-center gap-2 text-sm">
-                {!! get_svg('images.chevron-right', 'text-oriel size-4 flex-shrink-0') !!}
+              <li class="text-sm pl-1">
+
                 <span>{{ $item }}</span>
               </li>
             @endforeach
@@ -225,15 +220,15 @@
     >
       <x-slot name="accordion">
         <x-accordion heading="What do packages include?">
-          <ul class="grid list-none gap-4 md:grid-cols-2">
+          <ul class="grid list-image-(--red-chevron) pl-3 gap-4 md:grid-cols-2">
             @foreach ([
               'Personalized SAT Test Prep',
               'Personalized ACT Test Prep',
               'Academic Tutoring across all subjects',
               'AP Exams'
             ] as $item)
-              <li class="flex items-center gap-2 text-sm">
-                {!! get_svg('images.chevron-right', 'text-oriel size-4 flex-shrink-0') !!}
+              <li class="text-sm pl-1">
+
                 <span>{{ $item }}</span>
               </li>
             @endforeach
@@ -251,7 +246,7 @@
     >
       <x-slot name="accordion">
         <x-accordion heading="What do packages include?">
-          <ul class="grid list-none gap-4 md:grid-cols-2">
+          <ul class="grid list-image-(--red-chevron) pl-3 gap-4 md:grid-cols-2 grid-flow-row auto-rows-auto">
             @foreach ([
               'Creation of a Strategic Roadmap with your Educational System in Mind',
               'Advising Sessions',
@@ -265,8 +260,7 @@
               'Professional Resume',
               'Comprehensive Support for Completing the Common App and/or other Applications'
             ] as $item)
-              <li class="flex items-center gap-2 text-sm">
-                {!! get_svg('images.chevron-right', 'text-oriel size-4 flex-shrink-0') !!}
+              <li class="text-sm pl-1">
                 <span>{{ $item }}</span>
               </li>
             @endforeach

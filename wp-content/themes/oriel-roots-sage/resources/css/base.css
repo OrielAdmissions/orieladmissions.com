@@ -145,7 +145,7 @@
     }
 
     ul.wp-block-list {
-      @apply list-disc pl-4;
+      @apply list-image-(--red-chevron) pl-4;
     }
 
     ol.wp-block-list {
