@@ -6,7 +6,7 @@
     <div class="grid grid-cols-12 gap-4">
       <div class="col-span-full md:col-span-6 lg:col-span-4 lg:col-start-2">
         <div class="pin-content md:pr-10">
-          {!! App\get_picture([22], 'full', false, ['class' => 'object-cover object-right w-full']) !!}
+          {!! App\get_picture([22], 'full', false, ['class' => 'object-cover object-right w-full rounded-xl']) !!}
         </div>
       </div>
       <div class="long-content col-span-full md:col-span-6 lg:col-span-6">
