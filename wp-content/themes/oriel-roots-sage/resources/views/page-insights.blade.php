@@ -10,7 +10,7 @@
         'applicants' => '2405',
         'lorems' => '6',
         'button_text' => 'Read more',
-        'button_link' => '#',
+        'button_link' => '',
       ],
       [
         'college_name' => 'Barnard College',
@@ -19,7 +19,7 @@
         'applicants' => '2200',
         'lorems' => '5',
         'button_text' => 'Read more',
-        'button_link' => '#',
+        'button_link' => '',
       ],
       [
         'college_name' => 'Boston College',
@@ -28,7 +28,7 @@
         'applicants' => '3000',
         'lorems' => '4',
         'button_text' => 'Read more',
-        'button_link' => '#',
+        'button_link' => '',
       ],
       [
         'college_name' => 'Brown University',
@@ -37,7 +37,7 @@
         'applicants' => '2800',
         'lorems' => '7',
         'button_text' => 'Read more',
-        'button_link' => '#',
+        'button_link' => '',
       ],
       [
         'college_name' => 'California Institute of Technology',
@@ -46,7 +46,7 @@
         'applicants' => '1800',
         'lorems' => '3',
         'button_text' => 'Read more',
-        'button_link' => '#',
+        'button_link' => '',
       ],
     ];
   @endphp

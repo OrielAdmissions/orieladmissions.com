@@ -5,7 +5,7 @@
   'applicants' => 'N/A',
   'lorems' => 'N/A',
   'button_text' => 'Read more',
-  'button_link' => '#',
+  'button_link' => '',
 ])
 
 <div
@@ -20,10 +20,11 @@
       {{ $college_name }}
     </h2>
     <p class="">{!! $description !!}</p>
-
-    <a href="{{ $button_link }}" class="btn btn-outline">
-      {{ $button_text }}
-    </a>
+    @if($button_link)
+      <a href="{{ $button_link }}" class="btn btn-outline">
+        {{ $button_text }}
+      </a>
+    @endif
   </div>
 
   <!-- Right Stats Panel -->
@@ -43,7 +44,7 @@
       </p>
       <p class="font-medium tracking-wide uppercase">
         Overall Acceptance Rate
-        <br />
+        <br/>
         Class of 2027
       </p>
     </div>
