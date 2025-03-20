@@ -26,7 +26,7 @@ export function initIntersectionObserver() {
 
   // Add Observers
   fadeInElements.forEach((el) => {
-    el.style.opacity = 0;
+    el.style.opacity = 0.01;
     el.style.transform = 'translateY(50px)';
     observer.observe(el);
   });

@@ -108,7 +108,7 @@
 }
 
 .fade-in-bottom {
-  @apply opacity-0;
+  opacity: 0.01;
 }
 
 @keyframes smoothPulse {
