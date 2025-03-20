@@ -77,7 +77,7 @@
         <div class="basis-7/12 max-lg:order-last">
           {!!
             App\get_picture([270], 'full', false, [
-              'class' => 'w-full h-auto object-cover',
+              'class' => 'w-full h-auto object-cover rounded-xl',
             ])
           !!}
         </div>
@@ -108,7 +108,7 @@
             </small>
             {!!
               App\get_picture([272], 'full', false, [
-                'class' => 'w-full h-auto object-cover relative top-24 max-lg:hidden',
+                'class' => 'w-full h-auto object-cover relative top-24 max-lg:hidden rounded-xl',
                 'data-speed' => '1.05',
               ])
             !!}
@@ -124,7 +124,7 @@
         <div class="col-start-1 max-lg:order-last lg:col-span-3">
           {!!
             App\get_picture([271], 'full', false, [
-              'class' => 'w-full h-auto object-cover',
+              'class' => 'w-full h-auto object-cover rounded-xl',
               'data-speed' => '1.1',
             ])
           !!}
