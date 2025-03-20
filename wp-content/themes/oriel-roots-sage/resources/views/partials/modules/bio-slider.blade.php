@@ -2,17 +2,17 @@
   // Example array for dynamic slides (replace with your actual data)
   $slides = [
     [
-      'image_id' => 255,
+      'image_id' => 455,
 
       'story' => 'Working with Oriel Admissions was the best decision that I made for my son’s college applications! Rona and her team went above and beyond, offering comprehensive support that exceeded my expectations. Their holistic counseling approach empowered my son to achieve his dream of being admitted to an Ivy League college. I highly recommend Oriel Admissions!',
     ],
     [
-      'image_id' => 255,
+      'image_id' => 456,
 
       'story' => 'I started with Oriel Admissions when I was in 10th grade and every stage of counseling was structured yet personalized to align with my interests and goals. I appreciated their 360 degree approach and being able to work with a team, allowing me to develop diverse skills and gain valuable experiences that strengthened my applications.  I couldn’t be happier with the support that I received!',
     ],
     [
-      'image_id' => 255,
+      'image_id' => 454,
 
       'story' => 'When we began my daughter’s application process, we had no idea how much we had to learn! Rona provided direction at every step, helping my daughter to clarify her career interests, develop activities to explore those interests, and brainstorming a really interesting personal statement that showcased her personality. I think that this high level of support was the key for her acceptance into her top choice college: Brown University.',
     ],
