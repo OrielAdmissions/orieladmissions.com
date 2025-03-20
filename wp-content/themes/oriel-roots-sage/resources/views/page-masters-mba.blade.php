@@ -26,14 +26,14 @@
   </div>
 
   <div class="bg-sand full-width content-grid py-12 md:py-30">
-
+    <div class="mb-20 md:mb-30 mx-auto max-w-175 text-center">
       <h2
-        class="text-6xl-fluid mx-auto mb-20 md:mb-30 max-w-175 text-center"
-      >
+        class="text-6xl-fluid mb-8">
         Applying to graduate school is competitive so
         <span class="text-oriel">don’t leave your application to chance!</span>
       </h2>
-
+      <a href="/contact" class="btn btn-primary">Contact Us</a>
+    </div>
 
     <div class="breakout">
       <h2
