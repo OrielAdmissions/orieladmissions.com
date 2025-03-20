@@ -261,3 +261,27 @@
     mask-size: 100% 700px;
   }
 }
+
+#forminator-module-465 {
+  margin-bottom: 0;
+
+  .forminator-row-last {
+    @apply h-full top-0 right-0 absolute z-2;
+
+    & * {
+      @apply h-full;
+    }
+  }
+
+  .forminator-input.forminator-email--field {
+    border-bottom-color: transparent;
+  }
+
+  .forminator-response-message {
+    @apply absolute -translate-y-full;
+  }
+
+  .forminator-error-message {
+    @apply absolute translate-y-full;
+  }
+}

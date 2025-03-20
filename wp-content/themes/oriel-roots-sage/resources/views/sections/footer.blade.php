@@ -8,18 +8,12 @@
     <div class="col-span-12 md:col-span-7">
       <div class="mx-auto md:mr-0">
         <div class="flex flex-wrap">
-          <form class="relative w-full md:flex-1">
-            <input
-              class="border-keyline/80 focus:ring-opacity-50 focus:ring-oriel h-16 w-full rounded-full border bg-white px-6 py-5 leading-tight text-black placeholder-black/50 focus:ring-2 focus:outline-none md:h-20"
-              type="text"
-              placeholder="Enter your email"
-            />
-            <button
-              class="absolute top-1/2 right-6 -translate-y-1/2 cursor-pointer"
-            >
-              {!! get_svg('images.chevron-right', 'size-5') !!}
-            </button>
-          </form>
+
+          <div class="border-keyline/80 relative w-full rounded-full border bg-white px-6 leading-tight text-black h-20">
+            {!! do_shortcode('[forminator_form id="378"]') !!}
+            {!! get_svg('images.chevron-right', 'absolute right-6 top-1/2 -translate-y-1/2') !!}
+          </div>
+
         </div>
       </div>
     </div>
