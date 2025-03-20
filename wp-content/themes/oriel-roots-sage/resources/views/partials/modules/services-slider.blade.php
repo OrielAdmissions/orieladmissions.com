@@ -15,31 +15,31 @@
           'title' => 'Passion Project Development',
           'content' => 'We help students identify, develop, and excel in activities that showcase their passions and leadership potential. We match students with project mentors who are experts in their fields. Under their guidance, students are able to focus more deeply on their interests. These projects allow students to build a compelling narrative that stands out in college applications and aligns with their long-term goals.',
           'button_link' => '#',
-          'image' => 449,
+          'image_id' => 449,
         ],
         [
           'title' => 'Summer Program Application',
           'content' => 'To make the most of summer break, we identify meaningful opportunities aligned with a student’s academic interests and career goals. Our team creates a tailored list of summer programs and provides expert support in crafting compelling essays and application materials,  ensuring students are well-prepared to pursue enriching summer experiences that foster growth.',
           'button_link' => '#',
-          'image' => 450,
+          'image_id' => 450,
         ],
         [
           'title' => 'College List Building',
           'content' => 'We curate a personalized list of colleges tailored to a student’s goals, preferences, and strengths. We help the student to identify schools that will be a strong fit and that they would be genuinely excited to attend. All college lists will include a balance between realistic schools, target schools, and dream schools to maximize a student’s chances of success.',
           'button_link' => '#',
-          'image' => 446,
+          'image_id' => 446,
         ],
         [
           'title' => 'Interview Preparation',
           'content' => 'Through our personalized coaching, students will go into every college interview well prepared. We will help to hone answers and practice delivery, completing mock interviews to allow students to communicate their stories confidently and authentically, leaving a positive impression.',
           'button_link' => '#',
-          'image' => 447,
+          'image_id' => 447,
         ],
         [
           'title' => 'Career Coaching and Resume Creation',
           'content' => 'We guide students around exploring career interests and building essential professional skills. We assist with identifying internships and leadership experiences and we support students with their applications for these opportunities. We also assist with crafting professional, stand out resumes and aligning student’s high school experiences with future career aspirations.',
           'button_link' => '#',
-          'image' => 448,
+          'image_id' => 448,
         ],
       ];
     @endphp
@@ -55,6 +55,7 @@
                 <x-services-card-2
                   :title="$card['title']"
                   :content="$card['content']"
+                  :image_id="$card['image_id']"
                 />
               </div>
             @endforeach
