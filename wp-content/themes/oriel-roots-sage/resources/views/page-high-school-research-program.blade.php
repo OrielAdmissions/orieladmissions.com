@@ -58,7 +58,7 @@
       <div class="relative">
         {!!
           App\get_picture([273], 'full', false, [
-            'class' => 'object-cover max-lg:w-full mx-auto',
+            'class' => 'object-cover max-lg:w-full mx-auto rounded-xl',
           ])
         !!}
         {!! get_svg('images.window-full', 'max-lg:hidden stroke-cardinal/40 scale-y-75 text-transparent absolute h-auto w-[500px] left-1/2 top-1/2 -translate-1/2') !!}
