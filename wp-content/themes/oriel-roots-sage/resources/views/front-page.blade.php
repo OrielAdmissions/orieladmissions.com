@@ -15,8 +15,7 @@
               <h1 class="max-w-225 text-8xl-fluid max-md:mb-6 max-md:text-center text-white">
                 Your Trusted Authority in Admissions.
               </h1>
-              <p class="text-white md:text-lg text-center max-md:mx-auto md:text-right max-w-80 md:mb-4">Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+              <p class="text-white md:text-lg text-center max-md:mx-auto md:text-right max-w-80 md:mb-4">From application strategy to essay refinement, Oriel Admissions is your trusted partner in gaining acceptance to the world’s leading academic institutions.</p>
             </div>
 
         </div>
