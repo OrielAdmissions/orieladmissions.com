@@ -343,90 +343,158 @@
       <h2 @class(['text-6xl-fluid mb-12 md:bb-30 text-center'])>
         Student Stories
       </h2>
+      <div class="spiral-binding relative overflow-hidden rounded-md shadow-[0_3px_3px_0_rgba(0,0,0,0.06)]">
+        <div class="bg-chalk/70 relative grid grid-cols-12 py-6 lg:py-15">
 
-      <x-testimonial
-        :profile_image_id="74"
-        location="Texas"
-        major="Technology"
-        name="Kellogg School of Management"
-        image_position="bottom"
-        testimonial_type="student"
-      >
-        <x-slot:profile_image>
-          <img
-            src="{{ Vite::asset('resources/images/student-story.jpeg') }}"
-            alt="Student Story placeholder image"
-            height="400"
-            width="600"
-            loading="lazy"
-            class="h-auto w-full max-w-sm rounded-xl"
-          />
-        </x-slot>
-        <x-slot:title>
-          <span class="text-oriel">
+
+          <div class="col-span-full lg:col-start-2">
+            <div class="px-6">
+
+              <h3 class="text-2xl-fluid mb-4">
+            <span class="text-oriel">
             Madison had wanted to become a doctor since elementary school.
           </span>
-          Determined to achieve her goal, she set her sights on competitive
-          BS/MD programs, which offer direct entry into medical school. Knowing
-          that these programs value candidates with robust research experience,
-          Madison applied to the Oriel Ignite Research Program.
-        </x-slot>
+                Determined to achieve her goal, she set her sights on competitive
+                BS/MD programs, which offer direct entry into medical school. Knowing
+                that these programs value candidates with robust research experience,
+                Madison applied to the Oriel Ignite Research Program.
+              </h3>
 
-        <x-slot:description>
-          <p>
-            In order to explore her passion in public health, Madison
-            collaborated with her mentor to explore healthcare inequalities in
-            her city. She began by analyzing publicly available data and soon
-            realized the importance of incorporating primary research into her
-            study. Eager to gain firsthand insights, Madison identified several
-            local programs addressing healthcare disparities and reached out to
-            their administrators. Several were willing to share their
-            experiences and perspectives, which significantly enriched her
-            research.
-          </p>
-        </x-slot>
-      </x-testimonial>
-      <x-testimonial
-        :profile_image_id="74"
-        location="Texas"
-        major="Technology"
-        name="Kellogg School of Management"
-        image_position="bottom"
-        testimonial_type="student"
-      >
-        <x-slot:profile_image>
-          <img
-            src="{{ Vite::asset('resources/images/student-story.jpeg') }}"
-            alt="Student Story placeholder image"
-            height="400"
-            width="600"
-            loading="lazy"
-            class="h-auto w-full max-w-sm rounded-xl"
-          />
-        </x-slot>
-        <x-slot:title>
-          <span class="text-oriel">
+              <div class="space-y-6 text-xl">
+                <p>
+                  In order to explore her passion in public health, Madison
+                  collaborated with her mentor to explore healthcare inequalities in
+                  her city. She began by analyzing publicly available data and soon
+                  realized the importance of incorporating primary research into her
+                  study. Eager to gain firsthand insights, Madison identified several
+                  local programs addressing healthcare disparities and reached out to
+                  their administrators. Several were willing to share their
+                  experiences and perspectives, which significantly enriched her
+                  research.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="spiral-binding relative overflow-hidden rounded-md shadow-[0_3px_3px_0_rgba(0,0,0,0.06)]">
+
+
+        <div class="bg-chalk/70 relative grid grid-cols-12 py-6 lg:py-15">
+
+          <div class="col-span-full lg:col-start-2">
+            <div class="px-6">
+
+              <h3 class="text-2xl-fluid mb-4">
+            <span class="text-oriel">
             Alex's passion for astrophysics led him to embark on an ambitious
             research project that combined his curiosity with hands-on
             scientific discovery.
           </span>
-          Guided by a mentor with expertise in astrophysics, Alex identified a
-          project focused on analyzing light curves from stars to detect
-          potential exoplanets (planets orbiting stars beyond our solar system).
-        </x-slot>
+                Guided by a mentor with expertise in astrophysics, Alex identified a
+                project focused on analyzing light curves from stars to detect
+                potential exoplanets (planets orbiting stars beyond our solar system).
+              </h3>
 
-        <x-slot:description>
-          <p>
-            This project provided an invaluable opportunity for Alex to
-            strengthen his computer programming skills while applying his
-            academic knowledge to a real-world scientific challenge. This
-            project not only deepened Alex's understanding of astrophysics but
-            also equipped him with valuable skills in data analysis and coding.
-            It served as a stepping stone toward further exploration in the
-            field.
-          </p>
-        </x-slot>
-      </x-testimonial>
+              <div class="space-y-6 text-xl">
+                <p>
+                  This project provided an invaluable opportunity for Alex to
+                  strengthen his computer programming skills while applying his
+                  academic knowledge to a real-world scientific challenge. This
+                  project not only deepened Alex's understanding of astrophysics but
+                  also equipped him with valuable skills in data analysis and coding.
+                  It served as a stepping stone toward further exploration in the
+                  field.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+{{--      <x-testimonial--}}
+{{--        :profile_image_id="74"--}}
+{{--        location="Texas"--}}
+{{--        major="Technology"--}}
+{{--        name="Kellogg School of Management"--}}
+{{--        image_position="bottom"--}}
+{{--        testimonial_type="student"--}}
+{{--      >--}}
+{{--        <x-slot:profile_image>--}}
+{{--          <img--}}
+{{--            src="{{ Vite::asset('resources/images/student-story.jpeg') }}"--}}
+{{--            alt="Student Story placeholder image"--}}
+{{--            height="400"--}}
+{{--            width="600"--}}
+{{--            loading="lazy"--}}
+{{--            class="h-auto w-full max-w-sm rounded-xl"--}}
+{{--          />--}}
+{{--        </x-slot>--}}
+{{--        <x-slot:title>--}}
+{{--          <span class="text-oriel">--}}
+{{--            Madison had wanted to become a doctor since elementary school.--}}
+{{--          </span>--}}
+{{--          Determined to achieve her goal, she set her sights on competitive--}}
+{{--          BS/MD programs, which offer direct entry into medical school. Knowing--}}
+{{--          that these programs value candidates with robust research experience,--}}
+{{--          Madison applied to the Oriel Ignite Research Program.--}}
+{{--        </x-slot>--}}
+
+{{--        <x-slot:description>--}}
+{{--          <p>--}}
+{{--            In order to explore her passion in public health, Madison--}}
+{{--            collaborated with her mentor to explore healthcare inequalities in--}}
+{{--            her city. She began by analyzing publicly available data and soon--}}
+{{--            realized the importance of incorporating primary research into her--}}
+{{--            study. Eager to gain firsthand insights, Madison identified several--}}
+{{--            local programs addressing healthcare disparities and reached out to--}}
+{{--            their administrators. Several were willing to share their--}}
+{{--            experiences and perspectives, which significantly enriched her--}}
+{{--            research.--}}
+{{--          </p>--}}
+{{--        </x-slot>--}}
+{{--      </x-testimonial>--}}
+{{--      <x-testimonial--}}
+{{--        :profile_image_id="74"--}}
+{{--        location="Texas"--}}
+{{--        major="Technology"--}}
+{{--        name="Kellogg School of Management"--}}
+{{--        image_position="bottom"--}}
+{{--        testimonial_type="student"--}}
+{{--      >--}}
+{{--        <x-slot:profile_image>--}}
+{{--          <img--}}
+{{--            src="{{ Vite::asset('resources/images/student-story.jpeg') }}"--}}
+{{--            alt="Student Story placeholder image"--}}
+{{--            height="400"--}}
+{{--            width="600"--}}
+{{--            loading="lazy"--}}
+{{--            class="h-auto w-full max-w-sm rounded-xl"--}}
+{{--          />--}}
+{{--        </x-slot>--}}
+{{--        <x-slot:title>--}}
+{{--          <span class="text-oriel">--}}
+{{--            Alex's passion for astrophysics led him to embark on an ambitious--}}
+{{--            research project that combined his curiosity with hands-on--}}
+{{--            scientific discovery.--}}
+{{--          </span>--}}
+{{--          Guided by a mentor with expertise in astrophysics, Alex identified a--}}
+{{--          project focused on analyzing light curves from stars to detect--}}
+{{--          potential exoplanets (planets orbiting stars beyond our solar system).--}}
+{{--        </x-slot>--}}
+
+{{--        <x-slot:description>--}}
+{{--          <p>--}}
+{{--            This project provided an invaluable opportunity for Alex to--}}
+{{--            strengthen his computer programming skills while applying his--}}
+{{--            academic knowledge to a real-world scientific challenge. This--}}
+{{--            project not only deepened Alex's understanding of astrophysics but--}}
+{{--            also equipped him with valuable skills in data analysis and coding.--}}
+{{--            It served as a stepping stone toward further exploration in the--}}
+{{--            field.--}}
+{{--          </p>--}}
+{{--        </x-slot>--}}
+{{--      </x-testimonial>--}}
     </div>
   </div>
 
