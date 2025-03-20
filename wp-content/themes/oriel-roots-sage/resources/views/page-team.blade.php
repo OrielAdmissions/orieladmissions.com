@@ -91,12 +91,6 @@
       </div>
     </div>
   </section>
-  <div class="breakout py-12 md:py-30">
-    <h2
-      class="text-6xl-fluid mx-auto mb-12 md:mb-30 max-w-screen-sm text-center"
-    >
-      Our team
-    </h2>
     @php
       $teamMembers = [
         [
@@ -287,31 +281,43 @@
       ];
     @endphp
 
-    <div class="breakout">
-      <div
-        class="mx-auto grid grid-cols-[repeat(auto-fill,_minmax(min(275px,_300px),_1fr))] gap-4"
-      >
-        @foreach ($teamMembers as $member)
-          <x-team-card
-            :name="$member['name']"
-            :role="$member['role']"
-            :education="$member['education']"
-            :image_file_name="$member['image_file_name']"
-            :link="$member['link_text']"
-            :bio="$member['bio']"
-          >
-            <x-slot:image>
-              <img
-                src="{{ Vite::asset('resources/images/Headshots/' . $member['image_file_name']) }}"
-                alt="{{ $member['name'] }}"
-                class="team-card__image {{ $member['image_class'] }} mx-auto aspect-square h-auto w-full max-w-full object-cover"
-              />
-            </x-slot>
-          </x-team-card>
-        @endforeach
+    @php
+      $teamQuery = new WP_Query([
+        'post_type'      => 'team_member',
+        'posts_per_page' => -1,
+      ]);
+    @endphp
+
+    @if($teamQuery->have_posts())
+      <div class="breakout py-12 md:py-30">
+        <h2 class="text-6xl-fluid mx-auto mb-12 md:mb-30 max-w-screen-sm text-center">
+          Our team
+        </h2>
+        <div class="breakout">
+          <div class="mx-auto grid grid-cols-[repeat(auto-fill,_minmax(min(275px,_300px),_1fr))] gap-4">
+            @while($teamQuery->have_posts())
+              @php $teamQuery->the_post(); @endphp
+              <x-team-card
+                :name="get_the_title()"
+                :role="get_field('role')"
+                :education="get_field('education')"
+                :link="get_field('link_text')"
+                :bio="get_the_content()"
+              >
+                <x-slot:image>
+                  {!! get_the_post_thumbnail(null, 'full', [
+                    'class' => 'team-card__image object-center mx-auto aspect-square h-auto w-full max-w-full object-cover'
+                  ]) !!}
+                </x-slot>
+              </x-team-card>
+            @endwhile
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
+      @php wp_reset_postdata(); @endphp
+    @endif
+
+
 
   <x-faq-section title="Need some more help? Here are some answers.">
     <x-accordion
