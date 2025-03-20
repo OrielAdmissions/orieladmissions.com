@@ -21,11 +21,12 @@
 
 <div class="window-overlay full-width relative">
   <div class="the-stack">
-    <div class="swiper story-swiper h-[750px] max-w-full">
+    <div class="swiper story-swiper
+    h-[750px] max-w-full">
       <div class="swiper-wrapper">
         @foreach ($slides as $index => $slide)
           <div class="swiper-slide" data-story="{{ $slide['story'] }}">
-            {!! App\get_picture([$slide['image_id']], 'full', false, ['class' => 'h-full w-full object-cover object-top']) !!}
+            {!! App\get_picture([$slide['image_id']], 'full', false, ['class' => 'h-full w-full object-center object-top']) !!}
           </div>
         @endforeach
       </div>
