@@ -1,7 +1,7 @@
 <?php
 
 $header_class =
-  ! has_post_thumbnail() || is_single() || is_archive() || is_home()
+  ! has_post_thumbnail() || is_single() || is_archive() || is_home() || is_page(['contact'])
     ? 'header-light'
     : 'header-dark';
 ?>
