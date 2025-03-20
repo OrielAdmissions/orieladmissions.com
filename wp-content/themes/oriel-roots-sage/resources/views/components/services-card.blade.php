@@ -13,7 +13,7 @@
       @if ($image_id)
         {!! App\get_picture([$image_id], 'full', false, ['class' => 'w-full h-full object-cover mx-auto']) !!}
       @else
-          {!! get_svg('images.featured-image-placeholder', 'w-full object-cover h-full mx-auto') !!}
+        {!! App\get_picture([444], 'full', false, ['class' => 'w-full h-full object-cover mx-auto']) !!}
       @endif
     </div>
 

@@ -16,7 +16,7 @@
     @if ($image_id)
       {!! App\get_picture([$image_id], 'full', false, ['class' => 'w-full h-full object-cover aspect-16/9']) !!}
     @else
-      {!! get_svg('images.featured-image-placeholder', 'w-full h-auto object-cover aspect-16/9 max-w-full') !!}
+      {!! App\get_picture([444], 'full', false, ['class' => 'w-full h-full object-cover aspect-16/9']) !!}
     @endif
   </div>
 
