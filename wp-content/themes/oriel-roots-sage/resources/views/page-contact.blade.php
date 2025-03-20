@@ -13,8 +13,8 @@
     <section class="grid gap-8 pb-12 lg:grid-cols-12 lg:gap-x-12 lg:pb-30">
       <div class="lg:col-span-6">
         {!!
-          App\get_picture([95], 'full', false, [
-            'class' => 'object-cover max-lg:w-full mx-lg:mx-auto pin-content',
+          App\get_picture([get_post_thumbnail_id()], 'full', false, [
+            'class' => 'object-cover max-lg:w-full mx-lg:mx-auto pin-content rounded-xl',
           ])
         !!}
       </div>
