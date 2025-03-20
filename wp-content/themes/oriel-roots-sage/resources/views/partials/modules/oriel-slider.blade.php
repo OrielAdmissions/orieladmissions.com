@@ -2,38 +2,38 @@
   // Headline and text data
   $slides = [
     [
-      'image_id' => 76,
+      'image_id' => 406,
       'title' => 'College Counselor',
       'text' => 'Your dedicated counselor will lead you through every step of your college application journey, including crafting a personalized roadmap and a month-by-month action plan to keep you on track.',
     ],
     [
-      'image_id' => 75,
+      'image_id' => 407,
       'title' => 'Career Coach',
       'text' => 'Your career coach will help you to explore diverse career paths and to identify your passions, ensuring that you can translate your interests into future career direction.',
     ],
     [
-      'image_id' => 76,
+      'image_id' => 408,
       'title' => 'Writing Coach',
       'text' => 'Your writing coach will elevate your writing skills, offering expert support with brainstorming, outlining, and revising all of your application materials.',
     ],
     [
-      'image_id' => 75,
+      'image_id' => 409,
       'title' => 'Project Mentor',
       'text' => 'Your project mentor will come from your field of interest and will be another guide for exploring unique activities that reflect your interests.',
     ],
     [
-      'image_id' => 76,
+      'image_id' => 410,
       'title' => 'Former Admissions Officer',
       'text' => 'Our former admissions officers will review your application in your senior year, providing another valuable perspective on your candidacy as we perfect your application.',
     ],
 
     [
-      'image_id' => 75,
+      'image_id' => 406,
       'title' => 'College Counselor',
       'text' => 'Your dedicated counselor will lead you through every step of your college application journey, including crafting a personalized roadmap and a month-by-month action plan to keep you on track.',
     ],
     [
-      'image_id' => 75,
+      'image_id' => 407,
       'title' => 'Career Coach',
       'text' => 'Your career coach will help you to explore diverse career paths and to identify your passions, ensuring that you can translate your interests into future career direction.',
     ],
