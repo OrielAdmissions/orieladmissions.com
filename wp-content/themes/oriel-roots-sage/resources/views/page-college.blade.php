@@ -216,7 +216,7 @@
       grade="All Grades"
       title="Academic Tutoring and Test Prep"
       description="Maintaining a strong academic profile is critical when applying to college. As part of the counseling process, your counselor will advise if a student needs any additional academic or test prep support. Our team of tutors will coordinate with the counselor to provide expert guidance on the SAT, ACT, AP exams, or any other academic needs, allowing students to reach their full potential."
-      image_id="97"
+      image_id="445"
     >
       <x-slot name="accordion">
         <x-accordion heading="What do packages include?">
