@@ -10,7 +10,7 @@
         <div class="flex flex-wrap">
 
           <div class="border-keyline/80 relative w-full rounded-full border bg-white px-6 leading-tight text-black h-20">
-            {!! do_shortcode('[forminator_form id="378"]') !!}
+            {!! do_shortcode('[forminator_form id="465"]') !!}
             {!! get_svg('images.chevron-right', 'absolute right-6 top-1/2 -translate-y-1/2') !!}
           </div>
 
