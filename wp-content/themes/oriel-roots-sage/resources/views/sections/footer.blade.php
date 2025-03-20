@@ -97,12 +97,18 @@
               <div class="w-full max-md:order-last md:w-auto">
                 <h6 class="mb-2 text-black/40">Address</h6>
                 <a href="#">
-                  <address class="leading-relaxed not-italic">
+                  <address class="leading-relaxed not-italic mb-4">
                     35 Quarry St.
                     <br />
                     Princeton, New Jersey
                     <br />
                     08542
+                  </address>
+                  <address class="leading-relaxed not-italic mb-4">
+                    401 Park Avenue S
+                    <br />
+                    New York, New York <br>
+                    10016
                   </address>
                 </a>
               </div>
