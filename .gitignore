@@ -16,6 +16,9 @@ sitemap.xml.gz
 wp-content/themes/twentytwentyfive/
 wp-admin/
 wp-includes/
+wp-content/plugins/
+wp-content/mu-plugins/
+
 
 # @TODO writable paths
 wp-content/cache/
