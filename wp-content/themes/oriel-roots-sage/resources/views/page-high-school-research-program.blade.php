@@ -316,7 +316,6 @@
           <li class="basis-1/4 space-y-4 px-4 py-6 text-center">
             <span class="pill bg-sand text-black">step 1</span>
             <p class="text-2xl-fluid font-medium">Fill out the application</p>
-            <p>Takes 5 min</p>
           </li>
           <li class="basis-1/4 space-y-4 px-4 py-6 text-center">
             <span class="pill bg-[#F6ADAE] text-black">step 2</span>
@@ -326,12 +325,12 @@
           <li class="basis-1/4 space-y-4 px-4 py-6 text-center">
             <span class="pill bg-[#F07677] text-black">step 3</span>
             <p class="text-2xl-fluid font-medium">Get your decision</p>
-            <p>Within 1-2 week</p>
+            <p>Within 1-2 weeks</p>
           </li>
           <li class="basis-1/4 space-y-4 px-4 py-6 text-center">
             <span class="pill bg-oriel">step 4</span>
             <p class="text-2xl-fluid font-medium">Begin your research</p>
-            <p>In 3 months</p>
+            <p>Within 1 month</p>
           </li>
         </ul>
       </div>
