@@ -168,10 +168,7 @@
           program options
         </h2>
         <p class="text-lg">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor
+          Every student has different goals, which is why we offer two research program options. Both are designed to help students develop original research with expert mentorship, but with varied levels of depth and support. Our signature research program is perfect for students looking to complete a guided research project while our Plus Program takes it a step further, with enhanced writing support and guidance through submission to top journals and competitions.
         </p>
       </div>
       <div class="col-span-full grid grid-cols-12 gap-6 lg:col-span-7">
@@ -194,10 +191,10 @@
               :items="[
                 'Academic mentor meetings',
                 '2 writing and editing sessions',
-                'Paper or project submission',
+                'Paper or project',
                 ['classes' => 'text-black/50', 'content' => 'Journals and competitions','icon' => get_svg('images.icon-close')],
                 ['content' => '3-5 hours a week','icon' => get_svg('images.icon-calendar', 'text-oriel')],
-                ['content' => '5-6 month duration','icon' => get_svg('images.icon-clock', 'text-oriel')],
+                ['content' => '3-4 month duration','icon' => get_svg('images.icon-clock', 'text-oriel')],
               ]"
             />
           </div>
@@ -225,7 +222,7 @@
               :items="[
                 'Academic mentor meetings',
                 '5 writing and editing sessions',
-                'Paper or project submission',
+                'Paper or project',
                 'Journals and competitions',
                 ['content' => '3-5 hours a week','icon' => get_svg('images.icon-calendar')],
                 ['content' => '5-6 month duration','icon' => get_svg('images.icon-clock')],
