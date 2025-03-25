@@ -7,7 +7,7 @@
       'text' => 'Your dedicated counselor will lead you through every step of your college application journey, including crafting a personalized roadmap and a month-by-month action plan to keep you on track.',
     ],
     [
-      'image_id' => 407,
+      'image_id' => 436,
       'title' => 'Career Coach',
       'text' => 'Your career coach will help you to explore diverse career paths and to identify your passions, ensuring that you can translate your interests into future career direction.',
     ],
@@ -33,7 +33,7 @@
       'text' => 'Your dedicated counselor will lead you through every step of your college application journey, including crafting a personalized roadmap and a month-by-month action plan to keep you on track.',
     ],
     [
-      'image_id' => 407,
+      'image_id' => 436,
       'title' => 'Career Coach',
       'text' => 'Your career coach will help you to explore diverse career paths and to identify your passions, ensuring that you can translate your interests into future career direction.',
     ],
