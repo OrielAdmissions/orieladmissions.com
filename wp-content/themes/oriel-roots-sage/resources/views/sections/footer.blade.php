@@ -41,7 +41,7 @@
                       class="animate-underline inline-block"
                       href="/about/team"
                     >
-                      About
+                      Our Team
                     </a>
                   </li>
                   <li>
@@ -49,7 +49,15 @@
                       class="animate-underline inline-block"
                       href="/admissions-counseling/college/"
                     >
-                      Admissions Counseling
+                      College Counseling
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="animate-underline inline-block"
+                      href="/admissions-counseling/masters-mba/"
+                    >
+                      MBA & Master's Admissions
                     </a>
                   </li>
                   <li>
