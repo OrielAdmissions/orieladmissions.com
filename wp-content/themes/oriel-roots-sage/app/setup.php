@@ -395,7 +395,7 @@ function register_team_member_cpt() {
         'has_archive'        => true,
         'hierarchical'       => false,
         'menu_position'      => null,
-        'supports'           => ['title', 'editor', 'thumbnail', 'excerpt'],
+        'supports'           => ['title', 'editor', 'thumbnail', 'excerpt', 'page-attributes'],
     ];
 
     register_post_type('team_member', $args);
