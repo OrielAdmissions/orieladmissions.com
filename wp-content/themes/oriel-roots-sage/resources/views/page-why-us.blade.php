@@ -149,8 +149,13 @@
           <div class="py-12">
             <h3 class="text-oriel text-6xl-fluid">3 hours</h3>
             <p class="text-lg font-medium">
-              Describing their activities 6 hours Completing all portions of
-              their Common App
+              Describing their activities
+            </p>
+          </div>
+          <div class="py-12">
+            <h3 class="text-oriel text-6xl-fluid">6 hours</h3>
+            <p class="text-lg font-medium">
+              Completing all portions of their Common App
             </p>
           </div>
           <div class="py-12">
