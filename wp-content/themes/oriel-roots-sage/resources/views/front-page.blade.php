@@ -10,12 +10,11 @@
       </div>
       <div class="hero__window-overlay relative bg-[black] opacity-50"></div>
       <div class="content-grid">
-        <div class="breakout relative flex flex-col justify-end">
-            <div class="relative py-8 flex max-md:flex-col fade-in-bottom items-end justify-between">
-              <h1 class="max-w-225 text-8xl-fluid max-md:mb-6 max-md:text-center text-white">
+        <div class="breakout relative flex flex-col justify-center">
+            <div class="relative py-8 fade-in-bottom items-center">
+              <h1 class="max-w-225 text-8xl-fluid text-center mx-auto text-white">
                 Your Trusted Authority in Admissions.
               </h1>
-              <p class="text-white md:text-lg text-center max-md:mx-auto md:text-right max-w-80 md:mb-4">From application strategy to essay refinement, Oriel Admissions is your trusted partner in gaining acceptance to the world’s leading academic institutions.</p>
             </div>
 
         </div>
