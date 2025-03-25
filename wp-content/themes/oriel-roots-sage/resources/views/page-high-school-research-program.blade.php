@@ -198,8 +198,8 @@
               ]"
             />
           </div>
-          <a href="/contact" class="btn btn-primary text-center max-sm:w-full">
-            Get Started
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSf9vOm8tW8_Y2r9DoDnaAvboKvzsedZ-Gy_lIpOmQXk7j4qLA/viewform" target="_blank" class="btn btn-primary text-center max-sm:w-full">
+            Apply Now
           </a>
         </div>
         <div
@@ -230,8 +230,8 @@
             />
           </div>
 
-          <a href="/contact" class="btn btn-white text-center max-sm:w-full">
-            Get Started
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSf9vOm8tW8_Y2r9DoDnaAvboKvzsedZ-Gy_lIpOmQXk7j4qLA/viewform" target="_blank" class="btn btn-white text-center max-sm:w-full">
+            Apply Now
           </a>
         </div>
       </div>
