@@ -12,7 +12,7 @@
   @class(['the-stack relative items-center overflow-hidden pt-20 text-center', 'h-dvh' => is_single() && has_post_thumbnail($page_id), 'md:min-h-112' => ! (is_single() && has_post_thumbnail($page_id))])
 >
   @if (is_single() && has_post_thumbnail($page_id))
-    {!! App\get_picture([get_post_thumbnail_id($page_id)], 'full', false, ['loading' => false, 'class' => 'w-full h-full object-cover absolute inset-0 kenburns-top']) !!}
+    {!! App\get_picture([get_post_thumbnail_id($page_id)], 'full', false, ['loading' => false, 'class' => 'w-full h-full object-cover absolute inset-0']) !!}
   @endif
 
   <div
