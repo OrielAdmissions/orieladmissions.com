@@ -282,9 +282,9 @@
       >
         <x-slot:profile_image>
           <img
-            src="{{ Vite::asset('resources/images/college-logos/saiid-white-bg.png') }}"
+            src="{{ Vite::asset('resources/images/college-logos/oxford-white-bg.svg') }}"
             alt=""
-            class="h-auto w-full max-w-sm rounded-xl"
+            class="h-auto w-full max-w-full rounded-xl"
           />
         </x-slot>
         <x-slot:title>
@@ -320,7 +320,7 @@
           <img
             src="{{ Vite::asset('resources/images/college-logos/kellogg-white-bg.png') }}"
             alt=""
-            class="h-auto w-full max-w-sm rounded-xl"
+            class="h-auto w-full max-w-full rounded-xl"
           />
         </x-slot>
         <x-slot:title>
@@ -355,7 +355,7 @@
           <img
             src="{{ Vite::asset('resources/images/college-logos/harvard-business-white-bg.png') }}"
             alt=""
-            class="h-auto w-full max-w-sm rounded-xl"
+            class="h-auto w-full max-w-full rounded-xl"
           />
         </x-slot>
         <x-slot:title>
