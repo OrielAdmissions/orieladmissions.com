@@ -3,6 +3,7 @@ env:
   WPE_SSHG_KEY_PRIVATE: ${{ secrets.WPE_SSHG_KEY_PRIVATE }}
   WPE_INSTALL_NAME: ${{ secrets.PROD_ENVIRONMENT }}
   THEME_NAME: ${{ secrets.THEME_NAME }}
+  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 on:
   push:
     branches:
@@ -54,7 +55,7 @@ jobs:
           path: ~/.composer/cache
           key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
           restore-keys: |
-               ${{ runner.os }}-composer-
+            ${{ runner.os }}-composer-
 
       - name: Install Composer
         run: curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer

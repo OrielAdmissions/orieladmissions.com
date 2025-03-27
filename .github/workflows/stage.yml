@@ -3,6 +3,7 @@ env:
   WPE_SSHG_KEY_PRIVATE: ${{ secrets.WPE_SSHG_KEY_PRIVATE }}
   WPE_INSTALL_NAME: ${{ secrets.STG_ENVIRONMENT }}
   THEME_NAME: ${{ secrets.THEME_NAME }}
+  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 on:
   push:
     branches:
@@ -19,25 +20,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'yarn'
-          cache-dependency-path: wp-content/themes/${{ secrets.THEME_NAME }}/yarn.lock
-
-      - name: Install Yarn
-        run: npm install -g yarn
-
-      - name: Check for yarn.lock file
-        run: |
-          if [ ! -f wp-content/themes/${{ secrets.THEME_NAME }}/yarn.lock ]; then
-            echo "yarn.lock file is missing. Please ensure it exists in the specified directory."
-            exit 1
-          fi
+          cache: 'npm'
+          cache-dependency-path: wp-content/themes/${{ secrets.THEME_NAME }}/package-lock.json
 
       - name: Install js/css dependencies
-        run: yarn install
+        run: npm install
         working-directory: wp-content/themes/${{ secrets.THEME_NAME }}
 
       - name: Build js/css
-        run: yarn build
+        run: npm run build
         working-directory: wp-content/themes/${{ secrets.THEME_NAME }}
 
       - name: Clean up node modules (not needed to deploy)
@@ -64,7 +55,7 @@ jobs:
           path: ~/.composer/cache
           key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
           restore-keys: |
-               ${{ runner.os }}-composer-
+            ${{ runner.os }}-composer-
 
       - name: Install Composer
         run: curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
