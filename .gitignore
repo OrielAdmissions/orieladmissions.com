@@ -90,7 +90,7 @@ cache/acorn/
 /wp-signup.php
 /wp-trackback.php
 /xmlrpc.php
-wp-content/themes/oriel-roots-sage/vendor/
+#wp-content/themes/oriel-roots-sage/vendor/
 
 /wp-content/themes/oriel-roots-sage/public/*
 !/wp-content/themes/oriel-roots-sage/public/.gitkeep
