@@ -54,7 +54,7 @@
             <p class="mb-4">
                 We offer comprehensive advising and planning services beginning as early as 8th grade, helping students
                 navigate every stage of their academic and personal development. </p>
-            <ul class="list-disc space-y-4 pl-4">
+            <ul class="list-disc space-y-4 pl-4 mb-4">
                 <li>
                     <strong class="font-medium">High School Roadmap Preparation:</strong> A tailored plan to guide
                     students through their high school journey.
@@ -88,7 +88,7 @@
                 </li>
             </ul>
 
-            <p>
+            <p class="mb-4">
                 As students transition into the college application process in their junior and senior years, we
                 provide: </p>
             <ul class="list-disc space-y-4 pl-4">
