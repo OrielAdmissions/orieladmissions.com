@@ -23,10 +23,9 @@
     ],
     [
       'image_id' => 410,
-      'title' => 'Former Admissions Officer',
-      'text' => 'Our former admissions officers will review your application in your senior year, providing another valuable perspective on your candidacy as we perfect your application.',
+      'title' => 'Student Success Manager',
+      'text' => 'Your student success manager will help you to stay organized and accountable, while navigating deadlines and staying on track.',
     ],
-
     [
       'image_id' => 406,
       'title' => 'College Counselor',
