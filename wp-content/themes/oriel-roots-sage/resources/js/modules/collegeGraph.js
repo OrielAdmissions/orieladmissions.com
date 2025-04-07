@@ -97,7 +97,7 @@ Alpine.data('collegeGraph', () => ({
 
       if (data) {
         const tooltipContent = `
-                  <div class="p-6 text-lg">
+                  <div class="p-6">
           <img src="${data.logo}" alt="${collegeName} Logo" class="mb-4" width="${data.logoWidth}"/>
           <div><span class="inline-block rounded-full bg-[#C3A6A3] size-3 mr-2"></span>${data.nationalAverage} National Acceptance Rate</div>
           <div><span class="inline-block rounded-full bg-oriel size-3 mr-2"></span>${data.orielAverage} Oriel Admissions Acceptance Rate</div>
