@@ -1,0 +1,24 @@
+{
+  "name": "acf/block-links",
+  "title": "Block Links Section",
+  "description": "Block Links Section",
+  "style": [ "file:./style.css" ],
+  "category": "",
+  "icon": "",
+  "keywords": [
+    "oriel",
+    "section",
+    "block links"
+  ],
+  "acf": {
+    "mode": "auto",
+    "renderCallback": "\\App\\blade_render_callback",
+    "postTypes": [
+      "page"
+    ],
+    "blockVersion": 3
+  },
+  "supports": {
+    "anchor": true
+  }
+}

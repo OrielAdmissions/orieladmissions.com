@@ -2,7 +2,7 @@
   // Headline and text data
   $slides = [
     [
-      'image_id' => 406,
+      'image_id' => 415,
       'title' => 'College Counselor',
       'text' => 'Your dedicated counselor will lead you through every step of your college application journey, including crafting a personalized roadmap and a month-by-month action plan to keep you on track.',
     ],
@@ -27,7 +27,7 @@
       'text' => 'Your student success manager will help you to stay organized and accountable, while navigating deadlines and staying on track.',
     ],
     [
-      'image_id' => 406,
+      'image_id' => 415,
       'title' => 'College Counselor',
       'text' => 'Your dedicated counselor will lead you through every step of your college application journey, including crafting a personalized roadmap and a month-by-month action plan to keep you on track.',
     ],

@@ -5,15 +5,7 @@ import { initStorySwiper } from './storySwiper.js';
 
 export function initializeSwipers() {
   initCardSlider();
-
-  if (document.body.classList.contains('home')) {
-    initArcSwiper();
-    initStorySwiper();
-  }
-  if (document.body.classList.contains('why-us')) {
-    initArcSwiper();
-  }
-  if (document.body.classList.contains('college')) {
-    initServicesSwiper();
-  }
+  initArcSwiper();
+  initStorySwiper();
+  initServicesSwiper();
 }

@@ -1,0 +1,23 @@
+{
+  "name": "acf/arc-slider",
+  "title": "360 Slider",
+  "description": "360 degree slider",
+  "style": [ "file:./style.css" ],
+  "category": "",
+  "icon": "",
+  "keywords": [
+    "team",
+    "slider"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderCallback": "\\App\\blade_render_callback",
+    "postTypes": [
+      "page"
+    ],
+    "blockVersion": 3
+  },
+  "supports": {
+    "anchor": true
+  }
+}
