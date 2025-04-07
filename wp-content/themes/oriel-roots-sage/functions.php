@@ -49,7 +49,7 @@ Application::configure()
 |
 */
 
-collect(['setup', 'filters'])
+collect(['setup', 'filters', 'blocks', 'blade_render_callback'])
     ->each(function ($file) {
         if (!locate_template($file = "app/{$file}.php", true, true)) {
             wp_die(

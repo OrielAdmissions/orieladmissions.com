@@ -7,10 +7,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && npm run build:blocks --output-path=resources/views/blocks",
-    "build:blocks": "wp-scripts build --output-path=resources/views/blocks",
-    "start": "vite && npm run start:blocks --output-path=resources/views/blocks",
-    "start:blocks": "wp-scripts start --output-path=resources/views/blocks",
+    "build": "vite build",
     "translate": "npm run translate:pot && npm run translate:update",
     "translate:pot": "wp i18n make-pot . ./resources/lang/sage.pot --include=\"theme.json,patterns,app,resources\"",
     "translate:update": "for file in ./resources/lang/*.po; do wp i18n update-po ./resources/lang/sage.pot $file; done",
