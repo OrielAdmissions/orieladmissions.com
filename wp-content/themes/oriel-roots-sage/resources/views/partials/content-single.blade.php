@@ -11,6 +11,11 @@
           {!! get_svg('images.chevron-left', 'inline-block mr-2') !!}
           <span class="animate-underline">Back</span>
         </a>
+      @elseif (is_singular('college'))
+        <a href="/resources/insights">
+          {!! get_svg('images.chevron-left', 'inline-block mr-2') !!}
+          <span class="animate-underline">Back</span>
+        </a>
       @endif
 
 

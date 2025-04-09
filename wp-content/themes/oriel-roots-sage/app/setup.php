@@ -401,3 +401,32 @@ function register_team_member_cpt() {
     register_post_type('team_member', $args);
 }
 
+function register_colleges_cpt() {
+    $labels = array(
+        'name' => 'Colleges',
+        'singular_name' => 'College',
+        'add_new' => 'Add New',
+        'add_new_item' => 'Add New College',
+        'edit_item' => 'Edit College',
+        'new_item' => 'New College',
+        'view_item' => 'View College',
+        'search_items' => 'Search Colleges',
+        'not_found' => 'No colleges found',
+        'not_found_in_trash' => 'No colleges found in Trash',
+        'menu_name' => 'Colleges'
+    );
+
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'has_archive' => true,
+        'rewrite' => array('slug' => 'colleges'),
+        'supports' => array('title', 'editor', 'excerpt', 'custom-fields'),
+        'show_in_rest' => true,
+        'menu_position' => 5,
+        'menu_icon' => 'dashicons-welcome-learn-more',
+    );
+
+    register_post_type('college', $args);
+}
+
