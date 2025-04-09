@@ -38,7 +38,10 @@
           <!-- Mobile Dropdown -->
           <div class="dropdown-wrapper flex justify-center md:hidden">
             <div
-              x-data="dropdown({ links: {!! collect($colleges)->map(fn($c) => [ 'href' => '#' . Str::kebab($c->post_title), 'text' => $c->post_title ])->toJson() !!}})"
+  x-data='dropdown({ links: {!! collect($colleges)->map(fn($c) => [
+    "href" => "#" . Str::kebab($c->post_title),
+    "text" => $c->post_title
+  ])->toJson() !!} })'
               x-on:keydown.escape.prevent.stop="close($refs.button)"
               x-on:focusin.window="! $refs.panel.contains($event.target) && close()"
               x-id="['dropdown-button']"
