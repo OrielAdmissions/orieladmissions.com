@@ -12,7 +12,6 @@
     "marquee"
   ],
   "acf": {
-    "mode": "preview",
     "renderCallback": "\\App\\blade_render_callback",
     "postTypes": [
       "page"
@@ -20,6 +19,12 @@
     "blockVersion": 3
   },
   "supports": {
-    "anchor": true
+    "anchor": true,
+    "align": true,
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": true
+    }
   }
 }

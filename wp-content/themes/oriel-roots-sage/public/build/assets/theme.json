@@ -1301,6 +1301,7 @@
     },
     "spacing": {
       "padding": true,
+      "margin": true,
       "units": [
         "px",
         "%",
@@ -1312,7 +1313,19 @@
     },
     "typography": {
       "defaultFontSizes": false,
-      "customFontSize": false,
+      "customFontSize": true,
+      "fontFamilies": [
+        {
+          "fontFamily": "PP Editorial New, serif",
+          "name": "PP Editorial New",
+          "slug": "pp-editorial-new"
+        },
+        {
+          "fontFamily": "Barlow Semi Condensed, sans-serif",
+          "name": "Barlow Semi Condensed",
+          "slug": "barlow-semi-condensed"
+        }
+      ],
       "fontSizes": [
         {
           "name": "xs",
@@ -1415,6 +1428,10 @@
           "size": "clamp(1rem,.208vw + .958rem,1.125rem)"
         }
       ]
+    },
+    "layout": {
+      "contentSize": "1100px",
+      "wideSize": "1280px"
     }
   }
 }
