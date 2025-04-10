@@ -1,76 +1,58 @@
+@php
+  $heading          = get_field('heading');
+  $video_url        = get_field('video_url') ?: 'https://www.youtube.com/watch?v=ScMzIvxBSi4';
+  $video_caption    = get_field('video_caption');
+  $background_image = get_field('background_image');
+  $paragraph        = get_field('paragraph');
+  $team_link        = get_field('team_link');
+@endphp
+
 <div class="py-12 md:py-30">
-  <h2 class="fade-in-bottom mb-12 md:mb-30 text-center font-serif text-5xl font-light">
-    Meet our founder, Rona
-  </h2>
+  @if ($heading)
+    <h2 class="fade-in-bottom mb-12 md:mb-30 text-center font-serif text-5xl font-light">
+      {{ $heading }}
+    </h2>
+  @endif
   <div class="space-y-8">
-    <a
-      class="videoFancyBoxLink grid grid-cols-3 grid-rows-1 items-center transition duration-300 hover:brightness-70"
-      data-fancybox
-      href="https://www.youtube.com/watch?v=ScMzIvxBSi4"
-      data-caption="Meet our founder, Rona"
-    >
+    <a class="videoFancyBoxLink grid grid-cols-3 grid-rows-1 items-center transition duration-300 hover:brightness-70"
+       data-fancybox href="{{ $video_url }}" data-caption="{{ $video_caption }}">
       <div class="col-span-full row-span-full overflow-hidden rounded-lg">
-        {!! App\get_picture([20], 'full', false, ['class' => 'object-cover object-right w-full']) !!}
+        {!! App\get_picture([$background_image['ID']], 'full', false, ['class' => 'object-cover object-right w-full']) !!}
       </div>
-      <svg
-        width="162"
-        height="88"
-        viewBox="0 0 162 88"
-        class="relative z-10 col-span-full row-span-full h-auto max-w-24 justify-self-center md:max-w-30"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+      <svg width="162" height="88" viewBox="0 0 162 88"
+           class="relative z-10 col-span-full row-span-full h-auto max-w-24 justify-self-center md:max-w-30" fill="none"
+           xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_b_457_12979)">
-          <rect
-            width="162"
-            height="88"
-            rx="44"
-            fill="white"
-            fill-opacity="0.8"
-          />
+          <rect width="162" height="88" rx="44" fill="white" fill-opacity="0.8"/>
           <path
             d="M66.75 43.5004C66.7505 43.7126 66.6961 43.9213 66.5921 44.1063C66.488 44.2912 66.3379 44.4461 66.1562 44.5559L54.9 51.4418C54.7102 51.558 54.4929 51.6214 54.2704 51.6256C54.0479 51.6297 53.8283 51.5743 53.6344 51.4652C53.4423 51.3578 53.2822 51.2012 53.1708 51.0114C53.0593 50.8217 53.0003 50.6056 53 50.3855V36.6152C53.0003 36.3951 53.0593 36.1791 53.1708 35.9894C53.2822 35.7996 53.4423 35.643 53.6344 35.5355C53.8283 35.4264 54.0479 35.3711 54.2704 35.3752C54.4929 35.3793 54.7102 35.4428 54.9 35.559L66.1562 42.4449C66.3379 42.5547 66.488 42.7095 66.5921 42.8945C66.6961 43.0795 66.7505 43.2882 66.75 43.5004Z"
-            fill="#29202D"
-          />
+            fill="#29202D"/>
           <path
             d="M84.4819 37.48C85.6152 37.48 86.5219 37.8533 87.2019 38.6C87.8952 39.3333 88.2419 40.3067 88.2419 41.52C88.2419 42.7067 87.8952 43.6667 87.2019 44.4C86.5219 45.12 85.6152 45.48 84.4819 45.48H81.8019C81.7485 45.48 81.7219 45.5067 81.7219 45.56V51.3C81.7219 51.4333 81.6552 51.5 81.5219 51.5H80.0019C79.8685 51.5 79.8019 51.4333 79.8019 51.3V37.68C79.8019 37.5467 79.8685 37.48 80.0019 37.48H84.4819ZM84.2019 43.94C84.8419 43.94 85.3552 43.7267 85.7419 43.3C86.1419 42.86 86.3419 42.28 86.3419 41.56C86.3419 40.8267 86.1419 40.24 85.7419 39.8C85.3552 39.36 84.8419 39.14 84.2019 39.14H81.8019C81.7485 39.14 81.7219 39.1667 81.7219 39.22V43.86C81.7219 43.9133 81.7485 43.94 81.8019 43.94H84.2019ZM90.2511 51.5C90.1178 51.5 90.0511 51.4333 90.0511 51.3V37.7C90.0511 37.5667 90.1178 37.5 90.2511 37.5H91.7711C91.9044 37.5 91.9711 37.5667 91.9711 37.7V51.3C91.9711 51.4333 91.9044 51.5 91.7711 51.5H90.2511ZM97.8489 41.16C98.9556 41.16 99.8422 41.4733 100.509 42.1C101.176 42.7133 101.509 43.52 101.509 44.52V51.3C101.509 51.4333 101.442 51.5 101.309 51.5H99.7889C99.6556 51.5 99.5889 51.4333 99.5889 51.3V50.72C99.5889 50.6933 99.5756 50.68 99.5489 50.68C99.5356 50.6667 99.5156 50.6733 99.4889 50.7C98.8889 51.34 98.0556 51.66 96.9889 51.66C96.1222 51.66 95.3822 51.4267 94.7689 50.96C94.1556 50.48 93.8489 49.7133 93.8489 48.66C93.8489 47.5667 94.2022 46.74 94.9089 46.18C95.6289 45.6067 96.6022 45.32 97.8289 45.32H99.5089C99.5622 45.32 99.5889 45.2933 99.5889 45.24V44.68C99.5889 44.1067 99.4356 43.6533 99.1289 43.32C98.8356 42.9867 98.4089 42.82 97.8489 42.82C97.4089 42.82 97.0422 42.9333 96.7489 43.16C96.4689 43.3733 96.2956 43.6667 96.2289 44.04C96.2156 44.16 96.1422 44.22 96.0089 44.22L94.3689 44.12C94.3156 44.12 94.2689 44.1067 94.2289 44.08C94.1889 44.04 94.1756 43.9933 94.1889 43.94C94.2689 43.1133 94.6422 42.4467 95.3089 41.94C95.9889 41.42 96.8356 41.16 97.8489 41.16ZM97.4089 50.02C97.9956 50.02 98.5022 49.8533 98.9289 49.52C99.3689 49.1867 99.5889 48.74 99.5889 48.18V46.9C99.5889 46.8467 99.5622 46.82 99.5089 46.82H97.9689C97.3156 46.82 96.7889 46.9667 96.3889 47.26C96.0022 47.5533 95.8089 47.98 95.8089 48.54C95.8089 49.0333 95.9556 49.4067 96.2489 49.66C96.5422 49.9 96.9289 50.02 97.4089 50.02ZM103.347 55.48C103.254 55.48 103.207 55.4133 103.207 55.28V54.1C103.207 53.9667 103.274 53.9 103.407 53.9H103.427C103.907 53.8867 104.281 53.82 104.547 53.7C104.827 53.58 105.054 53.3533 105.227 53.02C105.401 52.7 105.561 52.2133 105.707 51.56C105.721 51.5467 105.721 51.5267 105.707 51.5C105.707 51.46 105.707 51.44 105.707 51.44L102.767 41.54L102.747 41.48C102.747 41.3733 102.814 41.32 102.947 41.32H104.567C104.701 41.32 104.774 41.38 104.787 41.5L106.667 48.88C106.681 48.9067 106.694 48.9267 106.707 48.94C106.721 48.94 106.734 48.92 106.747 48.88L108.607 41.5C108.634 41.38 108.707 41.32 108.827 41.32L110.427 41.34C110.494 41.34 110.541 41.36 110.567 41.4C110.607 41.44 110.621 41.4933 110.607 41.56L107.427 52.2C107.147 53.12 106.867 53.8 106.587 54.24C106.307 54.6933 105.927 55.0133 105.447 55.2C104.981 55.3867 104.321 55.48 103.467 55.48H103.347Z"
-            fill="#29202D"
-          />
+            fill="#29202D"/>
         </g>
         <defs>
-          <filter
-            id="filter0_b_457_12979"
-            x="-24"
-            y="-24"
-            width="210"
-            height="136"
-            filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-            <feGaussianBlur in="BackgroundImageFix" stdDeviation="12" />
-            <feComposite
-              in2="SourceAlpha"
-              operator="in"
-              result="effect1_backgroundBlur_457_12979"
-            />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="effect1_backgroundBlur_457_12979"
-              result="shape"
-            />
+          <filter id="filter0_b_457_12979" x="-24" y="-24" width="210" height="136" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feGaussianBlur in="BackgroundImageFix" stdDeviation="12"/>
+            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_457_12979"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_457_12979" result="shape"/>
           </filter>
         </defs>
       </svg>
     </a>
     <div class="flex items-start justify-between gap-6 max-md:flex-col">
-      <p class="text-lg-fluid max-w-lg">
-        We are former admissions officers, dedicated college counselors,
-        creative writing specialists, academic tutors, project mentors, and
-        more.
-      </p>
-      <a href="/about/team" class="btn btn-primary">Meet the Team</a>
+      @if($paragraph)
+        <p class="text-lg-fluid max-w-lg">
+          {{ $paragraph }}
+        </p>
+      @endif
+      @if ($link)
+        <a href="{{ $link['url'] }}" class="btn btn-primary">
+          {{ $link['title'] }}
+        </a>
+      @endif
     </div>
   </div>
 </div>

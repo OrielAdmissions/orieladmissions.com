@@ -1,0 +1,31 @@
+{
+  "name": "acf/latest-posts",
+  "title": "Latest Posts Slider",
+  "description": "Latest Posts Slider",
+  "style": [ "file:./style.css" ],
+  "category": "",
+  "icon": "",
+  "keywords": [
+    "oriel",
+    "section",
+    "posts",
+    "latest posts",
+    "slider"
+  ],
+  "acf": {
+    "renderCallback": "\\App\\blade_render_callback",
+    "postTypes": [
+      "page"
+    ],
+    "blockVersion": 3
+  },
+  "supports": {
+    "anchor": true,
+    "align": true,
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": true
+    }
+  }
+}
