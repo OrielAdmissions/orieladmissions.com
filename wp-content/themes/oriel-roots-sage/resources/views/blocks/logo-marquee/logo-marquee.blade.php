@@ -1,32 +1,11 @@
 @php
-  $svgFiles = [
-    ['name' => 'berkeley', 'classes' => 'w-[150px]'],
-    ['name' => 'boston-college', 'classes' => 'w-[150px]'],
-    ['name' => 'boston-university', 'classes' => 'w-[150px]'],
-    ['name' => 'brown', 'classes' => 'w-[150px]'],
-    ['name' => 'cambridge', 'classes' => 'w-[150px]'],
-    ['name' => 'carnegie-mellon', 'classes' => 'w-[300px]'],
-    ['name' => 'columbia-university', 'classes' => 'w-[300px]'],
-    ['name' => 'cornell-university', 'classes' => 'w-[350px]'],
-    ['name' => 'dartmouth', 'classes' => 'w-[150px]'],
-    ['name' => 'georgetown-university', 'classes' => 'w-[150px]'],
-    ['name' => 'harvard', 'classes' => 'w-[180px]'],
-    ['name' => 'johns-hopkins', 'classes' => 'w-[150px]'],
-    ['name' => 'mit', 'classes' => 'w-[120px]'],
-    ['name' => 'northwestern', 'classes' => 'w-[150px]'],
-    ['name' => 'nyu', 'classes' => 'w-[150px]'],
-    ['name' => 'oxford', 'classes' => 'w-[180px]'],
-    ['name' => 'princeton', 'classes' => 'w-[300px]'],
-    ['name' => 'stanford', 'classes' => 'w-[150px]'],
-    ['name' => 'ucla', 'classes' => 'w-[120px]'],
-    ['name' => 'university-of-pennsylvania', 'classes' => 'w-[150px]'],
-    ['name' => 'university-of-virginia', 'classes' => 'w-[150px]'],
-    ['name' => 'yale', 'classes' => 'w-[120px]'],
-  ];
+  // Assume you're using an ACF repeater named 'logos'
+  $logos = get_field('logos');
 @endphp
 
+@if ($logos)
 <div class="bg-cardinal full-width content-grid space-y-28 pt-28 pb-20">
-  <div class="">
+  <div>
     <h2
       class="fade-in-bottom text-center font-serif text-5xl font-light text-white"
     >
@@ -35,13 +14,8 @@
   </div>
 
   @php
-    // Split the SVG files into two equal parts
-    $svgChunks = array_chunk($svgFiles, ceil(count($svgFiles) / 2));
-  @endphp
-
-  @php
-    // Split the SVG files into two equal parts
-    $svgChunks = array_chunk($svgFiles, ceil(count($svgFiles) / 2));
+    // If you'd like to chunk the logos for marquee rows
+    $svgChunks = array_chunk($logos, ceil(count($logos) / 2));
   @endphp
 
   <div class="full-width overflow-hidden select-none">
@@ -53,21 +27,27 @@
           <div
             class="grid min-w-max auto-cols-[250px] grid-flow-col place-content-center gap-6"
           >
-            @foreach ($row as $svg)
-              <div
-                class="logo-card flex aspect-16/9 items-center justify-center overflow-hidden rounded-xl bg-white"
-              >
-                {!! get_svg('images.college-logos.' . $svg['name'], 'max-w-full ' . $svg['classes']) !!}
+            @foreach ($row as $logo)
+              @php
+                // Retrieve the image and the width value from each repeater row.
+                // Ensure your ACF fields are named appropriately (here assumed as 'logo_image' and 'logo_width').
+                $imageID = $logo['logo_image']['ID'];
+                // Use the slider value and append 'px' if provided, default to 150px otherwise.
+                $logoWidth = $logo['logo_width'] ? $logo['logo_width'] . 'px' : '150px';
+              @endphp
+              <div class="logo-card flex aspect-16/9 items-center justify-center overflow-hidden rounded-xl bg-white">
+                {!! wp_get_attachment_image($imageID, 'full', false, ['style' => "width: $logoWidth;"]) !!}
               </div>
             @endforeach
 
-            {{-- Duplicate content for infinite loop --}}
-            @foreach ($row as $svg)
-              <div
-                class="logo-card flex aspect-16/9 items-center justify-center overflow-hidden rounded-xl bg-white"
-                aria-hidden="true"
-              >
-                {!! get_svg('images.college-logos.' . $svg['name'], 'max-w-full ' . $svg['classes']) !!}
+            {{-- Duplicate the row content for infinite scrolling effect --}}
+            @foreach ($row as $logo)
+              @php
+                $imageID = $logo['logo_image']['ID'];
+                $logoWidth = $logo['logo_width'] ? $logo['logo_width'] . 'px' : '150px';
+              @endphp
+              <div class="logo-card flex aspect-16/9 items-center justify-center overflow-hidden rounded-xl bg-white" aria-hidden="true">
+                {!! wp_get_attachment_image($imageID, 'full', false, ['style' => "width: $logoWidth;"]) !!}
               </div>
             @endforeach
           </div>
@@ -76,3 +56,4 @@
     </div>
   </div>
 </div>
+@endif

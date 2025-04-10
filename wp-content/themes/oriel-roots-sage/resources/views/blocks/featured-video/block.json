@@ -1,0 +1,30 @@
+{
+  "name": "acf/featured-video",
+  "title": "Featured Video Section",
+  "description": "Featured Video Section",
+  "style": [ "file:./style.css" ],
+  "category": "",
+  "icon": "",
+  "keywords": [
+    "oriel",
+    "section",
+    "video",
+    "lightbox"
+  ],
+  "acf": {
+    "renderCallback": "\\App\\blade_render_callback",
+    "postTypes": [
+      "page"
+    ],
+    "blockVersion": 3
+  },
+  "supports": {
+    "anchor": true,
+    "align": true,
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": true
+    }
+  }
+}

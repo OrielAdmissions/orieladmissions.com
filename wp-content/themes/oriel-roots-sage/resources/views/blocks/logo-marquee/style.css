@@ -1,0 +1,42 @@
+.logo-card,
+.marquee__row {
+  will-change: transform;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-50% - 1rem));
+  }
+}
+
+@keyframes marquee-reverse {
+  from {
+    transform: translateX(calc(-50% - 1rem));
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-marquee {
+  animation-name: marquee;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+.animate-marquee-reverse {
+  animation-name: marquee-reverse;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
