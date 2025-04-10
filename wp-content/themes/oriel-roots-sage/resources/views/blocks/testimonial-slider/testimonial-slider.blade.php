@@ -6,10 +6,10 @@
 @if ($slides)
   <div class="window-overlay full-width relative">
     <div class="the-stack">
-      <div class="swiper story-swiper max-w-full">
+      <div class="swiper story-swiper lg:h-[750px] max-w-full">
         <div class="swiper-wrapper">
           @foreach ($slides as $slide)
-            <div class="swiper-slide" data-story="{{ $slide['slide_story'] }}">
+            <div class="swiper-slide" data-story="{{ $slide['slide_testimonial'] }}">
               {!! App\get_picture([$slide['slide_image']['ID']], 'full', false, ['class' => 'h-full w-full object-cover object-center']) !!}
             </div>
           @endforeach
@@ -27,7 +27,7 @@
             <div class="mx-auto flex max-w-[400px] flex-col gap-6">
               <p class="text-lg max-lg:mb-12" id="storyText">
                 {{-- Display the story text from the first slide --}}
-                {{ $slides[0]['slide_story'] }}
+                {{ $slides[0]['slide_testimonial'] }}
               </p>
               <ul role="list" class="divide-keyline/40 hidden divide-y text-xl max-lg:mb-24">
                 <li class="py-4">
