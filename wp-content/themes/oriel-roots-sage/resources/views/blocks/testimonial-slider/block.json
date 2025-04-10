@@ -12,6 +12,7 @@
     "slider"
   ],
   "acf": {
+    "mode": "edit",
     "renderCallback": "\\App\\blade_render_callback",
     "postTypes": [
       "page"
