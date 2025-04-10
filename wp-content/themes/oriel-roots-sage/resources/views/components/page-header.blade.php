@@ -1,3 +1,4 @@
+<?php   $page_id = get_the_ID();?>
 <div
   @class(['the-stack relative items-center overflow-hidden text-center', 'h-dvh' => has_post_thumbnail($page_id), 'md:min-h-112' => ! has_post_thumbnail($page_id)])
 >

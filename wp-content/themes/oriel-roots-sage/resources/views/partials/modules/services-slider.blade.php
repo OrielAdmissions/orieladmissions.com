@@ -41,7 +41,7 @@
           'button_link' => '#',
           'image_id' => 448,
         ],
-      ];
+      ]
     @endphp
 
     <div class="content-grid overflow-x-clip">

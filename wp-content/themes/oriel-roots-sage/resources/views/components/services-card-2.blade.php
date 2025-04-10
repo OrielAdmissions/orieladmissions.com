@@ -7,7 +7,6 @@
 ])
 
 <article
-  data-tags="{{ implode(' ', wp_get_post_tags($post->ID, ['fields' => 'slugs'])) }}"
   class="group relative flex h-full flex-col items-start justify-between overflow-hidden rounded-xl bg-white transition duration-500"
 >
   @if ($image_id)
