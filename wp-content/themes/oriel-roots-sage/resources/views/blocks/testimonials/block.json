@@ -1,0 +1,24 @@
+{
+  "name": "acf/testimonials",
+  "title": "Testimonials",
+  "description": "Testimonials",
+  "style": [ "file:./style.css" ],
+  "category": "",
+  "icon": "",
+  "keywords": [
+    "oriel",
+    "section",
+    "testimonials"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderCallback": "\\App\\blade_render_callback",
+    "postTypes": [
+      "page"
+    ],
+    "blockVersion": 3
+  },
+  "supports": {
+    "anchor": true
+  }
+}

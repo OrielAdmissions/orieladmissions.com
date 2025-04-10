@@ -1,0 +1,25 @@
+{
+  "name": "acf/logo-marquee",
+  "title": "Logo Marquee Section",
+  "description": "Logo Marquee Section",
+  "style": [ "file:./style.css" ],
+  "category": "",
+  "icon": "",
+  "keywords": [
+    "oriel",
+    "section",
+    "logos",
+    "marquee"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderCallback": "\\App\\blade_render_callback",
+    "postTypes": [
+      "page"
+    ],
+    "blockVersion": 3
+  },
+  "supports": {
+    "anchor": true
+  }
+}

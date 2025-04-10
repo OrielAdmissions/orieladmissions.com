@@ -1,0 +1,24 @@
+{
+  "name": "acf/tabs",
+  "title": "Tabs Section",
+  "description": "Tabs Section",
+  "style": [ "file:./style.css" ],
+  "category": "",
+  "icon": "",
+  "keywords": [
+    "oriel",
+    "section",
+    "tabs"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderCallback": "\\App\\blade_render_callback",
+    "postTypes": [
+      "page"
+    ],
+    "blockVersion": 3
+  },
+  "supports": {
+    "anchor": true
+  }
+}

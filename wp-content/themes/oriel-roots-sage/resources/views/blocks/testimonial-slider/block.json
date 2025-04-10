@@ -1,0 +1,25 @@
+{
+  "name": "acf/testimonial-slider",
+  "title": "Testimonial Slider",
+  "description": "Testimonial Slider",
+  "style": [ "file:./style.css" ],
+  "category": "",
+  "icon": "",
+  "keywords": [
+    "oriel",
+    "section",
+    "testimonial",
+    "slider"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderCallback": "\\App\\blade_render_callback",
+    "postTypes": [
+      "page"
+    ],
+    "blockVersion": 3
+  },
+  "supports": {
+    "anchor": true
+  }
+}
