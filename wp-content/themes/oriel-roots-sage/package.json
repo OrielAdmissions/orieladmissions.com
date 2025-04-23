@@ -29,6 +29,7 @@
     "@alpinejs/focus": "^3.14.8",
     "@alpinejs/ui": "^3.14.8",
     "@fancyapps/ui": "^5.0.36",
+    "@lottiefiles/dotlottie-web": "^0.43.0",
     "@popperjs/core": "^2.11.8",
     "@wordpress/block-editor": "^14.13.0",
     "@wordpress/blocks": "^14.7.0",

@@ -5,7 +5,6 @@ import './modules/collegeGraph.js';
 import { gsapAnimations, smootherInstance } from './modules/gsap/gsapInit.js';
 import { initFancybox } from './modules/fancybox';
 import { initIntersectionObserver } from './modules/gsap/fadeIn.js';
-
 import { registerAlpineDirectives } from './modules/alpine';
 
 registerAlpineDirectives();

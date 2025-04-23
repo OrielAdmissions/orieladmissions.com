@@ -1,154 +1,51 @@
-import { gsap, ScrollSmoother } from './gsapConfig.js';
+import { gsap } from './gsapConfig.js';
+import { DotLottie } from '@lottiefiles/dotlottie-web';
 
 export function pageLoaderInit() {
-  let masterTl; // Store the timeline globally
-  const smoother = ScrollSmoother.get();
-  const svg = document.querySelector('#LetterGroup');
-  const orielGroup = document.querySelector('#OrielGroup');
-  const innerShape = document.querySelector('#InnerShape');
-  const gradientBox = document.querySelector('#GradientBox');
-  const innerShapeMiddle = document.querySelector('#InnerShapeMiddle');
+  const header = document.querySelector('.home #sticky-header > nav');
+  const heroTitle = document.querySelector('#home-hero h1');
+  const canvas = document.getElementById('dotlottie-canvas');
 
-  if (!svg || !innerShapeMiddle) return;
+  gsap.set(heroTitle, { autoAlpha: 0, y: 50 }); // fades + slides up
+  gsap.set(header, { autoAlpha: 0, y: -100 }); // hidden above screen
 
-  // Get bounding boxes
-  const bboxSVG = svg.getBBox();
-  // const bboxInner = innerShape.getBBox();
-
-  // Calculate center position for #O1
-  const centerX = bboxSVG.width / 2;
-  // const viewportHeight = window.innerHeight;
-  // const targetHeight = Math.min(675, viewportHeight); // No larger than viewport height
-  // const scaleFactor = targetHeight / bboxInner.height; // Scale to maintain proportions
-
-  const bboxInner = innerShapeMiddle.getBBox();
-  const viewportWidth = window.innerWidth;
-  const scaleFactor = (viewportWidth / bboxInner.width) * 1.5;
-
-  // Kill the previous timeline if it exists
-  if (masterTl) {
-    masterTl.kill();
-  }
-
-  // Pause ScrollSmoother if it exists
-  if (smoother) {
-    smoother.paused(true);
-    smoother.scrollTo(0, true); // Ensure we start from the top
-  }
-
-  // Create a new GSAP Timeline
-  masterTl = gsap.timeline({
-    onStart: () => {
-      if (smoother) smoother.paused(true); // Pause smooth scrolling
-      document.body.style.overflow = 'hidden'; // Prevent default scrolling
-    },
-    onComplete: () => {
-      if (smoother) smoother.paused(false); // Resume smooth scrolling
-      document.body.style.overflow = ''; // Allow scrolling again
-    },
+  /* build player – no autoplay so we can attach listeners first */
+  const dotLottie = new DotLottie({
+    canvas,
+    src: 'https://lottie.host/530b1cb1-b79f-483e-958d-e9c6b81613b4/WoZkKaOS8V.lottie',
+    autoplay: true,
+    loop: false, // play once
+    layout: { fit: 'cover' },
+    renderConfig: { autoResize: true },
+    segment: [0, 150],
   });
 
-  function intro() {
-    var tl = gsap.timeline({ defaults: { duration: 2, ease: 'power3.out' } });
-    tl.fromTo(
-      '#LogoBox',
-      {
-        y: 50,
-        opacity: 0,
-      },
-      {
+  function reveal() {
+    const tl = gsap.timeline();
+
+    // 1️⃣  hero title
+    tl.to(heroTitle, {
+      autoAlpha: 1,
+      y: 0,
+      duration: 1.2,
+      ease: 'power1.out',
+    })
+
+      // 2️⃣  header kicks in right after hero is done
+      .to(header, {
+        autoAlpha: 1,
         y: 0,
-        opacity: 1,
-        duration: 1.2, // Adjust as needed
-        ease: 'power3.out',
-      },
-    );
-    tl.to('#paint0_linear_0_1 stop:nth-child(3)', {
-      attr: {
-        offset: 1,
-      },
-      stopOpacity: 1,
-      duration: 1,
-    });
-    tl.to(
-      '#MainGroup',
-      {
-        xPercent: -100,
-        opacity: 0,
-      },
-      '-=1',
-    );
-
-    tl.to(
-      orielGroup,
-      {
-        transformOrigin: 'center center',
-        x: centerX,
-      },
-      '-=2',
-    );
-    tl.to('#InnerShapeMiddle', {
-      scale: 1,
-      transformOrigin: 'center center',
-      x: centerX,
-      duration: 0,
-    });
-
-    tl.to(gradientBox, {
-      opacity: 0,
-      duration: 0,
-    });
-    tl.to(innerShape, {
-      opacity: 0,
-      duration: 0,
-    });
-
-    return tl;
+        duration: 1,
+        ease: 'power1.out',
+      });
   }
 
-  function middle() {
-    var tl = gsap.timeline({
-      defaults: { duration: 2.5, ease: 'power.inOut' },
-    });
-    tl.to(orielGroup, {
-      scale: scaleFactor,
-      color: 'color-mix(in oklab,var(--color-opium)10%,transparent)',
-      transformOrigin: 'center center',
-      // opacity: 0
-    });
-    tl.to(
-      '#InnerShapeMiddle',
-      {
-        scale: scaleFactor,
-        transformOrigin: 'center center',
-        fill: '#000000',
-      },
-      '<',
-    );
-    tl.to(
-      '#O1',
-      {
-        opacity: 0,
-      },
-      '-=1',
-    );
-    tl.to(
-      '#animationOverlay',
-      {
-        opacity: 0,
-      },
-      '-=1',
-    );
-    tl.to(
-      'svg.bg-chalk',
-      {
-        background: 'transparent',
-      },
-      '-=2',
-    );
+  dotLottie.addEventListener('load', () => {
+    canvas.classList.remove('bg-chalk');
+  });
 
-    return tl;
-  }
 
-  masterTl.add(intro()).add(middle());
+  dotLottie.addEventListener('complete', () => {
+    reveal();
+  });
 }

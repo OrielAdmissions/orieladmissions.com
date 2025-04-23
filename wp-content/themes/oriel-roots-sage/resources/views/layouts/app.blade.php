@@ -10,7 +10,6 @@
   </head>
 
   <body @php(body_class())>
-    {{-- <x-page-loader /> --}}
     <a class="sr-only focus:not-sr-only" href="#main">
       {{ __('Skip to content', 'sage') }}
     </a>

@@ -10,7 +10,7 @@ import { pageLoaderInit } from './pageLoader.js';
 export function gsapAnimations() {
   initSmoothScroll();
   initStickyHeader();
-  // pageLoaderInit();
+  pageLoaderInit();
   let mm = gsap.matchMedia();
 
   mm.add('(min-width: 1024px)', () => {
