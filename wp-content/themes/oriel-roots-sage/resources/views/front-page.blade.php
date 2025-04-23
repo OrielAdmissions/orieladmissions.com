@@ -9,6 +9,9 @@
           {!! App\get_picture([get_post_thumbnail_id(get_the_ID())], 'full', false, ['loading' => false, 'class' => 'w-full h-full  object-cover']) !!}
         @endif
       </div>
+      <div class="relative bg-[black] opacity-20">
+
+      </div>
       <x-page-loader></x-page-loader>
       <div class="content-grid">
         <div class="breakout relative flex flex-col justify-center">
