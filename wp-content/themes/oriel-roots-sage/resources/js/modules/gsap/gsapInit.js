@@ -10,7 +10,11 @@ import { pageLoaderInit } from './pageLoader.js';
 export function gsapAnimations() {
   initSmoothScroll();
   initStickyHeader();
-  pageLoaderInit();
+
+  if (document.body.classList.contains('home')) {
+    pageLoaderInit();
+  }
+
   let mm = gsap.matchMedia();
 
   mm.add('(min-width: 1024px)', () => {
