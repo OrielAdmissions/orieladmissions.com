@@ -25,7 +25,7 @@
         <p class="faqStickyText max-w-42">
           Don’t see your questions?
           <br />
-          <a class="text-oriel animate-underline" href="/contact">
+          <a class="text-oriel animate-underline" href="/contact/">
             Get in touch
           </a>
           to learn more.
