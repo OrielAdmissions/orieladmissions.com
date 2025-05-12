@@ -57,7 +57,7 @@ $header_class =
         >
           <div class="pl-4">
             <a
-              href="/contact"
+              href="/contact/"
               class="btn {{is_page('high-school-research-program')?'btn-white':'btn-primary'}} whitespace-nowrap max-xl:hidden"
             >
               Contact Us

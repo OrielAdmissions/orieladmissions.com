@@ -39,7 +39,7 @@
             to college counseling.
           </h2>
 
-          <a href="/why-us" class="btn btn-outline">Learn More</a>
+          <a href="/why-us/" class="btn btn-outline">Learn More</a>
         </div>
         <div class="col-span-full md:col-start-9 lg:col-span-2 md:col-span-3">
           <p class="text-lg-fluid">

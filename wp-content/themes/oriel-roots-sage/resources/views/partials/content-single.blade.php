@@ -2,17 +2,17 @@
   <header class="text-center">
     <div class="pt-20 md:py-30">
       @if (is_singular('post'))
-        <a href="/blog">
+        <a href="/blog/">
           {!! get_svg('images.chevron-left', 'inline-block mr-2') !!}
           <span class="animate-underline">Back</span>
         </a>
       @elseif (is_singular('case_study'))
-        <a href="/case-studies">
+        <a href="/case-studies/">
           {!! get_svg('images.chevron-left', 'inline-block mr-2') !!}
           <span class="animate-underline">Back</span>
         </a>
       @elseif (is_singular('college'))
-        <a href="/resources/insights">
+        <a href="/resources/insights/">
           {!! get_svg('images.chevron-left', 'inline-block mr-2') !!}
           <span class="animate-underline">Back</span>
         </a>

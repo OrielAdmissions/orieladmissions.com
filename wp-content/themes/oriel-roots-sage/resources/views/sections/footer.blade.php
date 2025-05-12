@@ -39,7 +39,7 @@
                   <li>
                     <a
                       class="animate-underline inline-block"
-                      href="/about/team"
+                      href="/about/team/"
                     >
                       Our Team
                     </a>
@@ -63,7 +63,7 @@
                   <li>
                     <a
                       class="animate-underline inline-block"
-                      href="/high-school-research-program"
+                      href="/high-school-research-program/"
                     >
                       High School Research Program
                     </a>
@@ -71,7 +71,7 @@
                   <li>
                     <a
                       class="animate-underline inline-block"
-                      href="/resources/insights"
+                      href="/resources/insights/"
                     >
                       Resources
                     </a>
@@ -85,12 +85,12 @@
                     </a>
                   </li>
                   <li>
-                    <a class="animate-underline inline-block" href="/contact">
+                    <a class="animate-underline inline-block" href="/contact/">
                       Contact Us
                     </a>
                   </li>
                   <li>
-                    <a class="animate-underline inline-block" href="/careers">
+                    <a class="animate-underline inline-block" href="/careers/">
                       Careers
                     </a>
                   </li>
@@ -285,7 +285,7 @@
               <div class="hidden w-full md:w-auto lg:px-4">
                 <a
                   class="animate-underline inline-block text-sm font-light"
-                  href="/accessibility-statement"
+                  href="/accessibility-statement/"
                 >
                   Accessibility Statement
                 </a>
@@ -293,7 +293,7 @@
               <div class="w-full md:w-auto lg:px-4">
                 <a
                   class="animate-underline inline-block text-sm font-light"
-                  href="/privacy-policy"
+                  href="/privacy-policy/"
                 >
                   Privacy Policy
                 </a>
@@ -301,7 +301,7 @@
               <div class="hidden w-full md:w-auto lg:px-4">
                 <a
                   class="animate-underline inline-block text-sm font-light"
-                  href="/terms-and-conditions"
+                  href="/terms-and-conditions/"
                 >
                   Terms & Conditions
                 </a>

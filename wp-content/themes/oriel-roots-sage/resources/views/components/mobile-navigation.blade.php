@@ -112,7 +112,7 @@
       @endforeach
     </ul>
     <div>
-      <a href="/contact" class="btn btn-primary whitespace-nowrap">
+      <a href="/contact/" class="btn btn-primary whitespace-nowrap">
         Contact Us
       </a>
     </div>

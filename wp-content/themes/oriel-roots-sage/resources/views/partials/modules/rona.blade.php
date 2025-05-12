@@ -70,7 +70,7 @@
         creative writing specialists, academic tutors, project mentors, and
         more.
       </p>
-      <a href="/about/team" class="btn btn-primary">Meet the Team</a>
+      <a href="/about/team/" class="btn btn-primary">Meet the Team</a>
     </div>
   </div>
 </div>

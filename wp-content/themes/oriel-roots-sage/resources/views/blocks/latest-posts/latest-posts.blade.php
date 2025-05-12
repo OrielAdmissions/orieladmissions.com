@@ -4,7 +4,7 @@
       <div class="content-grid" id="card-slider">
         <div class="flex items-center justify-between">
           <h2 class="text-3xl md:text-5xl">Latest Posts</h2>
-          <a href="/blog" class="btn btn-outline sm:hidden">Show all</a>
+          <a href="/blog/" class="btn btn-outline sm:hidden">Show all</a>
         </div>
       </div>
     </div>
@@ -48,7 +48,7 @@
     <div class="col-start-1 max-sm:hidden md:row-start-1">
       <div class="content-grid">
         <div class="relative flex items-center justify-end gap-x-4">
-          <a href="/blog" class="btn btn-outline">Show all</a>
+          <a href="/blog/" class="btn btn-outline">Show all</a>
           <x-button-round
             direction="left"
             classes="swiper-button-prev--chevron"

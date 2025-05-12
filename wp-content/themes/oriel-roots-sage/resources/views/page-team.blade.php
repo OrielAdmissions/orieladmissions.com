@@ -17,7 +17,7 @@
     <p class="mx-auto mb-4 max-w-md font-serif text-[32px]/tight font-light">
       And, collectively, we have reviewed thousands of applications!
     </p>
-    <a href="/contact" class="btn btn-primary">Contact Us</a>
+    <a href="/contact/" class="btn btn-primary">Contact Us</a>
   </div>
   <div class="full-width">
     <?php

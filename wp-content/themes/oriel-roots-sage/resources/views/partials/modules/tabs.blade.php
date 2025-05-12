@@ -67,7 +67,7 @@
                   and Europe.
                 </p>
 
-                <a href="/contact" class="btn btn-primary">Contact Us</a>
+                <a href="/contact/" class="btn btn-primary">Contact Us</a>
               </div>
             </div>
             <div class="w-full px-4 md:w-1/2">
@@ -185,7 +185,7 @@
                 <p class="text-2xl">
                   Looking for support applying to a Masters program?
                 </p>
-                <a href="/contact" class="btn btn-ivy">Contact Us</a>
+                <a href="/contact/" class="btn btn-ivy">Contact Us</a>
               </div>
             </div>
             <div class="w-full px-4 md:w-1/2">

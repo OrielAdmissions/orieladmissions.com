@@ -13,7 +13,7 @@
       >
         MBA & Master's Admissions
       </h2>
-      <a href="/contact" class="btn btn-primary">Contact Us</a>
+      <a href="/contact/" class="btn btn-primary">Contact Us</a>
     </div>
   </div>
 
@@ -32,7 +32,7 @@
         Applying to graduate school is competitive so
         <span class="text-oriel">don’t leave your application to chance!</span>
       </h2>
-      <a href="/contact" class="btn btn-primary">Contact Us</a>
+      <a href="/contact/" class="btn btn-primary">Contact Us</a>
     </div>
 
     <div class="breakout">

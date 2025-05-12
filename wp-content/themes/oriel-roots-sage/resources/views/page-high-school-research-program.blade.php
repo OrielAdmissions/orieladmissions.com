@@ -13,7 +13,7 @@
       >
         Explore your passion through research.
       </h2>
-      <a href="/contact" class="btn btn-white hidden">Contact Us</a>
+      <a href="/contact/" class="btn btn-white hidden">Contact Us</a>
     </div>
   </div>
 
