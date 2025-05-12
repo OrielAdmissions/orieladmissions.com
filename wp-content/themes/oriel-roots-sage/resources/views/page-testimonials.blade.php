@@ -2,12 +2,12 @@
 @section('content')
   <x-hero>
     <x-slot name="headline">
-      <h2
+      <h1
         class="fade-in-bottom text-8xl-fluid mx-auto mb-4 max-w-160 text-center text-white"
       >
         Testimonials from our
         <span class="text-oriel">students</span>
-      </h2>
+      </h1>
     </x-slot>
   </x-hero>
 

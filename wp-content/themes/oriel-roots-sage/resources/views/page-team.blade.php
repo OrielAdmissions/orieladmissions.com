@@ -3,7 +3,7 @@
   <div
     class="flex min-h-svh flex-col items-center justify-center overflow-hidden py-24 text-center"
   >
-    <h2 class="fade-in-bottom text-8xl-fluid mb-4">
+    <h1 class="fade-in-bottom text-8xl-fluid mb-4">
       We are
       <span
         x-data="textCycler()"
@@ -13,7 +13,7 @@
       >
         Passionate
       </span>
-    </h2>
+    </h1>
     <p class="mx-auto mb-4 max-w-md font-serif text-[32px]/tight font-light">
       And, collectively, we have reviewed thousands of applications!
     </p>

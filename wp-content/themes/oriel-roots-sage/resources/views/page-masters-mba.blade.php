@@ -8,11 +8,11 @@
     <div
       class="relative flex min-h-svh flex-col items-center justify-center py-30 text-center"
     >
-      <h2
+      <h1
         class="fade-in-bottom text-8xl-fluid mx-auto mb-6 max-w-screen-lg text-center text-white"
       >
         MBA & Master's Admissions
-      </h2>
+      </h1>
       <a href="/contact/" class="btn btn-primary">Contact Us</a>
     </div>
   </div>

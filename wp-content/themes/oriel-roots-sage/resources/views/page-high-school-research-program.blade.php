@@ -8,11 +8,11 @@
     <div
       class="relative flex min-h-svh flex-col items-center justify-center px-4 py-30 text-center"
     >
-      <h2
+      <h1
         class="fade-in-bottom text-8xl-fluid mx-auto mb-6 max-w-200 text-center text-white"
       >
         Explore your passion through research.
-      </h2>
+      </h1>
       <a href="/contact/" class="btn btn-white hidden">Contact Us</a>
     </div>
   </div>
