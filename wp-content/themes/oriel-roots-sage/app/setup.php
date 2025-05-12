@@ -419,8 +419,11 @@ function register_colleges_cpt() {
     $args = array(
         'labels' => $labels,
         'public' => true,
-        'has_archive' => true,
-        'rewrite' => array('slug' => 'colleges'),
+        'has_archive' => false,
+        'rewrite' => array(
+            'slug' => 'resources/insights',
+            'with_front' => false
+        ),
         'supports' => array('title', 'editor', 'excerpt', 'custom-fields'),
         'show_in_rest' => true,
         'menu_position' => 5,
