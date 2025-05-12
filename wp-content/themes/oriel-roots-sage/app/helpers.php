@@ -4,16 +4,6 @@ namespace App;
 
 use WP_Query;
 
-/**
- * Get the picture markup from an array of image IDs.
- *
- * @param array $images Array of image attachment IDs.
- * @param string $size Image size to retrieve.
- * @param bool $icon Whether to treat the image as an icon.
- * @param array $atts Additional attributes.
- *
- * @return string The HTML markup for the picture.
- */
 function get_picture(array $images = [], string $size = 'full', bool $icon = false, array $atts = []): string
 {
     if (is_array($images) && !empty($images)) {
@@ -23,8 +13,12 @@ function get_picture(array $images = [], string $size = 'full', bool $icon = fal
         foreach ($images as $image) {
             $mime = get_post_mime_type($image);
 
+            // Get the alt text from the media library
+            $alt = get_post_meta($image, '_wp_attachment_image_alt', true);
+            $merged_atts = array_merge(['alt' => $alt], $atts);
+
             if (str_contains($mime, 'webp') && count($images) > 1) {
-                $webp = wp_get_attachment_image($image, $size, $icon, $atts);
+                $webp = wp_get_attachment_image($image, $size, $icon, $merged_atts);
                 preg_match_all('/[a-z]+=".*"/iU', $webp, $webp_atts);
 
                 foreach ($webp_atts[0] as $webp_att) {
@@ -40,14 +34,17 @@ function get_picture(array $images = [], string $size = 'full', bool $icon = fal
 
                 array_unshift($html, str_replace(['<img', 'src='], ['<source type="' . $mime . '"', 'srcset='], $webp));
             } elseif (!$has_default) {
-                $html[] = wp_get_attachment_image($image, $size, $icon, $atts);
+                $html[] = wp_get_attachment_image($image, $size, $icon, $merged_atts);
                 $has_default = true;
             }
         }
 
         return '<picture>' . join('', $html) . '</picture>';
     } else {
-        return wp_get_attachment_image($images, $size, $icon, $atts);
+        // Fallback if $images is not an array
+        $alt = get_post_meta($images, '_wp_attachment_image_alt', true);
+        $merged_atts = array_merge(['alt' => $alt], $atts);
+        return wp_get_attachment_image($images, $size, $icon, $merged_atts);
     }
 }
 
