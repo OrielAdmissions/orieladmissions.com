@@ -109,6 +109,8 @@ add_action('after_setup_theme', function () {
      */
     register_nav_menus([
         'primary_navigation' => __('Primary Navigation', 'sage'),
+        'footer_menu' => __('Footer Menu', 'sage'),
+        'footer_legal_menu' => __('Footer Legal Menu', 'sage'),
     ]);
 
     /**
@@ -189,11 +191,6 @@ add_action('widgets_init', function () {
         ] + $config
     );
 });
-
-// Register Navigation Menu with Custom Walker
-register_nav_menus([
-    'primary_navigation' => __('Primary Navigation', 'sage'),
-]);
 
 //add_filter( 'acf/settings/show_admin', function () {
 //   if ( isset( $_ENV['PANTHEON_ENVIRONMENT'] ) ) {
@@ -432,4 +429,3 @@ function register_colleges_cpt() {
 
     register_post_type('college', $args);
 }
-
