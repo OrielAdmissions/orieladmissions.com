@@ -17,7 +17,7 @@
         <div class="breakout relative flex flex-col justify-center">
             <div class="relative py-8 fade-in-bottom items-center">
               <h1 class="max-w-225 text-8xl-fluid text-center mx-auto text-white">
-                Your Trusted Authority in Admissions.
+                MBA & College Admissions Consulting Services
               </h1>
             </div>
         </div>
