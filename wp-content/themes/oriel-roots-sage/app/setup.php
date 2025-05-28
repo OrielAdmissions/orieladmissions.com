@@ -429,3 +429,25 @@ function register_colleges_cpt() {
 
     register_post_type('college', $args);
 }
+
+function register_faq_cpt() {
+    register_post_type('faq', [
+        'labels' => [
+            'name' => __('FAQs'),
+            'singular_name' => __('FAQ'),
+            'add_new_item' => __('Add New FAQ'),
+            'edit_item' => __('Edit FAQ'),
+            'new_item' => __('New FAQ'),
+            'view_item' => __('View FAQ'),
+            'search_items' => __('Search FAQs'),
+            'not_found' => __('No FAQs found'),
+        ],
+        'public' => true,
+        'show_in_rest' => true,
+        'supports' => ['title', 'editor'],
+        'menu_icon' => 'dashicons-editor-help',
+        'has_archive' => false,
+        'rewrite' => ['slug' => 'faqs'],
+    ]);
+}
+
