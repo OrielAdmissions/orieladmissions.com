@@ -3,8 +3,8 @@
 @endphp
 
 <section class="full-width content-grid bg-[#FBF8F6] py-12 md:py-30">
-  <h2 class="text-6xl-fluid mx-auto mb-12 md:mb-32 max-w-150 text-center">\
-    {{get_field('section-headline')}}
+  <h2 class="text-6xl-fluid mx-auto mb-12 md:mb-32 max-w-150 text-center">
+    {!! get_field('section_headline') !!}
   </h2>
   <div class="breakout">
     <div class="grid grid-cols-12 gap-4">
