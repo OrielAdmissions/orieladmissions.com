@@ -9,7 +9,6 @@ export function pageLoaderInit() {
   gsap.set(heroTitle, { autoAlpha: 0, y: 50 }); // fades + slides up
   gsap.set(header, { autoAlpha: 0, y: -100 }); // hidden above screen
 
-  /* build player – no autoplay so we can attach listeners first */
   const dotLottie = new DotLottie({
     canvas,
     src: 'https://lottie.host/530b1cb1-b79f-483e-958d-e9c6b81613b4/WoZkKaOS8V.lottie',

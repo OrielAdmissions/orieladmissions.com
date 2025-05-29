@@ -5,15 +5,11 @@ import { initPinnedElements } from './pinnedElements.js';
 import { initSmoothScroll, smootherInstance } from './smoothScroll.js';
 import { initTeamCards } from './teamCards.js';
 import { initScrollSpy } from './scrollSpy.js';
-import { pageLoaderInit } from './pageLoader.js';
+// import { pageLoaderInit } from './pageLoader.js';
 
 export function gsapAnimations() {
   initSmoothScroll();
   initStickyHeader();
-
-  if (document.body.classList.contains('home')) {
-    pageLoaderInit();
-  }
 
   let mm = gsap.matchMedia();
 

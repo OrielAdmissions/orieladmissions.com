@@ -6,21 +6,21 @@ export function initStickyHeader() {
   if (!header) return;
 
   // ✅ Hide/Show Header on Scroll
-  let showAnim = gsap
-    .from(stickyHeader, {
-      yPercent: -100,
-      paused: true,
-      duration: 0.2,
-    })
-    .progress(1);
-
-  ScrollTrigger.create({
-    start: 'top top',
-    end: 99999,
-    onUpdate: (self) => {
-      self.direction === -1 ? showAnim.play() : showAnim.reverse();
-    },
-  });
+  // let showAnim = gsap
+  //   .from(stickyHeader, {
+  //     yPercent: -100,
+  //     paused: true,
+  //     duration: 0.2,
+  //   })
+  //   .progress(1);
+  //
+  // ScrollTrigger.create({
+  //   start: 'top top',
+  //   end: 99999,
+  //   onUpdate: (self) => {
+  //     self.direction === -1 ? showAnim.play() : showAnim.reverse();
+  //   },
+  // });
 
   // Detect initial state
   const startedWithDark = header.classList.contains('header-dark');

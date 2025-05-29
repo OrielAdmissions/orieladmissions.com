@@ -53,11 +53,11 @@
   grid-column: full-width;
 }
 
-#home-hero h1,
-.home #sticky-header > nav {
-  opacity: 0;
-  visibility: hidden;
-}
+/*#home-hero h1,*/
+/*.home #sticky-header > nav {*/
+/*  opacity: 0;*/
+/*  visibility: hidden;*/
+/*}*/
 
 body.home .hero__window-overlay + .content-grid h1 {
   filter: drop-shadow(0 9px 7px rgba(0, 0, 0, 0.25));
