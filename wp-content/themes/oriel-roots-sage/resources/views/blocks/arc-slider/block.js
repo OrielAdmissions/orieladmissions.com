@@ -4,12 +4,12 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { gsap } from 'gsap';
-import { MorphSVGPlugin } from '../gsap/gsapConfig.js';
+import { MorphSVGPlugin } from '@scripts/modules/gsap/gsapConfig.js';
 
 gsap.registerPlugin(MorphSVGPlugin);
 Swiper.use([Navigation, Pagination, Autoplay]);
 
-export function initArcSwiper() {
+export default function(el) {
   let imageSwiperEl = document.querySelector('.imageSwiper');
   if (!imageSwiperEl) return;
   let activeAnimation = null; // Store reference to the active animation

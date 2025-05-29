@@ -9,7 +9,8 @@
     <h2
       class="fade-in-bottom text-center font-serif text-5xl font-light text-white"
     >
-      Our students have been accepted to:
+
+      {!! get_field('section_headline') ?? 'Our students have been accepted to:' !!}
     </h2>
   </div>
 

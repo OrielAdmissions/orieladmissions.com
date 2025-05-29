@@ -1,6 +1,5 @@
-import Alpine from 'alpinejs';
-import { createTooltip } from './tooltips';
-
+import tippy from 'tippy.js';
+import 'tippy.js/dist/tippy.css';
 import brown from '@images/college-logos/brown.svg';
 import cornell from '@images/college-logos/cornell-university.svg';
 import yale from '@images/college-logos/yale.svg';
@@ -14,8 +13,10 @@ import dartmouth from '@images/college-logos/dartmouth.svg';
 import columbia from '@images/college-logos/columbia-university.svg';
 import duke from '@images/college-logos/duke.svg';
 
-Alpine.data('collegeGraph', () => ({
-  collegeData: {
+export default function(el) {
+  console.log('✅ College Graph block initialized:', el);
+
+  const collegeData = {
     brown: {
       nationalAverage: '5.4%',
       orielAverage: '20%',
@@ -88,24 +89,38 @@ Alpine.data('collegeGraph', () => ({
       logo: johnshopkins,
       logoWidth: 140,
     },
-  },
+  };
 
-  init() {
-    this.$el.querySelectorAll('.bar').forEach((barElement) => {
-      const collegeName = barElement.id.toLowerCase();
-      const data = this.collegeData[collegeName];
+  el.querySelectorAll('.bar').forEach((barElement) => {
+    const collegeName = barElement.id.toLowerCase();
+    const data = collegeData[collegeName];
 
-      if (data) {
-        const tooltipContent = `
-                  <div class="p-6">
-          <img src="${data.logo}" alt="${collegeName} Logo" class="mb-4" width="${data.logoWidth}"/>
-          <div><span class="inline-block rounded-full bg-[#C3A6A3] size-3 mr-2"></span>${data.nationalAverage} National Acceptance Rate</div>
-          <div><span class="inline-block rounded-full bg-oriel size-3 mr-2"></span>${data.orielAverage} Oriel Admissions Acceptance Rate</div>
+    if (!data) return;
+
+    const tooltipContent = `
+      <div class="p-6">
+        <img src="${data.logo}" alt="${collegeName} Logo" class="mb-4" width="${data.logoWidth}" />
+        <div>
+          <span class="inline-block rounded-full bg-[#C3A6A3] size-3 mr-2"></span>
+          ${data.nationalAverage} National Acceptance Rate
         </div>
-        `;
-        createTooltip(barElement, tooltipContent);
-      }
+        <div>
+          <span class="inline-block rounded-full bg-oriel size-3 mr-2"></span>
+          ${data.orielAverage} Oriel Admissions Acceptance Rate
+        </div>
+      </div>
+    `;
+
+    tippy(barElement, {
+      content: tooltipContent,
+      allowHTML: true,
+      placement: 'auto-end',
+      trigger: 'mouseenter focus',
+      interactive: true,
+      appendTo: document.body,
+      arrow: false,
+      theme: 'custom-tooltip',
+      delay: [0, 0],
     });
-  },
-}));
-export default Alpine;
+  });
+}

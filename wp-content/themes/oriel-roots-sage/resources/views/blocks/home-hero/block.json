@@ -1,17 +1,17 @@
 {
-  "name": "acf/testimonials",
-  "title": "Testimonials",
-  "description": "Testimonials",
+  "name": "acf/home-hero",
+  "title": "Home Hero",
+  "description": "Home Hero Block",
   "style": [ "file:./style.css" ],
   "category": "",
   "icon": "",
   "keywords": [
     "oriel",
     "section",
-    "testimonials"
+    "home",
+    "hero"
   ],
   "acf": {
-    "mode": "edit",
     "renderCallback": "\\App\\blade_render_callback",
     "postTypes": [
       "page"

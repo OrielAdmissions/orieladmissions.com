@@ -1,0 +1,23 @@
+{
+  "name": "acf/home-college-graph",
+  "title": "Home College Graph",
+  "description": "Home College Graph",
+  "style": [ "file:./style.css" ],
+  "category": "",
+  "icon": "",
+  "keywords": [
+    "oriel",
+    "college data",
+    "college graph"
+  ],
+  "acf": {
+    "renderCallback": "\\App\\blade_render_callback",
+    "mode": "preview",
+    "postTypes": [
+      "page"
+    ],
+    "blockVersion": 3
+  },
+  "supports": {
+  }
+}

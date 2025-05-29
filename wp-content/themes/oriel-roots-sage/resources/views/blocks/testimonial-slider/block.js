@@ -7,7 +7,7 @@ import { gsap } from 'gsap';
 
 Swiper.use([Navigation, Pagination, Autoplay]);
 
-export function initStorySwiper() {
+export default function() {
   const swiperElement = document.querySelector('.story-swiper');
   if (!swiperElement) return;
 
