@@ -20,3 +20,9 @@ add_action('wp_ajax_nopriv_filterPosts', __NAMESPACE__ . '\\filterPosts');
 add_action('init',  __NAMESPACE__ . '\\register_team_member_cpt');
 add_action('init', __NAMESPACE__ . '\\register_colleges_cpt');
 add_action('init', __NAMESPACE__ . '\\register_faq_cpt');
+add_action('template_redirect', function() {
+    if (is_category() || is_tag() || is_date()) {
+        global $wp_query;
+        $wp_query->set_404();
+    }
+});
