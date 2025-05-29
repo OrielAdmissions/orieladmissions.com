@@ -7,8 +7,11 @@ namespace App;
  */
 function blade_render_callback($block, string $content = '', bool $is_preview = false, int $post_id = 0)
 {
-    $slug = str_replace('acf' . '/', '', $block['name']);
+    $slug = str_replace('acf/', '', $block['name']);
     $block['slug'] = $slug;
 
-    echo \Roots\view('blocks.' . $block['slug'] . '.' . $block['slug'], ['block' => $block])->render();
+    // Render the block template with a wrapper div for scoped JS targeting
+    echo '<div data-acf-block-name="' . esc_attr($block['name']) . '">';
+    echo \Roots\view('blocks.' . $slug . '.' . $slug, ['block' => $block])->render();
+    echo '</div>';
 }

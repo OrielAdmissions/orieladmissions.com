@@ -28,23 +28,5 @@ class ThemeServiceProvider extends SageServiceProvider
     public function boot()
     {
         parent::boot();
-
-        // ✅ Auto-register all blocks inside /resources/blocks/
-        $blocksPath = resource_path('blocks');
-
-        if (File::exists($blocksPath)) {
-            collect(File::directories($blocksPath))->each(function ($path) {
-                $blockName = basename($path);
-
-                register_block_type($path, [
-                    'render_callback' => function ($attributes, $content) use ($blockName) {
-                        return view("blocks.{$blockName}", [
-                            'attributes' => $attributes,
-                            'content' => $content
-                        ])->render();
-                    },
-                ]);
-            });
-        }
     }
 }
