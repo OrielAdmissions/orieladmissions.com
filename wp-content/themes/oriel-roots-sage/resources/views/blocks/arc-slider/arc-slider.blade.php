@@ -1,5 +1,8 @@
 @php
   $slides = get_field('slides');
+  if ($slides && count($slides) < 6) {
+  $slides = array_merge($slides, $slides);
+  }
 @endphp
 
 @if( $slides )
