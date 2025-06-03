@@ -4,7 +4,7 @@
 @endphp
 
 @if($team_members)
-  <div class="breakout py-12 md:py-30">
+  <div class="content-grid py-12 md:py-30">
     <h2 class="text-6xl-fluid mx-auto mb-12 md:mb-30 max-w-screen-sm text-center">
       {{ $headline }}
     </h2>
