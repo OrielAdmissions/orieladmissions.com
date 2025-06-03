@@ -1,0 +1,32 @@
+{
+  "name": "acf/college-services-slider",
+  "title": "College Services Slider",
+  "description": "College Services Slider",
+  "style": [ "file:./style.css" ],
+  "category": "",
+  "icon": "",
+  "keywords": [
+    "oriel",
+    "section",
+    "college",
+    "services",
+    "slider",
+    "carousel"
+  ],
+  "acf": {
+    "renderCallback": "\\App\\blade_render_callback",
+    "postTypes": [
+      "page"
+    ],
+    "blockVersion": 3
+  },
+  "supports": {
+    "anchor": true,
+    "align": true,
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": true
+    }
+  }
+}
