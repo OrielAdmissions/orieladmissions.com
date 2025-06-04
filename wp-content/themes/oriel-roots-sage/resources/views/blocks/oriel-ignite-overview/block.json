@@ -1,0 +1,30 @@
+{
+  "name": "acf/oriel-ignite-overview",
+  "title": "Oriel Ignite Overview",
+  "description": "Multi-section content layout with parallax images",
+  "style": [ "file:./style.css" ],
+  "category": "",
+  "icon": "",
+  "keywords": [
+    "parallax",
+    "oriel ignite",
+    "overview"
+  ],
+  "acf": {
+    "mode": "edit",
+    "renderCallback": "\\App\\blade_render_callback",
+    "postTypes": [
+      "page"
+    ],
+    "blockVersion": 3
+  },
+  "supports": {
+    "anchor": true,
+    "align": true,
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": true
+    }
+  }
+}
