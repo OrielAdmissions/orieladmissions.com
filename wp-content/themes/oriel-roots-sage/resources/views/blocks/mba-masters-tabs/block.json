@@ -1,16 +1,19 @@
 {
-  "name": "acf/tabs",
-  "title": "Tabs Section",
-  "description": "Tabs Section",
+  "name": "acf/mba-masters-tabs",
+  "title": "MBA & Master's Tabs",
+  "description": "",
   "style": [ "file:./style.css" ],
   "category": "",
   "icon": "",
   "keywords": [
     "oriel",
     "section",
-    "tabs"
+    "tabs",
+    "MBA",
+    "Masters"
   ],
   "acf": {
+    "mode": "edit",
     "renderCallback": "\\App\\blade_render_callback",
     "postTypes": [
       "page"
