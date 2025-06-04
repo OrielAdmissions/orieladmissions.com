@@ -22,19 +22,20 @@
       <h1 class="p-name fade-in-bottom text-6xl-fluid py-12 font-serif">
         {!! $title !!}
       </h1>
-    </div>
-    <div
-      class="divide-keyline/80 flex hidden items-center justify-center divide-x text-[19px]"
-    >
-      @include('partials.entry-meta')
+      <div class="divide-keyline/80 flex items-center justify-center divide-x text-[19px]">
+        @include('partials.entry-meta')
+      </div>
     </div>
   </header>
   <div class="full-width pb-12">
-    {!! App\get_picture([get_post_thumbnail_id()], 'full', false, ['class' => 'w-screen-xl mx-auto rounded-xl img-grow']) !!}
+    {!! App\get_picture([get_post_thumbnail_id()], 'full', false, ['class' => 'w-screen-lg object-cover max-h-125 mx-auto rounded-xl img-grow']) !!}
   </div>
 
   <div class="e-content full-width-constrained lg:text-lg">
     @php(the_content())
+    <div class="text-center mt-12">
+      <a href="/contact/" class="btn btn-primary">Contact Us</a>
+    </div>
   </div>
 
   @if ($pagination)
