@@ -1,0 +1,31 @@
+{
+  "name": "acf/research-programs",
+  "title": "Research Programs",
+  "description": "Research Programs",
+  "style": [ "file:./style.css" ],
+  "category": "",
+  "icon": "",
+  "keywords": [
+    "team",
+    "programs",
+    "research"
+  ],
+  "acf": {
+    "mode": "edit",
+    "renderCallback": "\\App\\blade_render_callback",
+    "postTypes": [
+      "page"
+    ],
+    "blockVersion": 3
+  },
+  "supports": {
+
+    "anchor": true,
+    "align": true,
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": true
+    }
+  }
+}
