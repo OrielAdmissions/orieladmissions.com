@@ -1,0 +1,169 @@
+{
+    "key": "group_color_block_hero",
+    "title": "Block: Color Block Hero",
+    "fields": [
+        {
+            "key": "field_hero_headline",
+            "label": "Headline",
+            "name": "headline",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_hero_show_button",
+            "label": "Show Contact Button",
+            "name": "show_button",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "ui": true,
+            "default_value": 0,
+            "message": "",
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_hero_button_link",
+            "label": "Contact Button Link",
+            "name": "button_link",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_hero_button_style",
+            "label": "Button Style",
+            "name": "button_style",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "btn-oriel": "Oriel (Red)",
+                "btn-white": "White"
+            },
+            "default_value": "btn-white",
+            "ui": true,
+            "allow_null": false,
+            "multiple": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "return_format": "value"
+        },
+        {
+            "key": "field_hero_headline_color",
+            "label": "Headline Text Color",
+            "name": "headline_color",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "text-white": "White",
+                "text-oriel": "Oriel (Red)",
+                "text-black": "Black"
+            },
+            "default_value": "text-white",
+            "ui": true,
+            "allow_null": false,
+            "multiple": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "return_format": "value"
+        },
+        {
+            "key": "field_hero_background_class",
+            "label": "Background Color Class",
+            "name": "background_class",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "bg-chalk": "Chalk (#f7f0eb)",
+                "bg-sand": "Sand (#edddd1)",
+                "bg-brick": "Brick (#d35040)",
+                "bg-stucco": "Stucco (#ab8867)",
+                "bg-opium": "Opium (#968587)",
+                "bg-ivy": "Ivy (#5d6720)",
+                "bg-black": "Black (#29202d)",
+                "bg-keyline": "Keyline (#d9cbcf)",
+                "bg-oriel": "Oriel (#ee2212)",
+                "bg-cardinal": "Cardinal (#602537)",
+                "bg-cardinal-muted": "Cardinal Muted (#c3a6a3)"
+            },
+            "ui": true,
+            "allow_null": false,
+            "default_value": "bg-oriel",
+            "multiple": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "return_format": "value"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/color-block-hero"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": false,
+    "modified": 1749039943
+}
