@@ -1,0 +1,68 @@
+{
+  "key": "group_student_hours_estimate",
+  "title": "Block: Student Hours Estimate",
+  "fields": [
+    {
+      "key": "field_headline",
+      "label": "Headline",
+      "name": "headline",
+      "type": "textarea",
+      "default_value": "We estimate that our students spend over:"
+    },
+    {
+      "key": "field_image",
+      "label": "Image",
+      "name": "image",
+      "type": "image",
+      "return_format": "id",
+      "preview_size": "medium"
+    },
+    {
+      "key": "field_estimates",
+      "label": "Estimates",
+      "name": "estimates",
+      "type": "repeater",
+      "button_label": "Add Estimate",
+      "sub_fields": [
+        {
+          "key": "field_estimate_stat",
+          "label": "Stat",
+          "name": "stat",
+          "type": "text",
+          "placeholder": "e.g. 12 hours"
+        },
+        {
+          "key": "field_estimate_description",
+          "label": "Description",
+          "name": "description",
+          "type": "textarea",
+          "rows": 2,
+          "placeholder": "e.g. Writing and revising their personal statement"
+        },
+        {
+          "key": "field_estimate_note",
+          "label": "Note (optional)",
+          "name": "note",
+          "type": "textarea",
+          "rows": 2,
+          "placeholder": "e.g. *(required for the majority of colleges...)"
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf/student-hours-estimate"
+      }
+    ]
+  ],
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "active": true,
+  "description": ""
+}
