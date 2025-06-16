@@ -20,7 +20,7 @@
   <div class="full-width">
     <?php
     $image_id = get_post_thumbnail_id();
-    echo App\get_picture([$image_id], 'full', false, [
+    echo wp_get_attachment_image($image_id, 'full', false, [
       'class' => 'w-full h-auto min-h-96 object-cover',
     ]); ?>
   </div>
@@ -37,7 +37,7 @@
       <div class="lg:basis-[550px]">
         <?php
         $image_id = get_post_thumbnail_id();
-        echo App\get_picture([268], 'full', false, [
+        echo wp_get_attachment_image(268, 'full', false, [
           'class' => 'w-full h-auto object-cover rounded-xl',
         ]); ?>
       </div>
@@ -57,7 +57,7 @@
     >
       <div class="relative">
         {!!
-          App\get_picture([273], 'full', false, [
+          wp_get_attachment_image(273, 'full', false, [
             'class' => 'object-cover max-lg:w-full mx-auto rounded-xl',
           ])
         !!}
@@ -76,7 +76,7 @@
       <div class="flex justify-center gap-8 max-lg:flex-col">
         <div class="basis-7/12 max-lg:order-last">
           {!!
-            App\get_picture([270], 'full', false, [
+            wp_get_attachment_image(270, 'full', false, [
               'class' => 'w-full h-auto object-cover rounded-xl',
             ])
           !!}
@@ -107,7 +107,7 @@
               *The classification is made by the Carnegie Classification.
             </small>
             {!!
-              App\get_picture([272], 'full', false, [
+              wp_get_attachment_image(272, 'full', false, [
                 'class' => 'w-full h-auto object-cover relative top-24 max-lg:hidden rounded-xl',
                 'data-speed' => '1.05',
               ])
@@ -123,7 +123,7 @@
       <div class="grid gap-8 lg:grid-cols-12">
         <div class="col-start-1 max-lg:order-last lg:col-span-3">
           {!!
-            App\get_picture([271], 'full', false, [
+            wp_get_attachment_image(271, 'full', false, [
               'class' => 'w-full h-auto object-cover rounded-xl',
               'data-speed' => '1.1',
             ])

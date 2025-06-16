@@ -109,7 +109,7 @@
                   -webkit-clip-path: url(#clip-{{ $index }});
                 "
               >
-                {!! App\get_picture([$slide['image_id']], 'full', false, ['class' => 'object-cover object-top h-auto aspect-[470/650]']) !!}
+                {!! wp_get_attachment_image($slide['image_id'], 'full', false, ['class' => 'object-cover object-top h-auto aspect-[470/650]']) !!}
               </div>
             </div>
           </div>

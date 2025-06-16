@@ -14,9 +14,9 @@
     class="bg-sand relative aspect-square w-full overflow-clip max-sm:rounded-lg sm:aspect-16/9 sm:rounded-t-lg"
   >
     @if ($image_id)
-      {!! App\get_picture([$image_id], 'full', false, ['class' => 'w-full h-full object-cover aspect-square sm:aspect-16/9']) !!}
+      {!! wp_get_attachment_image($image_id, 'full', false, ['class' => 'w-full h-full object-cover aspect-square sm:aspect-16/9']) !!}
     @else
-      {!! App\get_picture([444], 'full', false, ['class' => 'w-full h-full object-cover aspect-square sm:aspect-16/9']) !!}
+      {!! wp_get_attachment_image(444, 'full', false, ['class' => 'w-full h-full object-cover aspect-square sm:aspect-16/9']) !!}
     @endif
   </div>
 

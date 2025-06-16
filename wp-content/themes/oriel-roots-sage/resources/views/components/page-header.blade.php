@@ -3,7 +3,7 @@
   @class(['the-stack relative items-center overflow-hidden text-center', 'h-dvh' => has_post_thumbnail($page_id), 'md:min-h-112' => ! has_post_thumbnail($page_id)])
 >
   @if (has_post_thumbnail($page_id))
-    {!! App\get_picture([get_post_thumbnail_id($page_id)], 'full', false, ['loading' => false, 'class' => 'w-full h-full object-cover absolute inset-0']) !!}
+    {!! wp_get_attachment_image(get_post_thumbnail_id($page_id), 'full', false, ['loading' => false, 'class' => 'w-full h-full object-cover absolute inset-0']) !!}
   @endif
 
   <div

@@ -11,7 +11,7 @@
 >
   @if ($image_id)
     <div class="relative w-full overflow-clip">
-      {!! App\get_picture([$image_id], 'full', false, ['class' => 'w-full object-cover rounded-t-lg  aspect-16/9']) !!}
+      {!! wp_get_attachment_image($image_id, 'full', false, ['class' => 'w-full object-cover rounded-t-lg  aspect-16/9']) !!}
     </div>
 
   @else

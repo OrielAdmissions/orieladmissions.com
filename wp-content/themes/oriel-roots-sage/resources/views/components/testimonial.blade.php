@@ -12,7 +12,7 @@
 <div
   class="spiral-binding relative overflow-hidden rounded-md shadow-[0_3px_3px_0_rgba(0,0,0,0.06)]"
 >
-  {{-- {!! App\get_picture([80], 'full', false, ['class' => 'h-full w-full object-cover absolute inset-0']) !!} --}}
+  {{-- {!! wp_get_attachment_image(80, 'full', false, ['class' => 'h-full w-full object-cover absolute inset-0']) !!} --}}
 
   <div class="bg-chalk/70 relative grid grid-cols-12 py-6 lg:py-15">
     <div

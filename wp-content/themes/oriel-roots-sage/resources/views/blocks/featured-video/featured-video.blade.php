@@ -17,7 +17,7 @@
     <a class="videoFancyBoxLink grid grid-cols-3 grid-rows-1 items-center transition duration-300 hover:brightness-70"
        data-fancybox href="{{ $video_url }}" data-caption="{{ $video_caption }}">
       <div class="col-span-full row-span-full overflow-hidden rounded-lg">
-        {!! App\get_picture([$background_image['ID']], 'full', false, ['class' => 'object-cover object-right w-full']) !!}
+        {!! wp_get_attachment_image($background_image['ID'], 'full', false, ['class' => 'object-cover object-right w-full']) !!}
       </div>
       <svg width="162" height="88" viewBox="0 0 162 88"
            class="relative z-10 col-span-full row-span-full h-auto max-w-24 justify-self-center md:max-w-30" fill="none"

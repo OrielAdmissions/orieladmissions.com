@@ -28,7 +28,7 @@
     </div>
   </header>
   <div class="full-width pb-12">
-    {!! App\get_picture([get_post_thumbnail_id()], 'full', false, ['class' => 'w-screen-lg object-cover max-h-125 mx-auto rounded-xl img-grow']) !!}
+    {!! wp_get_attachment_image(get_post_thumbnail_id(), 'full', false, ['class' => 'w-screen-lg object-cover max-h-125 mx-auto rounded-xl img-grow']) !!}
   </div>
 
   <div class="e-content full-width-constrained lg:text-lg">

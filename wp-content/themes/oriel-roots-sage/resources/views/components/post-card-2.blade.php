@@ -14,9 +14,9 @@
     class="bg-sand relative aspect-16/9 w-full overflow-hidden rounded-t-lg"
   >
     @if ($image_id)
-      {!! App\get_picture([$image_id], 'full', false, ['class' => 'w-full h-full object-cover aspect-16/9']) !!}
+      {!! wp_get_attachment_image($image_id, 'full', false, ['class' => 'w-full h-full object-cover aspect-16/9']) !!}
     @else
-      {!! App\get_picture([444], 'full', false, ['class' => 'w-full h-full object-cover aspect-16/9']) !!}
+      {!! wp_get_attachment_image(444, 'full', false, ['class' => 'w-full h-full object-cover aspect-16/9']) !!}
     @endif
   </div>
 

@@ -11,9 +11,9 @@
     <!-- Left: Image -->
     <div class="flex flex-col overflow-hidden ">
       @if ($image_id)
-        {!! App\get_picture([$image_id], 'full', false, ['class' => 'w-full h-full object-cover mx-auto rounded-t-lg md:rounded-b-lg']) !!}
+        {!! wp_get_attachment_image($image_id, 'full', false, ['class' => 'w-full h-full object-cover mx-auto rounded-t-lg md:rounded-b-lg']) !!}
       @else
-        {!! App\get_picture([444], 'full', false, ['class' => 'w-full h-full object-cover mx-auto rounded-t-lg md:rounded-b-lg']) !!}
+        {!! wp_get_attachment_image(444, 'full', false, ['class' => 'w-full h-full object-cover mx-auto rounded-t-lg md:rounded-b-lg']) !!}
       @endif
     </div>
 

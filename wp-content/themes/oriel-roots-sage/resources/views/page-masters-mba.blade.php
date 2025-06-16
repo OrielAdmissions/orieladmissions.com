@@ -20,7 +20,7 @@
   <div class="full-width">
     <?php
     $image_id = get_post_thumbnail_id();
-    echo App\get_picture([$image_id], 'full', false, [
+    echo wp_get_attachment_image($image_id, 'full', false, [
       'class' => 'w-full h-auto min-h-96 object-cover',
     ]); ?>
   </div>

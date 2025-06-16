@@ -37,7 +37,7 @@
                   clip-path: url(#clip-{{ $index }});
                   -webkit-clip-path: url(#clip-{{ $index }});
                 ">
-                  {!! App\get_picture([$slide['role_image']], 'full', false, ['class' => 'object-cover object-top h-auto aspect-[470/650]']) !!}
+                  {!! wp_get_attachment_image($slide['role_image'], 'full', false, ['class' => 'object-cover object-top h-auto aspect-[470/650]']) !!}
                 </div>
               </div>
             </div>

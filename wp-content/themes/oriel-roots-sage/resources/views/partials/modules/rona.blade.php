@@ -10,7 +10,7 @@
       data-caption="Meet our founder, Rona"
     >
       <div class="col-span-full row-span-full overflow-hidden rounded-lg">
-        {!! App\get_picture([20], 'full', false, ['class' => 'object-cover object-right w-full']) !!}
+        {!! wp_get_attachment_image(20, 'full', false, ['class' => 'object-cover object-right w-full']) !!}
       </div>
       <svg
         width="162"

@@ -5,7 +5,7 @@
   <div class="the-stack">
     <div class="overflow-hidden h-svh min-h-[500px]">
       @if (has_post_thumbnail(get_the_ID()))
-        {!! App\get_picture([get_post_thumbnail_id(get_the_ID())], 'full', false, ['loading' => false, 'class' => 'w-full h-full  object-cover']) !!}
+        {!! wp_get_attachment_image(get_post_thumbnail_id(get_the_ID()), 'full', false, ['loading' => false, 'class' => 'w-full h-full  object-cover']) !!}
       @endif
     </div>
     <div class="relative bg-[black] opacity-20">

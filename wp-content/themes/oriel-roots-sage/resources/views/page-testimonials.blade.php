@@ -22,7 +22,7 @@
         name="University of Pennsylvania"
       >
         <x-slot:profile_image>
-          {!! get_svg('images.college-logos.upenn-white-bg', 'w-full h-auto max-w-full') ?: \App\get_picture([$profile_image_id], 'full', false, ['class' => 'h-auto w-full rounded-xl max-w-sm']) !!}
+          {!! get_svg('images.college-logos.upenn-white-bg', 'w-full h-auto max-w-full') ?: wp_get_attachment_image($profile_image_id, 'full', false, ['class' => 'h-auto w-full rounded-xl max-w-sm']) !!}
         </x-slot>
         <x-slot:title>
           <span class="text-oriel">
@@ -63,7 +63,7 @@
         name="Columbia University"
       >
         <x-slot:profile_image>
-          {!! get_svg('images.college-logos.Columbia-white-bg', 'w-full h-auto max-w-full') ?: \App\get_picture([$profile_image_id], 'full', false, ['class' => 'h-auto w-full rounded-xl max-w-sm']) !!}
+          {!! get_svg('images.college-logos.Columbia-white-bg', 'w-full h-auto max-w-full') ?: wp_get_attachment_image($profile_image_id, 'full', false, ['class' => 'h-auto w-full rounded-xl max-w-sm']) !!}
         </x-slot>
         <x-slot:title>
           <span class="text-oriel">
@@ -107,7 +107,7 @@
         name="Cornell University"
       >
         <x-slot:profile_image>
-          {!! get_svg('images.college-logos.cornell-white-bg', 'w-full h-auto max-w-full') ?: \App\get_picture([$profile_image_id], 'full', false, ['class' => 'h-auto w-full rounded-xl max-w-sm']) !!}
+          {!! get_svg('images.college-logos.cornell-white-bg', 'w-full h-auto max-w-full') ?: wp_get_attachment_image($profile_image_id, 'full', false, ['class' => 'h-auto w-full rounded-xl max-w-sm']) !!}
         </x-slot>
         <x-slot:title>
           <span class="text-oriel">
@@ -144,7 +144,7 @@
         name="Carnegie Mellon University"
       >
         <x-slot:profile_image>
-          {!! get_svg('images.college-logos.carnegie-mellon-white-bg', 'w-full h-auto max-w-full') ?: \App\get_picture([$profile_image_id], 'full', false, ['class' => 'h-auto w-full rounded-xl max-w-sm']) !!}
+          {!! get_svg('images.college-logos.carnegie-mellon-white-bg', 'w-full h-auto max-w-full') ?: wp_get_attachment_image($profile_image_id, 'full', false, ['class' => 'h-auto w-full rounded-xl max-w-sm']) !!}
         </x-slot>
         <x-slot:title>
           <span class="text-oriel">
@@ -190,7 +190,7 @@
         name="MIT"
       >
         <x-slot:profile_image>
-          {!! get_svg('images.college-logos.mit-white-bg', 'w-full h-auto max-w-full') ?: \App\get_picture([$profile_image_id], 'full', false, ['class' => 'h-auto w-full rounded-xl max-w-sm']) !!}
+          {!! get_svg('images.college-logos.mit-white-bg', 'w-full h-auto max-w-full') ?: wp_get_attachment_image( $profile_image_id, 'full', false, ['class' => 'h-auto w-full rounded-xl max-w-sm']) !!}
         </x-slot>
         <x-slot:title>
           <span class="text-oriel">
@@ -242,7 +242,7 @@
         name="Johns Hopkins University"
       >
         <x-slot:profile_image>
-          {!! get_svg('images.college-logos.johnshopkins-white-bg', 'w-full h-auto max-w-full') ?: \App\get_picture([$profile_image_id], 'full', false, ['class' => 'h-auto w-full rounded-xl max-w-sm']) !!}
+          {!! get_svg('images.college-logos.johnshopkins-white-bg', 'w-full h-auto max-w-full') ?: wp_get_attachment_image($profile_image_id, 'full', false, ['class' => 'h-auto w-full rounded-xl max-w-sm']) !!}
         </x-slot>
         <x-slot:title>
           <span class="text-oriel">

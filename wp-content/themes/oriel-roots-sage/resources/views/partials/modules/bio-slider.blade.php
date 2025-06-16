@@ -25,7 +25,7 @@
       <div class="swiper-wrapper">
         @foreach ($slides as $index => $slide)
           <div class="swiper-slide" data-story="{{ $slide['story'] }}">
-            {!! App\get_picture([$slide['image_id']], 'full', false, ['class' => 'h-full w-full object-cover object-center']) !!}
+            {!! wp_get_attachment_image($slide['image_id'], 'full', false, ['class' => 'h-full w-full object-cover object-center']) !!}
           </div>
         @endforeach
       </div>

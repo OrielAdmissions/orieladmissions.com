@@ -30,7 +30,7 @@
 </div>
 
 <div class="full-width">
-  {!! App\get_picture([$imageId], 'full', false, [
+  {!! wp_get_attachment_image($imageId, 'full', false, [
     'class' => 'w-full h-auto min-h-96 object-cover',
   ]) !!}
 </div>

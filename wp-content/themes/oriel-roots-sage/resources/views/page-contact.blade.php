@@ -13,7 +13,7 @@
     <section class="grid gap-8 pb-12 lg:grid-cols-12 lg:gap-x-12 lg:pb-30">
       <div class="lg:col-span-6">
         {!!
-          App\get_picture([462], 'full', false, [
+          wp_get_attachment_image(462, 'full', false, [
             'class' => 'object-cover max-lg:w-full mx-lg:mx-auto pin-content rounded-xl',
           ])
         !!}

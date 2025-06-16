@@ -15,7 +15,7 @@
   <div class="">
     <div class="grid grid-cols-12 gap-y-8 md:gap-x-8 py-12 md:py-30 items-center">
       <div class="col-span-12 md:col-span-6">
-        {!! App\get_picture([394], 'full', false, ['class' => 'object-cover object-right w-full rounded-xl']) !!}
+        {!! wp_get_attachment_image(394, 'full', false, ['class' => 'object-cover object-right w-full rounded-xl']) !!}
       </div>
       <div class="col-span-12 md:col-span-6">
         <h2 class="leading-tight text-5xl-fluid">We are a team of highly motivated individuals who <span class="text-oriel">love working with students</span> in

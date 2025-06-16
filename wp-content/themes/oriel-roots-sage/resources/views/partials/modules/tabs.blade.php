@@ -72,7 +72,7 @@
             </div>
             <div class="w-full px-4 md:w-1/2">
               {!!
-                App\get_picture([81], 'full', false, [
+                wp_get_attachment_image(81, 'full', false, [
                   'class' => 'rounded-xl w-full',
                 ])
               !!}
@@ -190,7 +190,7 @@
             </div>
             <div class="w-full px-4 md:w-1/2">
               {!!
-                App\get_picture([457], 'full', false, [
+                wp_get_attachment_image(457, 'full', false, [
                   'class' => 'rounded-xl w-full',
                 ])
               !!}

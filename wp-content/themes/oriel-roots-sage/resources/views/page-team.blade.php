@@ -21,7 +21,7 @@
   </div>
   <div class="full-width">
     <?php
-    echo App\get_picture([21], 'full', false, [
+    echo wp_get_attachment_image(21, 'full', false, [
       'class' =>
         'object-cover object-right mx-auto rounded-xl img-grow w-screen-xl',
     ]); ?>
@@ -55,7 +55,7 @@
         <div class="col-span-full lg:col-span-7">
           <div class="">
             <?php
-            echo App\get_picture([76], 'full', false, [
+            echo wp_get_attachment_image(76, 'full', false, [
               'class' => 'object-cover object-right w-full rounded-xl',
             ]); ?>
           </div>
