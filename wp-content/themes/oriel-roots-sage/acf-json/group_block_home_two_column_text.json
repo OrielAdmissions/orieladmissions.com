@@ -1,0 +1,50 @@
+{
+  "key": "group_home_two_column_text",
+  "title": "Block: Home Two Column Text",
+  "fields": [
+    {
+      "key": "field_home_headline",
+      "label": "Headline",
+      "name": "headline",
+      "type": "textarea",
+      "instructions": "Use |pipes| to highlight part of the text with .text-oriel.",
+      "default_value": "Our |360 degree approach| to college counseling."
+    },
+    {
+      "key": "field_home_subtext",
+      "label": "Subtext",
+      "name": "subtext",
+      "type": "textarea",
+      "default_value": "Our team of experts provides personalized and high-touch support at every stage of the college application process."
+    },
+    {
+      "key": "field_home_button_text",
+      "label": "Button Text",
+      "name": "button_text",
+      "type": "text",
+      "default_value": "Learn More"
+    },
+    {
+      "key": "field_home_button_link",
+      "label": "Button Link",
+      "name": "button_link",
+      "type": "url",
+      "default_value": "/why-us/"
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf/home-two-column-text"
+      }
+    ]
+  ],
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "active": true,
+  "description": ""
+}
