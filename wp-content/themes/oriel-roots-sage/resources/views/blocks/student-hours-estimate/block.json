@@ -1,0 +1,30 @@
+{
+  "name": "acf/student-hours-estimate",
+  "title": "Student Hours Estimate",
+  "description": "",
+  "style": [ "file:./style.css" ],
+  "category": "",
+  "icon": "",
+  "keywords": [
+    "oriel",
+    "section",
+    "why us"
+  ],
+  "acf": {
+    "mode": "edit",
+    "renderCallback": "\\App\\blade_render_callback",
+    "postTypes": [
+      "page"
+    ],
+    "blockVersion": 3
+  },
+  "supports": {
+    "anchor": true,
+    "align": true,
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": true
+    }
+  }
+}

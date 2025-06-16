@@ -1,0 +1,43 @@
+{
+  "key": "group_why_us_two_column",
+  "title": "Block: Why Us Two Column Text",
+  "fields": [
+    {
+      "key": "field_headline",
+      "label": "Headline",
+      "name": "headline",
+      "type": "textarea",
+      "instructions": "Use |pipes| to highlight part of the headline with .text-oriel.",
+      "default_value": "Working with Oriel Admissions |Makes an Impact| for Students",
+      "placeholder": "",
+      "maxlength": "",
+      "rows": "",
+      "new_lines": ""
+    },
+    {
+      "key": "field_subtext",
+      "label": "Subtext",
+      "name": "subtext",
+      "type": "textarea",
+      "default_value": "Our students receive holistic support to build skills and experiences before they begin applying to college.",
+      "placeholder": "",
+      "rows": "",
+      "new_lines": ""
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf/why-us-two-column-text"
+      }
+    ]
+  ],
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "active": true,
+  "description": ""
+}

@@ -1,0 +1,42 @@
+{
+  "key": "group_team_two_column",
+  "title": "Block: Team Two Column Text",
+  "fields": [
+    {
+      "key": "field_team_headline",
+      "label": "Headline",
+      "name": "headline",
+      "type": "textarea",
+      "instructions": "Use |pipes| to highlight part of the headline in .text-oriel.",
+      "default_value": "The Oriel Admissions team are |experts| in our fields.",
+      "placeholder": "",
+      "rows": "",
+      "new_lines": ""
+    },
+    {
+      "key": "field_team_subtext",
+      "label": "Subtext",
+      "name": "subtext",
+      "type": "textarea",
+      "default_value": "We are former admissions officers, dedicated college counselors, creative writing specialists, academic tutors, project mentors, and more.",
+      "placeholder": "",
+      "rows": "",
+      "new_lines": ""
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf/team-two-column-text"
+      }
+    ]
+  ],
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "active": true,
+  "description": ""
+}
