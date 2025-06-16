@@ -1,0 +1,41 @@
+{
+  "key": "group_decorative_statement",
+  "title": "Block: Decorative Statement",
+  "fields": [
+    {
+      "key": "field_headline",
+      "label": "Headline",
+      "name": "headline",
+      "type": "textarea",
+      "instructions": "Wrap the text you want highlighted in pipe characters, like: Oriel Admissions counselors are |involved in every step of this process|.",
+      "required": 1,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "Oriel Admissions counselors are |involved in every step of this process|, spending countless hours supporting their students because applications need to be well thought through and perfectly polished before submissions.",
+      "placeholder": "",
+      "maxlength": "",
+      "rows": "",
+      "new_lines": ""
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf/decorative-statement"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": ""
+}
