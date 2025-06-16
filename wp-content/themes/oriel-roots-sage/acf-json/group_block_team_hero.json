@@ -1,0 +1,65 @@
+{
+  "key": "group_team_hero",
+  "title": "Block: Team Hero",
+  "fields": [
+    {
+      "key": "field_headline_prefix",
+      "label": "Headline Prefix",
+      "name": "headline_prefix",
+      "type": "text",
+      "default_value": "We are"
+    },
+    {
+      "key": "field_cycling_words",
+      "label": "Cycling Words (Comma Separated)",
+      "name": "cycling_words",
+      "type": "text",
+      "instructions": "Enter words separated by commas. Example: Passionate,Student-centric,Admissions-obsessed",
+      "default_value": "Passionate,Student-centric,Admissions-obsessed,Detail-oriented,Perfectionists,Creative thinkers,Your college experts"
+    },
+    {
+      "key": "field_static_word_fallback",
+      "label": "Static Word Fallback",
+      "name": "static_word_fallback",
+      "type": "text",
+      "instructions": "Fallback if JS doesn't run",
+      "default_value": "Passionate"
+    },
+    {
+      "key": "field_subtext",
+      "label": "Subtext",
+      "name": "subtext",
+      "type": "textarea",
+      "default_value": "And, collectively, we have reviewed thousands of applications!"
+    },
+    {
+      "key": "field_button_link",
+      "label": "Button Link",
+      "name": "button_link",
+      "type": "url",
+      "default_value": "/contact/"
+    },
+    {
+      "key": "field_button_text",
+      "label": "Button Text",
+      "name": "button_text",
+      "type": "text",
+      "default_value": "Contact Us"
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf/team-hero"
+      }
+    ]
+  ],
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "active": true,
+  "description": ""
+}
