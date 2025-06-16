@@ -1,0 +1,31 @@
+{
+  "name": "acf/why-us-graph",
+  "title": "Why Us Graph",
+  "description": "",
+  "style": [ "file:./style.css" ],
+  "category": "",
+  "icon": "",
+  "keywords": [
+    "oriel",
+    "section",
+    "graph",
+    "why us"
+  ],
+  "acf": {
+    "mode": "edit",
+    "renderCallback": "\\App\\blade_render_callback",
+    "postTypes": [
+      "page"
+    ],
+    "blockVersion": 3
+  },
+  "supports": {
+    "anchor": true,
+    "align": true,
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": true
+    }
+  }
+}
