@@ -1,74 +1,157 @@
 {
-  "key": "group_block_careers_list",
-  "title": "Block: Careers List",
-  "fields": [
-    {
-      "key": "field_roles",
-      "label": "Roles",
-      "name": "roles",
-      "type": "repeater",
-      "button_label": "Add Role",
-      "sub_fields": [
+    "key": "group_block_careers_list",
+    "title": "Block: Careers List",
+    "fields": [
         {
-          "key": "field_role_title",
-          "label": "Title",
-          "name": "title",
-          "type": "text",
-          "required": 1
-        },
-        {
-          "key": "field_role_description",
-          "label": "Description",
-          "name": "description",
-          "type": "textarea",
-          "rows": 5
-        },
-        {
-          "key": "field_role_responsibilities",
-          "label": "Responsibilities",
-          "name": "responsibilities",
-          "type": "repeater",
-          "button_label": "Add Responsibility",
-          "sub_fields": [
-            {
-              "key": "field_responsibility_item",
-              "label": "Item",
-              "name": "item",
-              "type": "textarea"
-            }
-          ]
-        },
-        {
-          "key": "field_role_qualifications",
-          "label": "Qualifications",
-          "name": "qualifications",
-          "type": "repeater",
-          "button_label": "Add Qualification",
-          "sub_fields": [
-            {
-              "key": "field_qualification_item",
-              "label": "Item",
-              "name": "item",
-              "type": "textarea"
-            }
-          ]
+            "key": "field_roles",
+            "label": "Roles",
+            "name": "roles",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Role",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_role_title",
+                    "label": "Title",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_roles"
+                },
+                {
+                    "key": "field_role_description",
+                    "label": "Description",
+                    "name": "description",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "rows": 5,
+                    "default_value": "",
+                    "new_lines": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "parent_repeater": "field_roles"
+                },
+                {
+                    "key": "field_role_sections",
+                    "label": "Sections",
+                    "name": "sections",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "button_label": "Add Section",
+                    "min": 0,
+                    "max": 0,
+                    "rows_per_page": 20,
+                    "layout": "table",
+                    "collapsed": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_section_title",
+                            "label": "Section Title",
+                            "name": "section_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placeholder": "e.g. Responsibilities",
+                            "default_value": "",
+                            "maxlength": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_role_sections"
+                        },
+                        {
+                            "key": "field_section_content",
+                            "label": "Section Content",
+                            "name": "section_content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "tabs": "visual",
+                            "media_upload": false,
+                            "toolbar": "full",
+                            "default_value": "",
+                            "delay": 0,
+                            "parent_repeater": "field_role_sections"
+                        }
+                    ],
+                    "parent_repeater": "field_roles"
+                }
+            ]
         }
-      ]
-    }
-  ],
-  "location": [
-    [
-      {
-        "param": "block",
-        "operator": "==",
-        "value": "acf/careers-list"
-      }
-    ]
-  ],
-  "position": "normal",
-  "style": "default",
-  "label_placement": "top",
-  "instruction_placement": "label",
-  "active": true,
-  "description": "Accordion list of open job roles with responsibilities and qualifications."
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/careers-list"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Accordion list of open job roles with flexible sections.",
+    "show_in_rest": 0,
+    "modified": 1750334609
 }

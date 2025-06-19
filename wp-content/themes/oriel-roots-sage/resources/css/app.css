@@ -12,6 +12,7 @@
 @source "../views/";
 @source "../../app/";
 
+/* Base grid container for structured layout */
 .content-grid {
   --padding-inline: 1rem;
   --content-max-width: 1100px;
@@ -33,24 +34,34 @@
     minmax(var(--padding-inline), 1fr) [full-width-end];
 }
 
-.content-grid > :not(.breakout, .full-width, .full-width-constrained),
-.full-width-constrained
-> :not(.breakout, .full-width, .full-width-constrained) {
+/* Default blocks go into content column */
+.content-grid > .wp-block,
+.content-grid > .acf-block-preview,
+.content-grid > :not(.breakout, .full-width, .full-width-constrained) {
   grid-column: content;
 }
 
-.content-grid .breakout {
+/* Wide blocks span breakout */
+.content-grid > .alignwide {
   grid-column: breakout;
 }
 
+/* Full-width blocks span the entire grid */
+.content-grid > .alignfull,
+.content-grid > .full-width {
+  grid-column: full-width;
+}
+
+/* Breakout sections that maintain inner grid structure */
 .content-grid .full-width-constrained {
   grid-column: full-width;
   display: grid;
   grid-template-columns: inherit;
 }
 
-.content-grid .full-width {
-  grid-column: full-width;
+/* Elements explicitly marked as breakout */
+.content-grid .breakout {
+  grid-column: breakout;
 }
 
 /*#home-hero h1,*/

@@ -3,7 +3,6 @@
 @endphp
 
 @if ($roles)
-  <div>
     @foreach ($roles as $role)
       <x-accordion
         :heading="$role['title']"
@@ -15,30 +14,25 @@
           @endif
 
           <div class="space-y-4">
-            @if ($role['responsibilities'])
-              <div class="rounded-xl bg-white p-6 md:p-10">
-                <h6 class="mb-4 font-sans font-medium text-lg md:text-xl">Responsibilities</h6>
-                <ul class="list-disc pl-4 md:text-lg">
-                  @foreach ($role['responsibilities'] as $item)
-                    <li>{!! $item['item'] !!}</li>
-                  @endforeach
-                </ul>
-              </div>
-            @endif
+            @if (!empty($role['sections']))
+              @foreach ($role['sections'] as $section)
+                @if ($section['section_title'] || $section['section_content'])
+                  <div class="rounded-xl bg-white p-6 md:p-10">
+                    @if ($section['section_title'])
+                      <h6 class="mb-4 font-sans font-medium text-lg md:text-xl">
+                        {{ $section['section_title'] }}
+                      </h6>
+                    @endif
 
-            @if ($role['qualifications'])
-              <div class="rounded-xl bg-white p-6 md:p-10">
-                <h6 class="mb-4 font-sans font-medium text-lg md:text-xl">Qualifications</h6>
-                <ul class="list-disc pl-4 md:text-lg">
-                  @foreach ($role['qualifications'] as $item)
-                    <li>{!! $item['item'] !!}</li>
-                  @endforeach
-                </ul>
-              </div>
+                    @if ($section['section_content'])
+                      <div class="md:text-lg">{!! $section['section_content'] !!}</div>
+                    @endif
+                  </div>
+                @endif
+              @endforeach
             @endif
           </div>
         </div>
       </x-accordion>
     @endforeach
-  </div>
 @endif
