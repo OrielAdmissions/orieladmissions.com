@@ -23,7 +23,7 @@
 <div id="smooth-wrapper">
   <div id="smooth-content">
     <div id="app">
-      <main id="main" class="main">
+      <main id="main" class="main content-grid">
         @yield('content')
       </main>
 
