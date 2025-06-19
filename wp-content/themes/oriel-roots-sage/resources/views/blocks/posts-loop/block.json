@@ -1,0 +1,31 @@
+{
+  "name": "acf/posts-loop",
+  "title": "Posts Loop",
+  "description": "Loop grid for displaying posts such as blog posts or case studies",
+  "style": [ "file:./style.css" ],
+  "category": "",
+  "icon": "",
+  "keywords": [
+    "case study",
+    "posts",
+    "loop",
+    "section"
+  ],
+  "acf": {
+    "mode": "edit",
+    "renderCallback": "\\App\\blade_render_callback",
+    "postTypes": [
+      "page"
+    ],
+    "blockVersion": 3
+  },
+  "supports": {
+    "anchor": true,
+    "align": true,
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": true
+    }
+  }
+}

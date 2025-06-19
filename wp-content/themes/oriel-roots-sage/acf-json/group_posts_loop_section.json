@@ -1,0 +1,43 @@
+{
+  "key": "group_posts_loop_section",
+  "title": "Block: Posts Loop",
+  "fields": [
+    {
+      "key": "field_post_type",
+      "label": "Post Type",
+      "name": "post_type",
+      "type": "select",
+      "choices": {
+        "post": "Post",
+        "case_study": "Case Study"
+      },
+      "default_value": "case_study",
+      "allow_null": 0,
+      "multiple": 0,
+      "ui": 1
+    },
+    {
+      "key": "field_posts_per_page",
+      "label": "Posts Per Page",
+      "name": "posts_per_page",
+      "type": "number",
+      "default_value": 8,
+      "min": 1
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf/posts-loop"
+      }
+    ]
+  ],
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "active": true,
+  "description": "Displays AJAX-loaded posts with category filters and pagination."
+}
