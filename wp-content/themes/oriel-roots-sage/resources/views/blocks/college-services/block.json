@@ -1,26 +1,26 @@
 {
   "name": "acf/college-services",
   "title": "College Services",
-  "description": "College Services",
-  "style": [ "file:./style.css" ],
-  "category": "",
-  "icon": "",
+  "description": "Displays a list of college service cards with optional accordions.",
+  "style": ["file:./style.css"],
+  "category": "layout",
+  "icon": "id-alt",
   "keywords": [
-    "oriel",
-    "section",
     "college",
-    "services"
+    "services",
+    "accordion",
+    "cards",
+    "section",
+    "oriel"
   ],
   "acf": {
     "renderCallback": "\\App\\blade_render_callback",
-    "postTypes": [
-      "page"
-    ],
+    "postTypes": ["page"],
     "blockVersion": 3
   },
   "supports": {
     "anchor": true,
-    "align": true,
+    "align": ["wide", "full"],
     "spacing": {
       "margin": true,
       "padding": true,
