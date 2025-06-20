@@ -37,7 +37,9 @@
 /* Default blocks go into content column */
 .content-grid > .wp-block,
 .content-grid > .acf-block-preview,
-.content-grid > :not(.breakout, .full-width, .full-width-constrained) {
+.content-grid > :not(.breakout, .full-width, .full-width-constrained),
+.full-width-constrained
+> :not(.breakout, .full-width, .full-width-constrained)  {
   grid-column: content;
 }
 
