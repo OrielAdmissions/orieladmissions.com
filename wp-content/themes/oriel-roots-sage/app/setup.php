@@ -451,30 +451,30 @@ function register_faq_cpt() {
     ]);
 }
 
-add_action('init', function () {
-    register_block_style('core/image', [
-        'name'  => 'rounded-sm',
-        'label' => 'Rounded SM',
-        'inline_style' => 'img { border-radius: var(--radius-sm); }',
-    ]);
-    register_block_style('core/image', [
-        'name'  => 'rounded-md',
-        'label' => 'Rounded MD',
-        'inline_style' => 'img { border-radius: var(--radius-md); }',
-    ]);
-    register_block_style('core/image', [
-        'name'  => 'rounded-lg',
-        'label' => 'Rounded LG',
-        'inline_style' => 'img { border-radius: var(--radius-lg); }',
-    ]);
-    register_block_style('core/image', [
-        'name'  => 'rounded-xl',
-        'label' => 'Rounded XL',
-        'inline_style' => 'img { border-radius: var(--radius-xl); }',
-    ]);
-    register_block_style('core/image', [
-        'name'  => 'rounded-2xl',
-        'label' => 'Rounded 2XL',
-        'inline_style' => 'img { border-radius: var(--radius-2xl); }',
-    ]);
-});
+//add_action('init', function () {
+//    register_block_style('core/image', [
+//        'name'  => 'rounded-sm',
+//        'label' => 'Rounded SM',
+//        'inline_style' => 'img { border-radius: var(--radius-sm); }',
+//    ]);
+//    register_block_style('core/image', [
+//        'name'  => 'rounded-md',
+//        'label' => 'Rounded MD',
+//        'inline_style' => 'img { border-radius: var(--radius-md); }',
+//    ]);
+//    register_block_style('core/image', [
+//        'name'  => 'rounded-lg',
+//        'label' => 'Rounded LG',
+//        'inline_style' => 'img { border-radius: var(--radius-lg); }',
+//    ]);
+//    register_block_style('core/image', [
+//        'name'  => 'rounded-xl',
+//        'label' => 'Rounded XL',
+//        'inline_style' => 'img { border-radius: var(--radius-xl); }',
+//    ]);
+//    register_block_style('core/image', [
+//        'name'  => 'rounded-2xl',
+//        'label' => 'Rounded 2XL',
+//        'inline_style' => 'img { border-radius: var(--radius-2xl); }',
+//    ]);
+//});
