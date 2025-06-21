@@ -1,5 +1,5 @@
 @if (have_rows('services'))
-  <div class="space-y-8 py-12 md:py-30">
+  <div class="space-y-8">
     @while (have_rows('services'))
       @php the_row(); @endphp
       <x-services-card grade="{{ get_sub_field('grade') }}" title="{{ get_sub_field('title') }}"
