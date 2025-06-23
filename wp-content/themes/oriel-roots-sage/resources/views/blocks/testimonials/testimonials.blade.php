@@ -1,5 +1,4 @@
-<div class="bg-sand">
-  <div class="space-y-8 py-12 md:py-21">
+<div class="space-y-8">
     @if (have_rows('testimonials'))
       @while (have_rows('testimonials'))
         @php the_row();
@@ -80,7 +79,7 @@
               <div class="lg:border-keyline px-6 lg:border-l">
                 @if ($category)
                   <div
-                    class="pill mb-6 text-white {{ $category === 'undergrad' ? 'bg-opium' : ($category === 'mba' ? 'bg-stucco' : '') }}">
+                    class="pill mb-6 text-white {{ $category == 'Undergrad' ? 'bg-opium' : 'bg-stucco' }}">
                     {{ $category }}
                   </div>
                 @endif
@@ -100,4 +99,4 @@
       @endwhile
     @endif
   </div>
-</div>
+
