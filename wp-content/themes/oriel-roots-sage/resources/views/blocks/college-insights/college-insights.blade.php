@@ -35,7 +35,7 @@
             ])->toJson() !!} })'
             x-on:keydown.escape.prevent.stop="close($refs.button)"
             x-on:focusin.window="! $refs.panel.contains($event.target) && close()"
-            x-id="['dropdown-button']"
+            x-id="dropdown-button"
             class="relative z-50 w-full"
           >
             <button
