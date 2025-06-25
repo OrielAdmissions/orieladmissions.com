@@ -108,9 +108,13 @@
           <h3 class="text-3xl-fluid text-center leading-tight">{{ $name }}</h3>
           <p class="text-oriel mb-6 text-center text-lg">{{ $role }}</p>
           <div class="text-center">
-            @foreach ($education as $degree)
-              <p class="font-serif text-lg font-light">{{ $degree }}</p>
-            @endforeach
+              @if(is_array($education))
+                @foreach ($education as $degree)
+                  <p class="font-serif text-lg font-light">{{ $degree }}</p>
+                @endforeach
+              @else
+                <p class="font-serif text-lg font-light">{{ $education }}</p>
+              @endif
           </div>
         </div>
         <hr class="bg-opium my-6" />
