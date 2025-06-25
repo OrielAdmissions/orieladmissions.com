@@ -7,7 +7,7 @@
             "label": "Title",
             "name": "title",
             "aria-label": "",
-            "type": "wysiwyg",
+            "type": "text",
             "instructions": "Section heading. Can include line breaks or basic formatting.",
             "required": 0,
             "conditional_logic": 0,
@@ -16,12 +16,12 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "allow_in_bindings": 0,
-            "tabs": "all",
-            "toolbar": "basic",
-            "media_upload": 0,
-            "delay": 0
+            "default_value": "Need help? <br> Start Here.",
+            "maxlength": "",
+            "allow_in_bindings": 1,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         },
         {
             "key": "field_6836ea86bc130",
@@ -54,6 +54,51 @@
             "elements": "",
             "bidirectional": 0,
             "bidirectional_target": []
+        },
+        {
+            "key": "field_685c0503dac97",
+            "label": "FAQ Page Link",
+            "name": "faq_page_link",
+            "aria-label": "",
+            "type": "page_link",
+            "instructions": "Select FAQ page to generate button",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "post_status": "",
+            "taxonomy": "",
+            "allow_archives": 0,
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 1
+        },
+        {
+            "key": "field_685c0527dac98",
+            "label": "FAQ Text Content",
+            "name": "faq_text_content",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Don’t see your questions? <a class=\"text-oriel animate-underline\" href=\"\/contact\/\"> Get in touch <\/a>to learn more. We would be happy to help!",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -74,5 +119,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1748429618
+    "modified": 1750862050
 }
