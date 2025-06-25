@@ -21,7 +21,7 @@
 </section>
 
 <footer class="content-grid has-global-padding bg-sand relative" role="contentinfo">
-  <div class="breakout">
+  <div class="alignwide">
     {!! get_svg('images.footer-window', 'absolute top-0 right-8 w-1/3 max-sm:hidden text-cardinal/40') !!}
     <section class="overflow-hidden">
       <div class="pb-6 lg:pb-37">
