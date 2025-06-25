@@ -3,7 +3,7 @@
 @endphp
 
 @if ($logos)
-  <div class="bg-cardinal full-width content-grid space-y-28 pt-28 pb-20">
+  <div class="bg-cardinal space-y-28 pt-28 pb-20">
     <div>
       <h2 class="fade-in-bottom text-center font-serif text-5xl font-light text-white">
         {!! get_field('section_headline') ?? 'Our students have been accepted to:' !!}
@@ -14,7 +14,7 @@
       $svgChunks = array_chunk($logos, ceil(count($logos) / 2));
     @endphp
 
-    <div class="full-width overflow-hidden select-none">
+    <div class="overflow-hidden select-none">
       <div class="marquee flex flex-col gap-6">
         @foreach ($svgChunks as $index => $row)
           <div class="{{ $index === 1 ? 'animate-marquee-reverse' : 'animate-marquee' }} marquee__row min-w-fit">
