@@ -1,6 +1,8 @@
 @php
   $faqs = get_field('faqs');
   $title = get_field('title');
+  $link = get_field('faq_page_link');
+  $content = get_field('faq_text_content')
 @endphp
 
 <section class="faq-section breakout py-20">
@@ -10,14 +12,15 @@
         @if ($title)
           <h2 class="mb-10 max-w-113 font-serif text-5xl leading-tight font-light">{!! $title !!}</h2>
         @endif
-        <p class="faqStickyText max-w-42">
-          Don’t see your questions?
-          <br />
-          <a class="text-oriel animate-underline" href="/contact/">Get in touch</a>
-          to learn more.
-          <br />
-          We would be happy to help!
-        </p>
+        @if($link)
+          <a href="{{ $link }}" target="{!! '_self' !!}"
+             class="btn btn-primary mb-10"> View all FAQs </a>
+        @endif
+        @if ($content)
+          <div class="faqStickyText max-w-42">
+            {!! $content !!}
+          </div>
+        @endif
       </div>
     </div>
 
