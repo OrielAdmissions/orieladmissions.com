@@ -15,7 +15,7 @@
           @endforeach
         </div>
       </div>
-      <div class="content-grid">
+      <div class="content-grid px-4">
         <div class="alignwide relative z-[2] grid grid-cols-1 items-center justify-center gap-6 lg:grid-cols-3">
           <div class="lg:col-span-1 lg:col-start-1">
             <h2 class="fade-in-bottom text-6xl-fluid text-white max-lg:mb-12 max-lg:text-center">
