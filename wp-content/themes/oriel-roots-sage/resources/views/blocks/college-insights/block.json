@@ -1,12 +1,20 @@
 {
   "name": "acf/college-insights",
   "title": "College Insights List",
+  "description": "",
+  "style": [ "file:./style.css" ],
   "category": "layout",
   "icon": "welcome-learn-more",
-  "keywords": ["college", "schools", "cards"],
+  "keywords": [
+    "college",
+    "schools",
+    "cards"
+  ],
   "acf": {
     "renderCallback": "\\App\\blade_render_callback",
-    "postTypes": ["page"],
+    "postTypes": [
+      "page"
+    ],
     "blockVersion": 3,
     "mode": "preview"
   },
@@ -16,3 +24,4 @@
     "customClassName": true
   }
 }
+
