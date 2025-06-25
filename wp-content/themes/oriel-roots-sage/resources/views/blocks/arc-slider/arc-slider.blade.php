@@ -6,7 +6,7 @@
 @endphp
 
 @if( $slides )
-  <div class="full-width oriel-slider !block overflow-x-clip">
+  <div class="oriel-slider !block overflow-x-clip">
     <div class="carousel">
       <div class="swiper imageSwiper">
         <div class="swiper-wrapper">
