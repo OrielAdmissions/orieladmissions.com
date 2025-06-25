@@ -29,8 +29,7 @@
   ];
 @endphp
 
-<div class="bg-cardinal full-width py-12 md:py-30">
-  <div class="breakout">
+<div class="bg-cardinal py-12 md:py-30">
     @if ($headline)
       <div>
         <h2 class="fade-in-bottom text-6xl-fluid text-center text-white max-md:mb-6 md:-mb-16">
@@ -38,11 +37,9 @@
         </h2>
       </div>
     @endif
-
     <div class="max-md:hidden">
       {!! get_svg('images.steps-arrow', 'w-full') !!}
     </div>
-
     <div>
       <ul class="divide-keyline/10 flex text-white max-md:flex-col max-md:divide-y md:divide-x">
         @foreach ($steps as $step)
@@ -58,5 +55,4 @@
         @endforeach
       </ul>
     </div>
-  </div>
 </div>
