@@ -337,13 +337,6 @@ add_action('init', function () {
 });
 
 
-register_block_type('vendor/team_card_block', [
-    'render_callback' => function ($attributes, $content) {
-        return view('blocks/team_card_block', compact('attributes', 'content'));
-    },
-]);
-
-
 add_action('widgets_init', function () {
     $menu_widgets = [
         'about' => 'About',
