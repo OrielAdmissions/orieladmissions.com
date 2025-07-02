@@ -2,7 +2,7 @@
   $block_links = get_field('block_links');
 @endphp
 
-<div class="py-12 md:py-30">
+<section class="py-12 md:py-30">
     <h2 class="text-6xl-fluid mx-auto mb-12 md:mb-32 max-w-150 text-center">
       {!! get_field('section_headline') !!}
     </h2>
@@ -42,5 +42,5 @@
         @endforeach
       </div>
     </div>
-  </div>
+  </section>
 
