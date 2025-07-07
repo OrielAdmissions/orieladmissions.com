@@ -21,7 +21,7 @@
   },
   "supports": {
     "anchor": true,
-    "align": ["full", "wide"],
+    "align": false,
     "spacing": {
       "margin": true,
       "padding": true,

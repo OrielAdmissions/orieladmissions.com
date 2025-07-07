@@ -19,7 +19,7 @@
   },
   "supports": {
     "anchor": true,
-    "align": true,
+    "align": false,
     "spacing": {
       "margin": true,
       "padding": true,

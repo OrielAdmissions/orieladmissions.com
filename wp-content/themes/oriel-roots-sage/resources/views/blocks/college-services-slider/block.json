@@ -3,6 +3,7 @@
   "title": "College Services Slider",
   "description": "College Services Slider",
   "style": [ "file:./style.css" ],
+  "editorStyle": "file:./editor.css",
   "category": "",
   "icon": "",
   "keywords": [
@@ -22,7 +23,7 @@
   },
   "supports": {
     "anchor": true,
-    "align": true,
+    "align": false,
     "spacing": {
       "margin": true,
       "padding": true,
