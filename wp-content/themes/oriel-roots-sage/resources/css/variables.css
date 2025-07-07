@@ -17,6 +17,32 @@
   --text-3xl-fluid--line-height: 1.25;
   --text-2xl-fluid: clamp(1.25rem, 0.417vw + 1.167rem, 1.5rem); /*20px to 24px*/
   --text-lg-fluid: clamp(1rem, 0.208vw + 0.958rem, 1.125rem); /*16px to 18px*/
+
+  /* Reset Tailwind default color palette */
+  --color-red-*: initial;
+  --color-orange-*: initial;
+  --color-amber-*: initial;
+  --color-yellow-*: initial;
+  --color-lime-*: initial;
+  --color-green-*: initial;
+  --color-emerald-*: initial;
+  --color-teal-*: initial;
+  --color-cyan-*: initial;
+  --color-sky-*: initial;
+  --color-blue-*: initial;
+  --color-indigo-*: initial;
+  --color-violet-*: initial;
+  --color-purple-*: initial;
+  --color-fuchsia-*: initial;
+  --color-pink-*: initial;
+  --color-rose-*: initial;
+  --color-slate-*: initial;
+  --color-gray-*: initial;
+  --color-zinc-*: initial;
+  --color-neutral-*: initial;
+  --color-stone-*: initial;
+
+
   --color-chalk: #f7f0eb;
   --color-sand: #edddd1;
   --color-brick: #d35040;
