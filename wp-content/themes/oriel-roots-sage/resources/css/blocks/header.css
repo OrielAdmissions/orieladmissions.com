@@ -11,14 +11,11 @@
   --hamburger-active-layer-color: var(--hamburger-layer-color);
   --hamburger-active-hover-opacity: var(--hamburger-hover-opacity);
   --transition-duration: 0.25s;
-
-  /* Toggle these if you want to use filter instead of opacity (or handle in JS). */
   --hamburger-hover-use-filter: false;
   --hamburger-hover-filter: opacity(50%);
   --hamburger-active-hover-filter: opacity(50%);
 }
 
-/* Example hamburger base */
 .hamburger {
   @apply cursor-pointer;
   padding: var(--hamburger-padding-y) var(--hamburger-padding-x);
@@ -26,20 +23,13 @@
   transition-duration: var(--transition-duration);
   transition-timing-function: linear;
 
-  /* Replace with filter or opacity, as needed.
-     (Tailwind can’t handle toggling 'filter' vs 'opacity' in pure CSS—
-     so you may need a separate class or JS approach.)
-  */
-
   &:hover {
     opacity: var(--hamburger-hover-opacity);
-    /* or filter: var(--hamburger-hover-filter); */
   }
 
   &.menu-opened {
     &:hover {
       opacity: var(--hamburger-active-hover-opacity);
-      /* or filter: var(--hamburger-active-hover-filter); */
     }
 
     .hamburger-inner,
@@ -60,14 +50,12 @@
 
 .hamburger-inner {
   @apply absolute block;
-  /* replaced 'top-1/2' with manual top: 50% below if you like */
   top: 50%;
 
   &,
   &::before,
   &::after {
     @apply absolute bg-white;
-    /* keep the color from var if you want */
     width: var(--hamburger-layer-width);
     height: var(--hamburger-layer-height);
     border-radius: var(--hamburger-layer-border-radius);
