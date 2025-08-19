@@ -13,7 +13,7 @@
   $stem = get_field('project_stem');
 @endphp
 
-<div class="breakout mb-20 space-y-12 pt-12 md:pt-30">
+<div class="mb-20 space-y-12 pt-12 md:pt-30">
   <div class="grid grid-cols-12 gap-x-4 gap-y-6">
     <div class="col-span-full flex max-w-lg flex-col gap-y-12 lg:col-span-4 lg:col-start-2 xl:pt-16">
       @if ($headline)
@@ -87,7 +87,7 @@
 </div>
 
 {{-- PROJECT AREAS --}}
-<div class="breakout mb-12 md:mb-30">
+<div class="alignwide mb-12 md:mb-30">
   <div class="grid grid-cols-12 gap-x-4 gap-y-6">
     <div class="col-span-full flex max-w-lg flex-col gap-y-12 lg:col-span-4 lg:col-start-2">
       @if ($project_heading)

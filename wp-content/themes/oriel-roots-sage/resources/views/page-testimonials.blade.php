@@ -12,7 +12,7 @@
   </x-hero>
 
   <div class="bg-sand full-width-constrained">
-    <div class="breakout space-y-8 py-12 md:py-21">
+    <div class="alignwide space-y-8 py-12 md:py-21">
       <x-testimonial
         category="undergrad"
         profile_image_id="74"

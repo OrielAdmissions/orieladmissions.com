@@ -23,7 +23,7 @@
       <div class="hero__window-overlay relative bg-[black] opacity-50"></div>
       {{--      <x-page-loader></x-page-loader>--}}
       <div class="content-grid">
-        <div class="breakout relative flex flex-col justify-center">
+        <div class="alignwide relative flex flex-col justify-center">
           <div class="relative py-8 fade-in-bottom items-center">
             <h1 class="max-w-225 text-8xl-fluid text-center mx-auto text-white">
               Expert College Admissions Consulting </h1>
@@ -35,7 +35,7 @@
 
   {{--  @include('partials.modules.rona')--}}
 
-  <div class="breakout">
+  <div class="alignwide">
     <div class="py-12 md:py-30">
       <div class="grid gap-8 grid-cols-12 max-md:text-center">
         <div class="md:col-start-2 md:col-span-7 col-span-full">

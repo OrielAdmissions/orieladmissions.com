@@ -3,6 +3,7 @@
   "title": "Testimonial Slider",
   "description": "Testimonial Slider",
   "style": [ "file:./style.css" ],
+  "view_script": ["file:./block.js"],
   "category": "",
   "icon": "",
   "keywords": [

@@ -11,12 +11,9 @@
       @endif
     </div>
     <div class="hero__window-overlay relative bg-[black] opacity-50"></div>
-    <div class="content-grid">
-      <div class="breakout relative flex flex-col justify-center">
+      <div class="max-w-7xl mx-auto relative flex flex-col justify-center">
         {{ $headline ?? '' }}
-
         {{ $content ?? '' }}
       </div>
-    </div>
   </div>
 </div>

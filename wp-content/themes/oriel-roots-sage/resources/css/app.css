@@ -4,7 +4,6 @@
 @import './components.css';
 @import './utilities.css';
 @import './fonts.css';
-@import './ninja-forms.css';
 @import './blocks/header.css';
 @import './blocks/logo-marquee.css';
 @import './animations.css';
@@ -12,67 +11,25 @@
 @source "../views/";
 @source "../../app/";
 
-/* Base grid container for structured layout */
 .content-grid {
-  --padding-inline: 1rem;
-  --content-max-width: 1100px;
-  --breakout-max-width: 1280px;
-
-  --breakout-size: calc(
-    (var(--breakout-max-width) - var(--content-max-width)) / 2
-  );
-
+  grid-template-columns: [full-start]minmax(0,1fr)[wide-start]minmax(0,calc((var(--wp--style--global--wide-size) - var(--wp--style--global--content-size))/2))[content-start]minmax(0,var(--wp--style--global--content-size))[content-end]minmax(0,calc((var(--wp--style--global--wide-size) - var(--wp--style--global--content-size))/2))[wide-end]minmax(0,1fr)[full-end];
   display: grid;
-  grid-template-columns:
-    [full-width-start] minmax(var(--padding-inline), 1fr)
-    [breakout-start] minmax(0, var(--breakout-size))
-    [content-start] min(
-      100% - (var(--padding-inline) * 2),
-      var(--content-max-width)
-    )
-    [content-end] minmax(0, var(--breakout-size)) [breakout-end]
-    minmax(var(--padding-inline), 1fr) [full-width-end];
+
+  .alignnone,
+  .aligncenter {
+    grid-column: content-start/content-end;
+  }
+
+  .alignwide {
+    grid-column: wide-start/wide-end;
+  }
+
+  .alignfull {
+    grid-column: full-start/full-end;
+  }
 }
 
-/* Default blocks go into content column */
-.content-grid > .wp-block,
-.content-grid > .acf-block-preview,
-.content-grid > :not(.breakout, .full-width, .full-width-constrained),
-.full-width-constrained
-> :not(.breakout, .full-width, .full-width-constrained)  {
-  grid-column: content;
-}
-
-/* Wide blocks span breakout */
-.content-grid > .alignwide {
-  grid-column: breakout;
-}
-
-/* Full-width blocks span the entire grid */
-.content-grid > .alignfull,
-.content-grid > .full-width {
-  grid-column: full-width;
-}
-
-/* Breakout sections that maintain inner grid structure */
-.content-grid .full-width-constrained {
-  grid-column: full-width;
-  display: grid;
-  grid-template-columns: inherit;
-}
-
-/* Elements explicitly marked as breakout */
-.content-grid .breakout {
-  grid-column: breakout;
-}
-
-/*#home-hero h1,*/
-/*.home #sticky-header > nav {*/
-/*  opacity: 0;*/
-/*  visibility: hidden;*/
-/*}*/
-
-body.home .hero__window-overlay + .content-grid h1 {
+.title-shadow h1 {
   filter: drop-shadow(0 9px 7px rgba(0, 0, 0, 0.25));
 }
 
@@ -167,6 +124,27 @@ body.home .hero__window-overlay + .content-grid h1 {
       mask-composite: exclude;
       mask-position: center;
     }
+  }
+}
+
+.wp-block__window-overlay {
+  .wp-block-cover__background.has-background-dim {
+    -webkit-mask-composite: destination-out;
+    mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 622 1274" preserveAspectRatio="xMidYMid meet"><g transform="scale(1.1, 1)" transform-origin="center"><path transform-origin="center" fill="none" stroke="black" stroke-width="0" d="M75.9474 1097.31C184.23 1128.99 268.923 1195.82 310.994 1272.95C353.066 1195.82 437.759 1128.99 546.042 1097.31C571.105 1089.98 596.117 1084.91 620.714 1081.98V204.709C598.202 201.694 575.37 196.891 552.495 190.198C437.996 156.7 349.87 83.8989 310.625 1.17163C271.382 83.9012 183.254 156.705 68.7523 190.204C45.8664 196.9 23.0231 201.705 0.5 204.72V1081.89C25.3462 1084.81 50.6207 1089.9 75.9474 1097.31Z"/><path transform-origin="center" fill="black" transform="scale(0.95, 0.95)" d="M75.9474 1097.31C184.23 1128.99 268.923 1195.82 310.994 1272.95C353.066 1195.82 437.759 1128.99 546.042 1097.31C571.105 1089.98 596.117 1084.91 620.714 1081.98V204.709C598.202 201.694 575.37 196.891 552.495 190.198C437.996 156.7 349.87 83.8989 310.625 1.17163C271.382 83.9012 183.254 156.705 68.7523 190.204C45.8664 196.9 23.0231 201.705 0.5 204.72V1081.89C25.3462 1084.81 50.6207 1089.9 75.9474 1097.31Z"/></g></svg>') 0 / 100% 75% no-repeat,
+    linear-gradient(#fff, #fff);
+    mask-composite: exclude;
+    mask-position: center;
+    @variant lg {
+      mask-size: 100% 700px;
+    }
+  }
+
+  h1 {
+    filter: drop-shadow(0 9px 7px rgba(0, 0, 0, 0.25));
+  }
+
+  img {
+    @apply brightness-75;
   }
 }
 
@@ -265,18 +243,6 @@ body.home .hero__window-overlay + .content-grid h1 {
   }
 }
 
-.hero__window-overlay {
-  @apply relative;
-  -webkit-mask-composite: destination-out;
-  mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 622 1274" preserveAspectRatio="xMidYMid meet"><g transform="scale(1.1, 1)" transform-origin="center"><path transform-origin="center" fill="none" stroke="black" stroke-width="0" d="M75.9474 1097.31C184.23 1128.99 268.923 1195.82 310.994 1272.95C353.066 1195.82 437.759 1128.99 546.042 1097.31C571.105 1089.98 596.117 1084.91 620.714 1081.98V204.709C598.202 201.694 575.37 196.891 552.495 190.198C437.996 156.7 349.87 83.8989 310.625 1.17163C271.382 83.9012 183.254 156.705 68.7523 190.204C45.8664 196.9 23.0231 201.705 0.5 204.72V1081.89C25.3462 1084.81 50.6207 1089.9 75.9474 1097.31Z"/><path transform-origin="center" fill="black" transform="scale(0.95, 0.95)" d="M75.9474 1097.31C184.23 1128.99 268.923 1195.82 310.994 1272.95C353.066 1195.82 437.759 1128.99 546.042 1097.31C571.105 1089.98 596.117 1084.91 620.714 1081.98V204.709C598.202 201.694 575.37 196.891 552.495 190.198C437.996 156.7 349.87 83.8989 310.625 1.17163C271.382 83.9012 183.254 156.705 68.7523 190.204C45.8664 196.9 23.0231 201.705 0.5 204.72V1081.89C25.3462 1084.81 50.6207 1089.9 75.9474 1097.31Z"/></g></svg>') 0 / 100% 75% no-repeat,
-  linear-gradient(#fff, #fff);
-  mask-composite: exclude;
-  mask-position: center;
-  @variant lg {
-    mask-size: 100% 700px;
-  }
-}
-
 #forminator-module-465 {
   margin-bottom: 0;
 
@@ -299,4 +265,67 @@ body.home .hero__window-overlay + .content-grid h1 {
   .forminator-error-message {
     @apply absolute translate-y-full;
   }
+}
+
+.wp-block-button__link.wp-element-button {
+  @apply relative inline-block overflow-hidden rounded-full px-8 py-3 pr-14 pl-12 font-[400] transition-all duration-300;
+
+  &:before {
+    content: '';
+    mask: url('data:image/svg+xml,%3Csvg%20width%3D%227%22%20height%3D%2217%22%20viewBox%3D%220%200%207%2017%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.365128%2016.7022H1.93207C2.0092%2016.051%202.14306%2015.3887%202.33721%2014.725C2.94817%2012.6364%204.05465%2010.8809%205.40004%209.65449C5.90427%209.19486%206.44206%208.80953%206.9999%208.50882C6.44208%208.20807%205.90431%207.82271%205.40011%207.36304C4.05488%206.13665%202.94855%204.38133%202.33764%202.29289C2.14172%201.62312%202.00719%200.954753%201.9304%200.297794L0.365128%200.297794V2.10608H0.417843C0.472988%202.33749%200.534372%202.56909%200.602085%202.80057C1.26505%205.06696%202.4583%207.0506%203.97753%208.50873C2.45809%209.96689%201.26468%2011.9507%200.601654%2014.2173C0.535682%2014.4428%200.475716%2014.6685%200.421676%2014.8939H0.365128V16.7022Z%22%20fill%3D%22currentColor%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E') center center/contain no-repeat;
+    @apply absolute top-1/2 left-0 h-4 w-16 -translate-x-16 -translate-y-1/2 border border-black bg-current pl-8 transition-all duration-300;
+  }
+
+  &:after {
+    content: '';
+    mask: url('data:image/svg+xml,%3Csvg%20width%3D%227%22%20height%3D%2217%22%20viewBox%3D%220%200%207%2017%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.365128%2016.7022H1.93207C2.0092%2016.051%202.14306%2015.3887%202.33721%2014.725C2.94817%2012.6364%204.05465%2010.8809%205.40004%209.65449C5.90427%209.19486%206.44206%208.80953%206.9999%208.50882C6.44208%208.20807%205.90431%207.82271%205.40011%207.36304C4.05488%206.13665%202.94855%204.38133%202.33764%202.29289C2.14172%201.62312%202.00719%200.954753%201.9304%200.297794L0.365128%200.297794V2.10608H0.417843C0.472988%202.33749%200.534372%202.56909%200.602085%202.80057C1.26505%205.06696%202.4583%207.0506%203.97753%208.50873C2.45809%209.96689%201.26468%2011.9507%200.601654%2014.2173C0.535682%2014.4428%200.475716%2014.6685%200.421676%2014.8939H0.365128V16.7022Z%22%20fill%3D%22currentColor%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E') center center/contain no-repeat;
+
+    @apply absolute top-1/2 right-0 h-4 w-16 -translate-y-1/2 border border-black bg-current pr-8 transition-all duration-300;
+  }
+
+  &:hover {
+    @apply pr-12 pl-14 brightness-90;
+
+    &:before {
+      @apply translate-x-0;
+    }
+
+    &:after {
+      @apply translate-x-16;
+    }
+  }
+}
+
+.accent-oriel {
+  --accent-color: #ee2212;
+}
+
+.accent-ivy {
+  --accent-color: #5d6720;
+}
+
+.tab-content .wp-block-details {
+  summary {
+    @apply text-3xl-fluid py-12 leading-tight;
+
+    &:after{
+      content:"";
+      transition:transform .35s ease;
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background-color: currentColor;
+      mask-image: url('data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2214%22%20viewBox%3D%220%200%2024%2014%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M27.875%200.773437V3.75238C26.6067%203.89938%2025.3169%204.15407%2024.0243%204.52317C19.9245%205.69393%2016.4829%207.82016%2014.0885%2010.404C13.2097%2011.3524%2012.4719%2012.3625%2011.8945%2013.4097C11.3171%2012.3625%2010.5794%2011.3524%209.70051%2010.404C7.3062%207.82016%203.86451%205.69394%20-0.235266%204.52318C-1.54107%204.15029%20-2.84414%203.89417%20-4.125%203.74789L-4.125%200.773438L-0.681432%200.773437V0.852743C-0.217777%200.959807%200.24635%201.07949%200.710301%201.21198C5.15334%202.48076%209.04629%204.77823%2011.8945%207.71245C14.7428%204.77823%2018.6357%202.48075%2023.0788%201.21197C23.5297%201.0832%2023.9808%200.966531%2024.4314%200.861786V0.773437L27.875%200.773437Z%22%20fill%3D%22currentColor%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+      mask-type: alpha;
+      mask-repeat: no-repeat;
+    }
+  }
+}
+
+figure.rounded-xl img {
+  @apply rounded-xl;
+}
+
+.gap-0 {
+  gap: 0;
 }

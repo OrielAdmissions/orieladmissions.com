@@ -6,7 +6,6 @@
 
 namespace App;
 
-use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Vite;
 
 /**
@@ -18,9 +17,7 @@ add_filter('block_editor_settings_all', function ($settings) {
     $style = Vite::asset('resources/css/editor.css');
 
     $settings['styles'][] = [
-        'css' => Vite::isRunningHot()
-            ? "@import url('{$style}')"
-            : Vite::content('resources/css/editor.css'),
+        'css' => "@import url('{$style}')",
     ];
 
     return $settings;
@@ -36,7 +33,7 @@ add_filter('admin_head', function () {
         return;
     }
 
-    $dependencies = json_decode(Vite::content('_editor.deps.json'));
+    $dependencies = json_decode(Vite::content('editor.deps.json'));
 
     foreach ($dependencies as $dependency) {
         if (!wp_script_is($dependency)) {
@@ -47,35 +44,6 @@ add_filter('admin_head', function () {
     echo Vite::withEntryPoints([
         'resources/js/editor.js',
     ])->toHtml();
-});
-
-/**
- * Add Vite's HMR client to the block editor.
- *
- * @return void
- */
-add_action('enqueue_block_assets', function () {
-    if (!is_admin() || !get_current_screen()?->is_block_editor()) {
-        return;
-    }
-
-    if (!Vite::isRunningHot()) {
-        return;
-    }
-
-    $script = sprintf(
-        <<<'JS'
-        window.__vite_client_url = '%s';
-
-        window.self !== window.top && document.head.appendChild(
-            Object.assign(document.createElement('script'), { type: 'module', src: '%s' })
-        );
-        JS,
-        untrailingslashit(Vite::asset('')),
-        Vite::asset('@vite/client')
-    );
-
-    wp_add_inline_script('wp-blocks', $script);
 });
 
 /**
@@ -188,8 +156,7 @@ add_action('widgets_init', function () {
         [
             'name' => __('Footer', 'sage'),
             'id' => 'sidebar-footer',
-        ] + $config
-    );
+        ] + $config);
 });
 
 //add_filter( 'acf/settings/show_admin', function () {

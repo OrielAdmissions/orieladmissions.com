@@ -2,7 +2,7 @@
 
 @section('content')
   @include('partials.page-header')
-  <div class="full-width content-grid">
+  <div class="wp-block-group alignwide has-global-padding is-layout-constrained wp-container-core-group-is-layout-1 wp-block-group-is-layout-constrained">
     <div class="postContainer pb-12">
       @if (! have_posts())
         <x-alert type="warning">

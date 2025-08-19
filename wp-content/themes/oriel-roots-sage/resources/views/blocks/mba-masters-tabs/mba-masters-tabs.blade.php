@@ -14,9 +14,9 @@
   $masters_accordions = get_field('masters_accordions');
 @endphp
 
-<div x-data="{ selectedTab: 0 }" x-tabs :selected="selectedTab" class="full-width content-grid bg-chalk">
+<div x-data="{ selectedTab: 0 }" x-tabs :selected="selectedTab" class="bg-chalk">
   {{-- Tab List --}}
-  <div x-tabs:list class="divide-keyline/80 breakout full-width flex items-stretch divide-x">
+  <div x-tabs:list class="divide-keyline/80 flex items-stretch divide-x">
     <button x-tabs:tab type="button" :class="$tab.isSelected ? 'border-b-[var(--tab-accent)]' : 'border-b-keyline/80'"
             class="bg-sand/20 inline-flex w-full cursor-pointer justify-center border-b-2 p-7 text-center text-2xl transition duration-300 focus:outline-none"
             style="--tab-accent: #EE2212">
@@ -30,7 +30,7 @@
   </div>
 
   {{-- Tab Panels --}}
-  <div x-tabs:panels class="tab-contents breakout">
+  <div x-tabs:panels class="tab-contents alignwide">
     {{-- MBA Tab --}}
     <section x-tabs:panel class="tab-content">
       <div class="relative py-24 md:py-40">
@@ -60,7 +60,7 @@
         </div>
       </div>
 
-      <div class="content-grid">
+      <div class="">
         <h2 class="text-6xl-fluid text-center">
           Our all-inclusive packages include: </h2>
         <div class="py-12 md:py-30">
@@ -105,7 +105,7 @@
         </div>
       </div>
 
-      <div class="content-grid space-y-24">
+      <div class="space-y-24">
         @if($masters_list_heading)
           <h2 class="text-5xl-fluid text-center">{!! $masters_list_heading !!}</h2>
         @endif
@@ -125,7 +125,7 @@
         @endif
 
         @if($masters_accordions)
-          <div class="content-grid">
+          <div class="">
             <h2 class="text-6xl-fluid text-center">
               Our all-inclusive packages include: </h2>
             <div class="py-12 md:py-30">

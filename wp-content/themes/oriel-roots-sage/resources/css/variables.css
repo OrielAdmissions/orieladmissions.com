@@ -37,7 +37,6 @@
   --color-pink-*: initial;
   --color-rose-*: initial;
   --color-slate-*: initial;
-  --color-gray-*: initial;
   --color-zinc-*: initial;
   --color-neutral-*: initial;
   --color-stone-*: initial;
@@ -49,12 +48,13 @@
   --color-stucco: #ab8867;
   --color-opium: #968587;
   --color-ivy: #5d6720;
-  --color-black: #29202d;
+  --color-theme-black: #29202d;
   --color-keyline: #d9cbcf;
   --color-oriel: #ee2212;
   --color-cardinal: #602537;
   --color-cardinal-muted: #c3a6a3;
   --container-8xl: 90rem;
+  --color-black: #000000;
 
   --color-chalk-passthrough: --alpha(var(--color-chalk) / 30%);
   --dot-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.25) inset;

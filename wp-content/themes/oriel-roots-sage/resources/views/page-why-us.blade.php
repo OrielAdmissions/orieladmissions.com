@@ -44,7 +44,7 @@
         x-init="init()"
         data-percentage="50"
         data-students="482"
-        class="breakout grid grid-cols-[repeat(auto-fit,minmax(min(400px,100%),1fr))] gap-4"
+        class="alignwide grid grid-cols-[repeat(auto-fit,minmax(min(400px,100%),1fr))] gap-4"
       >
         <div class="bg-chalk space-y-6 rounded-lg p-6 text-center shadow-md">
           <p class="text-lg lg:text-xl">
@@ -120,7 +120,7 @@
   </div>
 
   <section class="full-width content-grid bg-sand py-12 md:py-30">
-    <div class="breakout">
+    <div class="alignwide">
       <h2
         class="text-6xl-fluid mx-auto mb-12 md:mb-30 max-w-125 text-center"
       >

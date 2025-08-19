@@ -35,7 +35,7 @@
       <a href="/contact/" class="btn btn-primary">Contact Us</a>
     </div>
 
-    <div class="breakout">
+    <div class="alignwide">
       <h2
         class="text-6xl-fluid pb-12 text-center lg:pt-44 lg:pb-20"
       >

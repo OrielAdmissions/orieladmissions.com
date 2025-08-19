@@ -1,4 +1,4 @@
-<section class="content-grid has-global-padding py-12 sm:py-21 md:bg-[#E8D6C9]">
+<section class="content-grid has-global-padding is-layout-constrained py-12 sm:py-21 md:bg-[#E8D6C9]">
   <div class="alignwide grid grid-cols-12 items-center gap-4">
     <div class="col-span-12 md:col-span-5">
       <h3 class="text-center font-sans text-2xl font-normal md:text-left">
@@ -20,7 +20,7 @@
   </div>
 </section>
 
-<footer class="content-grid has-global-padding bg-sand relative" role="contentinfo">
+<footer class="wp-block-group alignwide has-global-padding is-layout-constrained bg-sand relative" role="contentinfo">
   <div class="alignwide">
     {!! get_svg('images.footer-window', 'absolute top-0 right-8 w-1/3 max-sm:hidden text-cardinal/40') !!}
     <section class="overflow-hidden">

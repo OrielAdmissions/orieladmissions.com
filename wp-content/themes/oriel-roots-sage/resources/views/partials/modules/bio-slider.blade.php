@@ -32,7 +32,7 @@
     </div>
     <div class="content-grid">
       <div
-        class="breakout relative z-[2] grid grid-cols-1 items-center justify-center gap-6 lg:grid-cols-3"
+        class="alignwide relative z-[2] grid grid-cols-1 items-center justify-center gap-6 lg:grid-cols-3"
       >
         <div class="lg:col-span-1 lg:col-start-1">
           <h2

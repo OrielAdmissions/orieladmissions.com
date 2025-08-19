@@ -4,7 +4,7 @@
 @endphp
 
 @if ($headline || $subtext)
-  <div class="full-width content-grid py-12 md:py-30">
+  <div class="py-12 md:py-30">
     <div class="grid grid-cols-1 gap-8 pb-12 md:pb-30 md:grid-cols-2">
       @if ($headline)
         <div>

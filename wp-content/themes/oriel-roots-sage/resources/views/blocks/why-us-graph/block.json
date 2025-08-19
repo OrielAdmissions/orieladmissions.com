@@ -3,6 +3,7 @@
   "title": "Why Us Graph",
   "description": "",
   "style": [ "file:./style.css" ],
+  "script": "file:./block.js",
   "category": "",
   "icon": "",
   "keywords": [

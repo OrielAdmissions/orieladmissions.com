@@ -103,33 +103,3 @@
 }
 
 
-@utility content-grid {
-  display: grid;
-  grid-template-columns:
-    [full-start] minmax(0, 1fr)
-    [wide-start content-start] minmax(0, var(--wp--style--global--wide-size, 1280px))
-    [content-end wide-end] minmax(0, 1fr)
-    [full-end];
-
-  .has-global-padding--inner {
-    padding-left: var(--wp--style--root--padding-left, 1rem);
-    padding-right: var(--wp--style--root--padding-right, 1rem);
-  }
-
-  .alignnone {
-    grid-column: content-start / content-end;
-  }
-
-  .aligncenter {
-    grid-column: content-start / content-end;
-  }
-
-  .alignwide {
-    grid-column: wide-start / wide-end;
-  }
-
-  .alignfull {
-    grid-column: full-start / full-end;
-  }
-}
-

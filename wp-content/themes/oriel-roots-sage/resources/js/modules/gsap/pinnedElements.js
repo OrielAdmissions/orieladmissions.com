@@ -18,7 +18,6 @@ export function initPinnedElements() {
         start: `top ${headerHeight}px`,
         endTrigger: endTrigger, // Set the scrolling end trigger
         end: () => `bottom ${pin.offsetHeight + headerHeight}px`,
-        pinSpacing: false,
         invalidateOnRefresh: true,
       });
     });

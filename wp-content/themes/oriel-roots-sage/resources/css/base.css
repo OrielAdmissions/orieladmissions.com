@@ -1,9 +1,7 @@
 @layer base {
   html {
-    @variant max-md {
       scroll-behavior: smooth;
       scroll-margin-top: 80px;
-    }
   }
 
   body {
@@ -12,10 +10,6 @@
 
   [x-cloak] {
     display: none !important;
-  }
-
-  #smooth-content {
-    will-change: transform;
   }
 
   /*!* width *!*/

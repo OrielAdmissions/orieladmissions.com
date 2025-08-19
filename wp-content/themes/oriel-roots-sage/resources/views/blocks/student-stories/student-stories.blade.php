@@ -3,8 +3,8 @@
   $stories = get_field('stories');
 @endphp
 
-<div class="bg-sand full-width-constrained">
-  <div class="breakout space-y-8 py-12 md:py-30">
+<div class="bg-sand">
+  <div class="space-y-8 py-12 md:py-30">
     @if ($headline)
       <h2 @class(['text-6xl-fluid mb-12 md:bb-30 text-center'])>
         {{ $headline }}

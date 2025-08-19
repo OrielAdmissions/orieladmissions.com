@@ -16,27 +16,23 @@
     "translate:mo": "wp i18n make-mo ./resources/lang ./resources/lang"
   },
   "devDependencies": {
-    "@tailwindcss/vite": "^4.0.6",
-    "@wordpress/dependency-extraction-webpack-plugin": "^6.18.0",
+    "@roots/vite-plugin": "^1.0.2",
+    "@tailwindcss/vite": "^4.0.9",
     "laravel-vite-plugin": "^1.2.0",
+    "tailwindcss": "^4.0.9",
+    "vite": "^6.2.0",
+    "@wordpress/dependency-extraction-webpack-plugin": "^6.18.0",
     "prettier": "^3.4.2",
     "prettier-plugin-blade": "^2.1.19",
-    "prettier-plugin-tailwindcss": "^0.6.11",
-    "tailwindcss": "^4.0.6",
-    "vite": "^6.1.0"
+    "prettier-plugin-tailwindcss": "^0.6.11"
   },
   "dependencies": {
     "@alpinejs/focus": "^3.14.8",
     "@alpinejs/ui": "^3.14.8",
     "@fancyapps/ui": "^5.0.36",
-    "@lottiefiles/dotlottie-web": "^0.43.0",
     "@popperjs/core": "^2.11.8",
-    "@wordpress/block-editor": "^14.13.0",
-    "@wordpress/blocks": "^14.7.0",
-    "@wordpress/components": "^29.4.0",
-    "@wordpress/scripts": "^30.11.0",
     "alpinejs": "^3.14.8",
-    "gsap": "npm:@gsap/shockingly@^3.12.7",
+    "gsap": "^3.13.0",
     "swiper": "^11.2.2",
     "tippy.js": "^6.3.7"
   }

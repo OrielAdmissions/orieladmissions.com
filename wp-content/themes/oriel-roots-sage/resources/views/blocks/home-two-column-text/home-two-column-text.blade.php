@@ -7,7 +7,7 @@
   $headline = preg_replace('/\|(.+?)\|/', '<span class="text-oriel text-6xl-fluid">$1</span>', e($headline));
 @endphp
 
-<div class="breakout">
+<div class="alignwide">
   <div class="py-12 md:py-30">
     <div class="grid gap-8 grid-cols-12 max-md:text-center">
       <div class="md:col-start-2 md:col-span-7 col-span-full">

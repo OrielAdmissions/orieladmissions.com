@@ -5,8 +5,8 @@
 @endphp
 
 @if ($headline || $image || $estimates)
-  <section class="full-width content-grid bg-sand py-12 md:py-30">
-    <div class="breakout">
+  <section class="bg-sand py-12 md:py-30">
+    <div>
       @if ($headline)
         <h2 class="text-6xl-fluid mx-auto mb-12 md:mb-30 max-w-125 text-center">
           {!! $headline !!}

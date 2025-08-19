@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-  <div class="breakout mt-[100px]">
+  <div class="alignwide mt-[100px]">
     <h1
       class="fade-in-bottom text-6xl-fluid max-w-screen-lg px-4 py-16 max-md:text-center"
     >
@@ -9,7 +9,7 @@
     </h1>
     <div></div>
   </div>
-  <div class="breakout">
+  <div class="alignwide">
     <section class="grid gap-8 pb-12 lg:grid-cols-12 lg:gap-x-12 lg:pb-30">
       <div class="lg:col-span-6">
         {!!

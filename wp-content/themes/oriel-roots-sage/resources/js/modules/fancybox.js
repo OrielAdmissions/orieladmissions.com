@@ -1,7 +1,7 @@
 import { Fancybox } from '@fancyapps/ui';
 import '@fancyapps/ui/dist/fancybox/fancybox.css';
 
-export function initFancybox(smoother) {
+export function initFancybox() {
   Fancybox.bind('.teamCardFancyBoxLink', {
     animated: true,
     dragToClose: false,
@@ -10,18 +10,6 @@ export function initFancybox(smoother) {
     Toolbar: {
       display: ['close'],
     },
-    on: {
-      reveal: () => {
-        if (window.innerWidth > 1024 && smoother) {
-          smoother.paused(true);
-        }
-      },
-      shouldClose: () => {
-        if (window.innerWidth > 1024 && smoother) {
-          smoother.paused(false);
-        }
-      },
-    },
   });
   Fancybox.bind('.videoFancyBoxLink', {
     animated: true,
@@ -29,18 +17,6 @@ export function initFancybox(smoother) {
     hideScrollbar: false,
     Toolbar: {
       display: ['close'],
-    },
-    on: {
-      reveal: () => {
-        if (window.innerWidth > 1024 && smoother) {
-          smoother.paused(true);
-        }
-      },
-      shouldClose: () => {
-        if (window.innerWidth > 1024 && smoother) {
-          smoother.paused(false);
-        }
-      },
     },
   });
 }

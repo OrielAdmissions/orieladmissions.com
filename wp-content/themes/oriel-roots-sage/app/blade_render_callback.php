@@ -15,11 +15,7 @@ function blade_render_callback($block, string $content = '', bool $is_preview = 
 
     // Build the class attribute
     $classes = ['acf-block', 'acf-' . $slug];
-
-    if (!empty($block['align'])) {
-        $classes[] = 'align' . $block['align'];
-    }
-
+    
     if (!empty($block['className'])) {
         $classes[] = $block['className'];
     }

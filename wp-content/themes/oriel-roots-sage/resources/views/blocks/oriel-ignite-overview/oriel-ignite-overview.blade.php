@@ -15,7 +15,7 @@
   $image_5 = get_field('image_5'); // far left image in section 3
 @endphp
 
-<div class="breakout relative space-y-12 py-12 md:py-30">
+<div class="relative space-y-12 py-12 md:py-30">
   <h2 class="text-6xl-fluid mx-auto max-w-4xl text-center font-serif">
     {!! $headline_1 !!}
   </h2>
@@ -41,8 +41,8 @@
   </div>
 </div>
 
-<div class="bg-sand full-width-constrained">
-  <div class="breakout py-12 lg:py-30">
+<div class="bg-sand">
+  <div class="py-12 lg:py-30">
     <h2 class="text-6xl-fluid mb-12 md:mb-30 max-w-2xl max-lg:text-center">
       {!! $headline_2 !!}
     </h2>
@@ -69,8 +69,8 @@
   </div>
 </div>
 
-<div class="bg-sand full-width content-grid pb-12 lg:pb-30">
-  <div class="breakout">
+<div class="bg-sand pb-12 lg:pb-30">
+  <div class="">
     <div class="grid gap-8 lg:grid-cols-12">
       <div class="col-start-1 max-lg:order-last lg:col-span-3">
         @if ($image_5)

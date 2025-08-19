@@ -3,6 +3,7 @@
   "title": "College Insights List",
   "description": "",
   "style": [ "file:./style.css" ],
+  "script": ["file:./block.js"],
   "category": "layout",
   "icon": "welcome-learn-more",
   "keywords": [

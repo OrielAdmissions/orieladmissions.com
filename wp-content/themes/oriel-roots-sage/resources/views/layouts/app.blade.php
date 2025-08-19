@@ -21,10 +21,8 @@
 </a>
 @include('sections.header')
 @php(wp_body_open())
-<div id="smooth-wrapper">
-  <div id="smooth-content">
     <div id="app">
-      <main id="main" class="main content-grid">
+      <main id="main" class="main">
         @yield('content')
       </main>
 
@@ -36,13 +34,10 @@
 
       @include('sections.footer')
     </div>
-
     @php(do_action('get_footer'))
     @php(wp_footer())
     @if ($footerScript = get_field('footer_scripts', 'option'))
       {!! $footerScript !!}
     @endif
-  </div>
-</div>
 </body>
 </html>

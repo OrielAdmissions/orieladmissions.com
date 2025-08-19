@@ -1,5 +1,5 @@
 <div class="content-grid overflow-x-clip py-14 md:py-25">
-  <div class="alignwide has-global-padding--inner grid grid-cols-1 gap-8">
+  <div class="alignnone grid grid-cols-1 gap-8">
     <div class="col-start-1 row-start-1">
       <div id="card-slider">
         <div class="flex items-center justify-between">

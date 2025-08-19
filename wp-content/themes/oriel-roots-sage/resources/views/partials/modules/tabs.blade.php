@@ -35,7 +35,7 @@
   <!-- Tab List -->
   <div
     x-tabs:list
-    class="divide-keyline/80 breakout full-width flex items-stretch divide-x"
+    class="divide-keyline/80 alignwide full-width flex items-stretch divide-x"
   >
     @foreach ($tabs as $tab)
       <button
@@ -51,7 +51,7 @@
   </div>
 
   <!-- Tab Panels -->
-  <div x-tabs:panels class="tab-contents breakout">
+  <div x-tabs:panels class="tab-contents alignwide">
     <section x-tabs:panel class="tab-content">
       <div class="relative py-24 md:py-40">
         <div class="relative z-10 mx-auto px-4">

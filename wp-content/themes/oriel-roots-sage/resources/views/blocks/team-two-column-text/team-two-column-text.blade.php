@@ -4,7 +4,7 @@
 @endphp
 
 @if ($headline || $subtext)
-  <div class="breakout">
+  <div class="alignwide">
     <div class="relative overflow-hidden pt-18 pb-47 lg:pt-30 lg:pb-70">
       <div class="grid gap-4 gap-x-6 max-lg:text-center lg:grid-cols-12">
         @if ($headline)

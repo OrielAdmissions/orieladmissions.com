@@ -11,9 +11,9 @@
     <div class="relative bg-[black] opacity-20">
     </div>
     <x-page-loader></x-page-loader>
-    <div class="content-grid">
-      <div class="breakout relative flex flex-col justify-center">
-        <div class="relative py-8 fade-in-bottom items-center">
+    <div class="">
+      <div class="alignwide relative flex flex-col justify-center">
+        <div class="relative py-8 items-center">
           <h1 class="max-w-225 text-8xl-fluid text-center mx-auto text-white">
             {!! $title !!}
           </h1>

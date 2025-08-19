@@ -1,4 +1,4 @@
-<article @php(post_class('h-entry full-width-constrained'))>
+<article @php(post_class('h-entry wp-block-group alignnone has-global-padding is-layout-constrained wp-container-core-group-is-layout-1 wp-block-group-is-layout-constrained'))>
   <header class="text-center">
     <div class="pt-20 md:py-30">
       @if (is_singular('post'))

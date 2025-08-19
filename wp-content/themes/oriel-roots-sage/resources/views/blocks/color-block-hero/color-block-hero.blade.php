@@ -8,7 +8,7 @@
   $imageId = get_post_thumbnail_id();
 @endphp
 
-<div class="full-width relative {{ $bgClass }}">
+<div class="full-width overflow-visible relative {{ $bgClass }}">
   <div class="full-width">
     {!! get_svg('images.window-full', 'absolute -bottom-[30vw] md:-bottom-[180px] mx-auto left-0 right-0 text-oriel w-full md:w-[500px] stroke-oriel md:stroke-white/20 max-w-2xl h-auto') !!}
   </div>

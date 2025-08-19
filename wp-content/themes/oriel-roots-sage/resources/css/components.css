@@ -1,5 +1,5 @@
 @layer components {
-  details {
+  details, .wp-block-details {
     box-sizing: border-box;
     @apply border-t border-[#D9CBCF] font-sans tracking-wide;
 
@@ -18,7 +18,7 @@
         @apply hidden;
       }
 
-      .accordion-icon {
+      .accordion-icon, &:after {
         position: absolute;
         width: 24px;
         height: 14px;
@@ -38,7 +38,7 @@
       > summary {
         @apply text-[var(--accent-color)];
 
-        .accordion-icon {
+        .accordion-icon, &:after {
           transform: translate(0, -50%) rotate(180deg);
           @apply text-[var(--accent-color)];
         }

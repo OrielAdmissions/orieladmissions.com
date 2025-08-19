@@ -26,7 +26,8 @@
         'object-cover object-right mx-auto rounded-xl img-grow w-screen-xl',
     ]); ?>
   </div>
-  <div class="breakout">
+  gap-0
+  <div class="alignwide">
     <div class="relative overflow-hidden pt-18 pb-47 lg:pt-30 lg:pb-70">
       <div class="grid gap-4 gap-x-6 max-lg:text-center lg:grid-cols-12">
         <div class="lg:col-span-5 lg:col-start-2">
@@ -46,7 +47,7 @@
     </div>
   </div>
   <section class="bg-cardinal full-width content-grid">
-    <div class="breakout mx-auto py-20 text-white lg:pt-24 lg:pb-4">
+    <div class="alignwide mx-auto py-20 text-white lg:pt-24 lg:pb-4">
       <h2 class="text-6xl-fluid mb-10 md:mb-30 md:text-center">
         Meet our founder
       </h2>
@@ -101,11 +102,11 @@
     @endphp
 
     @if($teamQuery->have_posts())
-      <div class="breakout py-12 md:py-30">
+      <div class="alignwide py-12 md:py-30">
         <h2 class="text-6xl-fluid mx-auto mb-12 md:mb-30 max-w-screen-sm text-center">
           Our team
         </h2>
-        <div class="breakout">
+        <div class="alignwide">
           <div class="mx-auto grid grid-cols-[repeat(auto-fill,_minmax(min(275px,_300px),_1fr))] gap-4">
             @while($teamQuery->have_posts())
               @php $teamQuery->the_post(); @endphp

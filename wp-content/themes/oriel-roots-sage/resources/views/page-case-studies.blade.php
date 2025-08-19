@@ -2,8 +2,8 @@
 
 @section('content')
   @include('partials.page-header')
-  <div class="full-width content-grid">
-    <div class="postContainer pb-12">
+  <div class="content-grid has-global-padding">
+    <div class="postContainer alignnone pb-12">
       @php
         $args = [
           'post_type' => 'case_study',

@@ -11,7 +11,7 @@
   @endphp
 
   @include('partials.page-header')
-  <div class="bg-chalk breakout">
+  <div class="bg-chalk alignwide">
     <section class="pb-30">
       <div class="grid gap-x-8 md:grid-cols-12">
         <!-- Sticky Sidebar -->

@@ -15,7 +15,7 @@
   $post_template = 'partials.content-' . $post_type;
 @endphp
 
-<div class="full-width content-grid">
+<div class="">
   <div class="postContainer pb-12">
     @if (! $wp_query->have_posts())
       <x-alert type="warning">

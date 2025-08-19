@@ -25,7 +25,7 @@
     ]); ?>
   </div>
 
-  <div class="breakout relative space-y-12 py-12 md:py-30">
+  <div class="alignwide relative space-y-12 py-12 md:py-30">
     <h2
       class="text-6xl-fluid mx-auto max-w-4xl text-center font-serif"
     >
@@ -67,7 +67,7 @@
   </div>
 
   <div class="bg-sand full-width-constrained">
-    <div class="breakout py-12 lg:py-30">
+    <div class="alignwide py-12 lg:py-30">
       <h2
         class="text-6xl-fluid mb-12 md:mb-30 max-w-2xl max-lg:text-center"
       >
@@ -119,7 +119,7 @@
   </div>
 
   <div class="bg-sand full-width content-grid pb-12 lg:pb-30">
-    <div class="breakout">
+    <div class="alignwide">
       <div class="grid gap-8 lg:grid-cols-12">
         <div class="col-start-1 max-lg:order-last lg:col-span-3">
           {!!
@@ -157,7 +157,7 @@
     </div>
   </div>
 
-  <div class="breakout mb-20 space-y-12 pt-12 md:pt-30">
+  <div class="alignwide mb-20 space-y-12 pt-12 md:pt-30">
     <div class="grid grid-cols-12 gap-x-4 gap-y-6">
       <div
         class="col-span-full flex max-w-lg flex-col gap-y-12 lg:col-span-4 lg:col-start-2 xl:pt-16"
@@ -237,7 +237,7 @@
       </div>
     </div>
   </div>
-  <div class="breakout mb-12 md:mb-30">
+  <div class="alignwide mb-12 md:mb-30">
     <div class="grid grid-cols-12 gap-x-4 gap-y-6">
       <div
         class="col-span-full flex max-w-lg flex-col gap-y-12 lg:col-span-4 lg:col-start-2"
@@ -295,7 +295,7 @@
     </div>
   </div>
   <div class="bg-cardinal full-width py-12 md:py-30">
-    <div class="breakout">
+    <div class="alignwide">
       <div class="">
         <h2
           class="fade-in-bottom text-6xl-fluid text-center text-white max-md:mb-6 md:-mb-16"
@@ -335,7 +335,7 @@
   </div>
 
   <div class="bg-sand full-width-constrained">
-    <div class="breakout space-y-8 py-12 md:py-30">
+    <div class="alignwide space-y-8 py-12 md:py-30">
       <h2 @class(['text-6xl-fluid mb-12 md:bb-30 text-center'])>
         Student Stories
       </h2>

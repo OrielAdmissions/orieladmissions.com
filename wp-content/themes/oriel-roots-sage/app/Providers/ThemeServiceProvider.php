@@ -2,11 +2,7 @@
 
 namespace App\Providers;
 
-use Illuminate\Support\Facades\Blade;
-use Illuminate\Support\Facades\File;
 use Roots\Acorn\Sage\SageServiceProvider;
-
-use function Roots\view;
 
 class ThemeServiceProvider extends SageServiceProvider
 {

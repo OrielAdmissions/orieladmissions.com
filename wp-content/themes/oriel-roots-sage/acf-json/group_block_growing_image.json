@@ -1,0 +1,47 @@
+{
+  "key": "group_growing_image",
+  "title": "Block: Growing Image",
+  "fields": [
+    {
+      "key": "field_gi_image",
+      "label": "Image",
+      "name": "image",
+      "type": "image",
+      "return_format": "id",
+      "preview_size": "medium",
+      "library": "all"
+    },
+    {
+      "key": "field_gi_image_starting_width",
+      "label": "Image Starting Width",
+      "name": "image_starting_width",
+      "type": "number",
+      "instructions": "Width (in pixels) of the center visible portion before scroll reveal. Default is 1280.",
+      "default_value": 1280,
+      "min": 100,
+      "step": 1
+    },
+    {
+      "key": "field_gi_bg_color",
+      "label": "Background Color",
+      "name": "bg_color",
+      "type": "color_picker",
+      "default_value": "#ffffff"
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "oriel/growing-image"
+      }
+    ]
+  ],
+  "style": "default",
+  "position": "acf_after_title",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "active": true,
+  "description": ""
+}

@@ -1,7 +1,7 @@
 <section class="full-width content-grid bg-[#FBF8F6] py-12 md:py-30">
   <h2 class="text-6xl-fluid mx-auto mb-12 md:mb-32 max-w-150 text-center">
     Our Services </h2>
-  <div class="breakout">
+  <div class="alignwide">
     <div class="grid grid-cols-12 gap-4">
       <div class="col-span-full md:col-span-6 lg:col-span-4 lg:col-start-2">
         <div class="pin-content md:pr-10">

@@ -3,7 +3,7 @@
   'isFaqPage' => is_page('faqs'),
 ])
 
-<section class="faq-section breakout {{ $isFaqPage ? 'mt-30' : '' }} py-20">
+<section class="faq-section alignwide {{ $isFaqPage ? 'mt-30' : '' }} py-20">
   <div
     class="grid grid-cols-12 place-content-center content-center gap-x-4 gap-y-20"
   >
