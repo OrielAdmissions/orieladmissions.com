@@ -1,5 +1,15 @@
 #!/bin/bash
 
+# Navigate to theme directory and ensure clean dependencies
+cd wp-content/themes/oriel-roots-sage/
+
+# Clean and reinstall Composer dependencies
+echo "Installing Composer dependencies..."
+composer install --no-dev --optimize-autoloader --no-scripts
+
+# Navigate back to WordPress root
+cd ../../../
+
 # Check if the theme is already active, and activate it if not
 if ! wp theme is-active oriel-roots-sage; then
     echo "Activating the theme..."
