@@ -4,12 +4,12 @@
     "src": "editor.deps.json"
   },
   "resources/css/app.css": {
-    "file": "assets/app-CS9MtZ5m.css",
+    "file": "assets/app-CvkrXVSx.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/css/editor.css": {
-    "file": "assets/editor-BF6u49jU.css",
+    "file": "assets/editor-CuaB3cBx.css",
     "src": "resources/css/editor.css",
     "isEntry": true
   },
@@ -68,74 +68,6 @@
   "resources/fonts/PPEditorialNew-UltralightItalic.otf": {
     "file": "assets/PPEditorialNew-UltralightItalic-Bw7LjlFL.otf",
     "src": "resources/fonts/PPEditorialNew-UltralightItalic.otf"
-  },
-  "resources/images/Headshots/Alison-Headshot.jpg": {
-    "file": "assets/Alison-Headshot-Xnb0vDfY.jpg",
-    "src": "resources/images/Headshots/Alison-Headshot.jpg"
-  },
-  "resources/images/Headshots/Alyssa-Headshot.jpg": {
-    "file": "assets/Alyssa-Headshot-9GbAOeve.jpg",
-    "src": "resources/images/Headshots/Alyssa-Headshot.jpg"
-  },
-  "resources/images/Headshots/Becky-Headshot.jpg": {
-    "file": "assets/Becky-Headshot-ByMltfjv.jpg",
-    "src": "resources/images/Headshots/Becky-Headshot.jpg"
-  },
-  "resources/images/Headshots/Carrie-Headshot.jpg": {
-    "file": "assets/Carrie-Headshot-uMhuHtRz.jpg",
-    "src": "resources/images/Headshots/Carrie-Headshot.jpg"
-  },
-  "resources/images/Headshots/Clarissa-Headshot.jpg": {
-    "file": "assets/Clarissa-Headshot-1zS6X9Sm.jpg",
-    "src": "resources/images/Headshots/Clarissa-Headshot.jpg"
-  },
-  "resources/images/Headshots/Dejuanna-Headshot.jpg": {
-    "file": "assets/Dejuanna-Headshot-q5r-yPsJ.jpg",
-    "src": "resources/images/Headshots/Dejuanna-Headshot.jpg"
-  },
-  "resources/images/Headshots/Ellie-Headshot.jpg": {
-    "file": "assets/Ellie-Headshot-DvuLwFwD.jpg",
-    "src": "resources/images/Headshots/Ellie-Headshot.jpg"
-  },
-  "resources/images/Headshots/Jessie-Headshot.jpg": {
-    "file": "assets/Jessie-Headshot-BrML8pPM.jpg",
-    "src": "resources/images/Headshots/Jessie-Headshot.jpg"
-  },
-  "resources/images/Headshots/Joy-Headshot.jpg": {
-    "file": "assets/Joy-Headshot-Ce4-Glnu.jpg",
-    "src": "resources/images/Headshots/Joy-Headshot.jpg"
-  },
-  "resources/images/Headshots/Julia-Headshot.jpg": {
-    "file": "assets/Julia-Headshot-Dm47vEQp.jpg",
-    "src": "resources/images/Headshots/Julia-Headshot.jpg"
-  },
-  "resources/images/Headshots/Kendra-Headshot.jpg": {
-    "file": "assets/Kendra-Headshot-blO-t0f9.jpg",
-    "src": "resources/images/Headshots/Kendra-Headshot.jpg"
-  },
-  "resources/images/Headshots/Lindsey-Headshot.jpg": {
-    "file": "assets/Lindsey-Headshot-CFaNUDeF.jpg",
-    "src": "resources/images/Headshots/Lindsey-Headshot.jpg"
-  },
-  "resources/images/Headshots/Rita-Headshot.jpg": {
-    "file": "assets/Rita-Headshot-BYTTX4Ih.jpg",
-    "src": "resources/images/Headshots/Rita-Headshot.jpg"
-  },
-  "resources/images/Headshots/Rona-Aydin-Headshot.jpg": {
-    "file": "assets/Rona-Aydin-Headshot-DW7AP6NB.jpg",
-    "src": "resources/images/Headshots/Rona-Aydin-Headshot.jpg"
-  },
-  "resources/images/Headshots/Tanner-Headshot.jpg": {
-    "file": "assets/Tanner-Headshot-ytaMOmLM.jpg",
-    "src": "resources/images/Headshots/Tanner-Headshot.jpg"
-  },
-  "resources/images/Headshots/Thea-Headshot.jpg": {
-    "file": "assets/Thea-Headshot-B5uZmGSU.jpg",
-    "src": "resources/images/Headshots/Thea-Headshot.jpg"
-  },
-  "resources/images/Headshots/Zoe-Headshot.jpg": {
-    "file": "assets/Zoe-Headshot-BN_r9Ny6.jpg",
-    "src": "resources/images/Headshots/Zoe-Headshot.jpg"
   },
   "resources/images/application-graph.svg": {
     "file": "assets/application-graph-BX3fWkX2.svg",
@@ -389,33 +321,13 @@
     "file": "assets/school-CXYPRBnL.svg",
     "src": "resources/images/icon-school.svg"
   },
-  "resources/images/slider-image-1.png": {
-    "file": "assets/slider-image-1-CkuY5KPq.png",
-    "src": "resources/images/slider-image-1.png"
-  },
   "resources/images/steps-arrow.svg": {
     "file": "assets/steps-arrow-C6XhELku.svg",
     "src": "resources/images/steps-arrow.svg"
   },
-  "resources/images/student-story.jpeg": {
-    "file": "assets/student-story-BUZ5r2pG.jpeg",
-    "src": "resources/images/student-story.jpeg"
-  },
-  "resources/images/window-bottom.svg": {
-    "file": "assets/window-bottom-Cm1Whe9E.svg",
-    "src": "resources/images/window-bottom.svg"
-  },
-  "resources/images/window-full-mask.svg": {
-    "file": "assets/window-full-mask-aW9mMEyq.svg",
-    "src": "resources/images/window-full-mask.svg"
-  },
   "resources/images/window-full.svg": {
     "file": "assets/window-full-CK-Mp6Ng.svg",
     "src": "resources/images/window-full.svg"
-  },
-  "resources/images/window-outline.svg": {
-    "file": "assets/window-outline-Be-RT41q.svg",
-    "src": "resources/images/window-outline.svg"
   },
   "resources/js/app.js": {
     "file": "assets/app-CVI7Bu70.js",

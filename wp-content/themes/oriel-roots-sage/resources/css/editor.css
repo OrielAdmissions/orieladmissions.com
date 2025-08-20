@@ -4,10 +4,8 @@
 @import './components.css';
 @import './utilities.css';
 @import './fonts.css';
-@import './ninja-forms.css';
 @import './blocks/header.css';
 @import './blocks/logo-marquee.css';
-@import './animations.css';
 
 @source "../views/";
 @source "../../app/";
@@ -338,4 +336,8 @@
 
 figure.rounded-xl img {
   @apply rounded-xl;
+}
+
+.fade-in-bottom {
+  opacity: 0.01;
 }

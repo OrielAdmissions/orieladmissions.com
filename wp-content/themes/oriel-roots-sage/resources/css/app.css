@@ -6,7 +6,6 @@
 @import './fonts.css';
 @import './blocks/header.css';
 @import './blocks/logo-marquee.css';
-@import './animations.css';
 
 @source "../views/";
 @source "../../app/";
@@ -328,4 +327,8 @@ figure.rounded-xl img {
 
 .gap-0 {
   gap: 0;
+}
+
+.fade-in-bottom {
+  opacity: 0.01;
 }
