@@ -3,6 +3,7 @@
   "title": "FAQs",
   "description": "FAQs",
   "style": [ "file:./style.css" ],
+  "viewScript": [ "file:./block.js" ],
   "category": "",
   "icon": "",
   "keywords": [

@@ -3,7 +3,6 @@ import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { gsap } from 'gsap';
 
 Swiper.use([Navigation, Pagination, Autoplay]);
 
@@ -12,13 +11,6 @@ export function initServicesSwiper() {
   if (!swiperEl) return;
   let screenXl = window.matchMedia('(min-width: 1440px)');
   let contentGridWidth = 1068;
-
-  function calculateOffset() {
-    const viewportWidth = window.innerWidth;
-    return screenXl.matches
-      ? Math.max((viewportWidth - contentGridWidth) / 2, 0)
-      : 0;
-  }
 
   let swiper = new Swiper(swiperEl, {
     slidesPerView: '1',

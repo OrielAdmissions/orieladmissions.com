@@ -173,28 +173,20 @@
     @apply transition-all duration-500;
     fill-opacity: 0;
   }
-
-  /*&:hover {*/
-  /*  @apply text-white;*/
-
-  /*  .mobile-bar-background {*/
-  /*    fill-opacity: 1;*/
-  /*  }*/
-  /*}*/
 }
 
 .tippy-box[data-theme~='custom-tooltip'] {
-  background-color: white !important; /* White background */
-  color: black; /* Black text */
-  border: 1px solid #ddd; /* Light border */
-  padding: 0 !important; /* Remove default padding */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
-  border-radius: 8px; /* Rounded corners */
-  max-width: 200px; /* Optional width limit */
+  background-color: white !important;
+  color: black;
+  border: 1px solid #ddd;
+  padding: 0 !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  max-width: 200px;
 }
 
 .tooltip-content {
-  padding: 16px; /* Control padding here */
+  padding: 16px;
 }
 
 .text-slide {

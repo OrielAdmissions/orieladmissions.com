@@ -1,15 +1,88 @@
 {
+  "_accordion-IFykHxbs.js": {
+    "file": "assets/accordion-IFykHxbs.js",
+    "name": "accordion"
+  },
+  "_duke-BHH8rdGj.css": {
+    "file": "assets/duke-BHH8rdGj.css",
+    "src": "_duke-BHH8rdGj.css"
+  },
+  "_duke-BkW0IOxM.js": {
+    "file": "assets/duke-BkW0IOxM.js",
+    "name": "duke",
+    "css": [
+      "assets/duke-BHH8rdGj.css"
+    ],
+    "assets": [
+      "assets/brown-DZDHKD4c.svg",
+      "assets/cornell-university-DItbG1r0.svg",
+      "assets/yale-D7cR1Ald.svg",
+      "assets/nyu-CzD5Ne3Y.svg",
+      "assets/mit-BkharLBy.svg",
+      "assets/princeton-BzLxY9LU.svg",
+      "assets/johns-hopkins-BMpvtMS0.svg",
+      "assets/university-of-pennsylvania-BpPiiBd3.svg",
+      "assets/harvard-Ddj4Dw05.svg",
+      "assets/dartmouth-CTz4_b9N.svg",
+      "assets/columbia-university-qjGb_auW.svg",
+      "assets/duke-IwUbceGj.svg"
+    ]
+  },
+  "_fancybox-7lwk_WoL.js": {
+    "file": "assets/fancybox-7lwk_WoL.js",
+    "name": "fancybox",
+    "css": [
+      "assets/fancybox-ds4Gh1HN.css"
+    ]
+  },
+  "_fancybox-ds4Gh1HN.css": {
+    "file": "assets/fancybox-ds4Gh1HN.css",
+    "src": "_fancybox-ds4Gh1HN.css"
+  },
+  "_gsapConfig-Cp14S8w9.js": {
+    "file": "assets/gsapConfig-Cp14S8w9.js",
+    "name": "gsapConfig",
+    "imports": [
+      "_vendor-gsap-CH_iu5NA.js"
+    ]
+  },
+  "_pagination-C9fdc_c7.js": {
+    "file": "assets/pagination-C9fdc_c7.js",
+    "name": "pagination",
+    "imports": [
+      "_vendor-swiper-lmBjDUkO.js"
+    ],
+    "css": [
+      "assets/pagination-Ds_YmOBQ.css"
+    ]
+  },
+  "_pagination-Ds_YmOBQ.css": {
+    "file": "assets/pagination-Ds_YmOBQ.css",
+    "src": "_pagination-Ds_YmOBQ.css"
+  },
+  "_vendor-alpine-Cm4okMZt.js": {
+    "file": "assets/vendor-alpine-Cm4okMZt.js",
+    "name": "vendor-alpine"
+  },
+  "_vendor-gsap-CH_iu5NA.js": {
+    "file": "assets/vendor-gsap-CH_iu5NA.js",
+    "name": "vendor-gsap"
+  },
+  "_vendor-swiper-lmBjDUkO.js": {
+    "file": "assets/vendor-swiper-lmBjDUkO.js",
+    "name": "vendor-swiper"
+  },
   "editor.deps.json": {
     "file": "assets/editor.deps-DxpY22xl.json",
     "src": "editor.deps.json"
   },
   "resources/css/app.css": {
-    "file": "assets/app-CvkrXVSx.css",
+    "file": "assets/app-css-CvkrXVSx.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/css/editor.css": {
-    "file": "assets/editor-CuaB3cBx.css",
+    "file": "assets/editor-css-CuaB3cBx.css",
     "src": "resources/css/editor.css",
     "isEntry": true
   },
@@ -330,26 +403,29 @@
     "src": "resources/images/window-full.svg"
   },
   "resources/js/app.js": {
-    "file": "assets/app-CVI7Bu70.js",
+    "file": "assets/app-eWqIZrG5.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
-    "css": [
-      "assets/app-xr_-SPmt.css"
+    "imports": [
+      "_vendor-alpine-Cm4okMZt.js",
+      "_gsapConfig-Cp14S8w9.js",
+      "_vendor-gsap-CH_iu5NA.js",
+      "_vendor-swiper-lmBjDUkO.js",
+      "_pagination-C9fdc_c7.js",
+      "_accordion-IFykHxbs.js",
+      "_duke-BkW0IOxM.js",
+      "_fancybox-7lwk_WoL.js"
     ],
-    "assets": [
-      "assets/brown-DZDHKD4c.svg",
-      "assets/cornell-university-DItbG1r0.svg",
-      "assets/yale-D7cR1Ald.svg",
-      "assets/nyu-CzD5Ne3Y.svg",
-      "assets/mit-BkharLBy.svg",
-      "assets/princeton-BzLxY9LU.svg",
-      "assets/johns-hopkins-BMpvtMS0.svg",
-      "assets/university-of-pennsylvania-BpPiiBd3.svg",
-      "assets/harvard-Ddj4Dw05.svg",
-      "assets/dartmouth-CTz4_b9N.svg",
-      "assets/columbia-university-qjGb_auW.svg",
-      "assets/duke-IwUbceGj.svg"
+    "dynamicImports": [
+      "resources/views/blocks/arc-slider/block.js",
+      "resources/views/blocks/college-insights/block.js",
+      "resources/views/blocks/faqs/block.js",
+      "resources/views/blocks/featured-video/block.js",
+      "resources/views/blocks/home-college-graph/block.js",
+      "resources/views/blocks/home-hero/block.js",
+      "resources/views/blocks/team/block.js",
+      "resources/views/blocks/testimonial-slider/block.js"
     ]
   },
   "resources/js/editor.js": {
@@ -357,5 +433,84 @@
     "name": "editor",
     "src": "resources/js/editor.js",
     "isEntry": true
+  },
+  "resources/views/blocks/arc-slider/block.js": {
+    "file": "assets/blocks/arc-slider-X-KeZmll.js",
+    "name": "blocks/arc-slider",
+    "src": "resources/views/blocks/arc-slider/block.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-swiper-lmBjDUkO.js",
+      "_pagination-C9fdc_c7.js",
+      "_vendor-gsap-CH_iu5NA.js",
+      "_gsapConfig-Cp14S8w9.js"
+    ]
+  },
+  "resources/views/blocks/college-insights/block.js": {
+    "file": "assets/blocks/college-insights-l0sNRNKZ.js",
+    "name": "blocks/college-insights",
+    "src": "resources/views/blocks/college-insights/block.js",
+    "isEntry": true
+  },
+  "resources/views/blocks/faqs/block.js": {
+    "file": "assets/blocks/faqs-qA6GefnO.js",
+    "name": "blocks/faqs",
+    "src": "resources/views/blocks/faqs/block.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_accordion-IFykHxbs.js"
+    ]
+  },
+  "resources/views/blocks/featured-video/block.js": {
+    "file": "assets/blocks/featured-video-39YJ-jI8.js",
+    "name": "blocks/featured-video",
+    "src": "resources/views/blocks/featured-video/block.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_fancybox-7lwk_WoL.js"
+    ]
+  },
+  "resources/views/blocks/home-college-graph/block.js": {
+    "file": "assets/blocks/home-college-graph-BHYK_fxY.js",
+    "name": "blocks/home-college-graph",
+    "src": "resources/views/blocks/home-college-graph/block.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_duke-BkW0IOxM.js"
+    ]
+  },
+  "resources/views/blocks/home-hero/block.js": {
+    "file": "assets/blocks/home-hero-9R9op1n2.js",
+    "name": "blocks/home-hero",
+    "src": "resources/views/blocks/home-hero/block.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_gsapConfig-Cp14S8w9.js",
+      "_vendor-gsap-CH_iu5NA.js"
+    ]
+  },
+  "resources/views/blocks/team/block.js": {
+    "file": "assets/blocks/team-BAKSJks6.js",
+    "name": "blocks/team",
+    "src": "resources/views/blocks/team/block.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_gsapConfig-Cp14S8w9.js",
+      "_fancybox-7lwk_WoL.js",
+      "_vendor-gsap-CH_iu5NA.js"
+    ]
+  },
+  "resources/views/blocks/testimonial-slider/block.js": {
+    "file": "assets/blocks/testimonial-slider-Bma_3bEe.js",
+    "name": "blocks/testimonial-slider",
+    "src": "resources/views/blocks/testimonial-slider/block.js",
+    "isEntry": true,
+    "isDynamicEntry": true
   }
 }

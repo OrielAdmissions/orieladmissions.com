@@ -2,6 +2,8 @@
 namespace App;
 
 /**
+ * blade_render_callback.php
+ *
  * Callback for rendering Blade templates.
  * Name of the Blade template at resources/views/blocks/{title}.blade.php
  */
@@ -15,7 +17,7 @@ function blade_render_callback($block, string $content = '', bool $is_preview = 
 
     // Build the class attribute
     $classes = ['acf-block', 'acf-' . $slug];
-    
+
     if (!empty($block['className'])) {
         $classes[] = $block['className'];
     }

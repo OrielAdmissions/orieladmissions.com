@@ -23,6 +23,12 @@ bootAlpineOnce(
 window.Alpine = Alpine;
 
 /* ----------------------------------------------------------------------
+   Block Loader System (Code Splitting)
+------------------------------------------------------------------------*/
+// Import the block loader for dynamic script loading
+import './modules/blockLoader.js';
+
+/* ----------------------------------------------------------------------
    Other feature modules
 ------------------------------------------------------------------------*/
 import { initializeSwipers }         from './modules/swiper/swiperInit.js';
